@@ -1,6 +1,4 @@
 #include "pch.h"
-#include "sql.h"
-
 
 using namespace System;
 
