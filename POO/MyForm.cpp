@@ -1,6 +1,7 @@
 #include "pch.h"
 #include "MyForm.h"
 #include <iostream>
+#include "SqlServices.h"
 
 using namespace System;
 using namespace System::Windows::Forms;
@@ -12,7 +13,7 @@ int __clrcall WinMain(array<String^>^ args)
 	Application::SetCompatibleTextRenderingDefault(false);
 	POO::MyForm monFormulaire;
 	
-	std::cout << "Hello World!" << std::endl;
+	auto test = gcnew NS_Comp_Data::CLcad();
 	
 	Application::Run(% monFormulaire);
 }
