@@ -8,6 +8,4 @@ public:
 	~SqlServices();
 	void ConnectToDB();
 	void ExecuteSQL();
-private:
-
 };
