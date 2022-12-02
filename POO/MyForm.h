@@ -43,14 +43,19 @@ namespace POO {
 
 
 	private: System::Windows::Forms::TabControl^ tabControl1;
-	private: System::Windows::Forms::TabPage^ tabPage1;
-	private: System::Windows::Forms::TabPage^ tabPage2;
-	private: System::Windows::Forms::TabPage^ tabPage3;
-	private: System::Windows::Forms::TabPage^ tabPage4;
+	private: System::Windows::Forms::TabPage^ tabClient;
+	private: System::Windows::Forms::TabPage^ tabCommandes;
+	private: System::Windows::Forms::TabPage^ tabEmployes;
+	private: System::Windows::Forms::TabPage^ tabStocks;
+	private: System::Windows::Forms::TabPage^ tabStats;
 
 
 
-	private: System::Windows::Forms::TabPage^ tabPage5;
+
+
+
+
+
 
 	private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel1;
 	private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel2;
@@ -143,7 +148,7 @@ namespace POO {
 		void InitializeComponent(void)
 		{
 			this->tabControl1 = (gcnew System::Windows::Forms::TabControl());
-			this->tabPage1 = (gcnew System::Windows::Forms::TabPage());
+			this->tabClient = (gcnew System::Windows::Forms::TabPage());
 			this->checkBox1 = (gcnew System::Windows::Forms::CheckBox());
 			this->tableLayoutPanel1 = (gcnew System::Windows::Forms::TableLayoutPanel());
 			this->tableLayoutPanel2 = (gcnew System::Windows::Forms::TableLayoutPanel());
@@ -156,7 +161,7 @@ namespace POO {
 			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox4 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox5 = (gcnew System::Windows::Forms::TextBox());
-			this->tabPage2 = (gcnew System::Windows::Forms::TabPage());
+			this->tabCommandes = (gcnew System::Windows::Forms::TabPage());
 			this->checkBox2 = (gcnew System::Windows::Forms::CheckBox());
 			this->tableLayoutPanel3 = (gcnew System::Windows::Forms::TableLayoutPanel());
 			this->tableLayoutPanel11 = (gcnew System::Windows::Forms::TableLayoutPanel());
@@ -169,7 +174,7 @@ namespace POO {
 			this->button4 = (gcnew System::Windows::Forms::Button());
 			this->button5 = (gcnew System::Windows::Forms::Button());
 			this->button6 = (gcnew System::Windows::Forms::Button());
-			this->tabPage3 = (gcnew System::Windows::Forms::TabPage());
+			this->tabEmployes = (gcnew System::Windows::Forms::TabPage());
 			this->checkBox3 = (gcnew System::Windows::Forms::CheckBox());
 			this->tableLayoutPanel5 = (gcnew System::Windows::Forms::TableLayoutPanel());
 			this->tableLayoutPanel12 = (gcnew System::Windows::Forms::TableLayoutPanel());
@@ -182,7 +187,7 @@ namespace POO {
 			this->button7 = (gcnew System::Windows::Forms::Button());
 			this->button8 = (gcnew System::Windows::Forms::Button());
 			this->button9 = (gcnew System::Windows::Forms::Button());
-			this->tabPage4 = (gcnew System::Windows::Forms::TabPage());
+			this->tabStocks = (gcnew System::Windows::Forms::TabPage());
 			this->checkBox4 = (gcnew System::Windows::Forms::CheckBox());
 			this->tableLayoutPanel7 = (gcnew System::Windows::Forms::TableLayoutPanel());
 			this->tableLayoutPanel13 = (gcnew System::Windows::Forms::TableLayoutPanel());
@@ -195,7 +200,7 @@ namespace POO {
 			this->button10 = (gcnew System::Windows::Forms::Button());
 			this->button11 = (gcnew System::Windows::Forms::Button());
 			this->button12 = (gcnew System::Windows::Forms::Button());
-			this->tabPage5 = (gcnew System::Windows::Forms::TabPage());
+			this->tabStats = (gcnew System::Windows::Forms::TabPage());
 			this->checkBox5 = (gcnew System::Windows::Forms::CheckBox());
 			this->tableLayoutPanel10 = (gcnew System::Windows::Forms::TableLayoutPanel());
 			this->StatsButton = (gcnew System::Windows::Forms::Button());
@@ -204,34 +209,34 @@ namespace POO {
 			this->CommandesButton = (gcnew System::Windows::Forms::Button());
 			this->ClientButton = (gcnew System::Windows::Forms::Button());
 			this->tabControl1->SuspendLayout();
-			this->tabPage1->SuspendLayout();
+			this->tabClient->SuspendLayout();
 			this->tableLayoutPanel1->SuspendLayout();
 			this->tableLayoutPanel2->SuspendLayout();
 			this->tableLayoutPanel9->SuspendLayout();
-			this->tabPage2->SuspendLayout();
+			this->tabCommandes->SuspendLayout();
 			this->tableLayoutPanel3->SuspendLayout();
 			this->tableLayoutPanel11->SuspendLayout();
 			this->tableLayoutPanel4->SuspendLayout();
-			this->tabPage3->SuspendLayout();
+			this->tabEmployes->SuspendLayout();
 			this->tableLayoutPanel5->SuspendLayout();
 			this->tableLayoutPanel12->SuspendLayout();
 			this->tableLayoutPanel6->SuspendLayout();
-			this->tabPage4->SuspendLayout();
+			this->tabStocks->SuspendLayout();
 			this->tableLayoutPanel7->SuspendLayout();
 			this->tableLayoutPanel13->SuspendLayout();
 			this->tableLayoutPanel8->SuspendLayout();
-			this->tabPage5->SuspendLayout();
+			this->tabStats->SuspendLayout();
 			this->tableLayoutPanel10->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// tabControl1
 			// 
 			this->tabControl1->Appearance = System::Windows::Forms::TabAppearance::Buttons;
-			this->tabControl1->Controls->Add(this->tabPage1);
-			this->tabControl1->Controls->Add(this->tabPage2);
-			this->tabControl1->Controls->Add(this->tabPage3);
-			this->tabControl1->Controls->Add(this->tabPage4);
-			this->tabControl1->Controls->Add(this->tabPage5);
+			this->tabControl1->Controls->Add(this->tabClient);
+			this->tabControl1->Controls->Add(this->tabCommandes);
+			this->tabControl1->Controls->Add(this->tabEmployes);
+			this->tabControl1->Controls->Add(this->tabStocks);
+			this->tabControl1->Controls->Add(this->tabStats);
 			this->tabControl1->Dock = System::Windows::Forms::DockStyle::Bottom;
 			this->tabControl1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.9F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
@@ -243,18 +248,18 @@ namespace POO {
 			this->tabControl1->Size = System::Drawing::Size(1190, 496);
 			this->tabControl1->TabIndex = 8;
 			// 
-			// tabPage1
+			// tabClient
 			// 
-			this->tabPage1->Controls->Add(this->checkBox1);
-			this->tabPage1->Controls->Add(this->tableLayoutPanel1);
-			this->tabPage1->Location = System::Drawing::Point(4, 29);
-			this->tabPage1->Name = L"tabPage1";
-			this->tabPage1->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage1->Size = System::Drawing::Size(1182, 463);
-			this->tabPage1->TabIndex = 0;
-			this->tabPage1->Text = L"tabPage1";
-			this->tabPage1->UseVisualStyleBackColor = true;
-			this->tabPage1->Click += gcnew System::EventHandler(this, &MyForm::tabPage1_Click);
+			this->tabClient->Controls->Add(this->checkBox1);
+			this->tabClient->Controls->Add(this->tableLayoutPanel1);
+			this->tabClient->Location = System::Drawing::Point(4, 29);
+			this->tabClient->Name = L"tabClient";
+			this->tabClient->Padding = System::Windows::Forms::Padding(3);
+			this->tabClient->Size = System::Drawing::Size(1182, 463);
+			this->tabClient->TabIndex = 0;
+			this->tabClient->Text = L"Client";
+			this->tabClient->UseVisualStyleBackColor = true;
+			this->tabClient->Click += gcnew System::EventHandler(this, &MyForm::tabPage1_Click);
 			// 
 			// checkBox1
 			// 
@@ -398,17 +403,17 @@ namespace POO {
 			this->textBox5->Size = System::Drawing::Size(184, 22);
 			this->textBox5->TabIndex = 4;
 			// 
-			// tabPage2
+			// tabCommandes
 			// 
-			this->tabPage2->Controls->Add(this->checkBox2);
-			this->tabPage2->Controls->Add(this->tableLayoutPanel3);
-			this->tabPage2->Location = System::Drawing::Point(4, 29);
-			this->tabPage2->Name = L"tabPage2";
-			this->tabPage2->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage2->Size = System::Drawing::Size(1182, 463);
-			this->tabPage2->TabIndex = 1;
-			this->tabPage2->Text = L"tabPage2";
-			this->tabPage2->UseVisualStyleBackColor = true;
+			this->tabCommandes->Controls->Add(this->checkBox2);
+			this->tabCommandes->Controls->Add(this->tableLayoutPanel3);
+			this->tabCommandes->Location = System::Drawing::Point(4, 29);
+			this->tabCommandes->Name = L"tabCommandes";
+			this->tabCommandes->Padding = System::Windows::Forms::Padding(3);
+			this->tabCommandes->Size = System::Drawing::Size(1182, 463);
+			this->tabCommandes->TabIndex = 1;
+			this->tabCommandes->Text = L"Commandes";
+			this->tabCommandes->UseVisualStyleBackColor = true;
 			// 
 			// checkBox2
 			// 
@@ -551,17 +556,17 @@ namespace POO {
 			this->button6->Text = L"button6";
 			this->button6->UseVisualStyleBackColor = true;
 			// 
-			// tabPage3
+			// tabEmployes
 			// 
-			this->tabPage3->Controls->Add(this->checkBox3);
-			this->tabPage3->Controls->Add(this->tableLayoutPanel5);
-			this->tabPage3->Location = System::Drawing::Point(4, 29);
-			this->tabPage3->Name = L"tabPage3";
-			this->tabPage3->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage3->Size = System::Drawing::Size(1182, 463);
-			this->tabPage3->TabIndex = 2;
-			this->tabPage3->Text = L"tabPage3";
-			this->tabPage3->UseVisualStyleBackColor = true;
+			this->tabEmployes->Controls->Add(this->checkBox3);
+			this->tabEmployes->Controls->Add(this->tableLayoutPanel5);
+			this->tabEmployes->Location = System::Drawing::Point(4, 29);
+			this->tabEmployes->Name = L"tabEmployes";
+			this->tabEmployes->Padding = System::Windows::Forms::Padding(3);
+			this->tabEmployes->Size = System::Drawing::Size(1182, 463);
+			this->tabEmployes->TabIndex = 2;
+			this->tabEmployes->Text = L"Employes";
+			this->tabEmployes->UseVisualStyleBackColor = true;
 			// 
 			// checkBox3
 			// 
@@ -704,17 +709,17 @@ namespace POO {
 			this->button9->Text = L"button9";
 			this->button9->UseVisualStyleBackColor = true;
 			// 
-			// tabPage4
+			// tabStocks
 			// 
-			this->tabPage4->Controls->Add(this->checkBox4);
-			this->tabPage4->Controls->Add(this->tableLayoutPanel7);
-			this->tabPage4->Location = System::Drawing::Point(4, 29);
-			this->tabPage4->Name = L"tabPage4";
-			this->tabPage4->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage4->Size = System::Drawing::Size(1182, 463);
-			this->tabPage4->TabIndex = 3;
-			this->tabPage4->Text = L"tabPage4";
-			this->tabPage4->UseVisualStyleBackColor = true;
+			this->tabStocks->Controls->Add(this->checkBox4);
+			this->tabStocks->Controls->Add(this->tableLayoutPanel7);
+			this->tabStocks->Location = System::Drawing::Point(4, 29);
+			this->tabStocks->Name = L"tabStocks";
+			this->tabStocks->Padding = System::Windows::Forms::Padding(3);
+			this->tabStocks->Size = System::Drawing::Size(1182, 463);
+			this->tabStocks->TabIndex = 3;
+			this->tabStocks->Text = L"Stocks";
+			this->tabStocks->UseVisualStyleBackColor = true;
 			// 
 			// checkBox4
 			// 
@@ -857,16 +862,16 @@ namespace POO {
 			this->button12->Text = L"button12";
 			this->button12->UseVisualStyleBackColor = true;
 			// 
-			// tabPage5
+			// tabStats
 			// 
-			this->tabPage5->Controls->Add(this->checkBox5);
-			this->tabPage5->Location = System::Drawing::Point(4, 29);
-			this->tabPage5->Name = L"tabPage5";
-			this->tabPage5->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage5->Size = System::Drawing::Size(1182, 463);
-			this->tabPage5->TabIndex = 4;
-			this->tabPage5->Text = L"tabPage5";
-			this->tabPage5->UseVisualStyleBackColor = true;
+			this->tabStats->Controls->Add(this->checkBox5);
+			this->tabStats->Location = System::Drawing::Point(4, 29);
+			this->tabStats->Name = L"tabStats";
+			this->tabStats->Padding = System::Windows::Forms::Padding(3);
+			this->tabStats->Size = System::Drawing::Size(1182, 463);
+			this->tabStats->TabIndex = 4;
+			this->tabStats->Text = L"Stats";
+			this->tabStats->UseVisualStyleBackColor = true;
 			// 
 			// checkBox5
 			// 
@@ -971,32 +976,32 @@ namespace POO {
 			this->Text = L"MyForm";
 			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
 			this->tabControl1->ResumeLayout(false);
-			this->tabPage1->ResumeLayout(false);
-			this->tabPage1->PerformLayout();
+			this->tabClient->ResumeLayout(false);
+			this->tabClient->PerformLayout();
 			this->tableLayoutPanel1->ResumeLayout(false);
 			this->tableLayoutPanel2->ResumeLayout(false);
 			this->tableLayoutPanel9->ResumeLayout(false);
 			this->tableLayoutPanel9->PerformLayout();
-			this->tabPage2->ResumeLayout(false);
-			this->tabPage2->PerformLayout();
+			this->tabCommandes->ResumeLayout(false);
+			this->tabCommandes->PerformLayout();
 			this->tableLayoutPanel3->ResumeLayout(false);
 			this->tableLayoutPanel11->ResumeLayout(false);
 			this->tableLayoutPanel11->PerformLayout();
 			this->tableLayoutPanel4->ResumeLayout(false);
-			this->tabPage3->ResumeLayout(false);
-			this->tabPage3->PerformLayout();
+			this->tabEmployes->ResumeLayout(false);
+			this->tabEmployes->PerformLayout();
 			this->tableLayoutPanel5->ResumeLayout(false);
 			this->tableLayoutPanel12->ResumeLayout(false);
 			this->tableLayoutPanel12->PerformLayout();
 			this->tableLayoutPanel6->ResumeLayout(false);
-			this->tabPage4->ResumeLayout(false);
-			this->tabPage4->PerformLayout();
+			this->tabStocks->ResumeLayout(false);
+			this->tabStocks->PerformLayout();
 			this->tableLayoutPanel7->ResumeLayout(false);
 			this->tableLayoutPanel13->ResumeLayout(false);
 			this->tableLayoutPanel13->PerformLayout();
 			this->tableLayoutPanel8->ResumeLayout(false);
-			this->tabPage5->ResumeLayout(false);
-			this->tabPage5->PerformLayout();
+			this->tabStats->ResumeLayout(false);
+			this->tabStats->PerformLayout();
 			this->tableLayoutPanel10->ResumeLayout(false);
 			this->ResumeLayout(false);
 
@@ -1020,14 +1025,19 @@ namespace POO {
 	private: System::Void tableLayoutPanel1_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
 	}
 	private: System::Void ClientButton_Click(System::Object^ sender, System::EventArgs^ e) {
+		this->tabControl1->SelectedTab = tabClient;
 	}
 	private: System::Void CommandesButton_Click(System::Object^ sender, System::EventArgs^ e) {
+		this->tabControl1->SelectedTab = tabCommandes;
 	}
 	private: System::Void StocksButton_Click(System::Object^ sender, System::EventArgs^ e) {
+		this->tabControl1->SelectedTab = tabStocks;
 	}
 	private: System::Void StatsButton_Click(System::Object^ sender, System::EventArgs^ e) {
+		this->tabControl1->SelectedTab = tabStats;
 	}
 	private: System::Void EmployesButton_Click(System::Object^ sender, System::EventArgs^ e) {
+		this->tabControl1->SelectedTab = tabEmployes;
 	}
 	};
 }
