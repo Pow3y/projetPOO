@@ -11,7 +11,7 @@ SqlServices::~SqlServices()
 
 void SqlServices::ConnectToDB()
 {
-    
+	Connection::ConnectionString;
 }
 void SqlServices::ExecuteSQL()
 {
