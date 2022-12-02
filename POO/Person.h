@@ -1,4 +1,7 @@
 #pragma once
+#include <iostream>
+#include <string>
+
 ref class Person
 {
 public:
@@ -9,8 +12,8 @@ public:
 	virtual void Update();
 
 protected:
-	System::String ID;
-	System::String FirstName;
-	System::String LastName;
+	System::String^ ID;
+	System::String^ FirstName;
+	System::String^ LastName;
 };
 

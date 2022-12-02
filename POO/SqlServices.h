@@ -1,12 +1,11 @@
 #pragma once
-#include "iostream"
+#include <iostream>
 
 ref class SqlServices
 {
 public:
 	SqlServices();
 	~SqlServices();
-	bool ConnectToDB();
+	void ConnectToDB();
 private:
-	System::String^ ConnectionString;
 };
