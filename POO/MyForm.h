@@ -107,6 +107,11 @@ namespace POO {
 	private: System::Windows::Forms::TextBox^ textBox18;
 	private: System::Windows::Forms::TextBox^ textBox19;
 	private: System::Windows::Forms::TextBox^ textBox20;
+	private: System::Windows::Forms::CheckBox^ checkBox1;
+	private: System::Windows::Forms::CheckBox^ checkBox2;
+	private: System::Windows::Forms::CheckBox^ checkBox3;
+	private: System::Windows::Forms::CheckBox^ checkBox4;
+	private: System::Windows::Forms::CheckBox^ checkBox5;
 
 
 
@@ -152,47 +157,52 @@ namespace POO {
 			this->textBox5 = (gcnew System::Windows::Forms::TextBox());
 			this->tabPage2 = (gcnew System::Windows::Forms::TabPage());
 			this->tableLayoutPanel3 = (gcnew System::Windows::Forms::TableLayoutPanel());
-			this->tableLayoutPanel4 = (gcnew System::Windows::Forms::TableLayoutPanel());
-			this->button4 = (gcnew System::Windows::Forms::Button());
-			this->button5 = (gcnew System::Windows::Forms::Button());
-			this->button6 = (gcnew System::Windows::Forms::Button());
-			this->tabPage3 = (gcnew System::Windows::Forms::TabPage());
-			this->tableLayoutPanel5 = (gcnew System::Windows::Forms::TableLayoutPanel());
-			this->tableLayoutPanel6 = (gcnew System::Windows::Forms::TableLayoutPanel());
-			this->button7 = (gcnew System::Windows::Forms::Button());
-			this->button8 = (gcnew System::Windows::Forms::Button());
-			this->button9 = (gcnew System::Windows::Forms::Button());
-			this->tabPage4 = (gcnew System::Windows::Forms::TabPage());
-			this->tableLayoutPanel7 = (gcnew System::Windows::Forms::TableLayoutPanel());
-			this->tableLayoutPanel8 = (gcnew System::Windows::Forms::TableLayoutPanel());
-			this->button10 = (gcnew System::Windows::Forms::Button());
-			this->button11 = (gcnew System::Windows::Forms::Button());
-			this->button12 = (gcnew System::Windows::Forms::Button());
-			this->tabPage5 = (gcnew System::Windows::Forms::TabPage());
-			this->tableLayoutPanel10 = (gcnew System::Windows::Forms::TableLayoutPanel());
-			this->ClientButton = (gcnew System::Windows::Forms::Button());
-			this->CommandesButton = (gcnew System::Windows::Forms::Button());
-			this->EmployesButton = (gcnew System::Windows::Forms::Button());
-			this->StocksButton = (gcnew System::Windows::Forms::Button());
-			this->StatsButton = (gcnew System::Windows::Forms::Button());
 			this->tableLayoutPanel11 = (gcnew System::Windows::Forms::TableLayoutPanel());
 			this->textBox6 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox7 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox8 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox9 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox10 = (gcnew System::Windows::Forms::TextBox());
+			this->tableLayoutPanel4 = (gcnew System::Windows::Forms::TableLayoutPanel());
+			this->button4 = (gcnew System::Windows::Forms::Button());
+			this->button5 = (gcnew System::Windows::Forms::Button());
+			this->button6 = (gcnew System::Windows::Forms::Button());
+			this->tabPage3 = (gcnew System::Windows::Forms::TabPage());
+			this->tableLayoutPanel5 = (gcnew System::Windows::Forms::TableLayoutPanel());
 			this->tableLayoutPanel12 = (gcnew System::Windows::Forms::TableLayoutPanel());
 			this->textBox11 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox12 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox13 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox14 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox15 = (gcnew System::Windows::Forms::TextBox());
+			this->tableLayoutPanel6 = (gcnew System::Windows::Forms::TableLayoutPanel());
+			this->button7 = (gcnew System::Windows::Forms::Button());
+			this->button8 = (gcnew System::Windows::Forms::Button());
+			this->button9 = (gcnew System::Windows::Forms::Button());
+			this->tabPage4 = (gcnew System::Windows::Forms::TabPage());
+			this->tableLayoutPanel7 = (gcnew System::Windows::Forms::TableLayoutPanel());
 			this->tableLayoutPanel13 = (gcnew System::Windows::Forms::TableLayoutPanel());
 			this->textBox16 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox17 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox18 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox19 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox20 = (gcnew System::Windows::Forms::TextBox());
+			this->tableLayoutPanel8 = (gcnew System::Windows::Forms::TableLayoutPanel());
+			this->button10 = (gcnew System::Windows::Forms::Button());
+			this->button11 = (gcnew System::Windows::Forms::Button());
+			this->button12 = (gcnew System::Windows::Forms::Button());
+			this->tabPage5 = (gcnew System::Windows::Forms::TabPage());
+			this->tableLayoutPanel10 = (gcnew System::Windows::Forms::TableLayoutPanel());
+			this->StatsButton = (gcnew System::Windows::Forms::Button());
+			this->StocksButton = (gcnew System::Windows::Forms::Button());
+			this->EmployesButton = (gcnew System::Windows::Forms::Button());
+			this->CommandesButton = (gcnew System::Windows::Forms::Button());
+			this->ClientButton = (gcnew System::Windows::Forms::Button());
+			this->checkBox1 = (gcnew System::Windows::Forms::CheckBox());
+			this->checkBox2 = (gcnew System::Windows::Forms::CheckBox());
+			this->checkBox3 = (gcnew System::Windows::Forms::CheckBox());
+			this->checkBox4 = (gcnew System::Windows::Forms::CheckBox());
+			this->checkBox5 = (gcnew System::Windows::Forms::CheckBox());
 			this->tabControl1->SuspendLayout();
 			this->tabPage1->SuspendLayout();
 			this->tableLayoutPanel1->SuspendLayout();
@@ -200,17 +210,18 @@ namespace POO {
 			this->tableLayoutPanel9->SuspendLayout();
 			this->tabPage2->SuspendLayout();
 			this->tableLayoutPanel3->SuspendLayout();
+			this->tableLayoutPanel11->SuspendLayout();
 			this->tableLayoutPanel4->SuspendLayout();
 			this->tabPage3->SuspendLayout();
 			this->tableLayoutPanel5->SuspendLayout();
+			this->tableLayoutPanel12->SuspendLayout();
 			this->tableLayoutPanel6->SuspendLayout();
 			this->tabPage4->SuspendLayout();
 			this->tableLayoutPanel7->SuspendLayout();
-			this->tableLayoutPanel8->SuspendLayout();
-			this->tableLayoutPanel10->SuspendLayout();
-			this->tableLayoutPanel11->SuspendLayout();
-			this->tableLayoutPanel12->SuspendLayout();
 			this->tableLayoutPanel13->SuspendLayout();
+			this->tableLayoutPanel8->SuspendLayout();
+			this->tabPage5->SuspendLayout();
+			this->tableLayoutPanel10->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// tabControl1
@@ -234,32 +245,20 @@ namespace POO {
 			// 
 			// tabPage1
 			// 
+			this->tabPage1->Controls->Add(this->checkBox1);
 			this->tabPage1->Controls->Add(this->tableLayoutPanel1);
 			this->tabPage1->Location = System::Drawing::Point(4, 29);
 			this->tabPage1->Name = L"tabPage1";
-			this->tabPage1->Padding = System::Windows::Forms::Padding(3, 3, 3, 3);
+			this->tabPage1->Padding = System::Windows::Forms::Padding(3);
 			this->tabPage1->Size = System::Drawing::Size(1182, 463);
 			this->tabPage1->TabIndex = 0;
 			this->tabPage1->Text = L"tabPage1";
 			this->tabPage1->UseVisualStyleBackColor = true;
 			this->tabPage1->Click += gcnew System::EventHandler(this, &MyForm::tabPage1_Click);
 			// 
-			====== =
-				this->tabPage1->Controls->Add(this->tableLayoutPanel1);
-			this->tabPage1->Location = System::Drawing::Point(4, 29);
-			this->tabPage1->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
-			this->tabPage1->Name = L"tabPage1";
-			this->tabPage1->Padding = System::Windows::Forms::Padding(4, 5, 4, 5);
-			this->tabPage1->Size = System::Drawing::Size(1777, 876);
-			this->tabPage1->TabIndex = 0;
-			this->tabPage1->Text = L"tabPage1";
-			this->tabPage1->UseVisualStyleBackColor = true;
-			this->tabPage1->Click += gcnew System::EventHandler(this, &MyForm::tabPage1_Click);
+			// tableLayoutPanel1
 			// 
-			>>>>>> > 202f0dd887df0b97fdcaf2a3c7ac3dddb4363ef7
-				// tableLayoutPanel1
-				// 
-				this->tableLayoutPanel1->ColumnCount = 2;
+			this->tableLayoutPanel1->ColumnCount = 2;
 			this->tableLayoutPanel1->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
 				80)));
 			this->tableLayoutPanel1->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
@@ -271,7 +270,7 @@ namespace POO {
 			this->tableLayoutPanel1->Name = L"tableLayoutPanel1";
 			this->tableLayoutPanel1->RowCount = 1;
 			this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel1->Size = System::Drawing::Size(1769, 156);
+			this->tableLayoutPanel1->Size = System::Drawing::Size(1176, 100);
 			this->tableLayoutPanel1->TabIndex = 2;
 			this->tableLayoutPanel1->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &MyForm::tableLayoutPanel1_Paint);
 			// 
@@ -284,14 +283,13 @@ namespace POO {
 			this->tableLayoutPanel2->Controls->Add(this->button1, 0, 0);
 			this->tableLayoutPanel2->Controls->Add(this->button3, 0, 2);
 			this->tableLayoutPanel2->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->tableLayoutPanel2->Location = System::Drawing::Point(1419, 5);
-			this->tableLayoutPanel2->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			this->tableLayoutPanel2->Location = System::Drawing::Point(943, 3);
 			this->tableLayoutPanel2->Name = L"tableLayoutPanel2";
 			this->tableLayoutPanel2->RowCount = 3;
 			this->tableLayoutPanel2->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 33.33333F)));
 			this->tableLayoutPanel2->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 33.33334F)));
 			this->tableLayoutPanel2->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 33.33333F)));
-			this->tableLayoutPanel2->Size = System::Drawing::Size(346, 146);
+			this->tableLayoutPanel2->Size = System::Drawing::Size(230, 94);
 			this->tableLayoutPanel2->TabIndex = 0;
 			// 
 			// button2
@@ -343,66 +341,61 @@ namespace POO {
 			this->tableLayoutPanel9->Controls->Add(this->textBox4, 3, 0);
 			this->tableLayoutPanel9->Controls->Add(this->textBox5, 4, 0);
 			this->tableLayoutPanel9->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->tableLayoutPanel9->Location = System::Drawing::Point(4, 5);
-			this->tableLayoutPanel9->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			this->tableLayoutPanel9->Location = System::Drawing::Point(3, 3);
 			this->tableLayoutPanel9->Name = L"tableLayoutPanel9";
 			this->tableLayoutPanel9->RowCount = 1;
 			this->tableLayoutPanel9->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel9->Size = System::Drawing::Size(1407, 146);
+			this->tableLayoutPanel9->Size = System::Drawing::Size(934, 94);
 			this->tableLayoutPanel9->TabIndex = 1;
 			// 
 			// textBox1
 			// 
 			this->textBox1->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->textBox1->Location = System::Drawing::Point(4, 5);
-			this->textBox1->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			this->textBox1->Location = System::Drawing::Point(3, 3);
 			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(273, 31);
+			this->textBox1->Size = System::Drawing::Size(180, 22);
 			this->textBox1->TabIndex = 0;
 			// 
 			// textBox2
 			// 
 			this->textBox2->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->textBox2->Location = System::Drawing::Point(285, 5);
-			this->textBox2->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			this->textBox2->Location = System::Drawing::Point(189, 3);
 			this->textBox2->Name = L"textBox2";
-			this->textBox2->Size = System::Drawing::Size(273, 31);
+			this->textBox2->Size = System::Drawing::Size(180, 22);
 			this->textBox2->TabIndex = 1;
 			// 
 			// textBox3
 			// 
 			this->textBox3->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->textBox3->Location = System::Drawing::Point(566, 5);
-			this->textBox3->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			this->textBox3->Location = System::Drawing::Point(375, 3);
 			this->textBox3->Name = L"textBox3";
-			this->textBox3->Size = System::Drawing::Size(273, 31);
+			this->textBox3->Size = System::Drawing::Size(180, 22);
 			this->textBox3->TabIndex = 2;
 			// 
 			// textBox4
 			// 
 			this->textBox4->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->textBox4->Location = System::Drawing::Point(847, 5);
-			this->textBox4->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			this->textBox4->Location = System::Drawing::Point(561, 3);
 			this->textBox4->Name = L"textBox4";
-			this->textBox4->Size = System::Drawing::Size(273, 31);
+			this->textBox4->Size = System::Drawing::Size(180, 22);
 			this->textBox4->TabIndex = 3;
 			// 
 			// textBox5
 			// 
 			this->textBox5->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->textBox5->Location = System::Drawing::Point(1128, 5);
-			this->textBox5->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			this->textBox5->Location = System::Drawing::Point(747, 3);
 			this->textBox5->Name = L"textBox5";
-			this->textBox5->Size = System::Drawing::Size(275, 31);
+			this->textBox5->Size = System::Drawing::Size(184, 22);
 			this->textBox5->TabIndex = 4;
 			// 
 			// tabPage2
 			// 
+			this->tabPage2->Controls->Add(this->checkBox2);
 			this->tabPage2->Controls->Add(this->tableLayoutPanel3);
 			this->tabPage2->Location = System::Drawing::Point(4, 29);
 			this->tabPage2->Name = L"tabPage2";
-			this->tabPage2->Padding = System::Windows::Forms::Padding(3, 3, 3, 3);
-			this->tabPage2->Size = System::Drawing::Size(1182, 439);
+			this->tabPage2->Padding = System::Windows::Forms::Padding(3);
+			this->tabPage2->Size = System::Drawing::Size(1182, 463);
 			this->tabPage2->TabIndex = 1;
 			this->tabPage2->Text = L"tabPage2";
 			this->tabPage2->UseVisualStyleBackColor = true;
@@ -417,329 +410,12 @@ namespace POO {
 			this->tableLayoutPanel3->Controls->Add(this->tableLayoutPanel11, 0, 0);
 			this->tableLayoutPanel3->Controls->Add(this->tableLayoutPanel4, 1, 0);
 			this->tableLayoutPanel3->Dock = System::Windows::Forms::DockStyle::Bottom;
-			this->tableLayoutPanel3->Location = System::Drawing::Point(3, 336);
+			this->tableLayoutPanel3->Location = System::Drawing::Point(3, 360);
 			this->tableLayoutPanel3->Name = L"tableLayoutPanel3";
 			this->tableLayoutPanel3->RowCount = 1;
 			this->tableLayoutPanel3->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
 			this->tableLayoutPanel3->Size = System::Drawing::Size(1176, 100);
 			this->tableLayoutPanel3->TabIndex = 2;
-			// 
-			// tableLayoutPanel4
-			// 
-			this->tableLayoutPanel4->ColumnCount = 1;
-			this->tableLayoutPanel4->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-				100)));
-			this->tableLayoutPanel4->Controls->Add(this->button4, 0, 1);
-			this->tableLayoutPanel4->Controls->Add(this->button5, 0, 0);
-			this->tableLayoutPanel4->Controls->Add(this->button6, 0, 2);
-			this->tableLayoutPanel4->Dock = System::Windows::Forms::DockStyle::Fill;
-			<<<<<< < HEAD
-				this->tableLayoutPanel4->Location = System::Drawing::Point(943, 3);
-			====== =
-				this->tableLayoutPanel4->Location = System::Drawing::Point(1419, 5);
-			this->tableLayoutPanel4->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
-			>>>>>> > 202f0dd887df0b97fdcaf2a3c7ac3dddb4363ef7
-				this->tableLayoutPanel4->Name = L"tableLayoutPanel4";
-			this->tableLayoutPanel4->RowCount = 3;
-			this->tableLayoutPanel4->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 33.33333F)));
-			this->tableLayoutPanel4->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 33.33334F)));
-			this->tableLayoutPanel4->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 33.33333F)));
-			<<<<<< < HEAD
-				this->tableLayoutPanel4->Size = System::Drawing::Size(230, 94);
-			====== =
-				this->tableLayoutPanel4->Size = System::Drawing::Size(346, 146);
-			>>>>>> > 202f0dd887df0b97fdcaf2a3c7ac3dddb4363ef7
-				this->tableLayoutPanel4->TabIndex = 0;
-			// 
-			// button4
-			// 
-			this->button4->Dock = System::Windows::Forms::DockStyle::Fill;
-			<<<<<< < HEAD
-				this->button4->Location = System::Drawing::Point(3, 34);
-			this->button4->Name = L"button4";
-			this->button4->Size = System::Drawing::Size(224, 25);
-			====== =
-				this->button4->Location = System::Drawing::Point(4, 53);
-			this->button4->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
-			this->button4->Name = L"button4";
-			this->button4->Size = System::Drawing::Size(338, 38);
-			>>>>>> > 202f0dd887df0b97fdcaf2a3c7ac3dddb4363ef7
-				this->button4->TabIndex = 5;
-			this->button4->Text = L"button4";
-			this->button4->UseVisualStyleBackColor = true;
-			// 
-			// button5
-			// 
-			this->button5->Dock = System::Windows::Forms::DockStyle::Fill;
-			<<<<<< < HEAD
-				this->button5->Location = System::Drawing::Point(3, 3);
-			this->button5->Name = L"button5";
-			this->button5->Size = System::Drawing::Size(224, 25);
-			====== =
-				this->button5->Location = System::Drawing::Point(4, 5);
-			this->button5->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
-			this->button5->Name = L"button5";
-			this->button5->Size = System::Drawing::Size(338, 38);
-			>>>>>> > 202f0dd887df0b97fdcaf2a3c7ac3dddb4363ef7
-				this->button5->TabIndex = 2;
-			this->button5->Text = L"button5";
-			this->button5->UseVisualStyleBackColor = true;
-			// 
-			// button6
-			// 
-			this->button6->Dock = System::Windows::Forms::DockStyle::Fill;
-			<<<<<< < HEAD
-				this->button6->Location = System::Drawing::Point(3, 65);
-			this->button6->Name = L"button6";
-			this->button6->Size = System::Drawing::Size(224, 26);
-			====== =
-				this->button6->Location = System::Drawing::Point(4, 101);
-			this->button6->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
-			this->button6->Name = L"button6";
-			this->button6->Size = System::Drawing::Size(338, 40);
-			>>>>>> > 202f0dd887df0b97fdcaf2a3c7ac3dddb4363ef7
-				this->button6->TabIndex = 4;
-			this->button6->Text = L"button6";
-			this->button6->UseVisualStyleBackColor = true;
-			// 
-			// tabPage3
-			// 
-			this->tabPage3->Controls->Add(this->tableLayoutPanel5);
-			this->tabPage3->Location = System::Drawing::Point(4, 29);
-			this->tabPage3->Name = L"tabPage3";
-			this->tabPage3->Padding = System::Windows::Forms::Padding(3, 3, 3, 3);
-			this->tabPage3->Size = System::Drawing::Size(1182, 439);
-			this->tabPage3->TabIndex = 2;
-			this->tabPage3->Text = L"tabPage3";
-			this->tabPage3->UseVisualStyleBackColor = true;
-			// 
-			// tableLayoutPanel5
-			// 
-			this->tableLayoutPanel5->ColumnCount = 2;
-			this->tableLayoutPanel5->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-				80)));
-			this->tableLayoutPanel5->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-				20)));
-			this->tableLayoutPanel5->Controls->Add(this->tableLayoutPanel12, 0, 0);
-			this->tableLayoutPanel5->Controls->Add(this->tableLayoutPanel6, 1, 0);
-			this->tableLayoutPanel5->Dock = System::Windows::Forms::DockStyle::Bottom;
-			this->tableLayoutPanel5->Location = System::Drawing::Point(3, 336);
-			this->tableLayoutPanel5->Name = L"tableLayoutPanel5";
-			this->tableLayoutPanel5->RowCount = 1;
-			this->tableLayoutPanel5->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel5->Size = System::Drawing::Size(1176, 100);
-			this->tableLayoutPanel5->TabIndex = 2;
-			// 
-			// tableLayoutPanel6
-			// 
-			this->tableLayoutPanel6->ColumnCount = 1;
-			this->tableLayoutPanel6->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-				100)));
-			this->tableLayoutPanel6->Controls->Add(this->button7, 0, 1);
-			this->tableLayoutPanel6->Controls->Add(this->button8, 0, 0);
-			this->tableLayoutPanel6->Controls->Add(this->button9, 0, 2);
-			this->tableLayoutPanel6->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->tableLayoutPanel6->Location = System::Drawing::Point(943, 3);
-			this->tableLayoutPanel6->Name = L"tableLayoutPanel6";
-			this->tableLayoutPanel6->RowCount = 3;
-			this->tableLayoutPanel6->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 33.33333F)));
-			this->tableLayoutPanel6->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 33.33334F)));
-			this->tableLayoutPanel6->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 33.33333F)));
-			this->tableLayoutPanel6->Size = System::Drawing::Size(230, 94);
-			this->tableLayoutPanel6->TabIndex = 0;
-			// 
-			// button7
-			// 
-			this->button7->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->button7->Location = System::Drawing::Point(3, 34);
-			this->button7->Name = L"button7";
-			this->button7->Size = System::Drawing::Size(224, 25);
-			this->button7->TabIndex = 5;
-			this->button7->Text = L"button7";
-			this->button7->UseVisualStyleBackColor = true;
-			// 
-			// button8
-			// 
-			this->button8->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->button8->Location = System::Drawing::Point(3, 3);
-			this->button8->Name = L"button8";
-			this->button8->Size = System::Drawing::Size(224, 25);
-			this->button8->TabIndex = 2;
-			this->button8->Text = L"button8";
-			this->button8->UseVisualStyleBackColor = true;
-			// 
-			// button9
-			// 
-			this->button9->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->button9->Location = System::Drawing::Point(3, 65);
-			this->button9->Name = L"button9";
-			this->button9->Size = System::Drawing::Size(224, 26);
-			this->button9->TabIndex = 4;
-			this->button9->Text = L"button9";
-			this->button9->UseVisualStyleBackColor = true;
-			// 
-			// tabPage4
-			// 
-			this->tabPage4->Controls->Add(this->tableLayoutPanel7);
-			this->tabPage4->Location = System::Drawing::Point(4, 29);
-			this->tabPage4->Name = L"tabPage4";
-			this->tabPage4->Padding = System::Windows::Forms::Padding(3, 3, 3, 3);
-			this->tabPage4->Size = System::Drawing::Size(1182, 439);
-			this->tabPage4->TabIndex = 3;
-			this->tabPage4->Text = L"tabPage4";
-			this->tabPage4->UseVisualStyleBackColor = true;
-			// 
-			// tableLayoutPanel7
-			// 
-			this->tableLayoutPanel7->ColumnCount = 2;
-			this->tableLayoutPanel7->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-				80)));
-			this->tableLayoutPanel7->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-				20)));
-			this->tableLayoutPanel7->Controls->Add(this->tableLayoutPanel13, 0, 0);
-			this->tableLayoutPanel7->Controls->Add(this->tableLayoutPanel8, 1, 0);
-			this->tableLayoutPanel7->Dock = System::Windows::Forms::DockStyle::Bottom;
-			this->tableLayoutPanel7->Location = System::Drawing::Point(3, 336);
-			this->tableLayoutPanel7->Name = L"tableLayoutPanel7";
-			this->tableLayoutPanel7->RowCount = 1;
-			this->tableLayoutPanel7->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel7->Size = System::Drawing::Size(1176, 100);
-			this->tableLayoutPanel7->TabIndex = 2;
-			// 
-			// tableLayoutPanel8
-			// 
-			this->tableLayoutPanel8->ColumnCount = 1;
-			this->tableLayoutPanel8->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-				100)));
-			this->tableLayoutPanel8->Controls->Add(this->button10, 0, 1);
-			this->tableLayoutPanel8->Controls->Add(this->button11, 0, 0);
-			this->tableLayoutPanel8->Controls->Add(this->button12, 0, 2);
-			this->tableLayoutPanel8->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->tableLayoutPanel8->Location = System::Drawing::Point(943, 3);
-			this->tableLayoutPanel8->Name = L"tableLayoutPanel8";
-			this->tableLayoutPanel8->RowCount = 3;
-			this->tableLayoutPanel8->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 33.33333F)));
-			this->tableLayoutPanel8->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 33.33334F)));
-			this->tableLayoutPanel8->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 33.33333F)));
-			this->tableLayoutPanel8->Size = System::Drawing::Size(230, 94);
-			this->tableLayoutPanel8->TabIndex = 0;
-			// 
-			// button10
-			// 
-			this->button10->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->button10->Location = System::Drawing::Point(3, 34);
-			this->button10->Name = L"button10";
-			this->button10->Size = System::Drawing::Size(224, 25);
-			this->button10->TabIndex = 5;
-			this->button10->Text = L"button10";
-			this->button10->UseVisualStyleBackColor = true;
-			// 
-			// button11
-			// 
-			this->button11->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->button11->Location = System::Drawing::Point(3, 3);
-			this->button11->Name = L"button11";
-			this->button11->Size = System::Drawing::Size(224, 25);
-			this->button11->TabIndex = 2;
-			this->button11->Text = L"button11";
-			this->button11->UseVisualStyleBackColor = true;
-			// 
-			// button12
-			// 
-			this->button12->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->button12->Location = System::Drawing::Point(3, 65);
-			this->button12->Name = L"button12";
-			this->button12->Size = System::Drawing::Size(224, 26);
-			this->button12->TabIndex = 4;
-			this->button12->Text = L"button12";
-			this->button12->UseVisualStyleBackColor = true;
-			// 
-			// tabPage5
-			// 
-			this->tabPage5->Location = System::Drawing::Point(4, 29);
-			this->tabPage5->Name = L"tabPage5";
-			this->tabPage5->Padding = System::Windows::Forms::Padding(3, 3, 3, 3);
-			this->tabPage5->Size = System::Drawing::Size(1182, 439);
-			this->tabPage5->TabIndex = 4;
-			this->tabPage5->Text = L"tabPage5";
-			this->tabPage5->UseVisualStyleBackColor = true;
-			// 
-			// tableLayoutPanel10
-			// 
-			this->tableLayoutPanel10->ColumnCount = 5;
-			this->tableLayoutPanel10->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-				20)));
-			this->tableLayoutPanel10->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-				20)));
-			this->tableLayoutPanel10->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-				20)));
-			this->tableLayoutPanel10->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-				20)));
-			this->tableLayoutPanel10->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-				20)));
-			this->tableLayoutPanel10->Controls->Add(this->StatsButton, 4, 0);
-			this->tableLayoutPanel10->Controls->Add(this->StocksButton, 3, 0);
-			this->tableLayoutPanel10->Controls->Add(this->EmployesButton, 2, 0);
-			this->tableLayoutPanel10->Controls->Add(this->CommandesButton, 1, 0);
-			this->tableLayoutPanel10->Controls->Add(this->ClientButton, 0, 0);
-			this->tableLayoutPanel10->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->tableLayoutPanel10->Location = System::Drawing::Point(0, 0);
-			this->tableLayoutPanel10->Name = L"tableLayoutPanel10";
-			this->tableLayoutPanel10->RowCount = 1;
-			this->tableLayoutPanel10->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel10->Size = System::Drawing::Size(1190, 86);
-			this->tableLayoutPanel10->TabIndex = 9;
-			// 
-			// ClientButton
-			// 
-			this->ClientButton->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->ClientButton->Location = System::Drawing::Point(3, 3);
-			this->ClientButton->Name = L"ClientButton";
-			this->ClientButton->Size = System::Drawing::Size(232, 80);
-			this->ClientButton->TabIndex = 0;
-			this->ClientButton->Text = L"Client";
-			this->ClientButton->UseVisualStyleBackColor = true;
-			this->ClientButton->Click += gcnew System::EventHandler(this, &MyForm::button13_Click);
-			// 
-			// CommandesButton
-			// 
-			this->CommandesButton->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->CommandesButton->Location = System::Drawing::Point(241, 3);
-			this->CommandesButton->Name = L"CommandesButton";
-			this->CommandesButton->Size = System::Drawing::Size(232, 80);
-			this->CommandesButton->TabIndex = 1;
-			this->CommandesButton->Text = L"Commandes";
-			this->CommandesButton->UseVisualStyleBackColor = true;
-			// 
-			// EmployesButton
-			// 
-			this->EmployesButton->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->EmployesButton->Location = System::Drawing::Point(479, 3);
-			this->EmployesButton->Name = L"EmployesButton";
-			this->EmployesButton->Size = System::Drawing::Size(232, 80);
-			this->EmployesButton->TabIndex = 2;
-			this->EmployesButton->Text = L"Employes";
-			this->EmployesButton->UseVisualStyleBackColor = true;
-			// 
-			// StocksButton
-			// 
-			this->StocksButton->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->StocksButton->Location = System::Drawing::Point(717, 3);
-			this->StocksButton->Name = L"StocksButton";
-			this->StocksButton->Size = System::Drawing::Size(232, 80);
-			this->StocksButton->TabIndex = 3;
-			this->StocksButton->Text = L"Stocks";
-			this->StocksButton->UseVisualStyleBackColor = true;
-			// 
-			// StatsButton
-			// 
-			this->StatsButton->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->StatsButton->Location = System::Drawing::Point(955, 3);
-			this->StatsButton->Name = L"StatsButton";
-			this->StatsButton->Size = System::Drawing::Size(232, 80);
-			this->StatsButton->TabIndex = 4;
-			this->StatsButton->Text = L"Stats";
-			this->StatsButton->UseVisualStyleBackColor = true;
 			// 
 			// tableLayoutPanel11
 			// 
@@ -807,6 +483,83 @@ namespace POO {
 			this->textBox10->Size = System::Drawing::Size(184, 22);
 			this->textBox10->TabIndex = 4;
 			// 
+			// tableLayoutPanel4
+			// 
+			this->tableLayoutPanel4->ColumnCount = 1;
+			this->tableLayoutPanel4->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
+				100)));
+			this->tableLayoutPanel4->Controls->Add(this->button4, 0, 1);
+			this->tableLayoutPanel4->Controls->Add(this->button5, 0, 0);
+			this->tableLayoutPanel4->Controls->Add(this->button6, 0, 2);
+			this->tableLayoutPanel4->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->tableLayoutPanel4->Location = System::Drawing::Point(943, 3);
+			this->tableLayoutPanel4->Name = L"tableLayoutPanel4";
+			this->tableLayoutPanel4->RowCount = 3;
+			this->tableLayoutPanel4->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 33.33333F)));
+			this->tableLayoutPanel4->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 33.33334F)));
+			this->tableLayoutPanel4->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 33.33333F)));
+			this->tableLayoutPanel4->Size = System::Drawing::Size(230, 94);
+			this->tableLayoutPanel4->TabIndex = 0;
+			// 
+			// button4
+			// 
+			this->button4->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->button4->Location = System::Drawing::Point(3, 34);
+			this->button4->Name = L"button4";
+			this->button4->Size = System::Drawing::Size(224, 25);
+			this->button4->TabIndex = 5;
+			this->button4->Text = L"button4";
+			this->button4->UseVisualStyleBackColor = true;
+			// 
+			// button5
+			// 
+			this->button5->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->button5->Location = System::Drawing::Point(3, 3);
+			this->button5->Name = L"button5";
+			this->button5->Size = System::Drawing::Size(224, 25);
+			this->button5->TabIndex = 2;
+			this->button5->Text = L"button5";
+			this->button5->UseVisualStyleBackColor = true;
+			// 
+			// button6
+			// 
+			this->button6->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->button6->Location = System::Drawing::Point(3, 65);
+			this->button6->Name = L"button6";
+			this->button6->Size = System::Drawing::Size(224, 26);
+			this->button6->TabIndex = 4;
+			this->button6->Text = L"button6";
+			this->button6->UseVisualStyleBackColor = true;
+			// 
+			// tabPage3
+			// 
+			this->tabPage3->Controls->Add(this->checkBox3);
+			this->tabPage3->Controls->Add(this->tableLayoutPanel5);
+			this->tabPage3->Location = System::Drawing::Point(4, 29);
+			this->tabPage3->Name = L"tabPage3";
+			this->tabPage3->Padding = System::Windows::Forms::Padding(3);
+			this->tabPage3->Size = System::Drawing::Size(1182, 463);
+			this->tabPage3->TabIndex = 2;
+			this->tabPage3->Text = L"tabPage3";
+			this->tabPage3->UseVisualStyleBackColor = true;
+			// 
+			// tableLayoutPanel5
+			// 
+			this->tableLayoutPanel5->ColumnCount = 2;
+			this->tableLayoutPanel5->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
+				80)));
+			this->tableLayoutPanel5->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
+				20)));
+			this->tableLayoutPanel5->Controls->Add(this->tableLayoutPanel12, 0, 0);
+			this->tableLayoutPanel5->Controls->Add(this->tableLayoutPanel6, 1, 0);
+			this->tableLayoutPanel5->Dock = System::Windows::Forms::DockStyle::Bottom;
+			this->tableLayoutPanel5->Location = System::Drawing::Point(3, 360);
+			this->tableLayoutPanel5->Name = L"tableLayoutPanel5";
+			this->tableLayoutPanel5->RowCount = 1;
+			this->tableLayoutPanel5->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
+			this->tableLayoutPanel5->Size = System::Drawing::Size(1176, 100);
+			this->tableLayoutPanel5->TabIndex = 2;
+			// 
 			// tableLayoutPanel12
 			// 
 			this->tableLayoutPanel12->ColumnCount = 5;
@@ -872,6 +625,83 @@ namespace POO {
 			this->textBox15->Name = L"textBox15";
 			this->textBox15->Size = System::Drawing::Size(184, 22);
 			this->textBox15->TabIndex = 4;
+			// 
+			// tableLayoutPanel6
+			// 
+			this->tableLayoutPanel6->ColumnCount = 1;
+			this->tableLayoutPanel6->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
+				100)));
+			this->tableLayoutPanel6->Controls->Add(this->button7, 0, 1);
+			this->tableLayoutPanel6->Controls->Add(this->button8, 0, 0);
+			this->tableLayoutPanel6->Controls->Add(this->button9, 0, 2);
+			this->tableLayoutPanel6->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->tableLayoutPanel6->Location = System::Drawing::Point(943, 3);
+			this->tableLayoutPanel6->Name = L"tableLayoutPanel6";
+			this->tableLayoutPanel6->RowCount = 3;
+			this->tableLayoutPanel6->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 33.33333F)));
+			this->tableLayoutPanel6->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 33.33334F)));
+			this->tableLayoutPanel6->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 33.33333F)));
+			this->tableLayoutPanel6->Size = System::Drawing::Size(230, 94);
+			this->tableLayoutPanel6->TabIndex = 0;
+			// 
+			// button7
+			// 
+			this->button7->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->button7->Location = System::Drawing::Point(3, 34);
+			this->button7->Name = L"button7";
+			this->button7->Size = System::Drawing::Size(224, 25);
+			this->button7->TabIndex = 5;
+			this->button7->Text = L"button7";
+			this->button7->UseVisualStyleBackColor = true;
+			// 
+			// button8
+			// 
+			this->button8->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->button8->Location = System::Drawing::Point(3, 3);
+			this->button8->Name = L"button8";
+			this->button8->Size = System::Drawing::Size(224, 25);
+			this->button8->TabIndex = 2;
+			this->button8->Text = L"button8";
+			this->button8->UseVisualStyleBackColor = true;
+			// 
+			// button9
+			// 
+			this->button9->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->button9->Location = System::Drawing::Point(3, 65);
+			this->button9->Name = L"button9";
+			this->button9->Size = System::Drawing::Size(224, 26);
+			this->button9->TabIndex = 4;
+			this->button9->Text = L"button9";
+			this->button9->UseVisualStyleBackColor = true;
+			// 
+			// tabPage4
+			// 
+			this->tabPage4->Controls->Add(this->checkBox4);
+			this->tabPage4->Controls->Add(this->tableLayoutPanel7);
+			this->tabPage4->Location = System::Drawing::Point(4, 29);
+			this->tabPage4->Name = L"tabPage4";
+			this->tabPage4->Padding = System::Windows::Forms::Padding(3);
+			this->tabPage4->Size = System::Drawing::Size(1182, 463);
+			this->tabPage4->TabIndex = 3;
+			this->tabPage4->Text = L"tabPage4";
+			this->tabPage4->UseVisualStyleBackColor = true;
+			// 
+			// tableLayoutPanel7
+			// 
+			this->tableLayoutPanel7->ColumnCount = 2;
+			this->tableLayoutPanel7->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
+				80)));
+			this->tableLayoutPanel7->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
+				20)));
+			this->tableLayoutPanel7->Controls->Add(this->tableLayoutPanel13, 0, 0);
+			this->tableLayoutPanel7->Controls->Add(this->tableLayoutPanel8, 1, 0);
+			this->tableLayoutPanel7->Dock = System::Windows::Forms::DockStyle::Bottom;
+			this->tableLayoutPanel7->Location = System::Drawing::Point(3, 360);
+			this->tableLayoutPanel7->Name = L"tableLayoutPanel7";
+			this->tableLayoutPanel7->RowCount = 1;
+			this->tableLayoutPanel7->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
+			this->tableLayoutPanel7->Size = System::Drawing::Size(1176, 100);
+			this->tableLayoutPanel7->TabIndex = 2;
 			// 
 			// tableLayoutPanel13
 			// 
@@ -939,6 +769,192 @@ namespace POO {
 			this->textBox20->Size = System::Drawing::Size(184, 22);
 			this->textBox20->TabIndex = 4;
 			// 
+			// tableLayoutPanel8
+			// 
+			this->tableLayoutPanel8->ColumnCount = 1;
+			this->tableLayoutPanel8->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
+				100)));
+			this->tableLayoutPanel8->Controls->Add(this->button10, 0, 1);
+			this->tableLayoutPanel8->Controls->Add(this->button11, 0, 0);
+			this->tableLayoutPanel8->Controls->Add(this->button12, 0, 2);
+			this->tableLayoutPanel8->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->tableLayoutPanel8->Location = System::Drawing::Point(943, 3);
+			this->tableLayoutPanel8->Name = L"tableLayoutPanel8";
+			this->tableLayoutPanel8->RowCount = 3;
+			this->tableLayoutPanel8->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 33.33333F)));
+			this->tableLayoutPanel8->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 33.33334F)));
+			this->tableLayoutPanel8->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 33.33333F)));
+			this->tableLayoutPanel8->Size = System::Drawing::Size(230, 94);
+			this->tableLayoutPanel8->TabIndex = 0;
+			// 
+			// button10
+			// 
+			this->button10->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->button10->Location = System::Drawing::Point(3, 34);
+			this->button10->Name = L"button10";
+			this->button10->Size = System::Drawing::Size(224, 25);
+			this->button10->TabIndex = 5;
+			this->button10->Text = L"button10";
+			this->button10->UseVisualStyleBackColor = true;
+			// 
+			// button11
+			// 
+			this->button11->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->button11->Location = System::Drawing::Point(3, 3);
+			this->button11->Name = L"button11";
+			this->button11->Size = System::Drawing::Size(224, 25);
+			this->button11->TabIndex = 2;
+			this->button11->Text = L"button11";
+			this->button11->UseVisualStyleBackColor = true;
+			// 
+			// button12
+			// 
+			this->button12->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->button12->Location = System::Drawing::Point(3, 65);
+			this->button12->Name = L"button12";
+			this->button12->Size = System::Drawing::Size(224, 26);
+			this->button12->TabIndex = 4;
+			this->button12->Text = L"button12";
+			this->button12->UseVisualStyleBackColor = true;
+			// 
+			// tabPage5
+			// 
+			this->tabPage5->Controls->Add(this->checkBox5);
+			this->tabPage5->Location = System::Drawing::Point(4, 29);
+			this->tabPage5->Name = L"tabPage5";
+			this->tabPage5->Padding = System::Windows::Forms::Padding(3);
+			this->tabPage5->Size = System::Drawing::Size(1182, 463);
+			this->tabPage5->TabIndex = 4;
+			this->tabPage5->Text = L"tabPage5";
+			this->tabPage5->UseVisualStyleBackColor = true;
+			// 
+			// tableLayoutPanel10
+			// 
+			this->tableLayoutPanel10->ColumnCount = 5;
+			this->tableLayoutPanel10->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
+				20)));
+			this->tableLayoutPanel10->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
+				20)));
+			this->tableLayoutPanel10->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
+				20)));
+			this->tableLayoutPanel10->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
+				20)));
+			this->tableLayoutPanel10->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
+				20)));
+			this->tableLayoutPanel10->Controls->Add(this->StatsButton, 4, 0);
+			this->tableLayoutPanel10->Controls->Add(this->StocksButton, 3, 0);
+			this->tableLayoutPanel10->Controls->Add(this->EmployesButton, 2, 0);
+			this->tableLayoutPanel10->Controls->Add(this->CommandesButton, 1, 0);
+			this->tableLayoutPanel10->Controls->Add(this->ClientButton, 0, 0);
+			this->tableLayoutPanel10->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->tableLayoutPanel10->Location = System::Drawing::Point(0, 0);
+			this->tableLayoutPanel10->Name = L"tableLayoutPanel10";
+			this->tableLayoutPanel10->RowCount = 1;
+			this->tableLayoutPanel10->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
+			this->tableLayoutPanel10->Size = System::Drawing::Size(1190, 86);
+			this->tableLayoutPanel10->TabIndex = 9;
+			// 
+			// StatsButton
+			// 
+			this->StatsButton->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->StatsButton->Location = System::Drawing::Point(955, 3);
+			this->StatsButton->Name = L"StatsButton";
+			this->StatsButton->Size = System::Drawing::Size(232, 80);
+			this->StatsButton->TabIndex = 4;
+			this->StatsButton->Text = L"Stats";
+			this->StatsButton->UseVisualStyleBackColor = true;
+			// 
+			// StocksButton
+			// 
+			this->StocksButton->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->StocksButton->Location = System::Drawing::Point(717, 3);
+			this->StocksButton->Name = L"StocksButton";
+			this->StocksButton->Size = System::Drawing::Size(232, 80);
+			this->StocksButton->TabIndex = 3;
+			this->StocksButton->Text = L"Stocks";
+			this->StocksButton->UseVisualStyleBackColor = true;
+			// 
+			// EmployesButton
+			// 
+			this->EmployesButton->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->EmployesButton->Location = System::Drawing::Point(479, 3);
+			this->EmployesButton->Name = L"EmployesButton";
+			this->EmployesButton->Size = System::Drawing::Size(232, 80);
+			this->EmployesButton->TabIndex = 2;
+			this->EmployesButton->Text = L"Employes";
+			this->EmployesButton->UseVisualStyleBackColor = true;
+			// 
+			// CommandesButton
+			// 
+			this->CommandesButton->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->CommandesButton->Location = System::Drawing::Point(241, 3);
+			this->CommandesButton->Name = L"CommandesButton";
+			this->CommandesButton->Size = System::Drawing::Size(232, 80);
+			this->CommandesButton->TabIndex = 1;
+			this->CommandesButton->Text = L"Commandes";
+			this->CommandesButton->UseVisualStyleBackColor = true;
+			// 
+			// ClientButton
+			// 
+			this->ClientButton->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->ClientButton->Location = System::Drawing::Point(3, 3);
+			this->ClientButton->Name = L"ClientButton";
+			this->ClientButton->Size = System::Drawing::Size(232, 80);
+			this->ClientButton->TabIndex = 0;
+			this->ClientButton->Text = L"Client";
+			this->ClientButton->UseVisualStyleBackColor = true;
+			this->ClientButton->Click += gcnew System::EventHandler(this, &MyForm::button13_Click);
+			// 
+			// checkBox1
+			// 
+			this->checkBox1->AutoSize = true;
+			this->checkBox1->Location = System::Drawing::Point(403, 195);
+			this->checkBox1->Name = L"checkBox1";
+			this->checkBox1->Size = System::Drawing::Size(98, 21);
+			this->checkBox1->TabIndex = 3;
+			this->checkBox1->Text = L"checkBox1";
+			this->checkBox1->UseVisualStyleBackColor = true;
+			// 
+			// checkBox2
+			// 
+			this->checkBox2->AutoSize = true;
+			this->checkBox2->Location = System::Drawing::Point(429, 152);
+			this->checkBox2->Name = L"checkBox2";
+			this->checkBox2->Size = System::Drawing::Size(98, 21);
+			this->checkBox2->TabIndex = 3;
+			this->checkBox2->Text = L"checkBox2";
+			this->checkBox2->UseVisualStyleBackColor = true;
+			// 
+			// checkBox3
+			// 
+			this->checkBox3->AutoSize = true;
+			this->checkBox3->Location = System::Drawing::Point(555, 172);
+			this->checkBox3->Name = L"checkBox3";
+			this->checkBox3->Size = System::Drawing::Size(98, 21);
+			this->checkBox3->TabIndex = 3;
+			this->checkBox3->Text = L"checkBox3";
+			this->checkBox3->UseVisualStyleBackColor = true;
+			// 
+			// checkBox4
+			// 
+			this->checkBox4->AutoSize = true;
+			this->checkBox4->Location = System::Drawing::Point(487, 168);
+			this->checkBox4->Name = L"checkBox4";
+			this->checkBox4->Size = System::Drawing::Size(98, 21);
+			this->checkBox4->TabIndex = 3;
+			this->checkBox4->Text = L"checkBox4";
+			this->checkBox4->UseVisualStyleBackColor = true;
+			// 
+			// checkBox5
+			// 
+			this->checkBox5->AutoSize = true;
+			this->checkBox5->Location = System::Drawing::Point(538, 196);
+			this->checkBox5->Name = L"checkBox5";
+			this->checkBox5->Size = System::Drawing::Size(98, 21);
+			this->checkBox5->TabIndex = 0;
+			this->checkBox5->Text = L"checkBox5";
+			this->checkBox5->UseVisualStyleBackColor = true;
+			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
@@ -946,32 +962,38 @@ namespace POO {
 			this->ClientSize = System::Drawing::Size(1190, 582);
 			this->Controls->Add(this->tableLayoutPanel10);
 			this->Controls->Add(this->tabControl1);
-			this->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->Margin = System::Windows::Forms::Padding(2);
 			this->Name = L"MyForm";
 			this->Text = L"MyForm";
 			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
 			this->tabControl1->ResumeLayout(false);
 			this->tabPage1->ResumeLayout(false);
+			this->tabPage1->PerformLayout();
 			this->tableLayoutPanel1->ResumeLayout(false);
 			this->tableLayoutPanel2->ResumeLayout(false);
 			this->tableLayoutPanel9->ResumeLayout(false);
 			this->tableLayoutPanel9->PerformLayout();
 			this->tabPage2->ResumeLayout(false);
+			this->tabPage2->PerformLayout();
 			this->tableLayoutPanel3->ResumeLayout(false);
-			this->tableLayoutPanel4->ResumeLayout(false);
-			this->tabPage3->ResumeLayout(false);
-			this->tableLayoutPanel5->ResumeLayout(false);
-			this->tableLayoutPanel6->ResumeLayout(false);
-			this->tabPage4->ResumeLayout(false);
-			this->tableLayoutPanel7->ResumeLayout(false);
-			this->tableLayoutPanel8->ResumeLayout(false);
-			this->tableLayoutPanel10->ResumeLayout(false);
 			this->tableLayoutPanel11->ResumeLayout(false);
 			this->tableLayoutPanel11->PerformLayout();
+			this->tableLayoutPanel4->ResumeLayout(false);
+			this->tabPage3->ResumeLayout(false);
+			this->tabPage3->PerformLayout();
+			this->tableLayoutPanel5->ResumeLayout(false);
 			this->tableLayoutPanel12->ResumeLayout(false);
 			this->tableLayoutPanel12->PerformLayout();
+			this->tableLayoutPanel6->ResumeLayout(false);
+			this->tabPage4->ResumeLayout(false);
+			this->tabPage4->PerformLayout();
+			this->tableLayoutPanel7->ResumeLayout(false);
 			this->tableLayoutPanel13->ResumeLayout(false);
 			this->tableLayoutPanel13->PerformLayout();
+			this->tableLayoutPanel8->ResumeLayout(false);
+			this->tabPage5->ResumeLayout(false);
+			this->tabPage5->PerformLayout();
+			this->tableLayoutPanel10->ResumeLayout(false);
 			this->ResumeLayout(false);
 
 		}
@@ -994,4 +1016,3 @@ namespace POO {
 	}
 	};
 }
-
