@@ -229,9 +229,6 @@ _pkginfo.txt
 # but keep track of directories ending in .cache
 !?*.[Cc]ache/
 
-# Untracked files:
-    #       Connection*
-
 # Others
 ClientBin/
 ~$*
@@ -364,3 +361,5 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+POO/Connection.h
