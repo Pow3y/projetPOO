@@ -1,6 +1,5 @@
 #include "pch.h"
 #include "MyForm.h"
-#include <iostream>
 #include "SqlServices.h"
 
 using namespace System;
@@ -13,7 +12,8 @@ int __clrcall WinMain(array<String^>^ args)
 	Application::SetCompatibleTextRenderingDefault(false);
 	POO::MyForm monFormulaire;
 	
-	
+	auto hello = gcnew SqlServices();
+	hello->ConnectToDB();
 	
 	Application::Run(% monFormulaire);
 }
