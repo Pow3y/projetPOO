@@ -1,5 +1,5 @@
 #pragma once
-#include <iostream>
+#include "Connection.h"
 
 ref class SqlServices
 {
@@ -9,6 +9,5 @@ public:
 	void ConnectToDB();
 	void ExecuteSQL();
 private:
-	System::String^ ConnectionString;
-	
+
 };
