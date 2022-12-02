@@ -1,5 +1,6 @@
 #include "pch.h"
 #include "SqlServices.h"
+#include "Connection.h"
 
 SqlServices::SqlServices()
 {
@@ -11,7 +12,7 @@ SqlServices::~SqlServices()
 
 void SqlServices::ConnectToDB()
 {
-	Connection::ConnectionString;
+	Login::ConnectionString;
 }
 void SqlServices::ExecuteSQL()
 {
