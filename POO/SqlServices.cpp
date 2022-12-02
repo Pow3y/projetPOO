@@ -13,3 +13,7 @@ void SqlServices::ConnectToDB()
 {
     
 }
+void SqlServices::ExecuteSQL()
+{
+
+}

@@ -7,5 +7,8 @@ public:
 	SqlServices();
 	~SqlServices();
 	void ConnectToDB();
+	void ExecuteSQL();
 private:
+	System::String^ ConnectionString;
+	
 };
