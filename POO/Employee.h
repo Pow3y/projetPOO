@@ -1,6 +1,6 @@
 #pragma once
-#include <string>
 #include "Person.h"
+#include "iostream"
 
 ref class Employee : public Person
 {
@@ -11,7 +11,7 @@ public:
 	void Remove() override;
 	void Update() override;
 private:
-	System::String SuperiorID;
-	System::String HiringDate;
+	int SuperiorID;
+	int HiringDate;
 };
 

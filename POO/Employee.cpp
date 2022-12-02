@@ -9,3 +9,14 @@ Employee::~Employee()
 {
 }
 
+void Employee::Create()
+{
+}
+
+void Employee::Remove()
+{
+}
+
+void Employee::Update()
+{
+}

@@ -4,10 +4,10 @@ ref class Person
 public:
 	Person();
 	~Person();
-	virtual void create();
-	virtual void remove();
-	virtual void update();
-	
+	virtual void Create();
+	virtual void Remove();
+	virtual void Update();
+
 protected:
 	System::String ID;
 	System::String FirstName;
