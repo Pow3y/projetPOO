@@ -59,24 +59,51 @@ namespace POO {
 
 	private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel1;
 	private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel2;
-	private: System::Windows::Forms::Button^ button2;
-	private: System::Windows::Forms::Button^ button1;
-	private: System::Windows::Forms::Button^ button3;
+	private: System::Windows::Forms::Button^ ModifierClientButton;
+
+	private: System::Windows::Forms::Button^ AjouterClientButton;
+	private: System::Windows::Forms::Button^ SupprimerClientButton;
+
+
+
+
+
+
+
 	private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel3;
 	private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel4;
-	private: System::Windows::Forms::Button^ button4;
-	private: System::Windows::Forms::Button^ button5;
-	private: System::Windows::Forms::Button^ button6;
+	private: System::Windows::Forms::Button^ ModifierCommandesButton;
+
+	private: System::Windows::Forms::Button^ AjouterCommandesButton;
+	private: System::Windows::Forms::Button^ SupprimerCommandesButton;
+
+
+
+
+
+
 	private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel5;
 	private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel6;
-	private: System::Windows::Forms::Button^ button7;
-	private: System::Windows::Forms::Button^ button8;
-	private: System::Windows::Forms::Button^ button9;
+	private: System::Windows::Forms::Button^ ModifierEmployesButton;
+
+	private: System::Windows::Forms::Button^ AjouterEmployesButton;
+	private: System::Windows::Forms::Button^ SupprimerEmployesButton;
+
+
+
+
+
 	private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel7;
 	private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel8;
-	private: System::Windows::Forms::Button^ button10;
-	private: System::Windows::Forms::Button^ button11;
-	private: System::Windows::Forms::Button^ button12;
+	private: System::Windows::Forms::Button^ ModifierStocksButton;
+
+	private: System::Windows::Forms::Button^ AjouterStocksButton;
+	private: System::Windows::Forms::Button^ SupprimerStocksButton;
+
+
+
+
+
 	private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel9;
 	private: System::Windows::Forms::TextBox^ textBox1;
 	private: System::Windows::Forms::TextBox^ textBox2;
@@ -152,9 +179,9 @@ namespace POO {
 			this->checkBox1 = (gcnew System::Windows::Forms::CheckBox());
 			this->tableLayoutPanel1 = (gcnew System::Windows::Forms::TableLayoutPanel());
 			this->tableLayoutPanel2 = (gcnew System::Windows::Forms::TableLayoutPanel());
-			this->button2 = (gcnew System::Windows::Forms::Button());
-			this->button1 = (gcnew System::Windows::Forms::Button());
-			this->button3 = (gcnew System::Windows::Forms::Button());
+			this->ModifierClientButton = (gcnew System::Windows::Forms::Button());
+			this->AjouterClientButton = (gcnew System::Windows::Forms::Button());
+			this->SupprimerClientButton = (gcnew System::Windows::Forms::Button());
 			this->tableLayoutPanel9 = (gcnew System::Windows::Forms::TableLayoutPanel());
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
@@ -171,9 +198,9 @@ namespace POO {
 			this->textBox9 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox10 = (gcnew System::Windows::Forms::TextBox());
 			this->tableLayoutPanel4 = (gcnew System::Windows::Forms::TableLayoutPanel());
-			this->button4 = (gcnew System::Windows::Forms::Button());
-			this->button5 = (gcnew System::Windows::Forms::Button());
-			this->button6 = (gcnew System::Windows::Forms::Button());
+			this->ModifierCommandesButton = (gcnew System::Windows::Forms::Button());
+			this->AjouterCommandesButton = (gcnew System::Windows::Forms::Button());
+			this->SupprimerCommandesButton = (gcnew System::Windows::Forms::Button());
 			this->tabEmployes = (gcnew System::Windows::Forms::TabPage());
 			this->checkBox3 = (gcnew System::Windows::Forms::CheckBox());
 			this->tableLayoutPanel5 = (gcnew System::Windows::Forms::TableLayoutPanel());
@@ -184,9 +211,9 @@ namespace POO {
 			this->textBox14 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox15 = (gcnew System::Windows::Forms::TextBox());
 			this->tableLayoutPanel6 = (gcnew System::Windows::Forms::TableLayoutPanel());
-			this->button7 = (gcnew System::Windows::Forms::Button());
-			this->button8 = (gcnew System::Windows::Forms::Button());
-			this->button9 = (gcnew System::Windows::Forms::Button());
+			this->ModifierEmployesButton = (gcnew System::Windows::Forms::Button());
+			this->AjouterEmployesButton = (gcnew System::Windows::Forms::Button());
+			this->SupprimerEmployesButton = (gcnew System::Windows::Forms::Button());
 			this->tabStocks = (gcnew System::Windows::Forms::TabPage());
 			this->checkBox4 = (gcnew System::Windows::Forms::CheckBox());
 			this->tableLayoutPanel7 = (gcnew System::Windows::Forms::TableLayoutPanel());
@@ -197,9 +224,9 @@ namespace POO {
 			this->textBox19 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox20 = (gcnew System::Windows::Forms::TextBox());
 			this->tableLayoutPanel8 = (gcnew System::Windows::Forms::TableLayoutPanel());
-			this->button10 = (gcnew System::Windows::Forms::Button());
-			this->button11 = (gcnew System::Windows::Forms::Button());
-			this->button12 = (gcnew System::Windows::Forms::Button());
+			this->ModifierStocksButton = (gcnew System::Windows::Forms::Button());
+			this->AjouterStocksButton = (gcnew System::Windows::Forms::Button());
+			this->SupprimerStocksButton = (gcnew System::Windows::Forms::Button());
 			this->tabStats = (gcnew System::Windows::Forms::TabPage());
 			this->checkBox5 = (gcnew System::Windows::Forms::CheckBox());
 			this->tableLayoutPanel10 = (gcnew System::Windows::Forms::TableLayoutPanel());
@@ -294,9 +321,9 @@ namespace POO {
 			this->tableLayoutPanel2->ColumnCount = 1;
 			this->tableLayoutPanel2->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
 				100)));
-			this->tableLayoutPanel2->Controls->Add(this->button2, 0, 1);
-			this->tableLayoutPanel2->Controls->Add(this->button1, 0, 0);
-			this->tableLayoutPanel2->Controls->Add(this->button3, 0, 2);
+			this->tableLayoutPanel2->Controls->Add(this->ModifierClientButton, 0, 1);
+			this->tableLayoutPanel2->Controls->Add(this->AjouterClientButton, 0, 0);
+			this->tableLayoutPanel2->Controls->Add(this->SupprimerClientButton, 0, 2);
 			this->tableLayoutPanel2->Dock = System::Windows::Forms::DockStyle::Fill;
 			this->tableLayoutPanel2->Location = System::Drawing::Point(943, 3);
 			this->tableLayoutPanel2->Name = L"tableLayoutPanel2";
@@ -307,35 +334,35 @@ namespace POO {
 			this->tableLayoutPanel2->Size = System::Drawing::Size(230, 94);
 			this->tableLayoutPanel2->TabIndex = 0;
 			// 
-			// button2
+			// ModifierClientButton
 			// 
-			this->button2->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->button2->Location = System::Drawing::Point(3, 34);
-			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(224, 25);
-			this->button2->TabIndex = 5;
-			this->button2->Text = L"button2";
-			this->button2->UseVisualStyleBackColor = true;
+			this->ModifierClientButton->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->ModifierClientButton->Location = System::Drawing::Point(3, 34);
+			this->ModifierClientButton->Name = L"ModifierClientButton";
+			this->ModifierClientButton->Size = System::Drawing::Size(224, 25);
+			this->ModifierClientButton->TabIndex = 5;
+			this->ModifierClientButton->Text = L"Modifier";
+			this->ModifierClientButton->UseVisualStyleBackColor = true;
 			// 
-			// button1
+			// AjouterClientButton
 			// 
-			this->button1->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->button1->Location = System::Drawing::Point(3, 3);
-			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(224, 25);
-			this->button1->TabIndex = 2;
-			this->button1->Text = L"button1";
-			this->button1->UseVisualStyleBackColor = true;
+			this->AjouterClientButton->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->AjouterClientButton->Location = System::Drawing::Point(3, 3);
+			this->AjouterClientButton->Name = L"AjouterClientButton";
+			this->AjouterClientButton->Size = System::Drawing::Size(224, 25);
+			this->AjouterClientButton->TabIndex = 2;
+			this->AjouterClientButton->Text = L"Ajouter";
+			this->AjouterClientButton->UseVisualStyleBackColor = true;
 			// 
-			// button3
+			// SupprimerClientButton
 			// 
-			this->button3->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->button3->Location = System::Drawing::Point(3, 65);
-			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(224, 26);
-			this->button3->TabIndex = 4;
-			this->button3->Text = L"button3";
-			this->button3->UseVisualStyleBackColor = true;
+			this->SupprimerClientButton->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->SupprimerClientButton->Location = System::Drawing::Point(3, 65);
+			this->SupprimerClientButton->Name = L"SupprimerClientButton";
+			this->SupprimerClientButton->Size = System::Drawing::Size(224, 26);
+			this->SupprimerClientButton->TabIndex = 4;
+			this->SupprimerClientButton->Text = L"Supprimer";
+			this->SupprimerClientButton->UseVisualStyleBackColor = true;
 			// 
 			// tableLayoutPanel9
 			// 
@@ -513,9 +540,9 @@ namespace POO {
 			this->tableLayoutPanel4->ColumnCount = 1;
 			this->tableLayoutPanel4->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
 				100)));
-			this->tableLayoutPanel4->Controls->Add(this->button4, 0, 1);
-			this->tableLayoutPanel4->Controls->Add(this->button5, 0, 0);
-			this->tableLayoutPanel4->Controls->Add(this->button6, 0, 2);
+			this->tableLayoutPanel4->Controls->Add(this->ModifierCommandesButton, 0, 1);
+			this->tableLayoutPanel4->Controls->Add(this->AjouterCommandesButton, 0, 0);
+			this->tableLayoutPanel4->Controls->Add(this->SupprimerCommandesButton, 0, 2);
 			this->tableLayoutPanel4->Dock = System::Windows::Forms::DockStyle::Fill;
 			this->tableLayoutPanel4->Location = System::Drawing::Point(943, 3);
 			this->tableLayoutPanel4->Name = L"tableLayoutPanel4";
@@ -526,35 +553,35 @@ namespace POO {
 			this->tableLayoutPanel4->Size = System::Drawing::Size(230, 94);
 			this->tableLayoutPanel4->TabIndex = 0;
 			// 
-			// button4
+			// ModifierCommandesButton
 			// 
-			this->button4->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->button4->Location = System::Drawing::Point(3, 34);
-			this->button4->Name = L"button4";
-			this->button4->Size = System::Drawing::Size(224, 25);
-			this->button4->TabIndex = 5;
-			this->button4->Text = L"button4";
-			this->button4->UseVisualStyleBackColor = true;
+			this->ModifierCommandesButton->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->ModifierCommandesButton->Location = System::Drawing::Point(3, 34);
+			this->ModifierCommandesButton->Name = L"ModifierCommandesButton";
+			this->ModifierCommandesButton->Size = System::Drawing::Size(224, 25);
+			this->ModifierCommandesButton->TabIndex = 5;
+			this->ModifierCommandesButton->Text = L"Modifier";
+			this->ModifierCommandesButton->UseVisualStyleBackColor = true;
 			// 
-			// button5
+			// AjouterCommandesButton
 			// 
-			this->button5->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->button5->Location = System::Drawing::Point(3, 3);
-			this->button5->Name = L"button5";
-			this->button5->Size = System::Drawing::Size(224, 25);
-			this->button5->TabIndex = 2;
-			this->button5->Text = L"button5";
-			this->button5->UseVisualStyleBackColor = true;
+			this->AjouterCommandesButton->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->AjouterCommandesButton->Location = System::Drawing::Point(3, 3);
+			this->AjouterCommandesButton->Name = L"AjouterCommandesButton";
+			this->AjouterCommandesButton->Size = System::Drawing::Size(224, 25);
+			this->AjouterCommandesButton->TabIndex = 2;
+			this->AjouterCommandesButton->Text = L"Ajouter";
+			this->AjouterCommandesButton->UseVisualStyleBackColor = true;
 			// 
-			// button6
+			// SupprimerCommandesButton
 			// 
-			this->button6->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->button6->Location = System::Drawing::Point(3, 65);
-			this->button6->Name = L"button6";
-			this->button6->Size = System::Drawing::Size(224, 26);
-			this->button6->TabIndex = 4;
-			this->button6->Text = L"button6";
-			this->button6->UseVisualStyleBackColor = true;
+			this->SupprimerCommandesButton->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->SupprimerCommandesButton->Location = System::Drawing::Point(3, 65);
+			this->SupprimerCommandesButton->Name = L"SupprimerCommandesButton";
+			this->SupprimerCommandesButton->Size = System::Drawing::Size(224, 26);
+			this->SupprimerCommandesButton->TabIndex = 4;
+			this->SupprimerCommandesButton->Text = L"Supprimer";
+			this->SupprimerCommandesButton->UseVisualStyleBackColor = true;
 			// 
 			// tabEmployes
 			// 
@@ -666,9 +693,9 @@ namespace POO {
 			this->tableLayoutPanel6->ColumnCount = 1;
 			this->tableLayoutPanel6->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
 				100)));
-			this->tableLayoutPanel6->Controls->Add(this->button7, 0, 1);
-			this->tableLayoutPanel6->Controls->Add(this->button8, 0, 0);
-			this->tableLayoutPanel6->Controls->Add(this->button9, 0, 2);
+			this->tableLayoutPanel6->Controls->Add(this->ModifierEmployesButton, 0, 1);
+			this->tableLayoutPanel6->Controls->Add(this->AjouterEmployesButton, 0, 0);
+			this->tableLayoutPanel6->Controls->Add(this->SupprimerEmployesButton, 0, 2);
 			this->tableLayoutPanel6->Dock = System::Windows::Forms::DockStyle::Fill;
 			this->tableLayoutPanel6->Location = System::Drawing::Point(943, 3);
 			this->tableLayoutPanel6->Name = L"tableLayoutPanel6";
@@ -679,35 +706,35 @@ namespace POO {
 			this->tableLayoutPanel6->Size = System::Drawing::Size(230, 94);
 			this->tableLayoutPanel6->TabIndex = 0;
 			// 
-			// button7
+			// ModifierEmployesButton
 			// 
-			this->button7->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->button7->Location = System::Drawing::Point(3, 34);
-			this->button7->Name = L"button7";
-			this->button7->Size = System::Drawing::Size(224, 25);
-			this->button7->TabIndex = 5;
-			this->button7->Text = L"button7";
-			this->button7->UseVisualStyleBackColor = true;
+			this->ModifierEmployesButton->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->ModifierEmployesButton->Location = System::Drawing::Point(3, 34);
+			this->ModifierEmployesButton->Name = L"ModifierEmployesButton";
+			this->ModifierEmployesButton->Size = System::Drawing::Size(224, 25);
+			this->ModifierEmployesButton->TabIndex = 5;
+			this->ModifierEmployesButton->Text = L"Modifier";
+			this->ModifierEmployesButton->UseVisualStyleBackColor = true;
 			// 
-			// button8
+			// AjouterEmployesButton
 			// 
-			this->button8->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->button8->Location = System::Drawing::Point(3, 3);
-			this->button8->Name = L"button8";
-			this->button8->Size = System::Drawing::Size(224, 25);
-			this->button8->TabIndex = 2;
-			this->button8->Text = L"button8";
-			this->button8->UseVisualStyleBackColor = true;
+			this->AjouterEmployesButton->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->AjouterEmployesButton->Location = System::Drawing::Point(3, 3);
+			this->AjouterEmployesButton->Name = L"AjouterEmployesButton";
+			this->AjouterEmployesButton->Size = System::Drawing::Size(224, 25);
+			this->AjouterEmployesButton->TabIndex = 2;
+			this->AjouterEmployesButton->Text = L"Ajouter";
+			this->AjouterEmployesButton->UseVisualStyleBackColor = true;
 			// 
-			// button9
+			// SupprimerEmployesButton
 			// 
-			this->button9->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->button9->Location = System::Drawing::Point(3, 65);
-			this->button9->Name = L"button9";
-			this->button9->Size = System::Drawing::Size(224, 26);
-			this->button9->TabIndex = 4;
-			this->button9->Text = L"button9";
-			this->button9->UseVisualStyleBackColor = true;
+			this->SupprimerEmployesButton->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->SupprimerEmployesButton->Location = System::Drawing::Point(3, 65);
+			this->SupprimerEmployesButton->Name = L"SupprimerEmployesButton";
+			this->SupprimerEmployesButton->Size = System::Drawing::Size(224, 26);
+			this->SupprimerEmployesButton->TabIndex = 4;
+			this->SupprimerEmployesButton->Text = L"Supprimer";
+			this->SupprimerEmployesButton->UseVisualStyleBackColor = true;
 			// 
 			// tabStocks
 			// 
@@ -819,9 +846,9 @@ namespace POO {
 			this->tableLayoutPanel8->ColumnCount = 1;
 			this->tableLayoutPanel8->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
 				100)));
-			this->tableLayoutPanel8->Controls->Add(this->button10, 0, 1);
-			this->tableLayoutPanel8->Controls->Add(this->button11, 0, 0);
-			this->tableLayoutPanel8->Controls->Add(this->button12, 0, 2);
+			this->tableLayoutPanel8->Controls->Add(this->ModifierStocksButton, 0, 1);
+			this->tableLayoutPanel8->Controls->Add(this->AjouterStocksButton, 0, 0);
+			this->tableLayoutPanel8->Controls->Add(this->SupprimerStocksButton, 0, 2);
 			this->tableLayoutPanel8->Dock = System::Windows::Forms::DockStyle::Fill;
 			this->tableLayoutPanel8->Location = System::Drawing::Point(943, 3);
 			this->tableLayoutPanel8->Name = L"tableLayoutPanel8";
@@ -832,35 +859,35 @@ namespace POO {
 			this->tableLayoutPanel8->Size = System::Drawing::Size(230, 94);
 			this->tableLayoutPanel8->TabIndex = 0;
 			// 
-			// button10
+			// ModifierStocksButton
 			// 
-			this->button10->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->button10->Location = System::Drawing::Point(3, 34);
-			this->button10->Name = L"button10";
-			this->button10->Size = System::Drawing::Size(224, 25);
-			this->button10->TabIndex = 5;
-			this->button10->Text = L"button10";
-			this->button10->UseVisualStyleBackColor = true;
+			this->ModifierStocksButton->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->ModifierStocksButton->Location = System::Drawing::Point(3, 34);
+			this->ModifierStocksButton->Name = L"ModifierStocksButton";
+			this->ModifierStocksButton->Size = System::Drawing::Size(224, 25);
+			this->ModifierStocksButton->TabIndex = 5;
+			this->ModifierStocksButton->Text = L"Modifier";
+			this->ModifierStocksButton->UseVisualStyleBackColor = true;
 			// 
-			// button11
+			// AjouterStocksButton
 			// 
-			this->button11->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->button11->Location = System::Drawing::Point(3, 3);
-			this->button11->Name = L"button11";
-			this->button11->Size = System::Drawing::Size(224, 25);
-			this->button11->TabIndex = 2;
-			this->button11->Text = L"button11";
-			this->button11->UseVisualStyleBackColor = true;
+			this->AjouterStocksButton->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->AjouterStocksButton->Location = System::Drawing::Point(3, 3);
+			this->AjouterStocksButton->Name = L"AjouterStocksButton";
+			this->AjouterStocksButton->Size = System::Drawing::Size(224, 25);
+			this->AjouterStocksButton->TabIndex = 2;
+			this->AjouterStocksButton->Text = L"Ajouter";
+			this->AjouterStocksButton->UseVisualStyleBackColor = true;
 			// 
-			// button12
+			// SupprimerStocksButton
 			// 
-			this->button12->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->button12->Location = System::Drawing::Point(3, 65);
-			this->button12->Name = L"button12";
-			this->button12->Size = System::Drawing::Size(224, 26);
-			this->button12->TabIndex = 4;
-			this->button12->Text = L"button12";
-			this->button12->UseVisualStyleBackColor = true;
+			this->SupprimerStocksButton->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->SupprimerStocksButton->Location = System::Drawing::Point(3, 65);
+			this->SupprimerStocksButton->Name = L"SupprimerStocksButton";
+			this->SupprimerStocksButton->Size = System::Drawing::Size(224, 26);
+			this->SupprimerStocksButton->TabIndex = 4;
+			this->SupprimerStocksButton->Text = L"Supprimer";
+			this->SupprimerStocksButton->UseVisualStyleBackColor = true;
 			// 
 			// tabStats
 			// 
