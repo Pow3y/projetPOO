@@ -12,7 +12,8 @@ SqlServices::~SqlServices()
 
 void SqlServices::ConnectToDB()
 {
-	Login::ConnectionString;
+	auto test = gcnew System::Data::SqlClient::SqlConnection(Login::ConnectionString);
+	test->Open();
 }
 void SqlServices::ExecuteSQL()
 {
