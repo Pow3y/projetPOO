@@ -9,7 +9,7 @@ SqlServices::~SqlServices()
 {
 }
 
-bool SqlServices::ConnectToDB()
+void SqlServices::ConnectToDB()
 {
     
 }
