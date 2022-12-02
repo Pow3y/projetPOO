@@ -13,7 +13,7 @@ int __clrcall WinMain(array<String^>^ args)
 	Application::SetCompatibleTextRenderingDefault(false);
 	POO::MyForm monFormulaire;
 	
-	auto test = gcnew NS_Comp_Data::CLcad();
+	
 	
 	Application::Run(% monFormulaire);
 }

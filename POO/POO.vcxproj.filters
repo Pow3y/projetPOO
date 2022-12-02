@@ -32,6 +32,15 @@
     <ClInclude Include="SqlServices.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Clients.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Employee.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Stock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="POO.cpp">
@@ -47,6 +56,15 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="SqlServices.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Clients.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Employee.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Stock.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
