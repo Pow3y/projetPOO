@@ -144,6 +144,7 @@ namespace POO {
 		{
 			this->tabControl1 = (gcnew System::Windows::Forms::TabControl());
 			this->tabPage1 = (gcnew System::Windows::Forms::TabPage());
+			this->checkBox1 = (gcnew System::Windows::Forms::CheckBox());
 			this->tableLayoutPanel1 = (gcnew System::Windows::Forms::TableLayoutPanel());
 			this->tableLayoutPanel2 = (gcnew System::Windows::Forms::TableLayoutPanel());
 			this->button2 = (gcnew System::Windows::Forms::Button());
@@ -156,6 +157,7 @@ namespace POO {
 			this->textBox4 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox5 = (gcnew System::Windows::Forms::TextBox());
 			this->tabPage2 = (gcnew System::Windows::Forms::TabPage());
+			this->checkBox2 = (gcnew System::Windows::Forms::CheckBox());
 			this->tableLayoutPanel3 = (gcnew System::Windows::Forms::TableLayoutPanel());
 			this->tableLayoutPanel11 = (gcnew System::Windows::Forms::TableLayoutPanel());
 			this->textBox6 = (gcnew System::Windows::Forms::TextBox());
@@ -168,6 +170,7 @@ namespace POO {
 			this->button5 = (gcnew System::Windows::Forms::Button());
 			this->button6 = (gcnew System::Windows::Forms::Button());
 			this->tabPage3 = (gcnew System::Windows::Forms::TabPage());
+			this->checkBox3 = (gcnew System::Windows::Forms::CheckBox());
 			this->tableLayoutPanel5 = (gcnew System::Windows::Forms::TableLayoutPanel());
 			this->tableLayoutPanel12 = (gcnew System::Windows::Forms::TableLayoutPanel());
 			this->textBox11 = (gcnew System::Windows::Forms::TextBox());
@@ -180,6 +183,7 @@ namespace POO {
 			this->button8 = (gcnew System::Windows::Forms::Button());
 			this->button9 = (gcnew System::Windows::Forms::Button());
 			this->tabPage4 = (gcnew System::Windows::Forms::TabPage());
+			this->checkBox4 = (gcnew System::Windows::Forms::CheckBox());
 			this->tableLayoutPanel7 = (gcnew System::Windows::Forms::TableLayoutPanel());
 			this->tableLayoutPanel13 = (gcnew System::Windows::Forms::TableLayoutPanel());
 			this->textBox16 = (gcnew System::Windows::Forms::TextBox());
@@ -192,17 +196,13 @@ namespace POO {
 			this->button11 = (gcnew System::Windows::Forms::Button());
 			this->button12 = (gcnew System::Windows::Forms::Button());
 			this->tabPage5 = (gcnew System::Windows::Forms::TabPage());
+			this->checkBox5 = (gcnew System::Windows::Forms::CheckBox());
 			this->tableLayoutPanel10 = (gcnew System::Windows::Forms::TableLayoutPanel());
 			this->StatsButton = (gcnew System::Windows::Forms::Button());
 			this->StocksButton = (gcnew System::Windows::Forms::Button());
 			this->EmployesButton = (gcnew System::Windows::Forms::Button());
 			this->CommandesButton = (gcnew System::Windows::Forms::Button());
 			this->ClientButton = (gcnew System::Windows::Forms::Button());
-			this->checkBox1 = (gcnew System::Windows::Forms::CheckBox());
-			this->checkBox2 = (gcnew System::Windows::Forms::CheckBox());
-			this->checkBox3 = (gcnew System::Windows::Forms::CheckBox());
-			this->checkBox4 = (gcnew System::Windows::Forms::CheckBox());
-			this->checkBox5 = (gcnew System::Windows::Forms::CheckBox());
 			this->tabControl1->SuspendLayout();
 			this->tabPage1->SuspendLayout();
 			this->tableLayoutPanel1->SuspendLayout();
@@ -255,6 +255,16 @@ namespace POO {
 			this->tabPage1->Text = L"tabPage1";
 			this->tabPage1->UseVisualStyleBackColor = true;
 			this->tabPage1->Click += gcnew System::EventHandler(this, &MyForm::tabPage1_Click);
+			// 
+			// checkBox1
+			// 
+			this->checkBox1->AutoSize = true;
+			this->checkBox1->Location = System::Drawing::Point(42, 73);
+			this->checkBox1->Name = L"checkBox1";
+			this->checkBox1->Size = System::Drawing::Size(98, 21);
+			this->checkBox1->TabIndex = 3;
+			this->checkBox1->Text = L"checkBox1";
+			this->checkBox1->UseVisualStyleBackColor = true;
 			// 
 			// tableLayoutPanel1
 			// 
@@ -400,6 +410,16 @@ namespace POO {
 			this->tabPage2->Text = L"tabPage2";
 			this->tabPage2->UseVisualStyleBackColor = true;
 			// 
+			// checkBox2
+			// 
+			this->checkBox2->AutoSize = true;
+			this->checkBox2->Location = System::Drawing::Point(429, 152);
+			this->checkBox2->Name = L"checkBox2";
+			this->checkBox2->Size = System::Drawing::Size(98, 21);
+			this->checkBox2->TabIndex = 3;
+			this->checkBox2->Text = L"checkBox2";
+			this->checkBox2->UseVisualStyleBackColor = true;
+			// 
 			// tableLayoutPanel3
 			// 
 			this->tableLayoutPanel3->ColumnCount = 2;
@@ -542,6 +562,16 @@ namespace POO {
 			this->tabPage3->TabIndex = 2;
 			this->tabPage3->Text = L"tabPage3";
 			this->tabPage3->UseVisualStyleBackColor = true;
+			// 
+			// checkBox3
+			// 
+			this->checkBox3->AutoSize = true;
+			this->checkBox3->Location = System::Drawing::Point(555, 172);
+			this->checkBox3->Name = L"checkBox3";
+			this->checkBox3->Size = System::Drawing::Size(98, 21);
+			this->checkBox3->TabIndex = 3;
+			this->checkBox3->Text = L"checkBox3";
+			this->checkBox3->UseVisualStyleBackColor = true;
 			// 
 			// tableLayoutPanel5
 			// 
@@ -686,6 +716,16 @@ namespace POO {
 			this->tabPage4->Text = L"tabPage4";
 			this->tabPage4->UseVisualStyleBackColor = true;
 			// 
+			// checkBox4
+			// 
+			this->checkBox4->AutoSize = true;
+			this->checkBox4->Location = System::Drawing::Point(487, 168);
+			this->checkBox4->Name = L"checkBox4";
+			this->checkBox4->Size = System::Drawing::Size(98, 21);
+			this->checkBox4->TabIndex = 3;
+			this->checkBox4->Text = L"checkBox4";
+			this->checkBox4->UseVisualStyleBackColor = true;
+			// 
 			// tableLayoutPanel7
 			// 
 			this->tableLayoutPanel7->ColumnCount = 2;
@@ -828,6 +868,16 @@ namespace POO {
 			this->tabPage5->Text = L"tabPage5";
 			this->tabPage5->UseVisualStyleBackColor = true;
 			// 
+			// checkBox5
+			// 
+			this->checkBox5->AutoSize = true;
+			this->checkBox5->Location = System::Drawing::Point(538, 196);
+			this->checkBox5->Name = L"checkBox5";
+			this->checkBox5->Size = System::Drawing::Size(98, 21);
+			this->checkBox5->TabIndex = 0;
+			this->checkBox5->Text = L"checkBox5";
+			this->checkBox5->UseVisualStyleBackColor = true;
+			// 
 			// tableLayoutPanel10
 			// 
 			this->tableLayoutPanel10->ColumnCount = 5;
@@ -905,56 +955,6 @@ namespace POO {
 			this->ClientButton->UseVisualStyleBackColor = true;
 			this->ClientButton->Click += gcnew System::EventHandler(this, &MyForm::button13_Click);
 			// 
-			// checkBox1
-			// 
-			this->checkBox1->AutoSize = true;
-			this->checkBox1->Location = System::Drawing::Point(403, 195);
-			this->checkBox1->Name = L"checkBox1";
-			this->checkBox1->Size = System::Drawing::Size(98, 21);
-			this->checkBox1->TabIndex = 3;
-			this->checkBox1->Text = L"checkBox1";
-			this->checkBox1->UseVisualStyleBackColor = true;
-			// 
-			// checkBox2
-			// 
-			this->checkBox2->AutoSize = true;
-			this->checkBox2->Location = System::Drawing::Point(429, 152);
-			this->checkBox2->Name = L"checkBox2";
-			this->checkBox2->Size = System::Drawing::Size(98, 21);
-			this->checkBox2->TabIndex = 3;
-			this->checkBox2->Text = L"checkBox2";
-			this->checkBox2->UseVisualStyleBackColor = true;
-			// 
-			// checkBox3
-			// 
-			this->checkBox3->AutoSize = true;
-			this->checkBox3->Location = System::Drawing::Point(555, 172);
-			this->checkBox3->Name = L"checkBox3";
-			this->checkBox3->Size = System::Drawing::Size(98, 21);
-			this->checkBox3->TabIndex = 3;
-			this->checkBox3->Text = L"checkBox3";
-			this->checkBox3->UseVisualStyleBackColor = true;
-			// 
-			// checkBox4
-			// 
-			this->checkBox4->AutoSize = true;
-			this->checkBox4->Location = System::Drawing::Point(487, 168);
-			this->checkBox4->Name = L"checkBox4";
-			this->checkBox4->Size = System::Drawing::Size(98, 21);
-			this->checkBox4->TabIndex = 3;
-			this->checkBox4->Text = L"checkBox4";
-			this->checkBox4->UseVisualStyleBackColor = true;
-			// 
-			// checkBox5
-			// 
-			this->checkBox5->AutoSize = true;
-			this->checkBox5->Location = System::Drawing::Point(538, 196);
-			this->checkBox5->Name = L"checkBox5";
-			this->checkBox5->Size = System::Drawing::Size(98, 21);
-			this->checkBox5->TabIndex = 0;
-			this->checkBox5->Text = L"checkBox5";
-			this->checkBox5->UseVisualStyleBackColor = true;
-			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
@@ -1012,7 +1012,7 @@ namespace POO {
 	}
 	private: System::Void tableLayoutPanel1_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
 	}
-	private: System::Void button13_Click(System::Object^ sender, System::EventArgs^ e) {
+	private: System::Void ClientButton_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
 	};
 }
