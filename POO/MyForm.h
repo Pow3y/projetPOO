@@ -913,6 +913,7 @@ namespace POO {
 			this->StatsButton->TabIndex = 4;
 			this->StatsButton->Text = L"Stats";
 			this->StatsButton->UseVisualStyleBackColor = true;
+			this->StatsButton->Click += gcnew System::EventHandler(this, &MyForm::StatsButton_Click);
 			// 
 			// StocksButton
 			// 
@@ -923,6 +924,7 @@ namespace POO {
 			this->StocksButton->TabIndex = 3;
 			this->StocksButton->Text = L"Stocks";
 			this->StocksButton->UseVisualStyleBackColor = true;
+			this->StocksButton->Click += gcnew System::EventHandler(this, &MyForm::StocksButton_Click);
 			// 
 			// EmployesButton
 			// 
@@ -933,6 +935,7 @@ namespace POO {
 			this->EmployesButton->TabIndex = 2;
 			this->EmployesButton->Text = L"Employes";
 			this->EmployesButton->UseVisualStyleBackColor = true;
+			this->EmployesButton->Click += gcnew System::EventHandler(this, &MyForm::EmployesButton_Click);
 			// 
 			// CommandesButton
 			// 
@@ -943,6 +946,7 @@ namespace POO {
 			this->CommandesButton->TabIndex = 1;
 			this->CommandesButton->Text = L"Commandes";
 			this->CommandesButton->UseVisualStyleBackColor = true;
+			this->CommandesButton->Click += gcnew System::EventHandler(this, &MyForm::CommandesButton_Click);
 			// 
 			// ClientButton
 			// 
@@ -953,7 +957,7 @@ namespace POO {
 			this->ClientButton->TabIndex = 0;
 			this->ClientButton->Text = L"Client";
 			this->ClientButton->UseVisualStyleBackColor = true;
-			this->ClientButton->Click += gcnew System::EventHandler(this, &MyForm::button13_Click);
+			this->ClientButton->Click += gcnew System::EventHandler(this, &MyForm::ClientButton_Click);
 			// 
 			// MyForm
 			// 
@@ -1005,6 +1009,9 @@ namespace POO {
 	private: System::Void label1_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
 	private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e) {
+		this->tabControl1->SizeMode = TabSizeMode::Fixed;
+		this->tabControl1->ItemSize = System::Drawing::Size(0, 1);
+		this->tabControl1->Appearance = TabAppearance::Buttons;
 	}
 	private: System::Void tabPage1_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
@@ -1013,6 +1020,14 @@ namespace POO {
 	private: System::Void tableLayoutPanel1_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
 	}
 	private: System::Void ClientButton_Click(System::Object^ sender, System::EventArgs^ e) {
+	}
+	private: System::Void CommandesButton_Click(System::Object^ sender, System::EventArgs^ e) {
+	}
+	private: System::Void StocksButton_Click(System::Object^ sender, System::EventArgs^ e) {
+	}
+	private: System::Void StatsButton_Click(System::Object^ sender, System::EventArgs^ e) {
+	}
+	private: System::Void EmployesButton_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
 	};
 }
