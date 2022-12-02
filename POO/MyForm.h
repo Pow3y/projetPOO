@@ -158,6 +158,16 @@ private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel2;
 private: System::Windows::Forms::Button^ SupprimerClientButton;
 private: System::Windows::Forms::Button^ AjouterClientButton;
 private: System::Windows::Forms::Button^ ModifierClientButton;
+private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel15;
+private: System::Windows::Forms::Button^ button1;
+private: System::Windows::Forms::Button^ button2;
+private: System::Windows::Forms::Button^ button3;
+private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel14;
+private: System::Windows::Forms::TextBox^ textBox21;
+private: System::Windows::Forms::TextBox^ textBox22;
+private: System::Windows::Forms::TextBox^ textBox23;
+private: System::Windows::Forms::TextBox^ textBox24;
+private: System::Windows::Forms::TextBox^ textBox25;
 
 
 
@@ -195,6 +205,19 @@ private: System::Windows::Forms::Button^ ModifierClientButton;
 		void InitializeComponent(void)
 		{
 			this->tabAffichage = (gcnew System::Windows::Forms::TabControl());
+			this->tabClient = (gcnew System::Windows::Forms::TabPage());
+			this->dataGridView1 = (gcnew System::Windows::Forms::DataGridView());
+			this->tableLayoutPanel1 = (gcnew System::Windows::Forms::TableLayoutPanel());
+			this->tableLayoutPanel15 = (gcnew System::Windows::Forms::TableLayoutPanel());
+			this->button1 = (gcnew System::Windows::Forms::Button());
+			this->button2 = (gcnew System::Windows::Forms::Button());
+			this->button3 = (gcnew System::Windows::Forms::Button());
+			this->tableLayoutPanel14 = (gcnew System::Windows::Forms::TableLayoutPanel());
+			this->textBox21 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox22 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox23 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox24 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox25 = (gcnew System::Windows::Forms::TextBox());
 			this->tabCommandes = (gcnew System::Windows::Forms::TabPage());
 			this->dataGridView2 = (gcnew System::Windows::Forms::DataGridView());
 			this->tableLayoutPanel3 = (gcnew System::Windows::Forms::TableLayoutPanel());
@@ -241,7 +264,6 @@ private: System::Windows::Forms::Button^ ModifierClientButton;
 			this->EmployesButton = (gcnew System::Windows::Forms::Button());
 			this->CommandesButton = (gcnew System::Windows::Forms::Button());
 			this->ClientButton = (gcnew System::Windows::Forms::Button());
-			this->tableLayoutPanel1 = (gcnew System::Windows::Forms::TableLayoutPanel());
 			this->tableLayoutPanel9 = (gcnew System::Windows::Forms::TableLayoutPanel());
 			this->textBox5 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox4 = (gcnew System::Windows::Forms::TextBox());
@@ -252,9 +274,12 @@ private: System::Windows::Forms::Button^ ModifierClientButton;
 			this->SupprimerClientButton = (gcnew System::Windows::Forms::Button());
 			this->AjouterClientButton = (gcnew System::Windows::Forms::Button());
 			this->ModifierClientButton = (gcnew System::Windows::Forms::Button());
-			this->dataGridView1 = (gcnew System::Windows::Forms::DataGridView());
-			this->tabClient = (gcnew System::Windows::Forms::TabPage());
 			this->tabAffichage->SuspendLayout();
+			this->tabClient->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
+			this->tableLayoutPanel1->SuspendLayout();
+			this->tableLayoutPanel15->SuspendLayout();
+			this->tableLayoutPanel14->SuspendLayout();
 			this->tabCommandes->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView2))->BeginInit();
 			this->tableLayoutPanel3->SuspendLayout();
@@ -271,8 +296,6 @@ private: System::Windows::Forms::Button^ ModifierClientButton;
 			this->tableLayoutPanel13->SuspendLayout();
 			this->tableLayoutPanel8->SuspendLayout();
 			this->tableLayoutPanel10->SuspendLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
-			this->tabClient->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// tabAffichage
@@ -283,15 +306,173 @@ private: System::Windows::Forms::Button^ ModifierClientButton;
 			this->tabAffichage->Controls->Add(this->tabEmployes);
 			this->tabAffichage->Controls->Add(this->tabStocks);
 			this->tabAffichage->Controls->Add(this->tabStats);
+			this->tabAffichage->Dock = System::Windows::Forms::DockStyle::Fill;
 			this->tabAffichage->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.9F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->tabAffichage->ItemSize = System::Drawing::Size(71, 25);
-			this->tabAffichage->Location = System::Drawing::Point(3, 89);
+			this->tabAffichage->Location = System::Drawing::Point(0, 86);
 			this->tabAffichage->Name = L"tabAffichage";
 			this->tabAffichage->RightToLeft = System::Windows::Forms::RightToLeft::No;
 			this->tabAffichage->SelectedIndex = 0;
 			this->tabAffichage->Size = System::Drawing::Size(1190, 496);
 			this->tabAffichage->TabIndex = 8;
+			// 
+			// tabClient
+			// 
+			this->tabClient->Controls->Add(this->dataGridView1);
+			this->tabClient->Controls->Add(this->tableLayoutPanel1);
+			this->tabClient->Location = System::Drawing::Point(4, 29);
+			this->tabClient->Name = L"tabClient";
+			this->tabClient->Padding = System::Windows::Forms::Padding(3);
+			this->tabClient->Size = System::Drawing::Size(1182, 463);
+			this->tabClient->TabIndex = 0;
+			this->tabClient->Text = L"Client";
+			this->tabClient->UseVisualStyleBackColor = true;
+			this->tabClient->Click += gcnew System::EventHandler(this, &MyForm::tabPage1_Click);
+			// 
+			// dataGridView1
+			// 
+			this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
+			this->dataGridView1->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->dataGridView1->Location = System::Drawing::Point(3, 3);
+			this->dataGridView1->Name = L"dataGridView1";
+			this->dataGridView1->RowHeadersWidth = 51;
+			this->dataGridView1->RowTemplate->Height = 24;
+			this->dataGridView1->Size = System::Drawing::Size(1176, 357);
+			this->dataGridView1->TabIndex = 4;
+			// 
+			// tableLayoutPanel1
+			// 
+			this->tableLayoutPanel1->ColumnCount = 2;
+			this->tableLayoutPanel1->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
+				80)));
+			this->tableLayoutPanel1->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
+				20)));
+			this->tableLayoutPanel1->Controls->Add(this->tableLayoutPanel15, 0, 0);
+			this->tableLayoutPanel1->Controls->Add(this->tableLayoutPanel14, 0, 0);
+			this->tableLayoutPanel1->Dock = System::Windows::Forms::DockStyle::Bottom;
+			this->tableLayoutPanel1->Location = System::Drawing::Point(3, 360);
+			this->tableLayoutPanel1->Name = L"tableLayoutPanel1";
+			this->tableLayoutPanel1->RowCount = 1;
+			this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
+			this->tableLayoutPanel1->Size = System::Drawing::Size(1176, 100);
+			this->tableLayoutPanel1->TabIndex = 2;
+			this->tableLayoutPanel1->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &MyForm::tableLayoutPanel1_Paint);
+			// 
+			// tableLayoutPanel15
+			// 
+			this->tableLayoutPanel15->ColumnCount = 1;
+			this->tableLayoutPanel15->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
+				100)));
+			this->tableLayoutPanel15->Controls->Add(this->button1, 0, 1);
+			this->tableLayoutPanel15->Controls->Add(this->button2, 0, 0);
+			this->tableLayoutPanel15->Controls->Add(this->button3, 0, 2);
+			this->tableLayoutPanel15->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->tableLayoutPanel15->Location = System::Drawing::Point(943, 3);
+			this->tableLayoutPanel15->Name = L"tableLayoutPanel15";
+			this->tableLayoutPanel15->RowCount = 3;
+			this->tableLayoutPanel15->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 33.33333F)));
+			this->tableLayoutPanel15->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 33.33334F)));
+			this->tableLayoutPanel15->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 33.33333F)));
+			this->tableLayoutPanel15->Size = System::Drawing::Size(230, 94);
+			this->tableLayoutPanel15->TabIndex = 4;
+			// 
+			// button1
+			// 
+			this->button1->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->button1->Location = System::Drawing::Point(3, 34);
+			this->button1->Name = L"button1";
+			this->button1->Size = System::Drawing::Size(224, 25);
+			this->button1->TabIndex = 5;
+			this->button1->Text = L"Modifier";
+			this->button1->UseVisualStyleBackColor = true;
+			// 
+			// button2
+			// 
+			this->button2->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->button2->Location = System::Drawing::Point(3, 3);
+			this->button2->Name = L"button2";
+			this->button2->Size = System::Drawing::Size(224, 25);
+			this->button2->TabIndex = 2;
+			this->button2->Text = L"Ajouter";
+			this->button2->UseVisualStyleBackColor = true;
+			this->button2->Click += gcnew System::EventHandler(this, &MyForm::button2_Click);
+			// 
+			// button3
+			// 
+			this->button3->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->button3->Location = System::Drawing::Point(3, 65);
+			this->button3->Name = L"button3";
+			this->button3->Size = System::Drawing::Size(224, 26);
+			this->button3->TabIndex = 4;
+			this->button3->Text = L"Supprimer";
+			this->button3->UseVisualStyleBackColor = true;
+			// 
+			// tableLayoutPanel14
+			// 
+			this->tableLayoutPanel14->ColumnCount = 5;
+			this->tableLayoutPanel14->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
+				20)));
+			this->tableLayoutPanel14->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
+				20)));
+			this->tableLayoutPanel14->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
+				20)));
+			this->tableLayoutPanel14->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
+				20)));
+			this->tableLayoutPanel14->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
+				20)));
+			this->tableLayoutPanel14->Controls->Add(this->textBox21, 0, 0);
+			this->tableLayoutPanel14->Controls->Add(this->textBox22, 1, 0);
+			this->tableLayoutPanel14->Controls->Add(this->textBox23, 2, 0);
+			this->tableLayoutPanel14->Controls->Add(this->textBox24, 3, 0);
+			this->tableLayoutPanel14->Controls->Add(this->textBox25, 4, 0);
+			this->tableLayoutPanel14->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->tableLayoutPanel14->Location = System::Drawing::Point(3, 3);
+			this->tableLayoutPanel14->Name = L"tableLayoutPanel14";
+			this->tableLayoutPanel14->RowCount = 1;
+			this->tableLayoutPanel14->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
+			this->tableLayoutPanel14->Size = System::Drawing::Size(934, 94);
+			this->tableLayoutPanel14->TabIndex = 3;
+			// 
+			// textBox21
+			// 
+			this->textBox21->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->textBox21->Location = System::Drawing::Point(3, 3);
+			this->textBox21->Name = L"textBox21";
+			this->textBox21->Size = System::Drawing::Size(180, 22);
+			this->textBox21->TabIndex = 0;
+			// 
+			// textBox22
+			// 
+			this->textBox22->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->textBox22->Location = System::Drawing::Point(189, 3);
+			this->textBox22->Name = L"textBox22";
+			this->textBox22->Size = System::Drawing::Size(180, 22);
+			this->textBox22->TabIndex = 1;
+			// 
+			// textBox23
+			// 
+			this->textBox23->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->textBox23->Location = System::Drawing::Point(375, 3);
+			this->textBox23->Name = L"textBox23";
+			this->textBox23->Size = System::Drawing::Size(180, 22);
+			this->textBox23->TabIndex = 2;
+			// 
+			// textBox24
+			// 
+			this->textBox24->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->textBox24->Location = System::Drawing::Point(561, 3);
+			this->textBox24->Name = L"textBox24";
+			this->textBox24->Size = System::Drawing::Size(180, 22);
+			this->textBox24->TabIndex = 3;
+			// 
+			// textBox25
+			// 
+			this->textBox25->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->textBox25->Location = System::Drawing::Point(747, 3);
+			this->textBox25->Name = L"textBox25";
+			this->textBox25->Size = System::Drawing::Size(184, 22);
+			this->textBox25->TabIndex = 4;
 			// 
 			// tabCommandes
 			// 
@@ -846,22 +1027,6 @@ private: System::Windows::Forms::Button^ ModifierClientButton;
 			this->ClientButton->UseVisualStyleBackColor = true;
 			this->ClientButton->Click += gcnew System::EventHandler(this, &MyForm::ClientButton_Click);
 			// 
-			// tableLayoutPanel1
-			// 
-			this->tableLayoutPanel1->ColumnCount = 2;
-			this->tableLayoutPanel1->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-				80)));
-			this->tableLayoutPanel1->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-				20)));
-			this->tableLayoutPanel1->Dock = System::Windows::Forms::DockStyle::Bottom;
-			this->tableLayoutPanel1->Location = System::Drawing::Point(3, 360);
-			this->tableLayoutPanel1->Name = L"tableLayoutPanel1";
-			this->tableLayoutPanel1->RowCount = 1;
-			this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel1->Size = System::Drawing::Size(1176, 100);
-			this->tableLayoutPanel1->TabIndex = 2;
-			this->tableLayoutPanel1->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &MyForm::tableLayoutPanel1_Paint);
-			// 
 			// tableLayoutPanel9
 			// 
 			this->tableLayoutPanel9->ColumnCount = 5;
@@ -968,42 +1133,24 @@ private: System::Windows::Forms::Button^ ModifierClientButton;
 			this->ModifierClientButton->Text = L"Modifier";
 			this->ModifierClientButton->UseVisualStyleBackColor = true;
 			// 
-			// dataGridView1
-			// 
-			this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->dataGridView1->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->dataGridView1->Location = System::Drawing::Point(3, 3);
-			this->dataGridView1->Name = L"dataGridView1";
-			this->dataGridView1->RowHeadersWidth = 51;
-			this->dataGridView1->RowTemplate->Height = 24;
-			this->dataGridView1->Size = System::Drawing::Size(1176, 357);
-			this->dataGridView1->TabIndex = 4;
-			// 
-			// tabClient
-			// 
-			this->tabClient->Controls->Add(this->dataGridView1);
-			this->tabClient->Controls->Add(this->tableLayoutPanel1);
-			this->tabClient->Location = System::Drawing::Point(4, 29);
-			this->tabClient->Name = L"tabClient";
-			this->tabClient->Padding = System::Windows::Forms::Padding(3);
-			this->tabClient->Size = System::Drawing::Size(1182, 463);
-			this->tabClient->TabIndex = 0;
-			this->tabClient->Text = L"Client";
-			this->tabClient->UseVisualStyleBackColor = true;
-			this->tabClient->Click += gcnew System::EventHandler(this, &MyForm::tabPage1_Click);
-			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(1190, 582);
-			this->Controls->Add(this->tableLayoutPanel10);
 			this->Controls->Add(this->tabAffichage);
+			this->Controls->Add(this->tableLayoutPanel10);
 			this->Margin = System::Windows::Forms::Padding(2);
 			this->Name = L"MyForm";
 			this->Text = L"MyForm";
 			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
 			this->tabAffichage->ResumeLayout(false);
+			this->tabClient->ResumeLayout(false);
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->EndInit();
+			this->tableLayoutPanel1->ResumeLayout(false);
+			this->tableLayoutPanel15->ResumeLayout(false);
+			this->tableLayoutPanel14->ResumeLayout(false);
+			this->tableLayoutPanel14->PerformLayout();
 			this->tabCommandes->ResumeLayout(false);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView2))->EndInit();
 			this->tableLayoutPanel3->ResumeLayout(false);
@@ -1023,8 +1170,6 @@ private: System::Windows::Forms::Button^ ModifierClientButton;
 			this->tableLayoutPanel13->PerformLayout();
 			this->tableLayoutPanel8->ResumeLayout(false);
 			this->tableLayoutPanel10->ResumeLayout(false);
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->EndInit();
-			this->tabClient->ResumeLayout(false);
 			this->ResumeLayout(false);
 
 		}
@@ -1061,5 +1206,7 @@ private: System::Windows::Forms::Button^ ModifierClientButton;
 	private: System::Void EmployesButton_Click(System::Object^ sender, System::EventArgs^ e) {
 		this->tabAffichage->SelectedTab = tabEmployes;
 	}
-	};
+	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
+	}
+};
 }
