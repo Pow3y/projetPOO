@@ -12,8 +12,8 @@ int __clrcall WinMain(array<String^>^ args)
 	Application::SetCompatibleTextRenderingDefault(false);
 	POO::MyForm monFormulaire;
 	
-	auto hello = gcnew SqlServices();
-	hello->ConnectToDB();
+	//auto hello = gcnew SqlServices();
+	//hello->ConnectToDB();
 	
 	Application::Run(% monFormulaire);
 }
