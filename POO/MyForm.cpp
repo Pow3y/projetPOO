@@ -15,6 +15,6 @@ int __clrcall WinMain(array<String^>^ args)
 	//auto hello = gcnew SqlServices();
 	//hello->ConnectToDB();
 	
-	Application::Run(% monFormulaire);
-}
+//	Application::Run(% monFormulaire);
+//}
 
