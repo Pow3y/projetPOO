@@ -7,9 +7,9 @@ ref class Commandes
 public:
 	Commandes();
 	~Commandes();
-	void Create() override;
-	void Remove() override;
-	void Update() override;
+	void Create() ;
+	void Remove() ;
+	void Update() ;
 private:
 	int CommandId;
 	DateTime DateDeLivraison;
