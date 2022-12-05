@@ -41,6 +41,7 @@ bool SqlServices::CloseDB()
 
 System::Data::DataTable^ SqlServices::ExecuteSQL(String^ Query)
 {
+	
 	System::Data::SqlClient::SqlCommand^ SqlQuery = gcnew System::Data::SqlClient::SqlCommand(Query);
 	SqlQuery->Connection = DataBaseCo;
 	System::Data::DataTable^ table = gcnew System::Data::DataTable();
