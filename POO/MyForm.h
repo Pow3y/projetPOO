@@ -12,6 +12,7 @@ namespace POO {
 	using namespace System::Globalization;
 	using namespace System::Data;
 	using namespace System::Drawing;
+	using namespace System::Configuration;
 
 	/// <summary>
 	/// Summary for MyForm
@@ -1580,6 +1581,18 @@ namespace POO {
 		this->tabAffichage->ItemSize = System::Drawing::Size(0, 1);
 		this->tabAffichage->Appearance = TabAppearance::Buttons;	
 		this->dataGridView1->Refresh();
+		gridbind();
+		
+	}
+	private: void gridbind() {
+		System::Data::SqlClient::SqlConnection^ con = gcnew System::Data::SqlClient::SqlConnection(Login::ConnectionString);
+		con->Open();
+		SqlCommand^ cmd = gcnew SqlCommand("select * from Personnel",con);
+		SqlDataReader^ reader = cmd->ExecuteReader();
+		DataTable^ dt = gcnew DataTable();
+		dt->Load(reader);
+		dataGridView1->DataSource = dt;
+		con->Close();
 	}
 	// personnalisation des boutons pour changer d'onglets
 	private: System::Void ClientButton_Click(System::Object^ sender, System::EventArgs^ e) {
@@ -1608,10 +1621,8 @@ namespace POO {
 	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
 		auto test = gcnew SqlServices;
 		test->OpenDB();
-		auto table = test->ExecuteSQL("FROM Address SELECT *");
-		this->dataGridView1->Refresh();
+		auto table = test->ExecuteSQL("SELECT * from address");
 		this->dataGridView1->DataSource = table;
-		this->Refresh();
 		this->dataGridView1->DataMember = "Address";
 	}
 	private: System::Void dataGridView1_CellContentClick(System::Object^ sender, System::Windows::Forms::DataGridViewCellEventArgs^ e) {
