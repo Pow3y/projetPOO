@@ -1579,6 +1579,7 @@ namespace POO {
 		this->tabAffichage->SizeMode = TabSizeMode::Fixed;
 		this->tabAffichage->ItemSize = System::Drawing::Size(0, 1);
 		this->tabAffichage->Appearance = TabAppearance::Buttons;	
+		this->dataGridView1->Refresh();
 	}
 	// personnalisation des boutons pour changer d'onglets
 	private: System::Void ClientButton_Click(System::Object^ sender, System::EventArgs^ e) {
@@ -1607,8 +1608,11 @@ namespace POO {
 	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
 		auto test = gcnew SqlServices;
 		test->OpenDB();
-		auto table = test->ExecuteSQL("FROM Employes SELECT *");
+		auto table = test->ExecuteSQL("FROM Address SELECT *");
+		this->dataGridView1->Refresh();
 		this->dataGridView1->DataSource = table;
+		this->Refresh();
+		this->dataGridView1->DataMember = "Address";
 	}
 	private: System::Void dataGridView1_CellContentClick(System::Object^ sender, System::Windows::Forms::DataGridViewCellEventArgs^ e) {
 	}
