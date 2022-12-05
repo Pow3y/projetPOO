@@ -2,6 +2,8 @@
 #include "Person.h"
 #include <iostream>
 
+using namespace System;
+
 ref class Employee : public Person
 {
 public:
@@ -12,6 +14,6 @@ public:
 	void Update() override;
 private:
 	int SuperiorID;
-	int HiringDate;
+	DateTime HiringDate;
 };
 

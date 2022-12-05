@@ -1,19 +1,19 @@
 #pragma once
-#include "Person.h"
 
 using namespace System;
 
-ref class Clients : public Person
+ref class Commandes 
 {
-
 public:
-	Clients();
-	~Clients();
+	Commandes();
+	~Commandes();
 	void Create() override;
 	void Remove() override;
 	void Update() override;
-
 private:
-	int ID;
-	DateTime BirthDate;
+	int CommandId;
+	DateTime DateDeLivraison;
+	DateTime DateDEmission;
 };
+
+

@@ -17,3 +17,4 @@ int __clrcall WinMain(array<String^>^ args)
 	
 	Application::Run(% monFormulaire);
 }
+
