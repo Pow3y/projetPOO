@@ -1,5 +1,6 @@
 #pragma once
 #include "Connection.h"
+#include "SqlServices.h"
 
 namespace POO {
 
@@ -38,154 +39,103 @@ namespace POO {
 			}
 		}
 	private: System::Windows::Forms::TabControl^ tabAffichage;
-	protected:
-
-	protected:
-
-
-
-
-
-
-
-
 	private: System::Windows::Forms::TabPage^ tabCommandes;
 	private: System::Windows::Forms::TabPage^ tabEmployes;
 	private: System::Windows::Forms::TabPage^ tabStocks;
 	private: System::Windows::Forms::TabPage^ tabStats;
-		
 	private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel10;
 	private: System::Windows::Forms::Button^ StatsButton;
-
 	private: System::Windows::Forms::Button^ StocksButton;
-
-
 	private: System::Windows::Forms::Button^ EmployesButton;
-
 	private: System::Windows::Forms::Button^ CommandesButton;
-
 	private: System::Windows::Forms::Button^ ClientButton;
-
-private: System::Windows::Forms::DataGridView^ dataGridView2;
-private: System::Windows::Forms::DataGridView^ dataGridView3;
-private: System::Windows::Forms::DataGridView^ dataGridView4;
-private: System::Windows::Forms::TabPage^ tabClient;
-private: System::Windows::Forms::DataGridView^ dataGridView1;
-
-private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel9;
-private: System::Windows::Forms::TextBox^ textBox5;
-private: System::Windows::Forms::TextBox^ textBox4;
-private: System::Windows::Forms::TextBox^ textBox3;
-private: System::Windows::Forms::TextBox^ textBox2;
-private: System::Windows::Forms::TextBox^ textBox1;
-private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel2;
-private: System::Windows::Forms::Button^ SupprimerClientButton;
-private: System::Windows::Forms::Button^ AjouterClientButton;
-private: System::Windows::Forms::Button^ ModifierClientButton;
-private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel1;
-private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel14;
-private: System::Windows::Forms::Button^ button1;
-private: System::Windows::Forms::Button^ button2;
-private: System::Windows::Forms::Button^ button3;
-private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel15;
-
-
-
-
-
-
-private: System::Windows::Forms::CheckBox^ checkBox2;
-private: System::Windows::Forms::CheckBox^ checkBox3;
-private: System::Windows::Forms::CheckBox^ checkBox4;
-private: System::Windows::Forms::CheckBox^ checkBox5;
-
-private: System::Windows::Forms::TextBox^ textBox22;
-
-
-
-private: System::Windows::Forms::Label^ label1;
-
-
-
-
-private: System::Windows::Forms::TextBox^ textBox23;
-private: System::Windows::Forms::Label^ label4;
-private: System::Windows::Forms::Label^ label6;
-private: System::Windows::Forms::Label^ label3;
-
-private: System::Windows::Forms::TextBox^ textBox25;
-private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel3;
-private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel4;
-
-private: System::Windows::Forms::Label^ label5;
-
-
-
-private: System::Windows::Forms::Label^ label7;
-private: System::Windows::Forms::TextBox^ textBox9;
-private: System::Windows::Forms::Label^ label8;
-private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel11;
-private: System::Windows::Forms::Button^ button4;
-private: System::Windows::Forms::Button^ button5;
-private: System::Windows::Forms::Button^ button6;
-private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel5;
-private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel6;
-private: System::Windows::Forms::Label^ label2;
-private: System::Windows::Forms::TextBox^ textBox6;
-
-private: System::Windows::Forms::Label^ label9;
-private: System::Windows::Forms::TextBox^ textBox11;
-private: System::Windows::Forms::Label^ label10;
-private: System::Windows::Forms::Label^ label14;
-private: System::Windows::Forms::TextBox^ textBox15;
-private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel12;
-private: System::Windows::Forms::Button^ button7;
-private: System::Windows::Forms::Button^ button8;
-private: System::Windows::Forms::Button^ button9;
-private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel7;
-private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel8;
-private: System::Windows::Forms::Label^ label11;
-private: System::Windows::Forms::TextBox^ textBox12;
-private: System::Windows::Forms::TextBox^ textBox13;
-private: System::Windows::Forms::Label^ label12;
-private: System::Windows::Forms::TextBox^ textBox14;
-private: System::Windows::Forms::Label^ label13;
-private: System::Windows::Forms::TextBox^ textBox16;
-private: System::Windows::Forms::TextBox^ textBox17;
-private: System::Windows::Forms::Label^ label15;
-private: System::Windows::Forms::Label^ label16;
-private: System::Windows::Forms::Label^ label17;
-private: System::Windows::Forms::TextBox^ textBox18;
-private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel13;
-private: System::Windows::Forms::Button^ button10;
-private: System::Windows::Forms::Button^ button11;
-private: System::Windows::Forms::Button^ button12;
-private: System::Windows::Forms::DateTimePicker^ dateTimePicker1;
-private: System::Windows::Forms::DateTimePicker^ dateTimePicker2;
-private: System::Windows::Forms::DateTimePicker^ dateTimePicker3;
-private: System::Windows::Forms::Label^ label18;
-private: System::Windows::Forms::Label^ label20;
-private: System::Windows::Forms::Label^ label21;
-private: System::Windows::Forms::TextBox^ textBox10;
-private: System::Windows::Forms::TextBox^ textBox19;
-private: System::Windows::Forms::TextBox^ textBox7;
-private: System::Windows::Forms::TextBox^ textBox8;
-private: System::Windows::Forms::Label^ label19;
-private: System::Windows::Forms::DateTimePicker^ dateTimePicker4;
-private: System::Windows::Forms::DataGridView^ dataGridView5;
-
-
-
-
-
-
-	protected:
-
-	private:
-		/// <summary>
-		/// Required designer variable.
-		/// </summary>
-		System::ComponentModel::Container^ components;
+	private: System::Windows::Forms::DataGridView^ dataGridView1;
+	private: System::Windows::Forms::DataGridView^ dataGridView2;
+	private: System::Windows::Forms::DataGridView^ dataGridView3;
+	private: System::Windows::Forms::DataGridView^ dataGridView4;
+	private: System::Windows::Forms::TabPage^ tabClient;
+	private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel9;
+	private: System::Windows::Forms::TextBox^ textBox5;
+	private: System::Windows::Forms::TextBox^ textBox4;
+	private: System::Windows::Forms::TextBox^ textBox3;
+	private: System::Windows::Forms::TextBox^ textBox2;
+	private: System::Windows::Forms::TextBox^ textBox1;
+	private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel2;
+	private: System::Windows::Forms::Button^ SupprimerClientButton;
+	private: System::Windows::Forms::Button^ AjouterClientButton;
+	private: System::Windows::Forms::Button^ ModifierClientButton;
+	private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel1;
+	private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel14;
+	private: System::Windows::Forms::Button^ button1;
+	private: System::Windows::Forms::Button^ button2;
+	private: System::Windows::Forms::Button^ button3;
+	private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel15;
+	private: System::Windows::Forms::CheckBox^ checkBox2;
+	private: System::Windows::Forms::CheckBox^ checkBox3;
+	private: System::Windows::Forms::CheckBox^ checkBox4;
+	private: System::Windows::Forms::CheckBox^ checkBox5;
+	private: System::Windows::Forms::TextBox^ textBox22;
+	private: System::Windows::Forms::Label^ label1;
+	private: System::Windows::Forms::TextBox^ textBox23;
+	private: System::Windows::Forms::Label^ label4;
+	private: System::Windows::Forms::Label^ label6;
+	private: System::Windows::Forms::Label^ label3;
+	private: System::Windows::Forms::TextBox^ textBox25;
+	private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel3;
+	private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel4;
+	private: System::Windows::Forms::Label^ label5;
+	private: System::Windows::Forms::Label^ label7;
+	private: System::Windows::Forms::TextBox^ textBox9;
+	private: System::Windows::Forms::Label^ label8;
+	private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel11;
+	private: System::Windows::Forms::Button^ button4;
+	private: System::Windows::Forms::Button^ button5;
+	private: System::Windows::Forms::Button^ button6;
+	private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel5;
+	private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel6;
+	private: System::Windows::Forms::Label^ label2;
+	private: System::Windows::Forms::TextBox^ textBox6;
+	private: System::Windows::Forms::Label^ label9;
+	private: System::Windows::Forms::TextBox^ textBox11;
+	private: System::Windows::Forms::Label^ label10;
+	private: System::Windows::Forms::Label^ label14;
+	private: System::Windows::Forms::TextBox^ textBox15;
+	private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel12;
+	private: System::Windows::Forms::Button^ button7;
+	private: System::Windows::Forms::Button^ button8;
+	private: System::Windows::Forms::Button^ button9;
+	private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel7;
+	private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel8;
+	private: System::Windows::Forms::Label^ label11;
+	private: System::Windows::Forms::TextBox^ textBox12;
+	private: System::Windows::Forms::TextBox^ textBox13;
+	private: System::Windows::Forms::Label^ label12;
+	private: System::Windows::Forms::TextBox^ textBox14;
+	private: System::Windows::Forms::Label^ label13;
+	private: System::Windows::Forms::TextBox^ textBox16;
+	private: System::Windows::Forms::TextBox^ textBox17;
+	private: System::Windows::Forms::Label^ label15;
+	private: System::Windows::Forms::Label^ label16;
+	private: System::Windows::Forms::Label^ label17;
+	private: System::Windows::Forms::TextBox^ textBox18;
+	private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel13;
+	private: System::Windows::Forms::Button^ button10;
+	private: System::Windows::Forms::Button^ button11;
+	private: System::Windows::Forms::Button^ button12;
+	private: System::Windows::Forms::DateTimePicker^ dateTimePicker1;
+	private: System::Windows::Forms::DateTimePicker^ dateTimePicker2;
+	private: System::Windows::Forms::DateTimePicker^ dateTimePicker3;
+	private: System::Windows::Forms::Label^ label18;
+	private: System::Windows::Forms::Label^ label20;
+	private: System::Windows::Forms::Label^ label21;
+	private: System::Windows::Forms::TextBox^ textBox10;
+	private: System::Windows::Forms::TextBox^ textBox19;
+	private: System::Windows::Forms::TextBox^ textBox7;
+	private: System::Windows::Forms::TextBox^ textBox8;
+	private: System::Windows::Forms::Label^ label19;
+	private: System::Windows::Forms::DateTimePicker^ dateTimePicker4;
+	private: System::Windows::Forms::DataGridView^ dataGridView5;
+	private: System::ComponentModel::Container^ components;
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
@@ -606,7 +556,7 @@ private: System::Windows::Forms::DataGridView^ dataGridView5;
 			this->tabCommandes->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->tabCommandes->Name = L"tabCommandes";
 			this->tabCommandes->Padding = System::Windows::Forms::Padding(4, 5, 4, 5);
-			this->tabCommandes->Size = System::Drawing::Size(1826, 815);
+			this->tabCommandes->Size = System::Drawing::Size(1826, 816);
 			this->tabCommandes->TabIndex = 1;
 			this->tabCommandes->Text = L"Commandes";
 			this->tabCommandes->UseVisualStyleBackColor = true;
@@ -620,7 +570,7 @@ private: System::Windows::Forms::DataGridView^ dataGridView5;
 			this->dataGridView2->Name = L"dataGridView2";
 			this->dataGridView2->RowHeadersWidth = 51;
 			this->dataGridView2->RowTemplate->Height = 24;
-			this->dataGridView2->Size = System::Drawing::Size(1818, 563);
+			this->dataGridView2->Size = System::Drawing::Size(1818, 564);
 			this->dataGridView2->TabIndex = 5;
 			// 
 			// tableLayoutPanel3
@@ -633,7 +583,7 @@ private: System::Windows::Forms::DataGridView^ dataGridView5;
 			this->tableLayoutPanel3->Controls->Add(this->tableLayoutPanel4, 0, 0);
 			this->tableLayoutPanel3->Controls->Add(this->tableLayoutPanel11, 1, 0);
 			this->tableLayoutPanel3->Dock = System::Windows::Forms::DockStyle::Bottom;
-			this->tableLayoutPanel3->Location = System::Drawing::Point(4, 568);
+			this->tableLayoutPanel3->Location = System::Drawing::Point(4, 569);
 			this->tableLayoutPanel3->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->tableLayoutPanel3->Name = L"tableLayoutPanel3";
 			this->tableLayoutPanel3->RowCount = 1;
@@ -828,7 +778,7 @@ private: System::Windows::Forms::DataGridView^ dataGridView5;
 			this->tabEmployes->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->tabEmployes->Name = L"tabEmployes";
 			this->tabEmployes->Padding = System::Windows::Forms::Padding(4, 5, 4, 5);
-			this->tabEmployes->Size = System::Drawing::Size(1826, 815);
+			this->tabEmployes->Size = System::Drawing::Size(1826, 816);
 			this->tabEmployes->TabIndex = 2;
 			this->tabEmployes->Text = L"Employes";
 			this->tabEmployes->UseVisualStyleBackColor = true;
@@ -842,7 +792,7 @@ private: System::Windows::Forms::DataGridView^ dataGridView5;
 			this->dataGridView3->Name = L"dataGridView3";
 			this->dataGridView3->RowHeadersWidth = 51;
 			this->dataGridView3->RowTemplate->Height = 24;
-			this->dataGridView3->Size = System::Drawing::Size(1818, 649);
+			this->dataGridView3->Size = System::Drawing::Size(1818, 650);
 			this->dataGridView3->TabIndex = 5;
 			// 
 			// tableLayoutPanel5
@@ -855,7 +805,7 @@ private: System::Windows::Forms::DataGridView^ dataGridView5;
 			this->tableLayoutPanel5->Controls->Add(this->tableLayoutPanel6, 0, 0);
 			this->tableLayoutPanel5->Controls->Add(this->tableLayoutPanel12, 1, 0);
 			this->tableLayoutPanel5->Dock = System::Windows::Forms::DockStyle::Bottom;
-			this->tableLayoutPanel5->Location = System::Drawing::Point(4, 654);
+			this->tableLayoutPanel5->Location = System::Drawing::Point(4, 655);
 			this->tableLayoutPanel5->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->tableLayoutPanel5->Name = L"tableLayoutPanel5";
 			this->tableLayoutPanel5->RowCount = 1;
@@ -967,7 +917,7 @@ private: System::Windows::Forms::DataGridView^ dataGridView5;
 			// 
 			this->textBox15->Dock = System::Windows::Forms::DockStyle::Fill;
 			this->textBox15->Location = System::Drawing::Point(628, 94);
-			this->textBox15->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox15->Margin = System::Windows::Forms::Padding(6);
 			this->textBox15->Name = L"textBox15";
 			this->textBox15->Size = System::Drawing::Size(252, 31);
 			this->textBox15->TabIndex = 18;
@@ -1072,7 +1022,7 @@ private: System::Windows::Forms::DataGridView^ dataGridView5;
 			this->tabStocks->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->tabStocks->Name = L"tabStocks";
 			this->tabStocks->Padding = System::Windows::Forms::Padding(4, 5, 4, 5);
-			this->tabStocks->Size = System::Drawing::Size(1826, 815);
+			this->tabStocks->Size = System::Drawing::Size(1826, 816);
 			this->tabStocks->TabIndex = 3;
 			this->tabStocks->Text = L"Stocks";
 			this->tabStocks->UseVisualStyleBackColor = true;
@@ -1086,7 +1036,7 @@ private: System::Windows::Forms::DataGridView^ dataGridView5;
 			this->dataGridView4->Name = L"dataGridView4";
 			this->dataGridView4->RowHeadersWidth = 51;
 			this->dataGridView4->RowTemplate->Height = 24;
-			this->dataGridView4->Size = System::Drawing::Size(1818, 649);
+			this->dataGridView4->Size = System::Drawing::Size(1818, 650);
 			this->dataGridView4->TabIndex = 5;
 			// 
 			// tableLayoutPanel7
@@ -1099,7 +1049,7 @@ private: System::Windows::Forms::DataGridView^ dataGridView5;
 			this->tableLayoutPanel7->Controls->Add(this->tableLayoutPanel8, 0, 0);
 			this->tableLayoutPanel7->Controls->Add(this->tableLayoutPanel13, 1, 0);
 			this->tableLayoutPanel7->Dock = System::Windows::Forms::DockStyle::Bottom;
-			this->tableLayoutPanel7->Location = System::Drawing::Point(4, 654);
+			this->tableLayoutPanel7->Location = System::Drawing::Point(4, 655);
 			this->tableLayoutPanel7->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->tableLayoutPanel7->Name = L"tableLayoutPanel7";
 			this->tableLayoutPanel7->RowCount = 1;
@@ -1210,7 +1160,7 @@ private: System::Windows::Forms::DataGridView^ dataGridView5;
 			// 
 			this->textBox16->Dock = System::Windows::Forms::DockStyle::Fill;
 			this->textBox16->Location = System::Drawing::Point(1220, 37);
-			this->textBox16->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox16->Margin = System::Windows::Forms::Padding(6);
 			this->textBox16->Name = L"textBox16";
 			this->textBox16->Size = System::Drawing::Size(220, 31);
 			this->textBox16->TabIndex = 17;
@@ -1219,7 +1169,7 @@ private: System::Windows::Forms::DataGridView^ dataGridView5;
 			// 
 			this->textBox17->Dock = System::Windows::Forms::DockStyle::Fill;
 			this->textBox17->Location = System::Drawing::Point(1220, 94);
-			this->textBox17->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox17->Margin = System::Windows::Forms::Padding(6);
 			this->textBox17->Name = L"textBox17";
 			this->textBox17->Size = System::Drawing::Size(220, 31);
 			this->textBox17->TabIndex = 18;
@@ -1261,7 +1211,7 @@ private: System::Windows::Forms::DataGridView^ dataGridView5;
 			// 
 			this->textBox18->Dock = System::Windows::Forms::DockStyle::Fill;
 			this->textBox18->Location = System::Drawing::Point(794, 94);
-			this->textBox18->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox18->Margin = System::Windows::Forms::Padding(6);
 			this->textBox18->Name = L"textBox18";
 			this->textBox18->Size = System::Drawing::Size(220, 31);
 			this->textBox18->TabIndex = 22;
@@ -1337,7 +1287,7 @@ private: System::Windows::Forms::DataGridView^ dataGridView5;
 			this->tabStats->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->tabStats->Name = L"tabStats";
 			this->tabStats->Padding = System::Windows::Forms::Padding(4, 5, 4, 5);
-			this->tabStats->Size = System::Drawing::Size(1826, 815);
+			this->tabStats->Size = System::Drawing::Size(1826, 816);
 			this->tabStats->TabIndex = 4;
 			this->tabStats->Text = L"Stats";
 			this->tabStats->UseVisualStyleBackColor = true;
@@ -1621,24 +1571,16 @@ private: System::Windows::Forms::DataGridView^ dataGridView5;
 			this->ResumeLayout(false);
 
 		}
+
 #pragma endregion
-	private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
-	}
-	private: System::Void textBox1_TextChanged(System::Object^ sender, System::EventArgs^ e) {
-	};
-	private: System::Void label1_Click(System::Object^ sender, System::EventArgs^ e) {
-	}
+		
+	// chargement de la page
 	private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e) {
 		this->tabAffichage->SizeMode = TabSizeMode::Fixed;
 		this->tabAffichage->ItemSize = System::Drawing::Size(0, 1);
-		this->tabAffichage->Appearance = TabAppearance::Buttons;
+		this->tabAffichage->Appearance = TabAppearance::Buttons;	
 	}
-	private: System::Void tabPage1_Click(System::Object^ sender, System::EventArgs^ e) {
-	}
-	private: System::Void progressBar1_Click(System::Object^ sender, System::EventArgs^ e) {
-	}
-	private: System::Void tableLayoutPanel1_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
-	}
+	// personnalisation des boutons pour changer d'onglets
 	private: System::Void ClientButton_Click(System::Object^ sender, System::EventArgs^ e) {
 		this->tabAffichage->SelectedTab = tabClient;
 	}
@@ -1654,25 +1596,43 @@ private: System::Windows::Forms::DataGridView^ dataGridView5;
 	private: System::Void EmployesButton_Click(System::Object^ sender, System::EventArgs^ e) {
 		this->tabAffichage->SelectedTab = tabEmployes;
 	}
-	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
+	
+	// autres actions sur la page
+	private: System::Void tabPage1_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
-private: System::Void dataGridView1_CellContentClick(System::Object^ sender, System::Windows::Forms::DataGridViewCellEventArgs^ e) {
-}
-private: System::Void tableLayoutPanel15_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
-}
-private: System::Void textBox26_TextChanged(System::Object^ sender, System::EventArgs^ e) {
-}
-private: System::Void label1_Click_1(System::Object^ sender, System::EventArgs^ e) {
-}
-private: System::Void label2_Click(System::Object^ sender, System::EventArgs^ e) {
-}
-private: System::Void checkBox1_CheckedChanged(System::Object^ sender, System::EventArgs^ e) {
-}
-private: System::Void label4_Click(System::Object^ sender, System::EventArgs^ e) {
-}
-private: System::Void label8_Click(System::Object^ sender, System::EventArgs^ e) {
-}
-private: System::Void tableLayoutPanel5_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
-}
+	private: System::Void progressBar1_Click(System::Object^ sender, System::EventArgs^ e) {
+	}
+	private: System::Void tableLayoutPanel1_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
+	}
+	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
+		auto test = gcnew SqlServices;
+		test->OpenDB();
+		auto table = test->ExecuteSQL("FROM Employes SELECT *");
+		this->dataGridView1->DataSource = table;
+	}
+	private: System::Void dataGridView1_CellContentClick(System::Object^ sender, System::Windows::Forms::DataGridViewCellEventArgs^ e) {
+	}
+	private: System::Void tableLayoutPanel15_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
+	}
+	private: System::Void textBox26_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+	}
+	private: System::Void label1_Click_1(System::Object^ sender, System::EventArgs^ e) {
+	}
+	private: System::Void label2_Click(System::Object^ sender, System::EventArgs^ e) {
+	}
+	private: System::Void checkBox1_CheckedChanged(System::Object^ sender, System::EventArgs^ e) {
+	}
+	private: System::Void label4_Click(System::Object^ sender, System::EventArgs^ e) {
+	}
+	private: System::Void label8_Click(System::Object^ sender, System::EventArgs^ e) {
+	}
+	private: System::Void tableLayoutPanel5_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
+	}
+	private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
+	}
+	private: System::Void textBox1_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+	};
+	private: System::Void label1_Click(System::Object^ sender, System::EventArgs^ e) {
+	}
 };
 }

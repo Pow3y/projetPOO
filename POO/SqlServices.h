@@ -4,7 +4,7 @@
 ref class SqlServices
 {
 private:
-	System::Data::SqlClient::SqlConnection^ DataBase;
+	System::Data::SqlClient::SqlConnection^ DataBaseCo;
 public:
 	SqlServices();
 	~SqlServices();

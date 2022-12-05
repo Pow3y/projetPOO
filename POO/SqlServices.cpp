@@ -4,8 +4,8 @@
 
 SqlServices::SqlServices()
 {
-	DataBase = gcnew System::Data::SqlClient::SqlConnection();
-	DataBase->ConnectionString = Login::ConnectionString;
+	DataBaseCo = gcnew System::Data::SqlClient::SqlConnection();
+	DataBaseCo->ConnectionString = Login::ConnectionString;
 }
 
 SqlServices::~SqlServices()
@@ -17,7 +17,7 @@ Exception^ SqlServices::OpenDB()
 {
     try
     {
-        DataBase->Open();
+        DataBaseCo->Open();
         return nullptr;
     }
     catch (System::Data::SqlClient::SqlException^ e)
@@ -30,7 +30,7 @@ bool SqlServices::CloseDB()
 {
 	try
 	{
-		DataBase->Close();
+		DataBaseCo->Close();
 		return true;
 	}
 	catch (System::Data::SqlClient::SqlException^ e)
@@ -39,10 +39,12 @@ bool SqlServices::CloseDB()
 	}
 }
 
-System::Data::DataTable^ SqlServices::ExecuteSQL(String^ sql)
+System::Data::DataTable^ SqlServices::ExecuteSQL(String^ Query)
 {
+	System::Data::SqlClient::SqlCommand^ SqlQuery = gcnew System::Data::SqlClient::SqlCommand(Query);
+	SqlQuery->Connection = DataBaseCo;
 	System::Data::DataTable^ table = gcnew System::Data::DataTable();
-	System::Data::SqlClient::SqlDataAdapter^ adapter = gcnew System::Data::SqlClient::SqlDataAdapter(sql, DataBase);
+	System::Data::SqlClient::SqlDataAdapter^ adapter = gcnew System::Data::SqlClient::SqlDataAdapter(SqlQuery);
 	adapter->Fill(table);
 	return table;
 }
