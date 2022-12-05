@@ -1,4 +1,5 @@
 #pragma once
+#include "Connection.h"
 
 namespace POO {
 
@@ -6,6 +7,8 @@ namespace POO {
 	using namespace System::ComponentModel;
 	using namespace System::Collections;
 	using namespace System::Windows::Forms;
+	using namespace System::Data::SqlClient;
+	using namespace System::Globalization;
 	using namespace System::Data;
 	using namespace System::Drawing;
 
@@ -50,68 +53,7 @@ namespace POO {
 	private: System::Windows::Forms::TabPage^ tabEmployes;
 	private: System::Windows::Forms::TabPage^ tabStocks;
 	private: System::Windows::Forms::TabPage^ tabStats;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+		
 	private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel10;
 	private: System::Windows::Forms::Button^ StatsButton;
 
@@ -123,24 +65,6 @@ namespace POO {
 	private: System::Windows::Forms::Button^ CommandesButton;
 
 	private: System::Windows::Forms::Button^ ClientButton;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 private: System::Windows::Forms::DataGridView^ dataGridView2;
 private: System::Windows::Forms::DataGridView^ dataGridView3;
@@ -236,75 +160,7 @@ private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel13;
 private: System::Windows::Forms::Button^ button10;
 private: System::Windows::Forms::Button^ button11;
 private: System::Windows::Forms::Button^ button12;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+private: System::Windows::Forms::DataGridView^ dataGridView5;
 
 
 
@@ -325,6 +181,7 @@ private: System::Windows::Forms::Button^ button12;
 		{
 			this->tabAffichage = (gcnew System::Windows::Forms::TabControl());
 			this->tabClient = (gcnew System::Windows::Forms::TabPage());
+			this->dataGridView5 = (gcnew System::Windows::Forms::DataGridView());
 			this->checkBox1 = (gcnew System::Windows::Forms::CheckBox());
 			this->dataGridView1 = (gcnew System::Windows::Forms::DataGridView());
 			this->tableLayoutPanel1 = (gcnew System::Windows::Forms::TableLayoutPanel());
@@ -414,6 +271,7 @@ private: System::Windows::Forms::Button^ button12;
 			this->ModifierClientButton = (gcnew System::Windows::Forms::Button());
 			this->tabAffichage->SuspendLayout();
 			this->tabClient->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView5))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
 			this->tableLayoutPanel1->SuspendLayout();
 			this->tableLayoutPanel15->SuspendLayout();
@@ -459,6 +317,7 @@ private: System::Windows::Forms::Button^ button12;
 			// 
 			// tabClient
 			// 
+			this->tabClient->Controls->Add(this->dataGridView5);
 			this->tabClient->Controls->Add(this->checkBox1);
 			this->tabClient->Controls->Add(this->dataGridView1);
 			this->tabClient->Controls->Add(this->tableLayoutPanel1);
@@ -472,10 +331,21 @@ private: System::Windows::Forms::Button^ button12;
 			this->tabClient->UseVisualStyleBackColor = true;
 			this->tabClient->Click += gcnew System::EventHandler(this, &MyForm::tabPage1_Click);
 			// 
+			// dataGridView5
+			// 
+			this->dataGridView5->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
+			this->dataGridView5->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->dataGridView5->Location = System::Drawing::Point(4, 4);
+			this->dataGridView5->Name = L"dataGridView5";
+			this->dataGridView5->RowHeadersWidth = 82;
+			this->dataGridView5->Size = System::Drawing::Size(2230, 897);
+			this->dataGridView5->TabIndex = 7;
+			this->dataGridView5->CellContentClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &MyForm::dataGridView5_CellContentClick);
+			// 
 			// checkBox1
 			// 
 			this->checkBox1->AutoSize = true;
-			this->checkBox1->Location = System::Drawing::Point(562, 262);
+			this->checkBox1->Location = System::Drawing::Point(391, 257);
 			this->checkBox1->Margin = System::Windows::Forms::Padding(4);
 			this->checkBox1->Name = L"checkBox1";
 			this->checkBox1->Size = System::Drawing::Size(151, 30);
@@ -1607,6 +1477,7 @@ private: System::Windows::Forms::Button^ button12;
 			this->tabAffichage->ResumeLayout(false);
 			this->tabClient->ResumeLayout(false);
 			this->tabClient->PerformLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView5))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->EndInit();
 			this->tableLayoutPanel1->ResumeLayout(false);
 			this->tableLayoutPanel15->ResumeLayout(false);
@@ -1691,6 +1562,8 @@ private: System::Void label4_Click(System::Object^ sender, System::EventArgs^ e)
 private: System::Void label8_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void tableLayoutPanel5_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
+}
+private: System::Void dataGridView5_CellContentClick(System::Object^ sender, System::Windows::Forms::DataGridViewCellEventArgs^ e) {
 }
 };
 }
