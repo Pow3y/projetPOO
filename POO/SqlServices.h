@@ -4,11 +4,10 @@
 ref class SqlServices
 {
 private:
-	System::Data::SqlClient::SqlConnection^ DataBaseCo;
+	static System::Data::SqlClient::SqlConnection^ DataBaseCo;
 public:
 	SqlServices();
 	~SqlServices();
-	Exception^ OpenDB();
-	bool CloseDB();
+	void ConnectDB();
 	System::Data::DataTable^ ExecuteSQL(String^);
 };

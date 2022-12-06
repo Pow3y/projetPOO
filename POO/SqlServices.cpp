@@ -4,8 +4,7 @@
 
 SqlServices::SqlServices()
 {
-	DataBaseCo = gcnew System::Data::SqlClient::SqlConnection();
-	DataBaseCo->ConnectionString = Login::ConnectionString;
+	
 }
 
 SqlServices::~SqlServices()
@@ -13,39 +12,16 @@ SqlServices::~SqlServices()
 	
 }
 
-Exception^ SqlServices::OpenDB()
-{
-    try
-    {
-        DataBaseCo->Open();
-        return nullptr;
-    }
-    catch (System::Data::SqlClient::SqlException^ e)
-    {
-        return e;
-    }
-}
-
-bool SqlServices::CloseDB()
-{
-	try
-	{
-		DataBaseCo->Close();
-		return true;
-	}
-	catch (System::Data::SqlClient::SqlException^ e)
-	{
-		return false;
-	}
+void SqlServices::ConnectDB() {
+		DataBaseCo = gcnew System::Data::SqlClient::SqlConnection(Login::ConnectionString);
+		DataBaseCo->Open();
 }
 
 System::Data::DataTable^ SqlServices::ExecuteSQL(String^ Query)
 {
-	
-	System::Data::SqlClient::SqlCommand^ SqlQuery = gcnew System::Data::SqlClient::SqlCommand(Query);
-	SqlQuery->Connection = DataBaseCo;
-	System::Data::DataTable^ table = gcnew System::Data::DataTable();
-	System::Data::SqlClient::SqlDataAdapter^ adapter = gcnew System::Data::SqlClient::SqlDataAdapter(SqlQuery);
-	adapter->Fill(table);
-	return table;
+	System::Data::SqlClient::SqlCommand^ cmd = gcnew System::Data::SqlClient::SqlCommand(Query, DataBaseCo);
+	System::Data::SqlClient::SqlDataReader^ reader = cmd->ExecuteReader();
+	System::Data::DataTable^ dt = gcnew System::Data::DataTable();
+	dt->Load(reader);
+	return dt;
 }
