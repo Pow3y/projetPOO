@@ -721,7 +721,6 @@ private: System::Windows::Forms::Label^ label22;
 			this->tabAffichage->SelectedIndex = 0;
 			this->tabAffichage->Size = System::Drawing::Size(1223, 472);
 			this->tabAffichage->TabIndex = 8;
-			this->tabAffichage->BorderBrush = null;
 			// 
 			// tabCommandes
 			// 
