@@ -21,7 +21,7 @@ void Clients::Create()
 {
     if (this->Exist())
     {
-        Windows::Forms::MessageBox::Show("Client already exist",MessageBoxIcon::Warning);
+        // 
     }
     else
     {

@@ -355,7 +355,6 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
             this->dataGridView6 = (gcnew System::Windows::Forms::DataGridView());
             this->tableLayoutPanel6 = (gcnew System::Windows::Forms::TableLayoutPanel());
             this->label22 = (gcnew System::Windows::Forms::Label());
-            this->checkBox1 = (gcnew System::Windows::Forms::CheckBox());
             this->tableLayoutPanelHotbar->SuspendLayout();
             this->panel1->SuspendLayout();
             this->tabAffichage->SuspendLayout();
@@ -672,7 +671,6 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
             // 
             this->tabClient->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(31)), static_cast<System::Int32>(static_cast<System::Byte>(32)),
                 static_cast<System::Int32>(static_cast<System::Byte>(69)));
-            this->tabClient->Controls->Add(this->checkBox1);
             this->tabClient->Controls->Add(this->tableLayoutPanel1);
             this->tabClient->Controls->Add(this->tableLayoutPanelClient);
             this->tabClient->Location = System::Drawing::Point(4, 29);
@@ -2027,16 +2025,6 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
             this->label22->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
             this->label22->Click += gcnew System::EventHandler(this, &MyForm::label22_Click);
             // 
-            // checkBox1
-            // 
-            this->checkBox1->AutoSize = true;
-            this->checkBox1->Location = System::Drawing::Point(8, 200);
-            this->checkBox1->Name = L"checkBox1";
-            this->checkBox1->Size = System::Drawing::Size(151, 30);
-            this->checkBox1->TabIndex = 7;
-            this->checkBox1->Text = L"checkBox1";
-            this->checkBox1->UseVisualStyleBackColor = true;
-            // 
             // MyForm
             // 
             this->AutoScaleDimensions = System::Drawing::SizeF(12, 25);
@@ -2200,7 +2188,7 @@ private: System::Void label22_Click(System::Object^ sender, System::EventArgs^ e
 }
 private: System::Void button6_Click(System::Object^ sender, System::EventArgs^ e) {
     MessageBox::Show(textBoxNomClient->Text);
-    Clients^ Client = gcnew Clients( textBoxIdClient , textBoxIdClient, textBoxIdClient, textBoxIdClient, textBoxIdClient, textBoxIdClient, textBoxIdClient, textBoxIdClient, textBoxIdClient);
+    Clients^ Client = gcnew Clients(textBoxClientId, textBoxNomClient, textBoxPrénomClient, textBoxNumRue, textBoxNomRue, textBoxNomRue, textBoxNomRue, textBoxNomRue, textBoxNomRue);
 }
 private: System::Void textBoxIdClient_TextChanged(System::Object^ sender, System::EventArgs^ e) {
 }
