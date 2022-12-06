@@ -715,6 +715,7 @@ private: System::Windows::Forms::Label^ label22;
 			// 
 			// dataGridView2
 			// 
+			this->dataGridView2->BackgroundColor = System::Drawing::SystemColors::ControlDarkDark;
 			this->dataGridView2->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
 			this->dataGridView2->Dock = System::Windows::Forms::DockStyle::Fill;
 			this->dataGridView2->Location = System::Drawing::Point(43, 33);
@@ -1896,7 +1897,7 @@ private: System::Windows::Forms::Label^ label22;
 			this->tableLayoutPanel6->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
 				40)));
 			this->tableLayoutPanel6->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Absolute,
-				21)));
+				23)));
 			this->tableLayoutPanel6->Controls->Add(this->label22, 2, 0);
 			this->tableLayoutPanel6->Dock = System::Windows::Forms::DockStyle::Top;
 			this->tableLayoutPanel6->Location = System::Drawing::Point(0, 0);
@@ -1989,7 +1990,8 @@ private: System::Windows::Forms::Label^ label22;
 		gridbind();
 	}
 	private: void gridbind() {
-		System::Data::SqlClient::SqlConnection^ con = gcnew System::Data::SqlClient::SqlConnection(Login::ConnectionString);
+		auto cs = Login::ConnectionString;
+		System::Data::SqlClient::SqlConnection^ con = gcnew System::Data::SqlClient::SqlConnection(cs);
 		con->Open();
 		SqlCommand^ cmd = gcnew SqlCommand("select * from Personnel",con);
 		SqlDataReader^ reader = cmd->ExecuteReader();
