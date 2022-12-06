@@ -4,12 +4,39 @@
 Clients::Clients(TextBox^ ID, TextBox^ LastName, TextBox^ Firstname, DateTimePicker^ BirthDate, TextBox^ NumAdr, TextBox^ NameStreet, TextBox^ Floor, TextBox^ City, TextBox^ PostalCode)
 {
     try {
-		this->ID = Convert::ToInt32(ID->Text);
+        this->ID = Convert::ToInt32(ID->Text);
     }
-	catch (Exception^ ex)
+	catch (Exception^ e)
 	{
-        MessageBox::Show("Le type de ID est incorrect il doit être de type INT");
+		MessageBox::Show("ID must be a number");
 	}
+    try {
+        this->AddressNum = Convert::ToInt32(NumAdr->Text);
+    }
+	catch (Exception^ e)
+	{
+		MessageBox::Show("Address number must be a number");
+	}
+    try {
+        this->AddressPostalCode = Convert::ToInt32(PostalCode->Text);
+
+        }
+	catch (Exception^ e)
+	{
+		MessageBox::Show("Postal code be a number");
+	}
+    try{
+	    this->AddressFloor = Convert::ToInt32(Floor->Text);
+	}
+	catch (Exception^ e)
+	{
+		MessageBox::Show("Floor must be a number");
+	}
+	this->FirstName = Firstname->Text;
+	this->LastName = LastName->Text;
+	this->AddressStreet = NameStreet->Text;
+	this->AddressCity = City->Text;
+	this->BirthDate = BirthDate->Value;
 }
 
 Clients::~Clients()

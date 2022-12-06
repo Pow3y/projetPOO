@@ -412,6 +412,8 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
             this->tableLayoutPanelHotbar->Controls->Add(this->CommandesButton, 2, 0);
             this->tableLayoutPanelHotbar->Dock = System::Windows::Forms::DockStyle::Top;
             this->tableLayoutPanelHotbar->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
+            this->tableLayoutPanelHotbar->Location = System::Drawing::Point(0, 60);
+            this->tableLayoutPanelHotbar->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
             this->tableLayoutPanelHotbar->Location = System::Drawing::Point(0, 38);
             this->tableLayoutPanelHotbar->Name = L"tableLayoutPanelHotbar";
             this->tableLayoutPanelHotbar->RowCount = 1;
@@ -451,7 +453,7 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
             this->ClientButton->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->ClientButton->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-            this->ClientButton->Location = System::Drawing::Point(3, 1);
+            this->ClientButton->Location = System::Drawing::Point(4, 1);
             this->ClientButton->Margin = System::Windows::Forms::Padding(1);
             this->ClientButton->Name = L"ClientButton";
             this->ClientButton->Size = System::Drawing::Size(279, 38);
@@ -709,7 +711,7 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
             this->dataGridView1->BackgroundColor = System::Drawing::Color::Black;
             this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
             this->dataGridView1->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->dataGridView1->Location = System::Drawing::Point(68, 31);
+            this->dataGridView1->Location = System::Drawing::Point(101, 48);
             this->dataGridView1->Margin = System::Windows::Forms::Padding(1);
             this->dataGridView1->Name = L"dataGridView1";
             this->dataGridView1->ReadOnly = true;
@@ -1104,7 +1106,7 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
             this->dataGridView2->BackgroundColor = System::Drawing::Color::Black;
             this->dataGridView2->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
             this->dataGridView2->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->dataGridView2->Location = System::Drawing::Point(68, 31);
+            this->dataGridView2->Location = System::Drawing::Point(101, 48);
             this->dataGridView2->Margin = System::Windows::Forms::Padding(1);
             this->dataGridView2->Name = L"dataGridView2";
             this->dataGridView2->ReadOnly = true;
@@ -1366,7 +1368,7 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
             this->dataGridView3->BackgroundColor = System::Drawing::Color::Black;
             this->dataGridView3->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
             this->dataGridView3->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->dataGridView3->Location = System::Drawing::Point(68, 31);
+            this->dataGridView3->Location = System::Drawing::Point(101, 48);
             this->dataGridView3->Margin = System::Windows::Forms::Padding(1);
             this->dataGridView3->Name = L"dataGridView3";
             this->dataGridView3->ReadOnly = true;
@@ -1656,7 +1658,7 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
             this->dataGridView4->BackgroundColor = System::Drawing::Color::Black;
             this->dataGridView4->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
             this->dataGridView4->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->dataGridView4->Location = System::Drawing::Point(68, 31);
+            this->dataGridView4->Location = System::Drawing::Point(101, 48);
             this->dataGridView4->Margin = System::Windows::Forms::Padding(1);
             this->dataGridView4->Name = L"dataGridView4";
             this->dataGridView4->ReadOnly = true;
@@ -2079,6 +2081,7 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
             this->dataGridView2->DataSource = DB->ExecuteSQL("Select Commands.Id_Command , Delivery_Date, Emissions_Date, Reference_command,Last_Client,First_Client,Birth_Date , A.Number_Adr AS Number_Adr_LIVRAISON , A.Street_Adr AS Street_Adr_LIVRAISON , A.Floor AS Floor_LIVRAISON , C.City_Name AS City_Name_LIVRAISON , C.Post_Code AS Post_Name_LIVRAISON,B.Number_Adr AS Number_Adr_FACTURATION , B.Street_Adr AS Street_Adr_FACTURATION , B.Floor AS Floor_FACTURATION , D.City_Name AS City_Name_FACTURATION , D.Post_Code AS Post_Name_FACTURATION , Include.quantity , Designate , Pay_Date , Price,Method_Name from[projetPOO].[dbo].[Commands] join [projetPOO].[dbo].[Client] ON Client.Id_Client = Commands.Id_Client join [projetPOO].[dbo].[Facturation] On Facturation.Id_Command = Commands.Id_Command join [projetPOO].[dbo].[Delivery] On Delivery.Id_Command = Commands.Id_Command join [projetPOO].[dbo].[Address] AS A ON A.Id_Adr = Facturation.Id_Adr join [projetPOO].[dbo].[Address] AS B ON B.Id_Adr = Delivery.Id_Adr join [projetPOO].[dbo].[residence_cities] AS C ON A.Id_City = C.Id_City join [projetPOO].[dbo].[residence_cities] AS D ON B.Id_City = D.Id_City join [projetPOO].[dbo].[Include]  ON Commands.Id_Command = Include.Id_Command join [projetPOO].[dbo].[Stocks]  ON Stocks.Id_Produit = Include.Id_Produit join [projetPOO].[dbo].[Payment_Details] On Payment_Details.Id_Command = Commands.Id_Command join [projetPOO].[dbo].[Payment_Methods] On Payment_Details.Id_Method = Payment_Methods.Id_Method");
             this->dataGridView3->DataSource = DB->ExecuteSQL("Select Personnel.Id_Personnel , LAST_Personnel , FIRST_Personnel , Hire_Date ,Id_Superior,  Number_Adr , Street_Adr,Floor , City_Name, Post_Code  FROM[projetPOO].[dbo].[Personnel] join[projetPOO].[dbo].[Live_InP] ON Live_InP.Id_Personnel = Personnel.Id_Personnel join[projetPOO].[dbo].[Address] ON Address.Id_Adr = Live_InP.Id_Adr join[projetPOO].[dbo].[residence_cities] ON residence_cities.Id_City = Address.Id_City");
             this->dataGridView4->DataSource = DB->ExecuteSQL("Select * FROM [projetPOO].[dbo].[Stocks] ");
+            delete DB;
         }
 		catch (const std::exception &)
 		{
@@ -2087,8 +2090,6 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
 	}
 	private: System::Void MyForm_Shown(System::Object^ sender, System::EventArgs^ e) {
 		Application::DoEvents();
-		this->dataGridView1->Refresh();
-		SqlServices^ DB = gcnew SqlServices();
 }
 
 	private: System::Void ClientButton_Click(System::Object^ sender, System::EventArgs^ e) {
@@ -2170,7 +2171,6 @@ private: System::Void tableLayoutPanelClient_Paint(System::Object^ sender, Syste
 private: System::Void label22_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void button6_Click(System::Object^ sender, System::EventArgs^ e) {
-    MessageBox::Show(textBoxNomClient->Text);
 	Clients^ Client = gcnew Clients(textBoxClientId, textBoxNomClient, textBoxPrénomClient, dateTimePickerBirthDate, textBoxNumRue, textBoxNomRue, textBoxEtage, textBoxVille, textBoxCodePostal);
 }
 private: System::Void textBoxIdClient_TextChanged(System::Object^ sender, System::EventArgs^ e) {
