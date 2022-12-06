@@ -412,7 +412,7 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
             this->tableLayoutPanelHotbar->Controls->Add(this->CommandesButton, 2, 0);
             this->tableLayoutPanelHotbar->Dock = System::Windows::Forms::DockStyle::Top;
             this->tableLayoutPanelHotbar->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
-            this->tableLayoutPanelHotbar->Location = System::Drawing::Point(0, 94);
+            this->tableLayoutPanelHotbar->Location = System::Drawing::Point(0, 60);
             this->tableLayoutPanelHotbar->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
             this->tableLayoutPanelHotbar->Name = L"tableLayoutPanelHotbar";
             this->tableLayoutPanelHotbar->RowCount = 1;
@@ -432,10 +432,10 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
             this->StatsButton->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->StatsButton->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-            this->StatsButton->Location = System::Drawing::Point(995, 1);
+            this->StatsButton->Location = System::Drawing::Point(996, 1);
             this->StatsButton->Margin = System::Windows::Forms::Padding(1);
             this->StatsButton->Name = L"StatsButton";
-            this->StatsButton->Size = System::Drawing::Size(249, 61);
+            this->StatsButton->Size = System::Drawing::Size(248, 61);
             this->StatsButton->TabIndex = 4;
             this->StatsButton->Text = L"Stats";
             this->StatsButton->UseVisualStyleBackColor = false;
@@ -452,7 +452,7 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
             this->ClientButton->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->ClientButton->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-            this->ClientButton->Location = System::Drawing::Point(3, 1);
+            this->ClientButton->Location = System::Drawing::Point(4, 1);
             this->ClientButton->Margin = System::Windows::Forms::Padding(1);
             this->ClientButton->Name = L"ClientButton";
             this->ClientButton->Size = System::Drawing::Size(246, 61);
@@ -472,7 +472,7 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
             this->StocksButton->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->StocksButton->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-            this->StocksButton->Location = System::Drawing::Point(747, 1);
+            this->StocksButton->Location = System::Drawing::Point(748, 1);
             this->StocksButton->Margin = System::Windows::Forms::Padding(1);
             this->StocksButton->Name = L"StocksButton";
             this->StocksButton->Size = System::Drawing::Size(246, 61);
@@ -492,7 +492,7 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
             this->EmployesButton->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->EmployesButton->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-            this->EmployesButton->Location = System::Drawing::Point(499, 1);
+            this->EmployesButton->Location = System::Drawing::Point(500, 1);
             this->EmployesButton->Margin = System::Windows::Forms::Padding(1);
             this->EmployesButton->Name = L"EmployesButton";
             this->EmployesButton->Size = System::Drawing::Size(246, 61);
@@ -512,7 +512,7 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
             this->CommandesButton->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->CommandesButton->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-            this->CommandesButton->Location = System::Drawing::Point(251, 1);
+            this->CommandesButton->Location = System::Drawing::Point(252, 1);
             this->CommandesButton->Margin = System::Windows::Forms::Padding(1);
             this->CommandesButton->Name = L"CommandesButton";
             this->CommandesButton->Size = System::Drawing::Size(246, 61);
@@ -659,7 +659,7 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
                 static_cast<System::Byte>(0)));
             this->tabAffichage->ImeMode = System::Windows::Forms::ImeMode::Off;
             this->tabAffichage->ItemSize = System::Drawing::Size(71, 25);
-            this->tabAffichage->Location = System::Drawing::Point(0, 192);
+            this->tabAffichage->Location = System::Drawing::Point(0, 123);
             this->tabAffichage->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
             this->tabAffichage->Name = L"tabAffichage";
             this->tabAffichage->RightToLeft = System::Windows::Forms::RightToLeft::No;
@@ -695,7 +695,7 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
                 100)));
             this->tableLayoutPanel1->Controls->Add(this->dataGridView1, 1, 1);
             this->tableLayoutPanel1->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->tableLayoutPanel1->Location = System::Drawing::Point(2, 2);
+            this->tableLayoutPanel1->Location = System::Drawing::Point(1, 1);
             this->tableLayoutPanel1->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
             this->tableLayoutPanel1->Name = L"tableLayoutPanel1";
             this->tableLayoutPanel1->RowCount = 3;
@@ -714,13 +714,13 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
             this->dataGridView1->BackgroundColor = System::Drawing::Color::Black;
             this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
             this->dataGridView1->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->dataGridView1->Location = System::Drawing::Point(68, 31);
+            this->dataGridView1->Location = System::Drawing::Point(101, 48);
             this->dataGridView1->Margin = System::Windows::Forms::Padding(1);
             this->dataGridView1->Name = L"dataGridView1";
             this->dataGridView1->ReadOnly = true;
             this->dataGridView1->RowHeadersWidth = 51;
             this->dataGridView1->RowTemplate->Height = 24;
-            this->dataGridView1->Size = System::Drawing::Size(1099, 213);
+            this->dataGridView1->Size = System::Drawing::Size(1033, 196);
             this->dataGridView1->TabIndex = 4;
             this->dataGridView1->CellClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &MyForm::dataGridView1_CellClick);
             // 
@@ -773,10 +773,10 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
             this->button3->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
             this->button3->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.9F));
             this->button3->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-            this->button3->Location = System::Drawing::Point(4, 103);
+            this->button3->Location = System::Drawing::Point(4, 68);
             this->button3->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
             this->button3->Name = L"button3";
-            this->button3->Size = System::Drawing::Size(235, 57);
+            this->button3->Size = System::Drawing::Size(233, 53);
             this->button3->TabIndex = 5;
             this->button3->Text = L"Modifier";
             this->button3->UseVisualStyleBackColor = false;
@@ -793,7 +793,7 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
             this->button6->Location = System::Drawing::Point(4, 5);
             this->button6->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
             this->button6->Name = L"button6";
-            this->button6->Size = System::Drawing::Size(235, 57);
+            this->button6->Size = System::Drawing::Size(233, 53);
             this->button6->TabIndex = 2;
             this->button6->Text = L"Ajouter";
             this->button6->UseVisualStyleBackColor = false;
@@ -854,7 +854,7 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
                 33.33333F)));
             this->tableLayoutPanelDetailClient->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent,
                 33.33333F)));
-            this->tableLayoutPanelDetailClient->Size = System::Drawing::Size(982, 126);
+            this->tableLayoutPanelDetailClient->Size = System::Drawing::Size(980, 122);
             this->tableLayoutPanelDetailClient->TabIndex = 2;
             this->tableLayoutPanelDetailClient->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &MyForm::tableLayoutPanel15_Paint);
             // 
@@ -865,10 +865,10 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
             this->labelClientId->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.9F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->labelClientId->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-            this->labelClientId->Location = System::Drawing::Point(2, 90);
+            this->labelClientId->Location = System::Drawing::Point(2, 91);
             this->labelClientId->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
             this->labelClientId->Name = L"labelClientId";
-            this->labelClientId->Size = System::Drawing::Size(96, 36);
+            this->labelClientId->Size = System::Drawing::Size(151, 31);
             this->labelClientId->TabIndex = 27;
             this->labelClientId->Text = L"Client ID :";
             // 
@@ -879,10 +879,10 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
             this->labelBirthDateClient->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.9F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->labelBirthDateClient->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-            this->labelBirthDateClient->Location = System::Drawing::Point(316, 55);
+            this->labelBirthDateClient->Location = System::Drawing::Point(312, 61);
             this->labelBirthDateClient->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
             this->labelBirthDateClient->Name = L"labelBirthDateClient";
-            this->labelBirthDateClient->Size = System::Drawing::Size(138, 35);
+            this->labelBirthDateClient->Size = System::Drawing::Size(215, 30);
             this->labelBirthDateClient->TabIndex = 17;
             this->labelBirthDateClient->Text = L"Date de naissance :";
             // 
@@ -893,29 +893,29 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
             this->labelPrenomClient->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.9F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->labelPrenomClient->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-            this->labelPrenomClient->Location = System::Drawing::Point(317, 20);
+            this->labelPrenomClient->Location = System::Drawing::Point(313, 31);
             this->labelPrenomClient->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
             this->labelPrenomClient->Name = L"labelPrenomClient";
-            this->labelPrenomClient->Size = System::Drawing::Size(136, 35);
+            this->labelPrenomClient->Size = System::Drawing::Size(213, 30);
             this->labelPrenomClient->TabIndex = 16;
             this->labelPrenomClient->Text = L"Prénom :";
             // 
             // textBoxPrénomClient
             // 
             this->textBoxPrénomClient->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->textBoxPrénomClient->Location = System::Drawing::Point(457, 22);
+            this->textBoxPrénomClient->Location = System::Drawing::Point(530, 33);
             this->textBoxPrénomClient->Margin = System::Windows::Forms::Padding(2);
             this->textBoxPrénomClient->Name = L"textBoxPrénomClient";
-            this->textBoxPrénomClient->Size = System::Drawing::Size(191, 22);
+            this->textBoxPrénomClient->Size = System::Drawing::Size(122, 31);
             this->textBoxPrénomClient->TabIndex = 14;
             // 
             // textBoxCodePostal
             // 
             this->textBoxCodePostal->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->textBoxCodePostal->Location = System::Drawing::Point(101, 56);
+            this->textBoxCodePostal->Location = System::Drawing::Point(156, 62);
             this->textBoxCodePostal->Margin = System::Windows::Forms::Padding(1);
             this->textBoxCodePostal->Name = L"textBoxCodePostal";
-            this->textBoxCodePostal->Size = System::Drawing::Size(193, 22);
+            this->textBoxCodePostal->Size = System::Drawing::Size(124, 31);
             this->textBoxCodePostal->TabIndex = 11;
             // 
             // labelCodePostalClient
@@ -925,10 +925,10 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
             this->labelCodePostalClient->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.9F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->labelCodePostalClient->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-            this->labelCodePostalClient->Location = System::Drawing::Point(2, 55);
+            this->labelCodePostalClient->Location = System::Drawing::Point(2, 61);
             this->labelCodePostalClient->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
             this->labelCodePostalClient->Name = L"labelCodePostalClient";
-            this->labelCodePostalClient->Size = System::Drawing::Size(96, 35);
+            this->labelCodePostalClient->Size = System::Drawing::Size(151, 30);
             this->labelCodePostalClient->TabIndex = 10;
             this->labelCodePostalClient->Text = L"Code postal :";
             this->labelCodePostalClient->Click += gcnew System::EventHandler(this, &MyForm::label4_Click);
@@ -936,20 +936,20 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
             // textBoxNomClient
             // 
             this->textBoxNomClient->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->textBoxNomClient->Location = System::Drawing::Point(102, 22);
+            this->textBoxNomClient->Location = System::Drawing::Point(157, 33);
             this->textBoxNomClient->Margin = System::Windows::Forms::Padding(2);
             this->textBoxNomClient->Name = L"textBoxNomClient";
-            this->textBoxNomClient->Size = System::Drawing::Size(191, 22);
+            this->textBoxNomClient->Size = System::Drawing::Size(122, 31);
             this->textBoxNomClient->TabIndex = 2;
             // 
             // dateTimePickerBirthDate
             // 
             this->dateTimePickerBirthDate->Dock = System::Windows::Forms::DockStyle::Fill;
             this->dateTimePickerBirthDate->Format = System::Windows::Forms::DateTimePickerFormat::Custom;
-            this->dateTimePickerBirthDate->Location = System::Drawing::Point(456, 56);
+            this->dateTimePickerBirthDate->Location = System::Drawing::Point(529, 62);
             this->dateTimePickerBirthDate->Margin = System::Windows::Forms::Padding(1);
             this->dateTimePickerBirthDate->Name = L"dateTimePickerBirthDate";
-            this->dateTimePickerBirthDate->Size = System::Drawing::Size(193, 22);
+            this->dateTimePickerBirthDate->Size = System::Drawing::Size(124, 31);
             this->dateTimePickerBirthDate->TabIndex = 18;
             // 
             // labelNumDeRueClient
@@ -959,10 +959,10 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
             this->labelNumDeRueClient->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.9F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->labelNumDeRueClient->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-            this->labelNumDeRueClient->Location = System::Drawing::Point(672, 20);
+            this->labelNumDeRueClient->Location = System::Drawing::Point(686, 31);
             this->labelNumDeRueClient->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
             this->labelNumDeRueClient->Name = L"labelNumDeRueClient";
-            this->labelNumDeRueClient->Size = System::Drawing::Size(96, 35);
+            this->labelNumDeRueClient->Size = System::Drawing::Size(152, 30);
             this->labelNumDeRueClient->TabIndex = 19;
             this->labelNumDeRueClient->Text = L"Num de rue :";
             // 
@@ -973,29 +973,29 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
             this->labelNomDeRueClient->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.9F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->labelNomDeRueClient->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-            this->labelNomDeRueClient->Location = System::Drawing::Point(671, 55);
+            this->labelNomDeRueClient->Location = System::Drawing::Point(685, 61);
             this->labelNomDeRueClient->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
             this->labelNomDeRueClient->Name = L"labelNomDeRueClient";
-            this->labelNomDeRueClient->Size = System::Drawing::Size(98, 35);
+            this->labelNomDeRueClient->Size = System::Drawing::Size(154, 30);
             this->labelNomDeRueClient->TabIndex = 20;
             this->labelNomDeRueClient->Text = L"Nom de rue :";
             // 
             // textBoxNumRue
             // 
             this->textBoxNumRue->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->textBoxNumRue->Location = System::Drawing::Point(772, 22);
+            this->textBoxNumRue->Location = System::Drawing::Point(842, 33);
             this->textBoxNumRue->Margin = System::Windows::Forms::Padding(2);
             this->textBoxNumRue->Name = L"textBoxNumRue";
-            this->textBoxNumRue->Size = System::Drawing::Size(191, 22);
+            this->textBoxNumRue->Size = System::Drawing::Size(122, 31);
             this->textBoxNumRue->TabIndex = 21;
             // 
             // textBoxNomRue
             // 
             this->textBoxNomRue->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->textBoxNomRue->Location = System::Drawing::Point(771, 56);
+            this->textBoxNomRue->Location = System::Drawing::Point(841, 62);
             this->textBoxNomRue->Margin = System::Windows::Forms::Padding(1);
             this->textBoxNomRue->Name = L"textBoxNomRue";
-            this->textBoxNomRue->Size = System::Drawing::Size(193, 22);
+            this->textBoxNomRue->Size = System::Drawing::Size(124, 31);
             this->textBoxNomRue->TabIndex = 22;
             // 
             // labelNomClient
@@ -1008,7 +1008,7 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
             this->labelNomClient->Location = System::Drawing::Point(4, 31);
             this->labelNomClient->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
             this->labelNomClient->Name = L"labelNomClient";
-            this->labelNomClient->Size = System::Drawing::Size(94, 35);
+            this->labelNomClient->Size = System::Drawing::Size(147, 30);
             this->labelNomClient->TabIndex = 6;
             this->labelNomClient->Text = L"Nom :";
             this->labelNomClient->Click += gcnew System::EventHandler(this, &MyForm::label1_Click_1);
@@ -1016,10 +1016,10 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
             // textBoxClientId
             // 
             this->textBoxClientId->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->textBoxClientId->Location = System::Drawing::Point(101, 91);
+            this->textBoxClientId->Location = System::Drawing::Point(156, 92);
             this->textBoxClientId->Margin = System::Windows::Forms::Padding(1);
             this->textBoxClientId->Name = L"textBoxClientId";
-            this->textBoxClientId->Size = System::Drawing::Size(193, 22);
+            this->textBoxClientId->Size = System::Drawing::Size(124, 31);
             this->textBoxClientId->TabIndex = 28;
             // 
             // labelEtageClient
@@ -1029,20 +1029,20 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
             this->labelEtageClient->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.9F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->labelEtageClient->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-            this->labelEtageClient->Location = System::Drawing::Point(317, 90);
+            this->labelEtageClient->Location = System::Drawing::Point(313, 91);
             this->labelEtageClient->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
             this->labelEtageClient->Name = L"labelEtageClient";
-            this->labelEtageClient->Size = System::Drawing::Size(136, 36);
+            this->labelEtageClient->Size = System::Drawing::Size(213, 31);
             this->labelEtageClient->TabIndex = 23;
             this->labelEtageClient->Text = L"Etage :";
             // 
             // textBoxEtage
             // 
             this->textBoxEtage->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->textBoxEtage->Location = System::Drawing::Point(457, 92);
+            this->textBoxEtage->Location = System::Drawing::Point(530, 93);
             this->textBoxEtage->Margin = System::Windows::Forms::Padding(2);
             this->textBoxEtage->Name = L"textBoxEtage";
-            this->textBoxEtage->Size = System::Drawing::Size(191, 22);
+            this->textBoxEtage->Size = System::Drawing::Size(122, 31);
             this->textBoxEtage->TabIndex = 25;
             // 
             // labelVilleClient
@@ -1052,20 +1052,20 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
             this->labelVilleClient->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.9F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->labelVilleClient->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-            this->labelVilleClient->Location = System::Drawing::Point(672, 90);
+            this->labelVilleClient->Location = System::Drawing::Point(686, 91);
             this->labelVilleClient->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
             this->labelVilleClient->Name = L"labelVilleClient";
-            this->labelVilleClient->Size = System::Drawing::Size(96, 36);
+            this->labelVilleClient->Size = System::Drawing::Size(152, 31);
             this->labelVilleClient->TabIndex = 24;
             this->labelVilleClient->Text = L" Ville :";
             // 
             // textBoxVille
             // 
             this->textBoxVille->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->textBoxVille->Location = System::Drawing::Point(772, 92);
+            this->textBoxVille->Location = System::Drawing::Point(842, 93);
             this->textBoxVille->Margin = System::Windows::Forms::Padding(2);
             this->textBoxVille->Name = L"textBoxVille";
-            this->textBoxVille->Size = System::Drawing::Size(191, 22);
+            this->textBoxVille->Size = System::Drawing::Size(122, 31);
             this->textBoxVille->TabIndex = 26;
             // 
             // tabCommandes
@@ -1098,7 +1098,7 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
                 100)));
             this->tableLayoutPanel2->Controls->Add(this->dataGridView2, 1, 1);
             this->tableLayoutPanel2->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->tableLayoutPanel2->Location = System::Drawing::Point(2, 2);
+            this->tableLayoutPanel2->Location = System::Drawing::Point(1, 1);
             this->tableLayoutPanel2->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
             this->tableLayoutPanel2->Name = L"tableLayoutPanel2";
             this->tableLayoutPanel2->RowCount = 3;
@@ -1116,13 +1116,13 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
             this->dataGridView2->BackgroundColor = System::Drawing::Color::Black;
             this->dataGridView2->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
             this->dataGridView2->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->dataGridView2->Location = System::Drawing::Point(68, 31);
+            this->dataGridView2->Location = System::Drawing::Point(101, 48);
             this->dataGridView2->Margin = System::Windows::Forms::Padding(1);
             this->dataGridView2->Name = L"dataGridView2";
             this->dataGridView2->ReadOnly = true;
             this->dataGridView2->RowHeadersWidth = 51;
             this->dataGridView2->RowTemplate->Height = 24;
-            this->dataGridView2->Size = System::Drawing::Size(1099, 213);
+            this->dataGridView2->Size = System::Drawing::Size(1033, 196);
             this->dataGridView2->TabIndex = 5;
             // 
             // checkBox2
@@ -1192,7 +1192,7 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
                 50)));
             this->tableLayoutPanelDetailsCommand->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent,
                 50)));
-            this->tableLayoutPanelDetailsCommand->Size = System::Drawing::Size(982, 126);
+            this->tableLayoutPanelDetailsCommand->Size = System::Drawing::Size(980, 122);
             this->tableLayoutPanelDetailsCommand->TabIndex = 2;
             // 
             // labelDateEmission
@@ -1201,9 +1201,9 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
             this->labelDateEmission->Dock = System::Windows::Forms::DockStyle::Fill;
             this->labelDateEmission->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.9F));
             this->labelDateEmission->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-            this->labelDateEmission->Location = System::Drawing::Point(512, 20);
+            this->labelDateEmission->Location = System::Drawing::Point(521, 31);
             this->labelDateEmission->Name = L"labelDateEmission";
-            this->labelDateEmission->Size = System::Drawing::Size(234, 82);
+            this->labelDateEmission->Size = System::Drawing::Size(234, 45);
             this->labelDateEmission->TabIndex = 16;
             this->labelDateEmission->Text = L"Date d\'émission :";
             // 
@@ -1213,10 +1213,10 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
             this->labelDateLivraisonClient->Dock = System::Windows::Forms::DockStyle::Fill;
             this->labelDateLivraisonClient->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.9F));
             this->labelDateLivraisonClient->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-            this->labelDateLivraisonClient->Location = System::Drawing::Point(4, 113);
+            this->labelDateLivraisonClient->Location = System::Drawing::Point(4, 76);
             this->labelDateLivraisonClient->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
             this->labelDateLivraisonClient->Name = L"labelDateLivraisonClient";
-            this->labelDateLivraisonClient->Size = System::Drawing::Size(254, 83);
+            this->labelDateLivraisonClient->Size = System::Drawing::Size(254, 46);
             this->labelDateLivraisonClient->TabIndex = 10;
             this->labelDateLivraisonClient->Text = L"Date de livraison :";
             // 
@@ -1226,7 +1226,7 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
             this->textBox9->Location = System::Drawing::Point(266, 36);
             this->textBox9->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
             this->textBox9->Name = L"textBox9";
-            this->textBox9->Size = System::Drawing::Size(311, 22);
+            this->textBox9->Size = System::Drawing::Size(214, 31);
             this->textBox9->TabIndex = 2;
             // 
             // labelReferenceCommandeCommande
@@ -1238,7 +1238,7 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
             this->labelReferenceCommandeCommande->Location = System::Drawing::Point(4, 31);
             this->labelReferenceCommandeCommande->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
             this->labelReferenceCommandeCommande->Name = L"labelReferenceCommandeCommande";
-            this->labelReferenceCommandeCommande->Size = System::Drawing::Size(254, 82);
+            this->labelReferenceCommandeCommande->Size = System::Drawing::Size(254, 45);
             this->labelReferenceCommandeCommande->TabIndex = 6;
             this->labelReferenceCommandeCommande->Text = L"Référence commande :";
             this->labelReferenceCommandeCommande->Click += gcnew System::EventHandler(this, &MyForm::label8_Click);
@@ -1248,10 +1248,10 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
             this->dateTimePickerDelivery->CustomFormat = L"";
             this->dateTimePickerDelivery->Dock = System::Windows::Forms::DockStyle::Fill;
             this->dateTimePickerDelivery->Format = System::Windows::Forms::DateTimePickerFormat::Custom;
-            this->dateTimePickerDelivery->Location = System::Drawing::Point(266, 118);
+            this->dateTimePickerDelivery->Location = System::Drawing::Point(266, 81);
             this->dateTimePickerDelivery->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
             this->dateTimePickerDelivery->Name = L"dateTimePickerDelivery";
-            this->dateTimePickerDelivery->Size = System::Drawing::Size(311, 22);
+            this->dateTimePickerDelivery->Size = System::Drawing::Size(214, 31);
             this->dateTimePickerDelivery->TabIndex = 17;
             // 
             // dateTimePickerEmission
@@ -1259,9 +1259,9 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
             this->dateTimePickerEmission->CustomFormat = L"";
             this->dateTimePickerEmission->Dock = System::Windows::Forms::DockStyle::Fill;
             this->dateTimePickerEmission->Format = System::Windows::Forms::DateTimePickerFormat::Custom;
-            this->dateTimePickerEmission->Location = System::Drawing::Point(667, 23);
+            this->dateTimePickerEmission->Location = System::Drawing::Point(761, 34);
             this->dateTimePickerEmission->Name = L"dateTimePickerEmission";
-            this->dateTimePickerEmission->Size = System::Drawing::Size(312, 22);
+            this->dateTimePickerEmission->Size = System::Drawing::Size(216, 31);
             this->dateTimePickerEmission->TabIndex = 18;
             // 
             // labelAdresseLivraison
@@ -1270,18 +1270,18 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
             this->labelAdresseLivraison->Dock = System::Windows::Forms::DockStyle::Fill;
             this->labelAdresseLivraison->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.9F));
             this->labelAdresseLivraison->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-            this->labelAdresseLivraison->Location = System::Drawing::Point(512, 73);
+            this->labelAdresseLivraison->Location = System::Drawing::Point(521, 76);
             this->labelAdresseLivraison->Name = L"labelAdresseLivraison";
-            this->labelAdresseLivraison->Size = System::Drawing::Size(234, 83);
+            this->labelAdresseLivraison->Size = System::Drawing::Size(234, 46);
             this->labelAdresseLivraison->TabIndex = 19;
             this->labelAdresseLivraison->Text = L"Adresse de livraison :";
             // 
             // textBox7
             // 
             this->textBox7->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->textBox7->Location = System::Drawing::Point(667, 76);
+            this->textBox7->Location = System::Drawing::Point(761, 79);
             this->textBox7->Name = L"textBox7";
-            this->textBox7->Size = System::Drawing::Size(312, 22);
+            this->textBox7->Size = System::Drawing::Size(216, 31);
             this->textBox7->TabIndex = 20;
             // 
             // tableLayoutPanelModCommand
@@ -1311,10 +1311,10 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
             this->ModifyCommandButton->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
             this->ModifyCommandButton->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.9F));
             this->ModifyCommandButton->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-            this->ModifyCommandButton->Location = System::Drawing::Point(4, 103);
+            this->ModifyCommandButton->Location = System::Drawing::Point(4, 68);
             this->ModifyCommandButton->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
             this->ModifyCommandButton->Name = L"ModifyCommandButton";
-            this->ModifyCommandButton->Size = System::Drawing::Size(235, 57);
+            this->ModifyCommandButton->Size = System::Drawing::Size(233, 53);
             this->ModifyCommandButton->TabIndex = 5;
             this->ModifyCommandButton->Text = L"Modifier";
             this->ModifyCommandButton->UseVisualStyleBackColor = false;
@@ -1331,7 +1331,7 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
             this->AddCommandButton->Location = System::Drawing::Point(4, 5);
             this->AddCommandButton->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
             this->AddCommandButton->Name = L"AddCommandButton";
-            this->AddCommandButton->Size = System::Drawing::Size(235, 57);
+            this->AddCommandButton->Size = System::Drawing::Size(233, 53);
             this->AddCommandButton->TabIndex = 2;
             this->AddCommandButton->Text = L"Ajouter";
             this->AddCommandButton->UseVisualStyleBackColor = false;
@@ -1364,7 +1364,7 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
                 100)));
             this->tableLayoutPanel3->Controls->Add(this->dataGridView3, 1, 1);
             this->tableLayoutPanel3->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->tableLayoutPanel3->Location = System::Drawing::Point(2, 2);
+            this->tableLayoutPanel3->Location = System::Drawing::Point(1, 1);
             this->tableLayoutPanel3->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
             this->tableLayoutPanel3->Name = L"tableLayoutPanel3";
             this->tableLayoutPanel3->RowCount = 3;
@@ -1382,13 +1382,13 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
             this->dataGridView3->BackgroundColor = System::Drawing::Color::Black;
             this->dataGridView3->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
             this->dataGridView3->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->dataGridView3->Location = System::Drawing::Point(68, 31);
+            this->dataGridView3->Location = System::Drawing::Point(101, 48);
             this->dataGridView3->Margin = System::Windows::Forms::Padding(1);
             this->dataGridView3->Name = L"dataGridView3";
             this->dataGridView3->ReadOnly = true;
             this->dataGridView3->RowHeadersWidth = 51;
             this->dataGridView3->RowTemplate->Height = 24;
-            this->dataGridView3->Size = System::Drawing::Size(1099, 220);
+            this->dataGridView3->Size = System::Drawing::Size(1033, 203);
             this->dataGridView3->TabIndex = 5;
             // 
             // checkBox3
@@ -1515,7 +1515,7 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
                 50)));
             this->tableLayoutPanelDetailEmployes->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent,
                 50)));
-            this->tableLayoutPanelDetailEmployes->Size = System::Drawing::Size(982, 126);
+            this->tableLayoutPanelDetailEmployes->Size = System::Drawing::Size(980, 122);
             this->tableLayoutPanelDetailEmployes->TabIndex = 2;
             // 
             // labelPrenomEmployes
@@ -1524,18 +1524,18 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
             this->labelPrenomEmployes->Dock = System::Windows::Forms::DockStyle::Fill;
             this->labelPrenomEmployes->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.9F));
             this->labelPrenomEmployes->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-            this->labelPrenomEmployes->Location = System::Drawing::Point(342, 20);
+            this->labelPrenomEmployes->Location = System::Drawing::Point(393, 31);
             this->labelPrenomEmployes->Name = L"labelPrenomEmployes";
-            this->labelPrenomEmployes->Size = System::Drawing::Size(124, 82);
+            this->labelPrenomEmployes->Size = System::Drawing::Size(124, 45);
             this->labelPrenomEmployes->TabIndex = 16;
             this->labelPrenomEmployes->Text = L"Prénom :";
             // 
             // textBox6
             // 
             this->textBox6->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->textBox6->Location = System::Drawing::Point(427, 23);
+            this->textBox6->Location = System::Drawing::Point(523, 34);
             this->textBox6->Name = L"textBox6";
-            this->textBox6->Size = System::Drawing::Size(173, 22);
+            this->textBox6->Size = System::Drawing::Size(137, 31);
             this->textBox6->TabIndex = 14;
             // 
             // labelDateEmbaucheEmployes
@@ -1544,9 +1544,9 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
             this->labelDateEmbaucheEmployes->Dock = System::Windows::Forms::DockStyle::Fill;
             this->labelDateEmbaucheEmployes->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.9F));
             this->labelDateEmbaucheEmployes->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-            this->labelDateEmbaucheEmployes->Location = System::Drawing::Point(3, 113);
+            this->labelDateEmbaucheEmployes->Location = System::Drawing::Point(3, 76);
             this->labelDateEmbaucheEmployes->Name = L"labelDateEmbaucheEmployes";
-            this->labelDateEmbaucheEmployes->Size = System::Drawing::Size(211, 83);
+            this->labelDateEmbaucheEmployes->Size = System::Drawing::Size(211, 46);
             this->labelDateEmbaucheEmployes->TabIndex = 10;
             this->labelDateEmbaucheEmployes->Text = L"Date d\'embauche :";
             // 
@@ -1556,7 +1556,7 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
             this->textBox11->Location = System::Drawing::Point(221, 36);
             this->textBox11->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
             this->textBox11->Name = L"textBox11";
-            this->textBox11->Size = System::Drawing::Size(173, 22);
+            this->textBox11->Size = System::Drawing::Size(135, 31);
             this->textBox11->TabIndex = 2;
             // 
             // labelNomEmployes
@@ -1568,7 +1568,7 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
             this->labelNomEmployes->Location = System::Drawing::Point(4, 31);
             this->labelNomEmployes->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
             this->labelNomEmployes->Name = L"labelNomEmployes";
-            this->labelNomEmployes->Size = System::Drawing::Size(209, 82);
+            this->labelNomEmployes->Size = System::Drawing::Size(209, 45);
             this->labelNomEmployes->TabIndex = 6;
             this->labelNomEmployes->Text = L"Nom :";
             // 
@@ -1578,27 +1578,27 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
             this->labelSuperieurEmployes->Dock = System::Windows::Forms::DockStyle::Fill;
             this->labelSuperieurEmployes->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.9F));
             this->labelSuperieurEmployes->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-            this->labelSuperieurEmployes->Location = System::Drawing::Point(341, 73);
+            this->labelSuperieurEmployes->Location = System::Drawing::Point(392, 76);
             this->labelSuperieurEmployes->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
             this->labelSuperieurEmployes->Name = L"labelSuperieurEmployes";
-            this->labelSuperieurEmployes->Size = System::Drawing::Size(126, 83);
+            this->labelSuperieurEmployes->Size = System::Drawing::Size(126, 46);
             this->labelSuperieurEmployes->TabIndex = 17;
             this->labelSuperieurEmployes->Text = L"Supérieur :";
             // 
             // textBox15
             // 
             this->textBox15->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->textBox15->Location = System::Drawing::Point(427, 76);
+            this->textBox15->Location = System::Drawing::Point(523, 79);
             this->textBox15->Name = L"textBox15";
-            this->textBox15->Size = System::Drawing::Size(173, 22);
+            this->textBox15->Size = System::Drawing::Size(137, 31);
             this->textBox15->TabIndex = 18;
             // 
             // textBox8
             // 
             this->textBox8->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->textBox8->Location = System::Drawing::Point(805, 23);
+            this->textBox8->Location = System::Drawing::Point(839, 34);
             this->textBox8->Name = L"textBox8";
-            this->textBox8->Size = System::Drawing::Size(174, 22);
+            this->textBox8->Size = System::Drawing::Size(138, 31);
             this->textBox8->TabIndex = 19;
             // 
             // labelAdressePostaleEmployes
@@ -1607,19 +1607,19 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
             this->labelAdressePostaleEmployes->Dock = System::Windows::Forms::DockStyle::Fill;
             this->labelAdressePostaleEmployes->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.9F));
             this->labelAdressePostaleEmployes->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-            this->labelAdressePostaleEmployes->Location = System::Drawing::Point(626, 20);
+            this->labelAdressePostaleEmployes->Location = System::Drawing::Point(696, 31);
             this->labelAdressePostaleEmployes->Name = L"labelAdressePostaleEmployes";
-            this->labelAdressePostaleEmployes->Size = System::Drawing::Size(173, 53);
+            this->labelAdressePostaleEmployes->Size = System::Drawing::Size(137, 45);
             this->labelAdressePostaleEmployes->TabIndex = 20;
             this->labelAdressePostaleEmployes->Text = L"Adresse postale :";
             // 
             // dateTimePickerHiring
             // 
             this->dateTimePickerHiring->Format = System::Windows::Forms::DateTimePickerFormat::Custom;
-            this->dateTimePickerHiring->Location = System::Drawing::Point(141, 74);
+            this->dateTimePickerHiring->Location = System::Drawing::Point(218, 77);
             this->dateTimePickerHiring->Margin = System::Windows::Forms::Padding(1);
             this->dateTimePickerHiring->Name = L"dateTimePickerHiring";
-            this->dateTimePickerHiring->Size = System::Drawing::Size(162, 31);
+            this->dateTimePickerHiring->Size = System::Drawing::Size(141, 31);
             this->dateTimePickerHiring->TabIndex = 21;
             // 
             // tabStocks
@@ -1650,7 +1650,7 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
                 100)));
             this->tableLayoutPanel4->Controls->Add(this->dataGridView4, 1, 1);
             this->tableLayoutPanel4->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->tableLayoutPanel4->Location = System::Drawing::Point(2, 2);
+            this->tableLayoutPanel4->Location = System::Drawing::Point(1, 1);
             this->tableLayoutPanel4->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
             this->tableLayoutPanel4->Name = L"tableLayoutPanel4";
             this->tableLayoutPanel4->RowCount = 3;
@@ -1672,13 +1672,13 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
             this->dataGridView4->BackgroundColor = System::Drawing::Color::Black;
             this->dataGridView4->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
             this->dataGridView4->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->dataGridView4->Location = System::Drawing::Point(68, 31);
+            this->dataGridView4->Location = System::Drawing::Point(101, 48);
             this->dataGridView4->Margin = System::Windows::Forms::Padding(1);
             this->dataGridView4->Name = L"dataGridView4";
             this->dataGridView4->ReadOnly = true;
             this->dataGridView4->RowHeadersWidth = 51;
             this->dataGridView4->RowTemplate->Height = 24;
-            this->dataGridView4->Size = System::Drawing::Size(1099, 213);
+            this->dataGridView4->Size = System::Drawing::Size(1033, 185);
             this->dataGridView4->TabIndex = 5;
             // 
             // checkBox4
@@ -1806,7 +1806,7 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
                 50)));
             this->tableLayoutPanelDetailStocks->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent,
                 50)));
-            this->tableLayoutPanelDetailStocks->Size = System::Drawing::Size(982, 126);
+            this->tableLayoutPanelDetailStocks->Size = System::Drawing::Size(980, 122);
             this->tableLayoutPanelDetailStocks->TabIndex = 2;
             // 
             // labelDesignationStocks
@@ -1815,27 +1815,27 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
             this->labelDesignationStocks->Dock = System::Windows::Forms::DockStyle::Fill;
             this->labelDesignationStocks->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.9F));
             this->labelDesignationStocks->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-            this->labelDesignationStocks->Location = System::Drawing::Point(329, 20);
+            this->labelDesignationStocks->Location = System::Drawing::Point(330, 31);
             this->labelDesignationStocks->Name = L"labelDesignationStocks";
-            this->labelDesignationStocks->Size = System::Drawing::Size(327, 82);
+            this->labelDesignationStocks->Size = System::Drawing::Size(327, 45);
             this->labelDesignationStocks->TabIndex = 16;
             this->labelDesignationStocks->Text = L"Désignation :";
             // 
             // textBox12
             // 
             this->textBox12->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->textBox12->Location = System::Drawing::Point(544, 23);
+            this->textBox12->Location = System::Drawing::Point(663, 34);
             this->textBox12->Name = L"textBox12";
-            this->textBox12->Size = System::Drawing::Size(150, 22);
+            this->textBox12->Size = System::Drawing::Size(60, 31);
             this->textBox12->TabIndex = 14;
             // 
             // textBox13
             // 
             this->textBox13->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->textBox13->Location = System::Drawing::Point(144, 74);
+            this->textBox13->Location = System::Drawing::Point(222, 77);
             this->textBox13->Margin = System::Windows::Forms::Padding(1);
             this->textBox13->Name = L"textBox13";
-            this->textBox13->Size = System::Drawing::Size(154, 22);
+            this->textBox13->Size = System::Drawing::Size(64, 31);
             this->textBox13->TabIndex = 11;
             // 
             // labelQuantiteStocks
@@ -1844,9 +1844,9 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
             this->labelQuantiteStocks->Dock = System::Windows::Forms::DockStyle::Fill;
             this->labelQuantiteStocks->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.9F));
             this->labelQuantiteStocks->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-            this->labelQuantiteStocks->Location = System::Drawing::Point(3, 113);
+            this->labelQuantiteStocks->Location = System::Drawing::Point(3, 76);
             this->labelQuantiteStocks->Name = L"labelQuantiteStocks";
-            this->labelQuantiteStocks->Size = System::Drawing::Size(215, 83);
+            this->labelQuantiteStocks->Size = System::Drawing::Size(215, 46);
             this->labelQuantiteStocks->TabIndex = 10;
             this->labelQuantiteStocks->Text = L"Quantité :";
             // 
@@ -1856,7 +1856,7 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
             this->textBox14->Location = System::Drawing::Point(225, 36);
             this->textBox14->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
             this->textBox14->Name = L"textBox14";
-            this->textBox14->Size = System::Drawing::Size(150, 22);
+            this->textBox14->Size = System::Drawing::Size(58, 31);
             this->textBox14->TabIndex = 2;
             // 
             // labelReferenceProduitStocks
@@ -1868,24 +1868,24 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
             this->labelReferenceProduitStocks->Location = System::Drawing::Point(4, 31);
             this->labelReferenceProduitStocks->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
             this->labelReferenceProduitStocks->Name = L"labelReferenceProduitStocks";
-            this->labelReferenceProduitStocks->Size = System::Drawing::Size(213, 82);
+            this->labelReferenceProduitStocks->Size = System::Drawing::Size(213, 45);
             this->labelReferenceProduitStocks->TabIndex = 6;
             this->labelReferenceProduitStocks->Text = L"Référence produit :";
             // 
             // textBox16
             // 
             this->textBox16->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->textBox16->Location = System::Drawing::Point(828, 23);
+            this->textBox16->Location = System::Drawing::Point(917, 34);
             this->textBox16->Name = L"textBox16";
-            this->textBox16->Size = System::Drawing::Size(151, 22);
+            this->textBox16->Size = System::Drawing::Size(60, 31);
             this->textBox16->TabIndex = 17;
             // 
             // textBox17
             // 
             this->textBox17->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->textBox17->Location = System::Drawing::Point(828, 76);
+            this->textBox17->Location = System::Drawing::Point(917, 79);
             this->textBox17->Name = L"textBox17";
-            this->textBox17->Size = System::Drawing::Size(151, 22);
+            this->textBox17->Size = System::Drawing::Size(60, 31);
             this->textBox17->TabIndex = 18;
             // 
             // labelPrixStocks
@@ -1894,10 +1894,10 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
             this->labelPrixStocks->Dock = System::Windows::Forms::DockStyle::Fill;
             this->labelPrixStocks->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.9F));
             this->labelPrixStocks->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-            this->labelPrixStocks->Location = System::Drawing::Point(728, 20);
+            this->labelPrixStocks->Location = System::Drawing::Point(770, 31);
             this->labelPrixStocks->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
             this->labelPrixStocks->Name = L"labelPrixStocks";
-            this->labelPrixStocks->Size = System::Drawing::Size(138, 82);
+            this->labelPrixStocks->Size = System::Drawing::Size(140, 45);
             this->labelPrixStocks->TabIndex = 19;
             this->labelPrixStocks->Text = L"Prix :";
             // 
@@ -1907,9 +1907,9 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
             this->labelTauxTvaStocks->Dock = System::Windows::Forms::DockStyle::Fill;
             this->labelTauxTvaStocks->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.9F));
             this->labelTauxTvaStocks->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-            this->labelTauxTvaStocks->Location = System::Drawing::Point(727, 73);
+            this->labelTauxTvaStocks->Location = System::Drawing::Point(769, 76);
             this->labelTauxTvaStocks->Name = L"labelTauxTvaStocks";
-            this->labelTauxTvaStocks->Size = System::Drawing::Size(142, 83);
+            this->labelTauxTvaStocks->Size = System::Drawing::Size(142, 46);
             this->labelTauxTvaStocks->TabIndex = 20;
             this->labelTauxTvaStocks->Text = L"Taux de Tva :";
             // 
@@ -1919,18 +1919,18 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
             this->labelSeuilReaprovisionnementStocks->Dock = System::Windows::Forms::DockStyle::Fill;
             this->labelSeuilReaprovisionnementStocks->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.9F));
             this->labelSeuilReaprovisionnementStocks->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-            this->labelSeuilReaprovisionnementStocks->Location = System::Drawing::Point(329, 73);
+            this->labelSeuilReaprovisionnementStocks->Location = System::Drawing::Point(330, 76);
             this->labelSeuilReaprovisionnementStocks->Name = L"labelSeuilReaprovisionnementStocks";
-            this->labelSeuilReaprovisionnementStocks->Size = System::Drawing::Size(327, 83);
+            this->labelSeuilReaprovisionnementStocks->Size = System::Drawing::Size(327, 46);
             this->labelSeuilReaprovisionnementStocks->TabIndex = 21;
             this->labelSeuilReaprovisionnementStocks->Text = L"Seuil de réaprovisionnement :";
             // 
             // textBox18
             // 
             this->textBox18->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->textBox18->Location = System::Drawing::Point(544, 76);
+            this->textBox18->Location = System::Drawing::Point(663, 79);
             this->textBox18->Name = L"textBox18";
-            this->textBox18->Size = System::Drawing::Size(150, 22);
+            this->textBox18->Size = System::Drawing::Size(60, 31);
             this->textBox18->TabIndex = 22;
             // 
             // tabStats
@@ -1959,7 +1959,7 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
                 60)));
             this->tableLayoutPanel5->Controls->Add(this->dataGridView6, 1, 1);
             this->tableLayoutPanel5->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->tableLayoutPanel5->Location = System::Drawing::Point(2, 2);
+            this->tableLayoutPanel5->Location = System::Drawing::Point(1, 1);
             this->tableLayoutPanel5->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
             this->tableLayoutPanel5->Name = L"tableLayoutPanel5";
             this->tableLayoutPanel5->RowCount = 3;
@@ -1978,7 +1978,7 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
             this->dataGridView6->Name = L"dataGridView6";
             this->dataGridView6->RowHeadersWidth = 51;
             this->dataGridView6->RowTemplate->Height = 24;
-            this->dataGridView6->Size = System::Drawing::Size(1149, 333);
+            this->dataGridView6->Size = System::Drawing::Size(1107, 307);
             this->dataGridView6->TabIndex = 5;
             // 
             // tableLayoutPanel6
@@ -1997,7 +1997,7 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
             this->tableLayoutPanel6->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Absolute,
                 22)));
             this->tableLayoutPanel6->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Absolute,
-                37)));
+                41)));
             this->tableLayoutPanel6->Controls->Add(this->label22, 3, 0);
             this->tableLayoutPanel6->Dock = System::Windows::Forms::DockStyle::Top;
             this->tableLayoutPanel6->Location = System::Drawing::Point(0, 0);
@@ -2016,10 +2016,10 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
             this->label22->ForeColor = System::Drawing::SystemColors::ButtonFace;
             this->label22->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"label22.Image")));
             this->label22->ImageAlign = System::Drawing::ContentAlignment::MiddleLeft;
-            this->label22->Location = System::Drawing::Point(495, 0);
+            this->label22->Location = System::Drawing::Point(499, 0);
             this->label22->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
             this->label22->Name = L"label22";
-            this->label22->Size = System::Drawing::Size(231, 60);
+            this->label22->Size = System::Drawing::Size(226, 60);
             this->label22->TabIndex = 1;
             this->label22->Text = L"x";
             this->label22->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -2040,7 +2040,6 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
             this->panel1->ResumeLayout(false);
             this->tabAffichage->ResumeLayout(false);
             this->tabClient->ResumeLayout(false);
-            this->tabClient->PerformLayout();
             this->tableLayoutPanel1->ResumeLayout(false);
             (cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->EndInit();
             this->tableLayoutPanelClient->ResumeLayout(false);
@@ -2096,6 +2095,7 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
             this->dataGridView2->DataSource = DB->ExecuteSQL("Select Commands.Id_Command , Delivery_Date, Emissions_Date, Reference_command,Last_Client,First_Client,Birth_Date , A.Number_Adr AS Number_Adr_LIVRAISON , A.Street_Adr AS Street_Adr_LIVRAISON , A.Floor AS Floor_LIVRAISON , C.City_Name AS City_Name_LIVRAISON , C.Post_Code AS Post_Name_LIVRAISON,B.Number_Adr AS Number_Adr_FACTURATION , B.Street_Adr AS Street_Adr_FACTURATION , B.Floor AS Floor_FACTURATION , D.City_Name AS City_Name_FACTURATION , D.Post_Code AS Post_Name_FACTURATION , Include.quantity , Designate , Pay_Date , Price,Method_Name from[projetPOO].[dbo].[Commands] join [projetPOO].[dbo].[Client] ON Client.Id_Client = Commands.Id_Client join [projetPOO].[dbo].[Facturation] On Facturation.Id_Command = Commands.Id_Command join [projetPOO].[dbo].[Delivery] On Delivery.Id_Command = Commands.Id_Command join [projetPOO].[dbo].[Address] AS A ON A.Id_Adr = Facturation.Id_Adr join [projetPOO].[dbo].[Address] AS B ON B.Id_Adr = Delivery.Id_Adr join [projetPOO].[dbo].[residence_cities] AS C ON A.Id_City = C.Id_City join [projetPOO].[dbo].[residence_cities] AS D ON B.Id_City = D.Id_City join [projetPOO].[dbo].[Include]  ON Commands.Id_Command = Include.Id_Command join [projetPOO].[dbo].[Stocks]  ON Stocks.Id_Produit = Include.Id_Produit join [projetPOO].[dbo].[Payment_Details] On Payment_Details.Id_Command = Commands.Id_Command join [projetPOO].[dbo].[Payment_Methods] On Payment_Details.Id_Method = Payment_Methods.Id_Method");
             this->dataGridView3->DataSource = DB->ExecuteSQL("Select Personnel.Id_Personnel , LAST_Personnel , FIRST_Personnel , Hire_Date ,Id_Superior,  Number_Adr , Street_Adr,Floor , City_Name, Post_Code  FROM[projetPOO].[dbo].[Personnel] join[projetPOO].[dbo].[Live_InP] ON Live_InP.Id_Personnel = Personnel.Id_Personnel join[projetPOO].[dbo].[Address] ON Address.Id_Adr = Live_InP.Id_Adr join[projetPOO].[dbo].[residence_cities] ON residence_cities.Id_City = Address.Id_City");
             this->dataGridView4->DataSource = DB->ExecuteSQL("Select * FROM [projetPOO].[dbo].[Stocks] ");
+            delete DB;
         }
 		catch (const std::exception &)
 		{
@@ -2104,8 +2104,6 @@ private: System::Windows::Forms::TextBox^ textBoxClientId;
 	}
 	private: System::Void MyForm_Shown(System::Object^ sender, System::EventArgs^ e) {
 		Application::DoEvents();
-		this->dataGridView1->Refresh();
-		SqlServices^ DB = gcnew SqlServices();
 }
 
 	private: System::Void ClientButton_Click(System::Object^ sender, System::EventArgs^ e) {
@@ -2187,7 +2185,6 @@ private: System::Void tableLayoutPanelClient_Paint(System::Object^ sender, Syste
 private: System::Void label22_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void button6_Click(System::Object^ sender, System::EventArgs^ e) {
-    MessageBox::Show(textBoxNomClient->Text);
 	Clients^ Client = gcnew Clients(textBoxClientId, textBoxNomClient, textBoxPrénomClient, dateTimePickerBirthDate, textBoxNumRue, textBoxNomRue, textBoxEtage, textBoxVille, textBoxCodePostal);
 }
 private: System::Void textBoxIdClient_TextChanged(System::Object^ sender, System::EventArgs^ e) {
