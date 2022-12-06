@@ -1990,8 +1990,7 @@ private: System::Windows::Forms::Label^ label22;
 		gridbind();
 	}
 	private: void gridbind() {
-		auto cs = Login::ConnectionString;
-		System::Data::SqlClient::SqlConnection^ con = gcnew System::Data::SqlClient::SqlConnection(cs);
+		System::Data::SqlClient::SqlConnection^ con = gcnew System::Data::SqlClient::SqlConnection(Login::ConnectionString);
 		con->Open();
 		SqlCommand^ cmd = gcnew SqlCommand("select * from Personnel",con);
 		SqlDataReader^ reader = cmd->ExecuteReader();
