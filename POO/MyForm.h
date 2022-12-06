@@ -1592,7 +1592,7 @@ private: System::Windows::Forms::Label^ label22;
 			this->tabStocks->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->tabStocks->Name = L"tabStocks";
 			this->tabStocks->Padding = System::Windows::Forms::Padding(3);
-			this->tabStocks->Size = System::Drawing::Size(1826, 705);
+			this->tabStocks->Size = System::Drawing::Size(1826, 745);
 			this->tabStocks->TabIndex = 3;
 			this->tabStocks->Text = L"Stocks";
 			// 
@@ -1616,7 +1616,7 @@ private: System::Windows::Forms::Label^ label22;
 			this->tableLayoutPanel4->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Absolute, 47)));
 			this->tableLayoutPanel4->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
 			this->tableLayoutPanel4->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Absolute, 30)));
-			this->tableLayoutPanel4->Size = System::Drawing::Size(1820, 567);
+			this->tableLayoutPanel4->Size = System::Drawing::Size(1820, 607);
 			this->tableLayoutPanel4->TabIndex = 9;
 			// 
 			// dataGridView4
@@ -1627,7 +1627,7 @@ private: System::Windows::Forms::Label^ label22;
 			this->dataGridView4->Name = L"dataGridView4";
 			this->dataGridView4->RowHeadersWidth = 51;
 			this->dataGridView4->RowTemplate->Height = 24;
-			this->dataGridView4->Size = System::Drawing::Size(1614, 484);
+			this->dataGridView4->Size = System::Drawing::Size(1614, 524);
 			this->dataGridView4->TabIndex = 5;
 			// 
 			// checkBox4
@@ -1653,7 +1653,7 @@ private: System::Windows::Forms::Label^ label22;
 			this->tableLayoutPanelStocks->Controls->Add(this->tableLayoutPanelDetailStocks, 0, 0);
 			this->tableLayoutPanelStocks->Controls->Add(this->tableLayoutPanelModStocks, 1, 0);
 			this->tableLayoutPanelStocks->Dock = System::Windows::Forms::DockStyle::Bottom;
-			this->tableLayoutPanelStocks->Location = System::Drawing::Point(3, 570);
+			this->tableLayoutPanelStocks->Location = System::Drawing::Point(3, 610);
 			this->tableLayoutPanelStocks->Name = L"tableLayoutPanelStocks";
 			this->tableLayoutPanelStocks->RowCount = 1;
 			this->tableLayoutPanelStocks->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent,
@@ -1908,7 +1908,7 @@ private: System::Windows::Forms::Label^ label22;
 			this->tabStats->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->tabStats->Name = L"tabStats";
 			this->tabStats->Padding = System::Windows::Forms::Padding(3);
-			this->tabStats->Size = System::Drawing::Size(1826, 705);
+			this->tabStats->Size = System::Drawing::Size(1826, 745);
 			this->tabStats->TabIndex = 4;
 			this->tabStats->Text = L"Stats";
 			// 
@@ -1943,7 +1943,7 @@ private: System::Windows::Forms::Label^ label22;
 			this->tableLayoutPanel5->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Absolute, 62)));
 			this->tableLayoutPanel5->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
 			this->tableLayoutPanel5->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Absolute, 40)));
-			this->tableLayoutPanel5->Size = System::Drawing::Size(1820, 699);
+			this->tableLayoutPanel5->Size = System::Drawing::Size(1820, 739);
 			this->tableLayoutPanel5->TabIndex = 9;
 			// 
 			// dataGridView6
@@ -1955,7 +1955,7 @@ private: System::Windows::Forms::Label^ label22;
 			this->dataGridView6->Name = L"dataGridView6";
 			this->dataGridView6->RowHeadersWidth = 51;
 			this->dataGridView6->RowTemplate->Height = 24;
-			this->dataGridView6->Size = System::Drawing::Size(1692, 587);
+			this->dataGridView6->Size = System::Drawing::Size(1692, 627);
 			this->dataGridView6->TabIndex = 5;
 			// 
 			// tableLayoutPanel6
@@ -1974,7 +1974,7 @@ private: System::Windows::Forms::Label^ label22;
 			this->tableLayoutPanel6->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Absolute,
 				23)));
 			this->tableLayoutPanel6->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Absolute,
-				22)));
+				23)));
 			this->tableLayoutPanel6->Controls->Add(this->label22, 3, 0);
 			this->tableLayoutPanel6->Dock = System::Windows::Forms::DockStyle::Top;
 			this->tableLayoutPanel6->Location = System::Drawing::Point(0, 0);
@@ -2080,7 +2080,7 @@ private: System::Windows::Forms::Label^ label22;
 		SqlServices^ DB = gcnew SqlServices();
 		this->dataGridView1->DataSource = DB->ExecuteSQL("Select Client.Id_Client , Last_Client , First_Client , Birth_Date , Number_Adr , Street_Adr,Floor , City_Name, Post_Code FROM[projetPOO].[dbo].[Client] join[projetPOO].[dbo].[Live_InC] ON Live_InC.Id_Client = Client.Id_Client join[projetPOO].[dbo].[Address] ON Address.Id_Adr = Live_InC.Id_Adr join[projetPOO].[dbo].[residence_cities] ON residence_cities.Id_City = Address.Id_City");
 		//this->dataGridView2->DataSource = DB->ExecuteSQL("");
-		//this->dataGridView3->DataSource = DB->ExecuteSQL("");
+		this->dataGridView3->DataSource = DB->ExecuteSQL("Select Personnel.Id_Personnel , LAST_Personnel , FIRST_Personnel , Hire_Date ,Id_Superior,  Number_Adr , Street_Adr,Floor , City_Name, Post_Code  FROM[projetPOO].[dbo].[Personnel] join[projetPOO].[dbo].[Live_InP] ON Live_InP.Id_Personnel = Personnel.Id_Personnel join[projetPOO].[dbo].[Address] ON Address.Id_Adr = Live_InP.Id_Adr join[projetPOO].[dbo].[residence_cities] ON residence_cities.Id_City = Address.Id_City");
 		//this->dataGridView4->DataSource = DB->ExecuteSQL("");
 	} 
 
