@@ -316,6 +316,7 @@ private: System::Windows::Forms::Button^ button6;
 private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel1;
 private: System::Windows::Forms::DataGridView^ dataGridView1;
 private: System::Windows::Forms::Button^ button4;
+private: System::Windows::Forms::TextBox^ textBoxIdClient;
 
 
 
