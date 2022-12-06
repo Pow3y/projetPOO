@@ -1929,6 +1929,7 @@ private: System::Windows::Forms::Label^ label22;
 			this->Name = L"MyForm";
 			this->Text = L"MyForm";
 			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
+			this->Shown += gcnew System::EventHandler(this, &MyForm::MyForm_Shown);
 			this->tableLayoutPanelHotbar->ResumeLayout(false);
 			this->panel1->ResumeLayout(false);
 			this->tabStats->ResumeLayout(false);
@@ -1986,19 +1987,17 @@ private: System::Windows::Forms::Label^ label22;
 		Application::DoEvents();
 		this->dataGridView1->Refresh();
 		gridbind();
-		
-	//}
-	//private: void gridbind() {
-	//	System::Data::SqlClient::SqlConnection^ con = gcnew System::Data::SqlClient::SqlConnection(Login::ConnectionString);
-	//	con->Open();
-	//	SqlCommand^ cmd = gcnew SqlCommand("select * from Personnel",con);
-	//	SqlDataReader^ reader = cmd->ExecuteReader();
-	//	DataTable^ dt = gcnew DataTable();
-	//	dt->Load(reader);
-	//	dataGridView1->DataSource = dt;
-	//	con->Close();
-	//}
-	// personnalisation des boutons pour changer d'onglets
+	}
+	private: void gridbind() {
+		System::Data::SqlClient::SqlConnection^ con = gcnew System::Data::SqlClient::SqlConnection(Login::ConnectionString);
+		con->Open();
+		SqlCommand^ cmd = gcnew SqlCommand("select * from Personnel",con);
+		SqlDataReader^ reader = cmd->ExecuteReader();
+		DataTable^ dt = gcnew DataTable();
+		dt->Load(reader);
+		dataGridView1->DataSource = dt;
+		con->Close();
+	}
 	private: System::Void ClientButton_Click(System::Object^ sender, System::EventArgs^ e) {
 		this->tabAffichage->SelectedTab = tabClient;
 	}
