@@ -1929,6 +1929,7 @@ private: System::Windows::Forms::Label^ label22;
 			this->Name = L"MyForm";
 			this->Text = L"MyForm";
 			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
+			this->Shown += gcnew System::EventHandler(this, &MyForm::MyForm_Shown);
 			this->tableLayoutPanelHotbar->ResumeLayout(false);
 			this->panel1->ResumeLayout(false);
 			this->tabAffichage->ResumeLayout(false);
@@ -1981,8 +1982,11 @@ private: System::Windows::Forms::Label^ label22;
 		this->tabAffichage->ItemSize = System::Drawing::Size(0, 1);
 		this->tabAffichage->Appearance = TabAppearance::Buttons;	
 		this->dataGridView1->Refresh();
+	}
+	private: System::Void MyForm_Shown(System::Object^ sender, System::EventArgs^ e) {
+		Application::DoEvents();
+		this->dataGridView1->Refresh();
 		gridbind();
-		
 	}
 	private: void gridbind() {
 		System::Data::SqlClient::SqlConnection^ con = gcnew System::Data::SqlClient::SqlConnection(Login::ConnectionString);
@@ -1994,7 +1998,6 @@ private: System::Windows::Forms::Label^ label22;
 		dataGridView1->DataSource = dt;
 		con->Close();
 	}
-	// personnalisation des boutons pour changer d'onglets
 	private: System::Void ClientButton_Click(System::Object^ sender, System::EventArgs^ e) {
 		this->tabAffichage->SelectedTab = tabClient;
 	}
