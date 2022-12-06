@@ -1,17 +1,15 @@
 #include "pch.h"
 #include "Clients.h"
 
-Clients::Clients(int ID,System::String^ LastName, System::String^ Firstname, System::DateTime BirthDate, int NumAdr, System::String^ NameStreet, int Floor, System::String^ City, int PostalCode)
+Clients::Clients(TextBox^ ID, TextBox^ LastName, TextBox^ Firstname, DateTimePicker^ BirthDate, TextBox^ NumAdr, TextBox^ NameStreet, TextBox^ Floor, TextBox^ City, TextBox^ PostalCode)
 {
-    this->ID = ID;
-    this->LastName = LastName;
-    this->FirstName = Firstname;
-    this->BirthDate = BirthDate;
-    this->AddressNum = NumAdr;
-    this->AddressStreet = NameStreet;
-    this->AddressFloor = Floor;
-    this->AddressCity = City;
-    this->AddressPostalCode = PostalCode;
+    try {
+		this->ID = Convert::ToInt32(ID->Text);
+    }
+	catch (Exception^ ex)
+	{
+        MessageBox::Show("Le type de ID est incorrect il doit être de type INT");
+	}
 }
 
 Clients::~Clients()
@@ -23,7 +21,7 @@ void Clients::Create()
 {
     if (this->Exist())
     {
-        Windows::Forms::MessageBox::Show("Client already exist");
+        // 
     }
     else
     {
