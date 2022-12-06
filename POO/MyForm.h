@@ -2188,7 +2188,7 @@ private: System::Void label22_Click(System::Object^ sender, System::EventArgs^ e
 }
 private: System::Void button6_Click(System::Object^ sender, System::EventArgs^ e) {
     MessageBox::Show(textBoxNomClient->Text);
-    Clients^ Client = gcnew Clients(textBoxClientId, textBoxNomClient, textBoxPrénomClient, textBoxNumRue, textBoxNomRue, textBoxNomRue, textBoxNomRue, textBoxNomRue, textBoxNomRue);
+	Clients^ Client = gcnew Clients(textBoxClientId, textBoxNomClient, textBoxPrénomClient, dateTimePickerBirthDate, textBoxNumRue, textBoxNomRue, textBoxEtage, textBoxVille, textBoxCodePostal);
 }
 private: System::Void textBoxIdClient_TextChanged(System::Object^ sender, System::EventArgs^ e) {
 }

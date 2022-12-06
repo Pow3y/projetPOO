@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "Clients.h"
 
-Clients::Clients(TextBox^ ID, TextBox^ LastName, TextBox^ Firstname, TextBox^ BirthDate, TextBox^ NumAdr, TextBox^ NameStreet, TextBox^ Floor, TextBox^ City, TextBox^ PostalCode)
+Clients::Clients(TextBox^ ID, TextBox^ LastName, TextBox^ Firstname, DateTimePicker^ BirthDate, TextBox^ NumAdr, TextBox^ NameStreet, TextBox^ Floor, TextBox^ City, TextBox^ PostalCode)
 {
     try {
 		this->ID = Convert::ToInt32(ID->Text);

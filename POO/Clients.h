@@ -8,7 +8,7 @@ ref class Clients : public Person
 {
 
 public:
-	Clients(TextBox^ ID, TextBox^ LastName, TextBox^ Firstname, TextBox^ BirthDate, TextBox^ NumAdr, TextBox^ NameStreet, TextBox^ Floor, TextBox^ City, TextBox^ PostalCode);
+	Clients(TextBox^ ID, TextBox^ LastName, TextBox^ Firstname, DateTimePicker^ BirthDate, TextBox^ NumAdr, TextBox^ NameStreet, TextBox^ Floor, TextBox^ City, TextBox^ PostalCode);
 	~Clients();
 	void Create() override;
 	void Remove() override;
