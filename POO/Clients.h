@@ -2,12 +2,13 @@
 #include "Person.h"
 
 using namespace System;
+using namespace System::Windows::Forms;
 
 ref class Clients : public Person
 {
 
 public:
-	Clients(int ID,System::String^ LastName, System::String^ Firstname, System::DateTime BirthDate, int NumAdr, System::String^ NameStreet, int Floor, System::String^ City, int PostalCode);
+	Clients(TextBox^ ID, TextBox^ LastName, TextBox^ Firstname, TextBox^ BirthDate, TextBox^ NumAdr, TextBox^ NameStreet, TextBox^ Floor, TextBox^ City, TextBox^ PostalCode);
 	~Clients();
 	void Create() override;
 	void Remove() override;
