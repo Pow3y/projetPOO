@@ -20,3 +20,8 @@ void Person::Remove()
 void Person::Update()
 {
 }
+
+bool Person::Exist()
+{
+    return false;
+}

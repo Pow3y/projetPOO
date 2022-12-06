@@ -9,5 +9,5 @@ public:
 	SqlServices();
 	~SqlServices();
 	void ConnectDB();
-	System::Data::DataTable^ ExecuteSQL(String^);
+	System::Data::DataTable^ ExecuteSQL(System::String^);
 };

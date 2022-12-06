@@ -7,13 +7,13 @@ ref class Clients : public Person
 {
 
 public:
-	Clients();
+	Clients(int ID,System::String^ LastName, System::String^ Firstname, System::DateTime BirthDate, int NumAdr, System::String^ NameStreet, int Floor, System::String^ City, int PostalCode);
 	~Clients();
 	void Create() override;
 	void Remove() override;
 	void Update() override;
-
+	bool Exist() override;
+	
 private:
-	int ID;
 	DateTime BirthDate;
 };
