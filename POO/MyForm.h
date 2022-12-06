@@ -336,6 +336,10 @@ private: System::Windows::Forms::Button^ DelClientButton;
             this->textBox10 = (gcnew System::Windows::Forms::TextBox());
             this->textBox19 = (gcnew System::Windows::Forms::TextBox());
             this->label1 = (gcnew System::Windows::Forms::Label());
+            this->tableLayoutPanelModClient = (gcnew System::Windows::Forms::TableLayoutPanel());
+            this->ModifyClientButton = (gcnew System::Windows::Forms::Button());
+            this->AddClientButton = (gcnew System::Windows::Forms::Button());
+            this->DelClientButton = (gcnew System::Windows::Forms::Button());
             this->tabEmployes = (gcnew System::Windows::Forms::TabPage());
             this->tableLayoutPanel3 = (gcnew System::Windows::Forms::TableLayoutPanel());
             this->dataGridView3 = (gcnew System::Windows::Forms::DataGridView());
@@ -384,10 +388,6 @@ private: System::Windows::Forms::Button^ DelClientButton;
             this->dataGridView6 = (gcnew System::Windows::Forms::DataGridView());
             this->tableLayoutPanel6 = (gcnew System::Windows::Forms::TableLayoutPanel());
             this->label22 = (gcnew System::Windows::Forms::Label());
-            this->DelClientButton = (gcnew System::Windows::Forms::Button());
-            this->AddClientButton = (gcnew System::Windows::Forms::Button());
-            this->ModifyClientButton = (gcnew System::Windows::Forms::Button());
-            this->tableLayoutPanelModClient = (gcnew System::Windows::Forms::TableLayoutPanel());
             this->tableLayoutPanelHotbar->SuspendLayout();
             this->panel1->SuspendLayout();
             this->tabAffichage->SuspendLayout();
@@ -402,6 +402,7 @@ private: System::Windows::Forms::Button^ DelClientButton;
             (cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
             this->tableLayoutPanelClient->SuspendLayout();
             this->tableLayoutPanelDetailClient->SuspendLayout();
+            this->tableLayoutPanelModClient->SuspendLayout();
             this->tabEmployes->SuspendLayout();
             this->tableLayoutPanel3->SuspendLayout();
             (cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView3))->BeginInit();
@@ -418,7 +419,6 @@ private: System::Windows::Forms::Button^ DelClientButton;
             this->tableLayoutPanel5->SuspendLayout();
             (cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView6))->BeginInit();
             this->tableLayoutPanel6->SuspendLayout();
-            this->tableLayoutPanelModClient->SuspendLayout();
             this->SuspendLayout();
             // 
             // tableLayoutPanelHotbar
@@ -742,12 +742,15 @@ private: System::Windows::Forms::Button^ DelClientButton;
             // 
             // dataGridView2
             // 
+            this->dataGridView2->AllowUserToAddRows = false;
+            this->dataGridView2->AllowUserToDeleteRows = false;
             this->dataGridView2->BackgroundColor = System::Drawing::Color::Black;
             this->dataGridView2->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
             this->dataGridView2->Dock = System::Windows::Forms::DockStyle::Fill;
             this->dataGridView2->Location = System::Drawing::Point(102, 49);
             this->dataGridView2->Margin = System::Windows::Forms::Padding(2);
             this->dataGridView2->Name = L"dataGridView2";
+            this->dataGridView2->ReadOnly = true;
             this->dataGridView2->RowHeadersWidth = 51;
             this->dataGridView2->RowTemplate->Height = 24;
             this->dataGridView2->Size = System::Drawing::Size(1616, 453);
@@ -1029,12 +1032,15 @@ private: System::Windows::Forms::Button^ DelClientButton;
             // 
             // dataGridView1
             // 
+            this->dataGridView1->AllowUserToAddRows = false;
+            this->dataGridView1->AllowUserToDeleteRows = false;
             this->dataGridView1->BackgroundColor = System::Drawing::Color::Black;
             this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
             this->dataGridView1->Dock = System::Windows::Forms::DockStyle::Fill;
             this->dataGridView1->Location = System::Drawing::Point(102, 49);
             this->dataGridView1->Margin = System::Windows::Forms::Padding(2);
             this->dataGridView1->Name = L"dataGridView1";
+            this->dataGridView1->ReadOnly = true;
             this->dataGridView1->RowHeadersWidth = 51;
             this->dataGridView1->RowTemplate->Height = 24;
             this->dataGridView1->Size = System::Drawing::Size(1618, 455);
@@ -1245,6 +1251,84 @@ private: System::Windows::Forms::Button^ DelClientButton;
             this->label1->Text = L"Nom :";
             this->label1->Click += gcnew System::EventHandler(this, &MyForm::label1_Click_1);
             // 
+            // tableLayoutPanelModClient
+            // 
+            this->tableLayoutPanelModClient->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(40)),
+                static_cast<System::Int32>(static_cast<System::Byte>(40)), static_cast<System::Int32>(static_cast<System::Byte>(60)));
+            this->tableLayoutPanelModClient->ColumnCount = 1;
+            this->tableLayoutPanelModClient->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
+                100)));
+            this->tableLayoutPanelModClient->Controls->Add(this->ModifyClientButton, 0, 1);
+            this->tableLayoutPanelModClient->Controls->Add(this->AddClientButton, 0, 0);
+            this->tableLayoutPanelModClient->Controls->Add(this->DelClientButton, 0, 2);
+            this->tableLayoutPanelModClient->Dock = System::Windows::Forms::DockStyle::Fill;
+            this->tableLayoutPanelModClient->Location = System::Drawing::Point(1461, 5);
+            this->tableLayoutPanelModClient->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+            this->tableLayoutPanelModClient->Name = L"tableLayoutPanelModClient";
+            this->tableLayoutPanelModClient->RowCount = 3;
+            this->tableLayoutPanelModClient->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent,
+                33.33333F)));
+            this->tableLayoutPanelModClient->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent,
+                33.33334F)));
+            this->tableLayoutPanelModClient->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent,
+                33.33333F)));
+            this->tableLayoutPanelModClient->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Absolute,
+                20)));
+            this->tableLayoutPanelModClient->Size = System::Drawing::Size(357, 196);
+            this->tableLayoutPanelModClient->TabIndex = 0;
+            // 
+            // ModifyClientButton
+            // 
+            this->ModifyClientButton->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(128)),
+                static_cast<System::Int32>(static_cast<System::Byte>(128)), static_cast<System::Int32>(static_cast<System::Byte>(255)));
+            this->ModifyClientButton->Cursor = System::Windows::Forms::Cursors::Hand;
+            this->ModifyClientButton->Dock = System::Windows::Forms::DockStyle::Fill;
+            this->ModifyClientButton->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+            this->ModifyClientButton->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.9F));
+            this->ModifyClientButton->ForeColor = System::Drawing::SystemColors::ControlLightLight;
+            this->ModifyClientButton->Location = System::Drawing::Point(2, 67);
+            this->ModifyClientButton->Margin = System::Windows::Forms::Padding(2);
+            this->ModifyClientButton->Name = L"ModifyClientButton";
+            this->ModifyClientButton->Size = System::Drawing::Size(353, 61);
+            this->ModifyClientButton->TabIndex = 5;
+            this->ModifyClientButton->Text = L"Modifier";
+            this->ModifyClientButton->UseVisualStyleBackColor = false;
+            // 
+            // AddClientButton
+            // 
+            this->AddClientButton->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(128)), static_cast<System::Int32>(static_cast<System::Byte>(128)),
+                static_cast<System::Int32>(static_cast<System::Byte>(255)));
+            this->AddClientButton->Cursor = System::Windows::Forms::Cursors::Hand;
+            this->AddClientButton->Dock = System::Windows::Forms::DockStyle::Fill;
+            this->AddClientButton->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+            this->AddClientButton->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.9F));
+            this->AddClientButton->ForeColor = System::Drawing::SystemColors::ControlLightLight;
+            this->AddClientButton->Location = System::Drawing::Point(4, 5);
+            this->AddClientButton->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+            this->AddClientButton->Name = L"AddClientButton";
+            this->AddClientButton->Size = System::Drawing::Size(349, 55);
+            this->AddClientButton->TabIndex = 2;
+            this->AddClientButton->Text = L"Ajouter";
+            this->AddClientButton->UseVisualStyleBackColor = false;
+            this->AddClientButton->Click += gcnew System::EventHandler(this, &MyForm::button2_Click_1);
+            // 
+            // DelClientButton
+            // 
+            this->DelClientButton->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(128)), static_cast<System::Int32>(static_cast<System::Byte>(128)),
+                static_cast<System::Int32>(static_cast<System::Byte>(255)));
+            this->DelClientButton->Cursor = System::Windows::Forms::Cursors::Hand;
+            this->DelClientButton->Dock = System::Windows::Forms::DockStyle::Fill;
+            this->DelClientButton->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+            this->DelClientButton->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.9F));
+            this->DelClientButton->ForeColor = System::Drawing::SystemColors::ControlLightLight;
+            this->DelClientButton->Location = System::Drawing::Point(2, 132);
+            this->DelClientButton->Margin = System::Windows::Forms::Padding(2);
+            this->DelClientButton->Name = L"DelClientButton";
+            this->DelClientButton->Size = System::Drawing::Size(353, 62);
+            this->DelClientButton->TabIndex = 4;
+            this->DelClientButton->Text = L"Supprimer";
+            this->DelClientButton->UseVisualStyleBackColor = false;
+            // 
             // tabEmployes
             // 
             this->tabEmployes->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(35)), static_cast<System::Int32>(static_cast<System::Byte>(35)),
@@ -1285,12 +1369,15 @@ private: System::Windows::Forms::Button^ DelClientButton;
             // 
             // dataGridView3
             // 
+            this->dataGridView3->AllowUserToAddRows = false;
+            this->dataGridView3->AllowUserToDeleteRows = false;
             this->dataGridView3->BackgroundColor = System::Drawing::Color::Black;
             this->dataGridView3->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
             this->dataGridView3->Dock = System::Windows::Forms::DockStyle::Fill;
             this->dataGridView3->Location = System::Drawing::Point(102, 49);
             this->dataGridView3->Margin = System::Windows::Forms::Padding(2);
             this->dataGridView3->Name = L"dataGridView3";
+            this->dataGridView3->ReadOnly = true;
             this->dataGridView3->RowHeadersWidth = 51;
             this->dataGridView3->RowTemplate->Height = 24;
             this->dataGridView3->Size = System::Drawing::Size(1618, 455);
@@ -1595,12 +1682,15 @@ private: System::Windows::Forms::Button^ DelClientButton;
             // 
             // dataGridView4
             // 
+            this->dataGridView4->AllowUserToAddRows = false;
+            this->dataGridView4->AllowUserToDeleteRows = false;
             this->dataGridView4->BackgroundColor = System::Drawing::Color::Black;
             this->dataGridView4->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
             this->dataGridView4->Dock = System::Windows::Forms::DockStyle::Fill;
             this->dataGridView4->Location = System::Drawing::Point(102, 49);
             this->dataGridView4->Margin = System::Windows::Forms::Padding(2);
             this->dataGridView4->Name = L"dataGridView4";
+            this->dataGridView4->ReadOnly = true;
             this->dataGridView4->RowHeadersWidth = 51;
             this->dataGridView4->RowTemplate->Height = 24;
             this->dataGridView4->Size = System::Drawing::Size(1618, 455);
@@ -1961,7 +2051,7 @@ private: System::Windows::Forms::Button^ DelClientButton;
             this->tableLayoutPanel6->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Absolute,
                 22)));
             this->tableLayoutPanel6->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Absolute,
-                23)));
+                25)));
             this->tableLayoutPanel6->Controls->Add(this->label22, 3, 0);
             this->tableLayoutPanel6->Dock = System::Windows::Forms::DockStyle::Top;
             this->tableLayoutPanel6->Location = System::Drawing::Point(0, 0);
@@ -1986,84 +2076,6 @@ private: System::Windows::Forms::Button^ DelClientButton;
             this->label22->TabIndex = 1;
             this->label22->Text = L"Nom Société";
             this->label22->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
-            // 
-            // DelClientButton
-            // 
-            this->DelClientButton->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(128)), static_cast<System::Int32>(static_cast<System::Byte>(128)),
-                static_cast<System::Int32>(static_cast<System::Byte>(255)));
-            this->DelClientButton->Cursor = System::Windows::Forms::Cursors::Hand;
-            this->DelClientButton->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->DelClientButton->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-            this->DelClientButton->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.9F));
-            this->DelClientButton->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-            this->DelClientButton->Location = System::Drawing::Point(2, 132);
-            this->DelClientButton->Margin = System::Windows::Forms::Padding(2);
-            this->DelClientButton->Name = L"DelClientButton";
-            this->DelClientButton->Size = System::Drawing::Size(353, 62);
-            this->DelClientButton->TabIndex = 4;
-            this->DelClientButton->Text = L"Supprimer";
-            this->DelClientButton->UseVisualStyleBackColor = false;
-            // 
-            // AddClientButton
-            // 
-            this->AddClientButton->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(128)), static_cast<System::Int32>(static_cast<System::Byte>(128)),
-                static_cast<System::Int32>(static_cast<System::Byte>(255)));
-            this->AddClientButton->Cursor = System::Windows::Forms::Cursors::Hand;
-            this->AddClientButton->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->AddClientButton->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-            this->AddClientButton->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.9F));
-            this->AddClientButton->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-            this->AddClientButton->Location = System::Drawing::Point(4, 5);
-            this->AddClientButton->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
-            this->AddClientButton->Name = L"AddClientButton";
-            this->AddClientButton->Size = System::Drawing::Size(349, 55);
-            this->AddClientButton->TabIndex = 2;
-            this->AddClientButton->Text = L"Ajouter";
-            this->AddClientButton->UseVisualStyleBackColor = false;
-            this->AddClientButton->Click += gcnew System::EventHandler(this, &MyForm::button2_Click_1);
-            // 
-            // ModifyClientButton
-            // 
-            this->ModifyClientButton->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(128)),
-                static_cast<System::Int32>(static_cast<System::Byte>(128)), static_cast<System::Int32>(static_cast<System::Byte>(255)));
-            this->ModifyClientButton->Cursor = System::Windows::Forms::Cursors::Hand;
-            this->ModifyClientButton->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->ModifyClientButton->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-            this->ModifyClientButton->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.9F));
-            this->ModifyClientButton->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-            this->ModifyClientButton->Location = System::Drawing::Point(2, 67);
-            this->ModifyClientButton->Margin = System::Windows::Forms::Padding(2);
-            this->ModifyClientButton->Name = L"ModifyClientButton";
-            this->ModifyClientButton->Size = System::Drawing::Size(353, 61);
-            this->ModifyClientButton->TabIndex = 5;
-            this->ModifyClientButton->Text = L"Modifier";
-            this->ModifyClientButton->UseVisualStyleBackColor = false;
-            // 
-            // tableLayoutPanelModClient
-            // 
-            this->tableLayoutPanelModClient->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(40)),
-                static_cast<System::Int32>(static_cast<System::Byte>(40)), static_cast<System::Int32>(static_cast<System::Byte>(60)));
-            this->tableLayoutPanelModClient->ColumnCount = 1;
-            this->tableLayoutPanelModClient->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-                100)));
-            this->tableLayoutPanelModClient->Controls->Add(this->ModifyClientButton, 0, 1);
-            this->tableLayoutPanelModClient->Controls->Add(this->AddClientButton, 0, 0);
-            this->tableLayoutPanelModClient->Controls->Add(this->DelClientButton, 0, 2);
-            this->tableLayoutPanelModClient->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->tableLayoutPanelModClient->Location = System::Drawing::Point(1461, 5);
-            this->tableLayoutPanelModClient->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
-            this->tableLayoutPanelModClient->Name = L"tableLayoutPanelModClient";
-            this->tableLayoutPanelModClient->RowCount = 3;
-            this->tableLayoutPanelModClient->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent,
-                33.33333F)));
-            this->tableLayoutPanelModClient->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent,
-                33.33334F)));
-            this->tableLayoutPanelModClient->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent,
-                33.33333F)));
-            this->tableLayoutPanelModClient->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Absolute,
-                20)));
-            this->tableLayoutPanelModClient->Size = System::Drawing::Size(357, 196);
-            this->tableLayoutPanelModClient->TabIndex = 0;
             // 
             // MyForm
             // 
@@ -2093,6 +2105,7 @@ private: System::Windows::Forms::Button^ DelClientButton;
             this->tableLayoutPanelClient->ResumeLayout(false);
             this->tableLayoutPanelDetailClient->ResumeLayout(false);
             this->tableLayoutPanelDetailClient->PerformLayout();
+            this->tableLayoutPanelModClient->ResumeLayout(false);
             this->tabEmployes->ResumeLayout(false);
             this->tabEmployes->PerformLayout();
             this->tableLayoutPanel3->ResumeLayout(false);
@@ -2115,7 +2128,6 @@ private: System::Windows::Forms::Button^ DelClientButton;
             (cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView6))->EndInit();
             this->tableLayoutPanel6->ResumeLayout(false);
             this->tableLayoutPanel6->PerformLayout();
-            this->tableLayoutPanelModClient->ResumeLayout(false);
             this->ResumeLayout(false);
 
         }
@@ -2165,7 +2177,6 @@ private: System::Windows::Forms::Button^ DelClientButton;
 	private: System::Void EmployesButton_Click(System::Object^ sender, System::EventArgs^ e) {
 		this->tabAffichage->SelectedTab = tabEmployes;
 	}
-	
 	// autres actions sur la page
 	private: System::Void tabPage1_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
