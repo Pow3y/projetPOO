@@ -237,10 +237,11 @@ private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel14;
 private: System::Windows::Forms::Button^ buttonSeuilR;
 private: System::Windows::Forms::Button^ buttonPanier;
 private: System::Windows::Forms::Button^ buttonC;
+private: System::Windows::Forms::Button^ buttonAchatsClient;
 
 
 
-private: System::Windows::Forms::Button^ button10;
+
 private: System::Windows::Forms::Button^ buttonArticlesLesPlusVendus;
 private: System::Windows::Forms::Button^ buttonArticlesLesMoinsVendus;
 private: System::Windows::Forms::Button^ buttonValeurCommercialeStock;
@@ -406,7 +407,7 @@ private: System::Windows::Forms::Button^ buttonValeurAchatStock;
             this->buttonSeuilR = (gcnew System::Windows::Forms::Button());
             this->buttonPanier = (gcnew System::Windows::Forms::Button());
             this->buttonC = (gcnew System::Windows::Forms::Button());
-            this->button10 = (gcnew System::Windows::Forms::Button());
+            this->buttonAchatsClient = (gcnew System::Windows::Forms::Button());
             this->buttonArticlesLesPlusVendus = (gcnew System::Windows::Forms::Button());
             this->buttonArticlesLesMoinsVendus = (gcnew System::Windows::Forms::Button());
             this->buttonValeurCommercialeStock = (gcnew System::Windows::Forms::Button());
@@ -2156,7 +2157,7 @@ private: System::Windows::Forms::Button^ buttonValeurAchatStock;
             this->tableLayoutPanel14->Controls->Add(this->buttonSeuilR, 0, 0);
             this->tableLayoutPanel14->Controls->Add(this->buttonPanier, 1, 0);
             this->tableLayoutPanel14->Controls->Add(this->buttonC, 2, 0);
-            this->tableLayoutPanel14->Controls->Add(this->button10, 3, 0);
+            this->tableLayoutPanel14->Controls->Add(this->buttonAchatsClient, 3, 0);
             this->tableLayoutPanel14->Controls->Add(this->buttonArticlesLesPlusVendus, 4, 0);
             this->tableLayoutPanel14->Controls->Add(this->buttonArticlesLesMoinsVendus, 5, 0);
             this->tableLayoutPanel14->Controls->Add(this->buttonValeurCommercialeStock, 6, 0);
@@ -2199,14 +2200,15 @@ private: System::Windows::Forms::Button^ buttonValeurAchatStock;
             this->buttonC->UseVisualStyleBackColor = true;
             this->buttonC->Click += gcnew System::EventHandler(this, &MyForm::buttonC_Click);
             // 
-            // button10
+            // buttonAchatsClient
             // 
-            this->button10->Location = System::Drawing::Point(492, 3);
-            this->button10->Name = L"button10";
-            this->button10->Size = System::Drawing::Size(157, 54);
-            this->button10->TabIndex = 3;
-            this->button10->Text = L"button10";
-            this->button10->UseVisualStyleBackColor = true;
+            this->buttonAchatsClient->Location = System::Drawing::Point(492, 3);
+            this->buttonAchatsClient->Name = L"buttonAchatsClient";
+            this->buttonAchatsClient->Size = System::Drawing::Size(157, 54);
+            this->buttonAchatsClient->TabIndex = 3;
+            this->buttonAchatsClient->Text = L"montant total des achats pour un client";
+            this->buttonAchatsClient->UseVisualStyleBackColor = true;
+            this->buttonAchatsClient->Click += gcnew System::EventHandler(this, &MyForm::buttonAchatsClient_Click);
             // 
             // buttonArticlesLesPlusVendus
             // 
@@ -2500,7 +2502,12 @@ private: System::Void buttonValeurAchatStock_Click(System::Object^ sender, Syste
 private: System::Void buttonC_Click(System::Object^ sender, System::EventArgs^ e) {
     SqlServices^ DB = gcnew SqlServices();
     DB->ConnectDB();
-    this->dataGridView6->DataSource = DB->ExecuteSQL(" SELECT  SUM(Include.quantity * Product_Price ) AS profit FROM [projetPOO].[dbo].[Commands] JOIN [projetPOO].[dbo].[Include] ON Include.Id_Command = Commands.Id_Command JOIN [projetPOO].[dbo].[Stocks] ON Stocks.Id_Produit = Include.Id_Produit WHERE MONTH([projetPOO].[dbo].[Commands].[Emissions_Date]) = ('"+this->Month(System::Convert::ToInt32(Month))+"') AND YEAR([projetPOO].[dbo].[Commands].[Emissions_Date]) = ('" +this->Year(System::Convert::ToInt32(Year))+"'")");
+    this->dataGridView6->DataSource = DB->ExecuteSQL(" SELECT  SUM(Include.quantity * Product_Price ) AS profit FROM [projetPOO].[dbo].[Commands] JOIN [projetPOO].[dbo].[Include] ON Include.Id_Command = Commands.Id_Command JOIN [projetPOO].[dbo].[Stocks] ON Stocks.Id_Produit = Include.Id_Produit WHERE MONTH([projetPOO].[dbo].[Commands].[Emissions_Date]) = 7 AND YEAR([projetPOO].[dbo].[Commands].[Emissions_Date]) = 2010");
+}
+private: System::Void buttonAchatsClient_Click(System::Object^ sender, System::EventArgs^ e) {
+    SqlServices^ DB = gcnew SqlServices();
+    DB->ConnectDB();
+    this->dataGridView6->DataSource = DB->ExecuteSQL(" SELECT  SUM(Include.quantity * Product_Price ) AS Profit FROM[projetPOO].[dbo].[Commands] JOIN[projetPOO].[dbo].[Client] ON Client.Id_Client = Commands.Id_Client JOIN[projetPOO].[dbo].[Include] ON Include.Id_Command = Commands.Id_Command JOIN[projetPOO].[dbo].[Stocks] ON Stocks.Id_Produit = Include.Id_Produit WHERE Client.Id_Client = 7");
 }
 };
 }
