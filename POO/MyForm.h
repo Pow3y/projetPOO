@@ -1601,11 +1601,11 @@ private: System::Windows::Forms::TextBox^ textBoxPoP;
             // 
             // textBoxPP
             // 
-            this->textBox6->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->textBox6->Location = System::Drawing::Point(658, 34);
-            this->textBox6->Name = L"textBox6";
-            this->textBox6->Size = System::Drawing::Size(272, 31);
-            this->textBox6->TabIndex = 14;
+            this->textBoxPP->Dock = System::Windows::Forms::DockStyle::Fill;
+            this->textBoxPP->Location = System::Drawing::Point(658, 34);
+            this->textBoxPP->Name = L"textBoxPP";
+            this->textBoxPP->Size = System::Drawing::Size(272, 31);
+            this->textBoxPP->TabIndex = 14;
             // 
             // labelDateEmbaucheEmployes
             // 
@@ -1621,12 +1621,12 @@ private: System::Windows::Forms::TextBox^ textBoxPoP;
             // 
             // textBoxNP
             // 
-            this->textBox11->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->textBox11->Location = System::Drawing::Point(221, 36);
-            this->textBox11->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
-            this->textBox11->Name = L"textBox11";
-            this->textBox11->Size = System::Drawing::Size(270, 31);
-            this->textBox11->TabIndex = 2;
+            this->textBoxNP->Dock = System::Windows::Forms::DockStyle::Fill;
+            this->textBoxNP->Location = System::Drawing::Point(221, 36);
+            this->textBoxNP->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+            this->textBoxNP->Name = L"textBoxNP";
+            this->textBoxNP->Size = System::Drawing::Size(270, 31);
+            this->textBoxNP->TabIndex = 2;
             // 
             // labelNomEmployes
             // 
@@ -1656,19 +1656,19 @@ private: System::Windows::Forms::TextBox^ textBoxPoP;
             // 
             // textBoxSP
             // 
-            this->textBox15->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->textBox15->Location = System::Drawing::Point(658, 122);
-            this->textBox15->Name = L"textBox15";
-            this->textBox15->Size = System::Drawing::Size(272, 31);
-            this->textBox15->TabIndex = 18;
+            this->textBoxSP->Dock = System::Windows::Forms::DockStyle::Fill;
+            this->textBoxSP->Location = System::Drawing::Point(658, 122);
+            this->textBoxSP->Name = L"textBoxSP";
+            this->textBoxSP->Size = System::Drawing::Size(272, 31);
+            this->textBoxSP->TabIndex = 18;
             // 
             // textBoxNuP
             // 
-            this->textBox8->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->textBox8->Location = System::Drawing::Point(1244, 34);
-            this->textBox8->Name = L"textBox8";
-            this->textBox8->Size = System::Drawing::Size(274, 31);
-            this->textBox8->TabIndex = 19;
+            this->textBoxNuP->Dock = System::Windows::Forms::DockStyle::Fill;
+            this->textBoxNuP->Location = System::Drawing::Point(1244, 34);
+            this->textBoxNuP->Name = L"textBoxNuP";
+            this->textBoxNuP->Size = System::Drawing::Size(274, 31);
+            this->textBoxNuP->TabIndex = 19;
             // 
             // labelAdressePostaleEmployes
             // 
@@ -1978,20 +1978,20 @@ private: System::Windows::Forms::TextBox^ textBoxPoP;
             // 
             // textBoxD
             // 
-            this->textBox12->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->textBox12->Location = System::Drawing::Point(843, 34);
-            this->textBox12->Name = L"textBox12";
-            this->textBox12->Size = System::Drawing::Size(240, 31);
-            this->textBox12->TabIndex = 14;
+            this->textBoxD->Dock = System::Windows::Forms::DockStyle::Fill;
+            this->textBoxD->Location = System::Drawing::Point(843, 34);
+            this->textBoxD->Name = L"textBoxD";
+            this->textBoxD->Size = System::Drawing::Size(240, 31);
+            this->textBoxD->TabIndex = 14;
             // 
             // textBoxQ
             // 
-            this->textBox13->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->textBox13->Location = System::Drawing::Point(223, 121);
-            this->textBox13->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
-            this->textBox13->Name = L"textBox13";
-            this->textBox13->Size = System::Drawing::Size(242, 31);
-            this->textBox13->TabIndex = 11;
+            this->textBoxQ->Dock = System::Windows::Forms::DockStyle::Fill;
+            this->textBoxQ->Location = System::Drawing::Point(223, 121);
+            this->textBoxQ->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+            this->textBoxQ->Name = L"textBox13";
+            this->textBoxQ->Size = System::Drawing::Size(242, 31);
+            this->textBoxQ->TabIndex = 11;
             // 
             // labelQuantiteStocks
             // 
@@ -2007,12 +2007,12 @@ private: System::Windows::Forms::TextBox^ textBoxPoP;
             // 
             // textBoxR
             // 
-            this->textBox14->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->textBox14->Location = System::Drawing::Point(225, 36);
-            this->textBox14->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
-            this->textBox14->Name = L"textBox14";
-            this->textBox14->Size = System::Drawing::Size(238, 31);
-            this->textBox14->TabIndex = 2;
+            this->textBoxR->Dock = System::Windows::Forms::DockStyle::Fill;
+            this->textBoxR->Location = System::Drawing::Point(225, 36);
+            this->textBoxR->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+            this->textBoxR->Name = L"textBoxR";
+            this->textBoxR->Size = System::Drawing::Size(238, 31);
+            this->textBoxR->TabIndex = 2;
             // 
             // labelReferenceProduitStocks
             // 
@@ -2029,19 +2029,19 @@ private: System::Windows::Forms::TextBox^ textBoxPoP;
             // 
             // textBoxP
             // 
-            this->textBox16->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->textBox16->Location = System::Drawing::Point(1277, 34);
-            this->textBox16->Name = L"textBox16";
-            this->textBox16->Size = System::Drawing::Size(241, 31);
-            this->textBox16->TabIndex = 17;
+            this->textBoxP->Dock = System::Windows::Forms::DockStyle::Fill;
+            this->textBoxP->Location = System::Drawing::Point(1277, 34);
+            this->textBoxP->Name = L"textBoxP";
+            this->textBoxP->Size = System::Drawing::Size(241, 31);
+            this->textBoxP->TabIndex = 17;
             // 
             // textBoxT
             // 
-            this->textBox17->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->textBox17->Location = System::Drawing::Point(1277, 122);
-            this->textBox17->Name = L"textBox17";
-            this->textBox17->Size = System::Drawing::Size(241, 31);
-            this->textBox17->TabIndex = 18;
+            this->textBoxT->Dock = System::Windows::Forms::DockStyle::Fill;
+            this->textBoxT->Location = System::Drawing::Point(1277, 122);
+            this->textBoxT->Name = L"textBoxT";
+            this->textBoxT->Size = System::Drawing::Size(241, 31);
+            this->textBoxT->TabIndex = 18;
             // 
             // labelPrixStocks
             // 
@@ -2082,11 +2082,11 @@ private: System::Windows::Forms::TextBox^ textBoxPoP;
             // 
             // textBoxS
             // 
-            this->textBox18->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->textBox18->Location = System::Drawing::Point(843, 122);
-            this->textBox18->Name = L"textBox18";
-            this->textBox18->Size = System::Drawing::Size(240, 31);
-            this->textBox18->TabIndex = 22;
+            this->textBoxS->Dock = System::Windows::Forms::DockStyle::Fill;
+            this->textBoxS->Location = System::Drawing::Point(843, 122);
+            this->textBoxS->Name = L"textBoxS";
+            this->textBoxS->Size = System::Drawing::Size(240, 31);
+            this->textBoxS->TabIndex = 22;
             // 
             // tabStats
             // 
