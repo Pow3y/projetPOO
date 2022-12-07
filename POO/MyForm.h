@@ -1065,7 +1065,6 @@ private: System::Windows::Forms::Label^ label26;
             this->textBoxCodePostal->Name = L"textBoxCodePostal";
             this->textBoxCodePostal->Size = System::Drawing::Size(198, 22);
             this->textBoxCodePostal->TabIndex = 11;
-            this->textBoxCodePostal->TextChanged += gcnew System::EventHandler(this, &MyForm::textBoxCodePostal_TextChanged);
             // 
             // labelCodePostalClient
             // 
