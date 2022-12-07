@@ -2279,7 +2279,7 @@ private: System::Windows::Forms::Button^ buttonValeurAchatStock;
             this->tableLayoutPanel6->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Absolute,
                 22)));
             this->tableLayoutPanel6->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Absolute,
-                31)));
+                33)));
             this->tableLayoutPanel6->Controls->Add(this->label22, 3, 0);
             this->tableLayoutPanel6->Dock = System::Windows::Forms::DockStyle::Top;
             this->tableLayoutPanel6->Location = System::Drawing::Point(0, 0);
@@ -2526,6 +2526,11 @@ private: System::Void buttonAchatsClient_Click(System::Object^ sender, System::E
     SqlServices^ DB = gcnew SqlServices();
     DB->ConnectDB();
     this->dataGridView6->DataSource = DB->ExecuteSQL(" SELECT  SUM(Include.quantity * Product_Price ) AS Profit FROM[projetPOO].[dbo].[Commands] JOIN[projetPOO].[dbo].[Client] ON Client.Id_Client = Commands.Id_Client JOIN[projetPOO].[dbo].[Include] ON Include.Id_Command = Commands.Id_Command JOIN[projetPOO].[dbo].[Stocks] ON Stocks.Id_Produit = Include.Id_Produit WHERE Client.Id_Client = 7");
+}
+private: System::Void button3_Click_1(System::Object^ sender, System::EventArgs^ e) {
+    Clients^ Client = gcnew Clients();
+    Client->Update(textBoxClientId, textBoxNomClient, textBoxPrénomClient, dateTimePickerBirthDate, textBoxNumRue, textBoxNomRue, textBoxEtage, textBoxVille, textBoxCodePostal);
+    updateForms();
 }
 };
 }
