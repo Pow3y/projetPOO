@@ -52,7 +52,7 @@ void Clients::Create(TextBox^ ID, TextBox^ LastName, TextBox^ Firstname, DateTim
     DB->ConnectDB();
     DB->ExecuteQuery("INSERT INTO projetPOO.dbo.Address VALUES ('" + System::Convert::ToString(this->AddressNum) + "','" + this->AddressStreet + "','" + System::Convert::ToString(this->AddressFloor) + "',20311)");
     DB->ExecuteQuery("INSERT INTO projetPOO.dbo.Client VALUES ( '" + this->LastName + "','" + this->FirstName + "','" + System::Convert::ToString(this->BirthDate) + "')");
-    DB->ExecuteQuery("INSERT INTO projetPOO.dbo.Live_InC VALUES ( '11','11')");
+    DB->ExecuteQuery("INSERT INTO projetPOO.dbo.Live_InC VALUES ( '13','13')");
     MessageBox::Show("Client Created");
 }
 
