@@ -8,13 +8,18 @@ ref class Clients : public Person
 {
 
 public:
-	Clients(TextBox^ ID, TextBox^ LastName, TextBox^ Firstname, DateTimePicker^ BirthDate, TextBox^ NumAdr, TextBox^ NameStreet, TextBox^ Floor, TextBox^ City, TextBox^ PostalCode);
+	Clients();
 	~Clients();
-	void Create() override;
-	void Remove() override;
-	void Update() override;
+	void Create(TextBox^ ID, TextBox^ LastName, TextBox^ Firstname, DateTimePicker^ BirthDate, TextBox^ NumAdr, TextBox^ NameStreet, TextBox^ Floor, TextBox^ City, TextBox^ PostalCode) override;
+	void Update(TextBox^ ID, TextBox^ LastName, TextBox^ Firstname, DateTimePicker^ BirthDate, TextBox^ NumAdr, TextBox^ NameStreet, TextBox^ Floor, TextBox^ City, TextBox^ PostalCode) override;
 	bool Exist() override;
-	
-private:
-	DateTime BirthDate;
+	static int ID;
+	static System::String^ FirstName;
+	static System::String^ LastName;
+	static int AddressNum;
+	static int AddressFloor;
+	static System::String^ AddressStreet;
+	static System::String^ AddressCity;
+	static int AddressPostalCode;
+	static DateTime BirthDate;
 };

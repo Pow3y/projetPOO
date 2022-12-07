@@ -25,3 +25,9 @@ System::Data::DataTable^ SqlServices::ExecuteSQL(System::String^ Query)
 	dt->Load(reader);
 	return dt;
 }
+
+int SqlServices::ExecuteQuery(System::String^ Query) {
+	System::Data::SqlClient::SqlCommand^ cmd = gcnew System::Data::SqlClient::SqlCommand(Query);
+	cmd->Connection = DataBaseCo;
+	return cmd->ExecuteNonQuery();
+}
