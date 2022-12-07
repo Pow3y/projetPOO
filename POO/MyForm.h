@@ -257,21 +257,32 @@ private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel15;
 private: System::Windows::Forms::Label^ label4;
 private: System::Windows::Forms::Label^ label5;
 private: System::Windows::Forms::Label^ label6;
-private: System::Windows::Forms::TextBox^ textBox10;
-private: System::Windows::Forms::TextBox^ textBox19;
+private: System::Windows::Forms::TextBox^ textBoxDeliveryDateNewOrder;
+private: System::Windows::Forms::TextBox^ textBoxNumberAdrDeliveryNewOrder;
+
+
+
 private: System::Windows::Forms::Label^ label7;
-private: System::Windows::Forms::TextBox^ textBox20;
-private: System::Windows::Forms::DateTimePicker^ dateTimePicker1;
+private: System::Windows::Forms::TextBox^ textBoxIdCommandNewOrder;
+private: System::Windows::Forms::DateTimePicker^ dateTimePickerBirthDateNewOrder;
+
+
+
 private: System::Windows::Forms::Label^ label8;
 private: System::Windows::Forms::Label^ label9;
-private: System::Windows::Forms::TextBox^ textBox21;
-private: System::Windows::Forms::TextBox^ textBox22;
+private: System::Windows::Forms::TextBox^ textBoxEmissonDateNewOrder;
+private: System::Windows::Forms::TextBox^ textBoxStreetNameAdrDeliveryNewOrder;
+
+
 private: System::Windows::Forms::Label^ label10;
-private: System::Windows::Forms::TextBox^ textBox23;
+private: System::Windows::Forms::TextBox^ textBoxCityDeliveryNewOrder;
+
 private: System::Windows::Forms::Label^ label11;
-private: System::Windows::Forms::TextBox^ textBox24;
+private: System::Windows::Forms::TextBox^ textBoxPostalCodeDeliveryNewOrder;
+
 private: System::Windows::Forms::Label^ label12;
-private: System::Windows::Forms::TextBox^ textBox25;
+private: System::Windows::Forms::TextBox^ textBoxNumberAdrFactNewOrder;
+
 private: System::Windows::Forms::Label^ label13;
 private: System::Windows::Forms::Label^ label14;
 private: System::Windows::Forms::Label^ label15;
@@ -284,19 +295,32 @@ private: System::Windows::Forms::Label^ label21;
 private: System::Windows::Forms::Label^ label23;
 private: System::Windows::Forms::Label^ label24;
 private: System::Windows::Forms::Label^ label25;
-private: System::Windows::Forms::TextBox^ textBox7;
-private: System::Windows::Forms::TextBox^ textBox9;
-private: System::Windows::Forms::TextBox^ textBox26;
-private: System::Windows::Forms::TextBox^ textBox27;
-private: System::Windows::Forms::TextBox^ textBox28;
-private: System::Windows::Forms::TextBox^ textBox29;
-private: System::Windows::Forms::TextBox^ textBox30;
-private: System::Windows::Forms::TextBox^ textBox31;
-private: System::Windows::Forms::TextBox^ textBox32;
-private: System::Windows::Forms::TextBox^ textBox33;
-private: System::Windows::Forms::TextBox^ textBox34;
-private: System::Windows::Forms::TextBox^ textBox35;
-private: System::Windows::Forms::TextBox^ textBox36;
+private: System::Windows::Forms::TextBox^ textBoxCommandReferenceNewOrder;
+private: System::Windows::Forms::TextBox^ textBoxFloorDeliveryNewOrder;
+private: System::Windows::Forms::TextBox^ textBoxStreetNameFactNewOrder;
+
+
+
+private: System::Windows::Forms::TextBox^ textBoxLastNameClientNewOrder;
+private: System::Windows::Forms::TextBox^ textBoxPaymentMethodNewOrder;
+private: System::Windows::Forms::TextBox^ textBoxFloorFactNewOrder;
+
+
+
+private: System::Windows::Forms::TextBox^ textBoxFirstNameClientNewOrder;
+private: System::Windows::Forms::TextBox^ textBoxPaymentDateNewOrder;
+private: System::Windows::Forms::TextBox^ textBoxPriceNewOrder;
+private: System::Windows::Forms::TextBox^ textBoxCityFactNewOrder;
+
+
+
+
+private: System::Windows::Forms::TextBox^ textBoxPostalCodeFactNewOrder;
+
+private: System::Windows::Forms::TextBox^ textBoxQuantityNewOrder;
+private: System::Windows::Forms::TextBox^ textBoxDesignationNewOrder;
+
+
 private: System::Windows::Forms::Label^ label26;
 
 
@@ -462,21 +486,21 @@ private: System::Windows::Forms::Label^ label26;
             this->label4 = (gcnew System::Windows::Forms::Label());
             this->label5 = (gcnew System::Windows::Forms::Label());
             this->label6 = (gcnew System::Windows::Forms::Label());
-            this->textBox10 = (gcnew System::Windows::Forms::TextBox());
-            this->textBox19 = (gcnew System::Windows::Forms::TextBox());
+            this->textBoxDeliveryDateNewOrder = (gcnew System::Windows::Forms::TextBox());
+            this->textBoxNumberAdrDeliveryNewOrder = (gcnew System::Windows::Forms::TextBox());
             this->label7 = (gcnew System::Windows::Forms::Label());
-            this->textBox20 = (gcnew System::Windows::Forms::TextBox());
-            this->dateTimePicker1 = (gcnew System::Windows::Forms::DateTimePicker());
+            this->textBoxIdCommandNewOrder = (gcnew System::Windows::Forms::TextBox());
+            this->dateTimePickerBirthDateNewOrder = (gcnew System::Windows::Forms::DateTimePicker());
             this->label8 = (gcnew System::Windows::Forms::Label());
             this->label9 = (gcnew System::Windows::Forms::Label());
-            this->textBox21 = (gcnew System::Windows::Forms::TextBox());
-            this->textBox22 = (gcnew System::Windows::Forms::TextBox());
+            this->textBoxEmissonDateNewOrder = (gcnew System::Windows::Forms::TextBox());
+            this->textBoxStreetNameAdrDeliveryNewOrder = (gcnew System::Windows::Forms::TextBox());
             this->label10 = (gcnew System::Windows::Forms::Label());
-            this->textBox23 = (gcnew System::Windows::Forms::TextBox());
+            this->textBoxCityDeliveryNewOrder = (gcnew System::Windows::Forms::TextBox());
             this->label11 = (gcnew System::Windows::Forms::Label());
-            this->textBox24 = (gcnew System::Windows::Forms::TextBox());
+            this->textBoxPostalCodeDeliveryNewOrder = (gcnew System::Windows::Forms::TextBox());
             this->label12 = (gcnew System::Windows::Forms::Label());
-            this->textBox25 = (gcnew System::Windows::Forms::TextBox());
+            this->textBoxNumberAdrFactNewOrder = (gcnew System::Windows::Forms::TextBox());
             this->tableLayoutPanel6 = (gcnew System::Windows::Forms::TableLayoutPanel());
             this->label22 = (gcnew System::Windows::Forms::Label());
             this->label13 = (gcnew System::Windows::Forms::Label());
@@ -491,19 +515,19 @@ private: System::Windows::Forms::Label^ label26;
             this->label23 = (gcnew System::Windows::Forms::Label());
             this->label24 = (gcnew System::Windows::Forms::Label());
             this->label25 = (gcnew System::Windows::Forms::Label());
-            this->textBox7 = (gcnew System::Windows::Forms::TextBox());
-            this->textBox9 = (gcnew System::Windows::Forms::TextBox());
-            this->textBox26 = (gcnew System::Windows::Forms::TextBox());
-            this->textBox27 = (gcnew System::Windows::Forms::TextBox());
-            this->textBox28 = (gcnew System::Windows::Forms::TextBox());
-            this->textBox29 = (gcnew System::Windows::Forms::TextBox());
-            this->textBox30 = (gcnew System::Windows::Forms::TextBox());
-            this->textBox31 = (gcnew System::Windows::Forms::TextBox());
-            this->textBox32 = (gcnew System::Windows::Forms::TextBox());
-            this->textBox33 = (gcnew System::Windows::Forms::TextBox());
-            this->textBox34 = (gcnew System::Windows::Forms::TextBox());
-            this->textBox35 = (gcnew System::Windows::Forms::TextBox());
-            this->textBox36 = (gcnew System::Windows::Forms::TextBox());
+            this->textBoxCommandReferenceNewOrder = (gcnew System::Windows::Forms::TextBox());
+            this->textBoxFloorDeliveryNewOrder = (gcnew System::Windows::Forms::TextBox());
+            this->textBoxStreetNameFactNewOrder = (gcnew System::Windows::Forms::TextBox());
+            this->textBoxLastNameClientNewOrder = (gcnew System::Windows::Forms::TextBox());
+            this->textBoxPaymentMethodNewOrder = (gcnew System::Windows::Forms::TextBox());
+            this->textBoxFloorFactNewOrder = (gcnew System::Windows::Forms::TextBox());
+            this->textBoxFirstNameClientNewOrder = (gcnew System::Windows::Forms::TextBox());
+            this->textBoxPaymentDateNewOrder = (gcnew System::Windows::Forms::TextBox());
+            this->textBoxPriceNewOrder = (gcnew System::Windows::Forms::TextBox());
+            this->textBoxCityFactNewOrder = (gcnew System::Windows::Forms::TextBox());
+            this->textBoxPostalCodeFactNewOrder = (gcnew System::Windows::Forms::TextBox());
+            this->textBoxQuantityNewOrder = (gcnew System::Windows::Forms::TextBox());
+            this->textBoxDesignationNewOrder = (gcnew System::Windows::Forms::TextBox());
             this->label26 = (gcnew System::Windows::Forms::Label());
             this->tableLayoutPanelHotbar->SuspendLayout();
             this->panel1->SuspendLayout();
@@ -2321,16 +2345,16 @@ private: System::Windows::Forms::Label^ label26;
                 20)));
             this->tableLayoutPanel15->Controls->Add(this->label4, 0, 3);
             this->tableLayoutPanel15->Controls->Add(this->label6, 3, 1);
-            this->tableLayoutPanel15->Controls->Add(this->textBox10, 4, 1);
-            this->tableLayoutPanel15->Controls->Add(this->textBox20, 1, 1);
+            this->tableLayoutPanel15->Controls->Add(this->textBoxDeliveryDateNewOrder, 4, 1);
+            this->tableLayoutPanel15->Controls->Add(this->textBoxIdCommandNewOrder, 1, 1);
             this->tableLayoutPanel15->Controls->Add(this->label8, 6, 1);
-            this->tableLayoutPanel15->Controls->Add(this->textBox21, 7, 1);
+            this->tableLayoutPanel15->Controls->Add(this->textBoxEmissonDateNewOrder, 7, 1);
             this->tableLayoutPanel15->Controls->Add(this->label10, 0, 1);
-            this->tableLayoutPanel15->Controls->Add(this->textBox23, 1, 3);
+            this->tableLayoutPanel15->Controls->Add(this->textBoxCityDeliveryNewOrder, 1, 3);
             this->tableLayoutPanel15->Controls->Add(this->label11, 3, 3);
-            this->tableLayoutPanel15->Controls->Add(this->textBox24, 4, 3);
+            this->tableLayoutPanel15->Controls->Add(this->textBoxPostalCodeDeliveryNewOrder, 4, 3);
             this->tableLayoutPanel15->Controls->Add(this->label12, 6, 3);
-            this->tableLayoutPanel15->Controls->Add(this->textBox25, 7, 3);
+            this->tableLayoutPanel15->Controls->Add(this->textBoxNumberAdrFactNewOrder, 7, 3);
             this->tableLayoutPanel15->Controls->Add(this->label13, 9, 1);
             this->tableLayoutPanel15->Controls->Add(this->label15, 9, 3);
             this->tableLayoutPanel15->Controls->Add(this->label16, 0, 4);
@@ -2338,31 +2362,31 @@ private: System::Windows::Forms::Label^ label26;
             this->tableLayoutPanel15->Controls->Add(this->label18, 6, 4);
             this->tableLayoutPanel15->Controls->Add(this->label19, 12, 1);
             this->tableLayoutPanel15->Controls->Add(this->label21, 12, 3);
-            this->tableLayoutPanel15->Controls->Add(this->textBox7, 10, 1);
-            this->tableLayoutPanel15->Controls->Add(this->textBox26, 10, 3);
-            this->tableLayoutPanel15->Controls->Add(this->textBox27, 13, 1);
-            this->tableLayoutPanel15->Controls->Add(this->textBox29, 13, 3);
-            this->tableLayoutPanel15->Controls->Add(this->textBox33, 1, 4);
-            this->tableLayoutPanel15->Controls->Add(this->textBox34, 4, 4);
-            this->tableLayoutPanel15->Controls->Add(this->textBox35, 7, 4);
-            this->tableLayoutPanel15->Controls->Add(this->textBox36, 10, 4);
+            this->tableLayoutPanel15->Controls->Add(this->textBoxCommandReferenceNewOrder, 10, 1);
+            this->tableLayoutPanel15->Controls->Add(this->textBoxStreetNameFactNewOrder, 10, 3);
+            this->tableLayoutPanel15->Controls->Add(this->textBoxLastNameClientNewOrder, 13, 1);
+            this->tableLayoutPanel15->Controls->Add(this->textBoxFloorFactNewOrder, 13, 3);
+            this->tableLayoutPanel15->Controls->Add(this->textBoxCityFactNewOrder, 1, 4);
+            this->tableLayoutPanel15->Controls->Add(this->textBoxPostalCodeFactNewOrder, 4, 4);
+            this->tableLayoutPanel15->Controls->Add(this->textBoxQuantityNewOrder, 7, 4);
+            this->tableLayoutPanel15->Controls->Add(this->textBoxDesignationNewOrder, 10, 4);
             this->tableLayoutPanel15->Controls->Add(this->label26, 9, 4);
             this->tableLayoutPanel15->Controls->Add(this->label24, 12, 4);
-            this->tableLayoutPanel15->Controls->Add(this->textBox31, 13, 4);
+            this->tableLayoutPanel15->Controls->Add(this->textBoxPaymentDateNewOrder, 13, 4);
             this->tableLayoutPanel15->Controls->Add(this->label25, 0, 5);
-            this->tableLayoutPanel15->Controls->Add(this->textBox32, 1, 5);
+            this->tableLayoutPanel15->Controls->Add(this->textBoxPriceNewOrder, 1, 5);
             this->tableLayoutPanel15->Controls->Add(this->label20, 3, 5);
-            this->tableLayoutPanel15->Controls->Add(this->textBox28, 4, 5);
-            this->tableLayoutPanel15->Controls->Add(this->textBox9, 13, 2);
+            this->tableLayoutPanel15->Controls->Add(this->textBoxPaymentMethodNewOrder, 4, 5);
+            this->tableLayoutPanel15->Controls->Add(this->textBoxFloorDeliveryNewOrder, 13, 2);
             this->tableLayoutPanel15->Controls->Add(this->label14, 12, 2);
-            this->tableLayoutPanel15->Controls->Add(this->textBox22, 10, 2);
+            this->tableLayoutPanel15->Controls->Add(this->textBoxStreetNameAdrDeliveryNewOrder, 10, 2);
             this->tableLayoutPanel15->Controls->Add(this->label9, 9, 2);
-            this->tableLayoutPanel15->Controls->Add(this->dateTimePicker1, 7, 2);
             this->tableLayoutPanel15->Controls->Add(this->label5, 6, 2);
-            this->tableLayoutPanel15->Controls->Add(this->textBox19, 4, 2);
             this->tableLayoutPanel15->Controls->Add(this->label7, 3, 2);
             this->tableLayoutPanel15->Controls->Add(this->label23, 0, 2);
-            this->tableLayoutPanel15->Controls->Add(this->textBox30, 1, 2);
+            this->tableLayoutPanel15->Controls->Add(this->textBoxFirstNameClientNewOrder, 1, 2);
+            this->tableLayoutPanel15->Controls->Add(this->dateTimePickerBirthDateNewOrder, 4, 2);
+            this->tableLayoutPanel15->Controls->Add(this->textBoxNumberAdrDeliveryNewOrder, 7, 2);
             this->tableLayoutPanel15->Dock = System::Windows::Forms::DockStyle::Fill;
             this->tableLayoutPanel15->Location = System::Drawing::Point(3, 3);
             this->tableLayoutPanel15->Name = L"tableLayoutPanel15";
@@ -2422,23 +2446,23 @@ private: System::Windows::Forms::Label^ label26;
             this->label6->TabIndex = 16;
             this->label6->Text = L"Date de livraison :";
             // 
-            // textBox10
+            // textBoxDeliveryDateNewOrder
             // 
-            this->textBox10->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->textBox10->Location = System::Drawing::Point(396, 21);
-            this->textBox10->Margin = System::Windows::Forms::Padding(1);
-            this->textBox10->Name = L"textBox10";
-            this->textBox10->Size = System::Drawing::Size(27, 22);
-            this->textBox10->TabIndex = 14;
+            this->textBoxDeliveryDateNewOrder->Dock = System::Windows::Forms::DockStyle::Fill;
+            this->textBoxDeliveryDateNewOrder->Location = System::Drawing::Point(396, 21);
+            this->textBoxDeliveryDateNewOrder->Margin = System::Windows::Forms::Padding(1);
+            this->textBoxDeliveryDateNewOrder->Name = L"textBoxDeliveryDateNewOrder";
+            this->textBoxDeliveryDateNewOrder->Size = System::Drawing::Size(27, 22);
+            this->textBoxDeliveryDateNewOrder->TabIndex = 14;
             // 
-            // textBox19
+            // textBoxNumberAdrDeliveryNewOrder
             // 
-            this->textBox19->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->textBox19->Location = System::Drawing::Point(396, 104);
-            this->textBox19->Margin = System::Windows::Forms::Padding(1);
-            this->textBox19->Name = L"textBox19";
-            this->textBox19->Size = System::Drawing::Size(27, 22);
-            this->textBox19->TabIndex = 11;
+            this->textBoxNumberAdrDeliveryNewOrder->Dock = System::Windows::Forms::DockStyle::Fill;
+            this->textBoxNumberAdrDeliveryNewOrder->Location = System::Drawing::Point(670, 104);
+            this->textBoxNumberAdrDeliveryNewOrder->Margin = System::Windows::Forms::Padding(1);
+            this->textBoxNumberAdrDeliveryNewOrder->Name = L"textBoxNumberAdrDeliveryNewOrder";
+            this->textBoxNumberAdrDeliveryNewOrder->Size = System::Drawing::Size(27, 22);
+            this->textBoxNumberAdrDeliveryNewOrder->TabIndex = 11;
             // 
             // label7
             // 
@@ -2454,24 +2478,24 @@ private: System::Windows::Forms::Label^ label26;
             this->label7->TabIndex = 10;
             this->label7->Text = L"Date de naissance :";
             // 
-            // textBox20
+            // textBoxIdCommandNewOrder
             // 
-            this->textBox20->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->textBox20->Location = System::Drawing::Point(153, 21);
-            this->textBox20->Margin = System::Windows::Forms::Padding(1);
-            this->textBox20->Name = L"textBox20";
-            this->textBox20->Size = System::Drawing::Size(27, 22);
-            this->textBox20->TabIndex = 2;
+            this->textBoxIdCommandNewOrder->Dock = System::Windows::Forms::DockStyle::Fill;
+            this->textBoxIdCommandNewOrder->Location = System::Drawing::Point(153, 21);
+            this->textBoxIdCommandNewOrder->Margin = System::Windows::Forms::Padding(1);
+            this->textBoxIdCommandNewOrder->Name = L"textBoxIdCommandNewOrder";
+            this->textBoxIdCommandNewOrder->Size = System::Drawing::Size(27, 22);
+            this->textBoxIdCommandNewOrder->TabIndex = 2;
             // 
-            // dateTimePicker1
+            // dateTimePickerBirthDateNewOrder
             // 
-            this->dateTimePicker1->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->dateTimePicker1->Format = System::Windows::Forms::DateTimePickerFormat::Custom;
-            this->dateTimePicker1->Location = System::Drawing::Point(670, 104);
-            this->dateTimePicker1->Margin = System::Windows::Forms::Padding(1);
-            this->dateTimePicker1->Name = L"dateTimePicker1";
-            this->dateTimePicker1->Size = System::Drawing::Size(27, 22);
-            this->dateTimePicker1->TabIndex = 18;
+            this->dateTimePickerBirthDateNewOrder->Dock = System::Windows::Forms::DockStyle::Fill;
+            this->dateTimePickerBirthDateNewOrder->Format = System::Windows::Forms::DateTimePickerFormat::Custom;
+            this->dateTimePickerBirthDateNewOrder->Location = System::Drawing::Point(396, 104);
+            this->dateTimePickerBirthDateNewOrder->Margin = System::Windows::Forms::Padding(1);
+            this->dateTimePickerBirthDateNewOrder->Name = L"dateTimePickerBirthDateNewOrder";
+            this->dateTimePickerBirthDateNewOrder->Size = System::Drawing::Size(27, 22);
+            this->dateTimePickerBirthDateNewOrder->TabIndex = 18;
             // 
             // label8
             // 
@@ -2501,23 +2525,23 @@ private: System::Windows::Forms::Label^ label26;
             this->label9->TabIndex = 20;
             this->label9->Text = L"Nom de rue LIVRAISON :";
             // 
-            // textBox21
+            // textBoxEmissonDateNewOrder
             // 
-            this->textBox21->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->textBox21->Location = System::Drawing::Point(670, 21);
-            this->textBox21->Margin = System::Windows::Forms::Padding(1);
-            this->textBox21->Name = L"textBox21";
-            this->textBox21->Size = System::Drawing::Size(27, 22);
-            this->textBox21->TabIndex = 21;
+            this->textBoxEmissonDateNewOrder->Dock = System::Windows::Forms::DockStyle::Fill;
+            this->textBoxEmissonDateNewOrder->Location = System::Drawing::Point(670, 21);
+            this->textBoxEmissonDateNewOrder->Margin = System::Windows::Forms::Padding(1);
+            this->textBoxEmissonDateNewOrder->Name = L"textBoxEmissonDateNewOrder";
+            this->textBoxEmissonDateNewOrder->Size = System::Drawing::Size(27, 22);
+            this->textBoxEmissonDateNewOrder->TabIndex = 21;
             // 
-            // textBox22
+            // textBoxStreetNameAdrDeliveryNewOrder
             // 
-            this->textBox22->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->textBox22->Location = System::Drawing::Point(922, 104);
-            this->textBox22->Margin = System::Windows::Forms::Padding(1);
-            this->textBox22->Name = L"textBox22";
-            this->textBox22->Size = System::Drawing::Size(27, 22);
-            this->textBox22->TabIndex = 22;
+            this->textBoxStreetNameAdrDeliveryNewOrder->Dock = System::Windows::Forms::DockStyle::Fill;
+            this->textBoxStreetNameAdrDeliveryNewOrder->Location = System::Drawing::Point(922, 104);
+            this->textBoxStreetNameAdrDeliveryNewOrder->Margin = System::Windows::Forms::Padding(1);
+            this->textBoxStreetNameAdrDeliveryNewOrder->Name = L"textBoxStreetNameAdrDeliveryNewOrder";
+            this->textBoxStreetNameAdrDeliveryNewOrder->Size = System::Drawing::Size(27, 22);
+            this->textBoxStreetNameAdrDeliveryNewOrder->TabIndex = 22;
             // 
             // label10
             // 
@@ -2532,14 +2556,14 @@ private: System::Windows::Forms::Label^ label26;
             this->label10->TabIndex = 6;
             this->label10->Text = L"Id commande :";
             // 
-            // textBox23
+            // textBoxCityDeliveryNewOrder
             // 
-            this->textBox23->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->textBox23->Location = System::Drawing::Point(153, 187);
-            this->textBox23->Margin = System::Windows::Forms::Padding(1);
-            this->textBox23->Name = L"textBox23";
-            this->textBox23->Size = System::Drawing::Size(27, 22);
-            this->textBox23->TabIndex = 28;
+            this->textBoxCityDeliveryNewOrder->Dock = System::Windows::Forms::DockStyle::Fill;
+            this->textBoxCityDeliveryNewOrder->Location = System::Drawing::Point(153, 187);
+            this->textBoxCityDeliveryNewOrder->Margin = System::Windows::Forms::Padding(1);
+            this->textBoxCityDeliveryNewOrder->Name = L"textBoxCityDeliveryNewOrder";
+            this->textBoxCityDeliveryNewOrder->Size = System::Drawing::Size(27, 22);
+            this->textBoxCityDeliveryNewOrder->TabIndex = 28;
             // 
             // label11
             // 
@@ -2555,14 +2579,14 @@ private: System::Windows::Forms::Label^ label26;
             this->label11->TabIndex = 23;
             this->label11->Text = L"Code postal LIVRAISON :";
             // 
-            // textBox24
+            // textBoxPostalCodeDeliveryNewOrder
             // 
-            this->textBox24->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->textBox24->Location = System::Drawing::Point(396, 187);
-            this->textBox24->Margin = System::Windows::Forms::Padding(1);
-            this->textBox24->Name = L"textBox24";
-            this->textBox24->Size = System::Drawing::Size(27, 22);
-            this->textBox24->TabIndex = 25;
+            this->textBoxPostalCodeDeliveryNewOrder->Dock = System::Windows::Forms::DockStyle::Fill;
+            this->textBoxPostalCodeDeliveryNewOrder->Location = System::Drawing::Point(396, 187);
+            this->textBoxPostalCodeDeliveryNewOrder->Margin = System::Windows::Forms::Padding(1);
+            this->textBoxPostalCodeDeliveryNewOrder->Name = L"textBoxPostalCodeDeliveryNewOrder";
+            this->textBoxPostalCodeDeliveryNewOrder->Size = System::Drawing::Size(27, 22);
+            this->textBoxPostalCodeDeliveryNewOrder->TabIndex = 25;
             // 
             // label12
             // 
@@ -2578,14 +2602,14 @@ private: System::Windows::Forms::Label^ label26;
             this->label12->TabIndex = 24;
             this->label12->Text = L" Numéro de rue FACTURATION :";
             // 
-            // textBox25
+            // textBoxNumberAdrFactNewOrder
             // 
-            this->textBox25->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->textBox25->Location = System::Drawing::Point(670, 187);
-            this->textBox25->Margin = System::Windows::Forms::Padding(1);
-            this->textBox25->Name = L"textBox25";
-            this->textBox25->Size = System::Drawing::Size(27, 22);
-            this->textBox25->TabIndex = 26;
+            this->textBoxNumberAdrFactNewOrder->Dock = System::Windows::Forms::DockStyle::Fill;
+            this->textBoxNumberAdrFactNewOrder->Location = System::Drawing::Point(670, 187);
+            this->textBoxNumberAdrFactNewOrder->Margin = System::Windows::Forms::Padding(1);
+            this->textBoxNumberAdrFactNewOrder->Name = L"textBoxNumberAdrFactNewOrder";
+            this->textBoxNumberAdrFactNewOrder->Size = System::Drawing::Size(27, 22);
+            this->textBoxNumberAdrFactNewOrder->TabIndex = 26;
             // 
             // tableLayoutPanel6
             // 
@@ -2775,110 +2799,110 @@ private: System::Windows::Forms::Label^ label26;
             this->label25->TabIndex = 40;
             this->label25->Text = L"Prix :";
             // 
-            // textBox7
+            // textBoxCommandReferenceNewOrder
             // 
-            this->textBox7->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->textBox7->Location = System::Drawing::Point(924, 23);
-            this->textBox7->Name = L"textBox7";
-            this->textBox7->Size = System::Drawing::Size(23, 22);
-            this->textBox7->TabIndex = 41;
+            this->textBoxCommandReferenceNewOrder->Dock = System::Windows::Forms::DockStyle::Fill;
+            this->textBoxCommandReferenceNewOrder->Location = System::Drawing::Point(924, 23);
+            this->textBoxCommandReferenceNewOrder->Name = L"textBoxCommandReferenceNewOrder";
+            this->textBoxCommandReferenceNewOrder->Size = System::Drawing::Size(23, 22);
+            this->textBoxCommandReferenceNewOrder->TabIndex = 41;
             // 
-            // textBox9
+            // textBoxFloorDeliveryNewOrder
             // 
-            this->textBox9->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->textBox9->Location = System::Drawing::Point(1134, 106);
-            this->textBox9->Name = L"textBox9";
-            this->textBox9->Size = System::Drawing::Size(23, 22);
-            this->textBox9->TabIndex = 42;
-            this->textBox9->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox9_TextChanged);
+            this->textBoxFloorDeliveryNewOrder->Dock = System::Windows::Forms::DockStyle::Fill;
+            this->textBoxFloorDeliveryNewOrder->Location = System::Drawing::Point(1134, 106);
+            this->textBoxFloorDeliveryNewOrder->Name = L"textBoxFloorDeliveryNewOrder";
+            this->textBoxFloorDeliveryNewOrder->Size = System::Drawing::Size(23, 22);
+            this->textBoxFloorDeliveryNewOrder->TabIndex = 42;
+            this->textBoxFloorDeliveryNewOrder->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox9_TextChanged);
             // 
-            // textBox26
+            // textBoxStreetNameFactNewOrder
             // 
-            this->textBox26->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->textBox26->Location = System::Drawing::Point(924, 189);
-            this->textBox26->Name = L"textBox26";
-            this->textBox26->Size = System::Drawing::Size(23, 22);
-            this->textBox26->TabIndex = 43;
+            this->textBoxStreetNameFactNewOrder->Dock = System::Windows::Forms::DockStyle::Fill;
+            this->textBoxStreetNameFactNewOrder->Location = System::Drawing::Point(924, 189);
+            this->textBoxStreetNameFactNewOrder->Name = L"textBoxStreetNameFactNewOrder";
+            this->textBoxStreetNameFactNewOrder->Size = System::Drawing::Size(23, 22);
+            this->textBoxStreetNameFactNewOrder->TabIndex = 43;
             // 
-            // textBox27
+            // textBoxLastNameClientNewOrder
             // 
-            this->textBox27->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->textBox27->Location = System::Drawing::Point(1134, 23);
-            this->textBox27->Name = L"textBox27";
-            this->textBox27->Size = System::Drawing::Size(23, 22);
-            this->textBox27->TabIndex = 44;
+            this->textBoxLastNameClientNewOrder->Dock = System::Windows::Forms::DockStyle::Fill;
+            this->textBoxLastNameClientNewOrder->Location = System::Drawing::Point(1134, 23);
+            this->textBoxLastNameClientNewOrder->Name = L"textBoxLastNameClientNewOrder";
+            this->textBoxLastNameClientNewOrder->Size = System::Drawing::Size(23, 22);
+            this->textBoxLastNameClientNewOrder->TabIndex = 44;
             // 
-            // textBox28
+            // textBoxPaymentMethodNewOrder
             // 
-            this->textBox28->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->textBox28->Location = System::Drawing::Point(398, 355);
-            this->textBox28->Name = L"textBox28";
-            this->textBox28->Size = System::Drawing::Size(23, 22);
-            this->textBox28->TabIndex = 45;
+            this->textBoxPaymentMethodNewOrder->Dock = System::Windows::Forms::DockStyle::Fill;
+            this->textBoxPaymentMethodNewOrder->Location = System::Drawing::Point(398, 355);
+            this->textBoxPaymentMethodNewOrder->Name = L"textBoxPaymentMethodNewOrder";
+            this->textBoxPaymentMethodNewOrder->Size = System::Drawing::Size(23, 22);
+            this->textBoxPaymentMethodNewOrder->TabIndex = 45;
             // 
-            // textBox29
+            // textBoxFloorFactNewOrder
             // 
-            this->textBox29->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->textBox29->Location = System::Drawing::Point(1134, 189);
-            this->textBox29->Name = L"textBox29";
-            this->textBox29->Size = System::Drawing::Size(23, 22);
-            this->textBox29->TabIndex = 46;
+            this->textBoxFloorFactNewOrder->Dock = System::Windows::Forms::DockStyle::Fill;
+            this->textBoxFloorFactNewOrder->Location = System::Drawing::Point(1134, 189);
+            this->textBoxFloorFactNewOrder->Name = L"textBoxFloorFactNewOrder";
+            this->textBoxFloorFactNewOrder->Size = System::Drawing::Size(23, 22);
+            this->textBoxFloorFactNewOrder->TabIndex = 46;
             // 
-            // textBox30
+            // textBoxFirstNameClientNewOrder
             // 
-            this->textBox30->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->textBox30->Location = System::Drawing::Point(155, 106);
-            this->textBox30->Name = L"textBox30";
-            this->textBox30->Size = System::Drawing::Size(23, 22);
-            this->textBox30->TabIndex = 47;
+            this->textBoxFirstNameClientNewOrder->Dock = System::Windows::Forms::DockStyle::Fill;
+            this->textBoxFirstNameClientNewOrder->Location = System::Drawing::Point(155, 106);
+            this->textBoxFirstNameClientNewOrder->Name = L"textBoxFirstNameClientNewOrder";
+            this->textBoxFirstNameClientNewOrder->Size = System::Drawing::Size(23, 22);
+            this->textBoxFirstNameClientNewOrder->TabIndex = 47;
             // 
-            // textBox31
+            // textBoxPaymentDateNewOrder
             // 
-            this->textBox31->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->textBox31->Location = System::Drawing::Point(1134, 272);
-            this->textBox31->Name = L"textBox31";
-            this->textBox31->Size = System::Drawing::Size(23, 22);
-            this->textBox31->TabIndex = 48;
+            this->textBoxPaymentDateNewOrder->Dock = System::Windows::Forms::DockStyle::Fill;
+            this->textBoxPaymentDateNewOrder->Location = System::Drawing::Point(1134, 272);
+            this->textBoxPaymentDateNewOrder->Name = L"textBoxPaymentDateNewOrder";
+            this->textBoxPaymentDateNewOrder->Size = System::Drawing::Size(23, 22);
+            this->textBoxPaymentDateNewOrder->TabIndex = 48;
             // 
-            // textBox32
+            // textBoxPriceNewOrder
             // 
-            this->textBox32->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->textBox32->Location = System::Drawing::Point(155, 355);
-            this->textBox32->Name = L"textBox32";
-            this->textBox32->Size = System::Drawing::Size(23, 22);
-            this->textBox32->TabIndex = 49;
+            this->textBoxPriceNewOrder->Dock = System::Windows::Forms::DockStyle::Fill;
+            this->textBoxPriceNewOrder->Location = System::Drawing::Point(155, 355);
+            this->textBoxPriceNewOrder->Name = L"textBoxPriceNewOrder";
+            this->textBoxPriceNewOrder->Size = System::Drawing::Size(23, 22);
+            this->textBoxPriceNewOrder->TabIndex = 49;
             // 
-            // textBox33
+            // textBoxCityFactNewOrder
             // 
-            this->textBox33->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->textBox33->Location = System::Drawing::Point(155, 272);
-            this->textBox33->Name = L"textBox33";
-            this->textBox33->Size = System::Drawing::Size(23, 22);
-            this->textBox33->TabIndex = 50;
+            this->textBoxCityFactNewOrder->Dock = System::Windows::Forms::DockStyle::Fill;
+            this->textBoxCityFactNewOrder->Location = System::Drawing::Point(155, 272);
+            this->textBoxCityFactNewOrder->Name = L"textBoxCityFactNewOrder";
+            this->textBoxCityFactNewOrder->Size = System::Drawing::Size(23, 22);
+            this->textBoxCityFactNewOrder->TabIndex = 50;
             // 
-            // textBox34
+            // textBoxPostalCodeFactNewOrder
             // 
-            this->textBox34->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->textBox34->Location = System::Drawing::Point(398, 272);
-            this->textBox34->Name = L"textBox34";
-            this->textBox34->Size = System::Drawing::Size(23, 22);
-            this->textBox34->TabIndex = 51;
+            this->textBoxPostalCodeFactNewOrder->Dock = System::Windows::Forms::DockStyle::Fill;
+            this->textBoxPostalCodeFactNewOrder->Location = System::Drawing::Point(398, 272);
+            this->textBoxPostalCodeFactNewOrder->Name = L"textBoxPostalCodeFactNewOrder";
+            this->textBoxPostalCodeFactNewOrder->Size = System::Drawing::Size(23, 22);
+            this->textBoxPostalCodeFactNewOrder->TabIndex = 51;
             // 
-            // textBox35
+            // textBoxQuantityNewOrder
             // 
-            this->textBox35->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->textBox35->Location = System::Drawing::Point(672, 272);
-            this->textBox35->Name = L"textBox35";
-            this->textBox35->Size = System::Drawing::Size(23, 22);
-            this->textBox35->TabIndex = 52;
+            this->textBoxQuantityNewOrder->Dock = System::Windows::Forms::DockStyle::Fill;
+            this->textBoxQuantityNewOrder->Location = System::Drawing::Point(672, 272);
+            this->textBoxQuantityNewOrder->Name = L"textBoxQuantityNewOrder";
+            this->textBoxQuantityNewOrder->Size = System::Drawing::Size(23, 22);
+            this->textBoxQuantityNewOrder->TabIndex = 52;
             // 
-            // textBox36
+            // textBoxDesignationNewOrder
             // 
-            this->textBox36->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->textBox36->Location = System::Drawing::Point(924, 272);
-            this->textBox36->Name = L"textBox36";
-            this->textBox36->Size = System::Drawing::Size(23, 22);
-            this->textBox36->TabIndex = 53;
+            this->textBoxDesignationNewOrder->Dock = System::Windows::Forms::DockStyle::Fill;
+            this->textBoxDesignationNewOrder->Location = System::Drawing::Point(924, 272);
+            this->textBoxDesignationNewOrder->Name = L"textBoxDesignationNewOrder";
+            this->textBoxDesignationNewOrder->Size = System::Drawing::Size(23, 22);
+            this->textBoxDesignationNewOrder->TabIndex = 53;
             // 
             // label26
             // 
