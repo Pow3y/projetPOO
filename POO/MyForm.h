@@ -437,6 +437,7 @@ private: System::Windows::Forms::Button^ button5;
             this->dataGridView1 = (gcnew System::Windows::Forms::DataGridView());
             this->tableLayoutPanelClient = (gcnew System::Windows::Forms::TableLayoutPanel());
             this->tableLayoutPanel10 = (gcnew System::Windows::Forms::TableLayoutPanel());
+            this->button9 = (gcnew System::Windows::Forms::Button());
             this->button3 = (gcnew System::Windows::Forms::Button());
             this->button6 = (gcnew System::Windows::Forms::Button());
             this->tableLayoutPanelDetailClient = (gcnew System::Windows::Forms::TableLayoutPanel());
@@ -462,6 +463,8 @@ private: System::Windows::Forms::Button^ button5;
             this->tableLayoutPanel2 = (gcnew System::Windows::Forms::TableLayoutPanel());
             this->dataGridView2 = (gcnew System::Windows::Forms::DataGridView());
             this->tableLayoutPanel16 = (gcnew System::Windows::Forms::TableLayoutPanel());
+            this->button13 = (gcnew System::Windows::Forms::Button());
+            this->button5 = (gcnew System::Windows::Forms::Button());
             this->buttonCreateCommande = (gcnew System::Windows::Forms::Button());
             this->checkBox2 = (gcnew System::Windows::Forms::CheckBox());
             this->tabEmployes = (gcnew System::Windows::Forms::TabPage());
@@ -470,6 +473,9 @@ private: System::Windows::Forms::Button^ button5;
             this->checkBox3 = (gcnew System::Windows::Forms::CheckBox());
             this->tableLayoutPanelEmployes = (gcnew System::Windows::Forms::TableLayoutPanel());
             this->tableLayoutPanel8 = (gcnew System::Windows::Forms::TableLayoutPanel());
+            this->button4 = (gcnew System::Windows::Forms::Button());
+            this->button10 = (gcnew System::Windows::Forms::Button());
+            this->button8 = (gcnew System::Windows::Forms::Button());
             this->tableLayoutPanelDetailEmployes = (gcnew System::Windows::Forms::TableLayoutPanel());
             this->labelPrenomEmployes = (gcnew System::Windows::Forms::Label());
             this->textBoxEmployesLastName = (gcnew System::Windows::Forms::TextBox());
@@ -483,20 +489,23 @@ private: System::Windows::Forms::Button^ button5;
             this->label29 = (gcnew System::Windows::Forms::Label());
             this->label27 = (gcnew System::Windows::Forms::Label());
             this->dateTimePickerHiringDate = (gcnew System::Windows::Forms::DateTimePicker());
-            this->label30 = (gcnew System::Windows::Forms::Label());
             this->label31 = (gcnew System::Windows::Forms::Label());
             this->label28 = (gcnew System::Windows::Forms::Label());
             this->textBoxIDEmployes = (gcnew System::Windows::Forms::TextBox());
             this->textBoxNameStreetEmployes = (gcnew System::Windows::Forms::TextBox());
-            this->textBoxFloorEmployes = (gcnew System::Windows::Forms::TextBox());
             this->textBoxCityEmployes = (gcnew System::Windows::Forms::TextBox());
             this->textBoxPostalCodeEmployes = (gcnew System::Windows::Forms::TextBox());
+            this->label30 = (gcnew System::Windows::Forms::Label());
+            this->textBoxFloorEmployes = (gcnew System::Windows::Forms::TextBox());
             this->tabStocks = (gcnew System::Windows::Forms::TabPage());
             this->tableLayoutPanel4 = (gcnew System::Windows::Forms::TableLayoutPanel());
             this->dataGridView4 = (gcnew System::Windows::Forms::DataGridView());
             this->checkBox4 = (gcnew System::Windows::Forms::CheckBox());
             this->tableLayoutPanelStocks = (gcnew System::Windows::Forms::TableLayoutPanel());
             this->tableLayoutPanel9 = (gcnew System::Windows::Forms::TableLayoutPanel());
+            this->button12 = (gcnew System::Windows::Forms::Button());
+            this->button7 = (gcnew System::Windows::Forms::Button());
+            this->button11 = (gcnew System::Windows::Forms::Button());
             this->tableLayoutPanelDetailStocks = (gcnew System::Windows::Forms::TableLayoutPanel());
             this->labelDesignationStocks = (gcnew System::Windows::Forms::Label());
             this->textBoxD = (gcnew System::Windows::Forms::TextBox());
@@ -582,15 +591,6 @@ private: System::Windows::Forms::Button^ button5;
             this->textBoxNumberAdrDeliveryNewOrder = (gcnew System::Windows::Forms::TextBox());
             this->tableLayoutPanel6 = (gcnew System::Windows::Forms::TableLayoutPanel());
             this->label22 = (gcnew System::Windows::Forms::Label());
-            this->button9 = (gcnew System::Windows::Forms::Button());
-            this->button10 = (gcnew System::Windows::Forms::Button());
-            this->button11 = (gcnew System::Windows::Forms::Button());
-            this->button7 = (gcnew System::Windows::Forms::Button());
-            this->button12 = (gcnew System::Windows::Forms::Button());
-            this->button8 = (gcnew System::Windows::Forms::Button());
-            this->button4 = (gcnew System::Windows::Forms::Button());
-            this->button5 = (gcnew System::Windows::Forms::Button());
-            this->button13 = (gcnew System::Windows::Forms::Button());
             this->tableLayoutPanelHotbar->SuspendLayout();
             this->panel1->SuspendLayout();
             this->tabAffichage->SuspendLayout();
@@ -673,7 +673,7 @@ private: System::Windows::Forms::Button^ button5;
                 static_cast<System::Byte>(0)));
             this->StatsButton->ForeColor = System::Drawing::SystemColors::ControlLightLight;
             this->StatsButton->Location = System::Drawing::Point(1027, 1);
-            this->StatsButton->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
+            this->StatsButton->Margin = System::Windows::Forms::Padding(1);
             this->StatsButton->Name = L"StatsButton";
             this->StatsButton->Size = System::Drawing::Size(255, 38);
             this->StatsButton->TabIndex = 4;
@@ -693,7 +693,7 @@ private: System::Windows::Forms::Button^ button5;
                 static_cast<System::Byte>(0)));
             this->ClientButton->ForeColor = System::Drawing::SystemColors::ControlLightLight;
             this->ClientButton->Location = System::Drawing::Point(3, 1);
-            this->ClientButton->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
+            this->ClientButton->Margin = System::Windows::Forms::Padding(1);
             this->ClientButton->Name = L"ClientButton";
             this->ClientButton->Size = System::Drawing::Size(254, 38);
             this->ClientButton->TabIndex = 0;
@@ -713,7 +713,7 @@ private: System::Windows::Forms::Button^ button5;
                 static_cast<System::Byte>(0)));
             this->StocksButton->ForeColor = System::Drawing::SystemColors::ControlLightLight;
             this->StocksButton->Location = System::Drawing::Point(771, 1);
-            this->StocksButton->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
+            this->StocksButton->Margin = System::Windows::Forms::Padding(1);
             this->StocksButton->Name = L"StocksButton";
             this->StocksButton->Size = System::Drawing::Size(254, 38);
             this->StocksButton->TabIndex = 3;
@@ -733,7 +733,7 @@ private: System::Windows::Forms::Button^ button5;
                 static_cast<System::Byte>(0)));
             this->EmployesButton->ForeColor = System::Drawing::SystemColors::ControlLightLight;
             this->EmployesButton->Location = System::Drawing::Point(515, 1);
-            this->EmployesButton->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
+            this->EmployesButton->Margin = System::Windows::Forms::Padding(1);
             this->EmployesButton->Name = L"EmployesButton";
             this->EmployesButton->Size = System::Drawing::Size(254, 38);
             this->EmployesButton->TabIndex = 2;
@@ -753,7 +753,7 @@ private: System::Windows::Forms::Button^ button5;
                 static_cast<System::Byte>(0)));
             this->CommandesButton->ForeColor = System::Drawing::SystemColors::ControlLightLight;
             this->CommandesButton->Location = System::Drawing::Point(259, 1);
-            this->CommandesButton->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
+            this->CommandesButton->Margin = System::Windows::Forms::Padding(1);
             this->CommandesButton->Name = L"CommandesButton";
             this->CommandesButton->Size = System::Drawing::Size(254, 38);
             this->CommandesButton->TabIndex = 1;
@@ -914,7 +914,7 @@ private: System::Windows::Forms::Button^ button5;
             this->tabClient->Controls->Add(this->tableLayoutPanelClient);
             this->tabClient->Location = System::Drawing::Point(4, 29);
             this->tabClient->Name = L"tabClient";
-            this->tabClient->Padding = System::Windows::Forms::Padding(1, 1, 1, 1);
+            this->tabClient->Padding = System::Windows::Forms::Padding(1);
             this->tabClient->Size = System::Drawing::Size(1275, 468);
             this->tabClient->TabIndex = 0;
             this->tabClient->Text = L"Client";
@@ -952,7 +952,7 @@ private: System::Windows::Forms::Button^ button5;
             this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
             this->dataGridView1->Dock = System::Windows::Forms::DockStyle::Fill;
             this->dataGridView1->Location = System::Drawing::Point(68, 31);
-            this->dataGridView1->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
+            this->dataGridView1->Margin = System::Windows::Forms::Padding(1);
             this->dataGridView1->Name = L"dataGridView1";
             this->dataGridView1->ReadOnly = true;
             this->dataGridView1->RowHeadersWidth = 51;
@@ -975,7 +975,7 @@ private: System::Windows::Forms::Button^ button5;
             this->tableLayoutPanelClient->Controls->Add(this->tableLayoutPanelDetailClient, 0, 0);
             this->tableLayoutPanelClient->Dock = System::Windows::Forms::DockStyle::Bottom;
             this->tableLayoutPanelClient->Location = System::Drawing::Point(1, 328);
-            this->tableLayoutPanelClient->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
+            this->tableLayoutPanelClient->Margin = System::Windows::Forms::Padding(1);
             this->tableLayoutPanelClient->Name = L"tableLayoutPanelClient";
             this->tableLayoutPanelClient->RowCount = 1;
             this->tableLayoutPanelClient->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent,
@@ -994,7 +994,7 @@ private: System::Windows::Forms::Button^ button5;
             this->tableLayoutPanel10->Controls->Add(this->button6, 0, 0);
             this->tableLayoutPanel10->Dock = System::Windows::Forms::DockStyle::Fill;
             this->tableLayoutPanel10->Location = System::Drawing::Point(1020, 2);
-            this->tableLayoutPanel10->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+            this->tableLayoutPanel10->Margin = System::Windows::Forms::Padding(2);
             this->tableLayoutPanel10->Name = L"tableLayoutPanel10";
             this->tableLayoutPanel10->RowCount = 3;
             this->tableLayoutPanel10->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 33.33333F)));
@@ -1002,6 +1002,22 @@ private: System::Windows::Forms::Button^ button5;
             this->tableLayoutPanel10->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 33.33333F)));
             this->tableLayoutPanel10->Size = System::Drawing::Size(251, 135);
             this->tableLayoutPanel10->TabIndex = 3;
+            // 
+            // button9
+            // 
+            this->button9->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(128)), static_cast<System::Int32>(static_cast<System::Byte>(128)),
+                static_cast<System::Int32>(static_cast<System::Byte>(255)));
+            this->button9->Cursor = System::Windows::Forms::Cursors::Hand;
+            this->button9->Dock = System::Windows::Forms::DockStyle::Fill;
+            this->button9->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+            this->button9->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.9F));
+            this->button9->ForeColor = System::Drawing::SystemColors::ControlLightLight;
+            this->button9->Location = System::Drawing::Point(3, 93);
+            this->button9->Name = L"button9";
+            this->button9->Size = System::Drawing::Size(245, 39);
+            this->button9->TabIndex = 6;
+            this->button9->Text = L"Supprimer";
+            this->button9->UseVisualStyleBackColor = false;
             // 
             // button3
             // 
@@ -1056,7 +1072,7 @@ private: System::Windows::Forms::Button^ button5;
             this->tableLayoutPanelDetailClient->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
                 33.33333F)));
             this->tableLayoutPanelDetailClient->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Absolute,
-                34)));
+                36)));
             this->tableLayoutPanelDetailClient->Controls->Add(this->labelClientId, 0, 3);
             this->tableLayoutPanelDetailClient->Controls->Add(this->labelBirthDateClient, 3, 2);
             this->tableLayoutPanelDetailClient->Controls->Add(this->labelPrenomClient, 3, 1);
@@ -1114,7 +1130,7 @@ private: System::Windows::Forms::Button^ button5;
             this->labelBirthDateClient->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.9F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->labelBirthDateClient->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-            this->labelBirthDateClient->Location = System::Drawing::Point(319, 51);
+            this->labelBirthDateClient->Location = System::Drawing::Point(318, 51);
             this->labelBirthDateClient->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
             this->labelBirthDateClient->Name = L"labelBirthDateClient";
             this->labelBirthDateClient->Size = System::Drawing::Size(138, 31);
@@ -1128,7 +1144,7 @@ private: System::Windows::Forms::Button^ button5;
             this->labelPrenomClient->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.9F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->labelPrenomClient->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-            this->labelPrenomClient->Location = System::Drawing::Point(319, 20);
+            this->labelPrenomClient->Location = System::Drawing::Point(318, 20);
             this->labelPrenomClient->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
             this->labelPrenomClient->Name = L"labelPrenomClient";
             this->labelPrenomClient->Size = System::Drawing::Size(138, 31);
@@ -1138,19 +1154,19 @@ private: System::Windows::Forms::Button^ button5;
             // textBoxPrénomClient
             // 
             this->textBoxPrénomClient->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->textBoxPrénomClient->Location = System::Drawing::Point(459, 21);
-            this->textBoxPrénomClient->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
+            this->textBoxPrénomClient->Location = System::Drawing::Point(458, 21);
+            this->textBoxPrénomClient->Margin = System::Windows::Forms::Padding(1);
             this->textBoxPrénomClient->Name = L"textBoxPrénomClient";
-            this->textBoxPrénomClient->Size = System::Drawing::Size(198, 22);
+            this->textBoxPrénomClient->Size = System::Drawing::Size(197, 22);
             this->textBoxPrénomClient->TabIndex = 14;
             // 
             // textBoxCodePostal
             // 
             this->textBoxCodePostal->Dock = System::Windows::Forms::DockStyle::Fill;
             this->textBoxCodePostal->Location = System::Drawing::Point(99, 52);
-            this->textBoxCodePostal->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
+            this->textBoxCodePostal->Margin = System::Windows::Forms::Padding(1);
             this->textBoxCodePostal->Name = L"textBoxCodePostal";
-            this->textBoxCodePostal->Size = System::Drawing::Size(198, 22);
+            this->textBoxCodePostal->Size = System::Drawing::Size(197, 22);
             this->textBoxCodePostal->TabIndex = 11;
             // 
             // labelCodePostalClient
@@ -1172,19 +1188,19 @@ private: System::Windows::Forms::Button^ button5;
             // 
             this->textBoxNomClient->Dock = System::Windows::Forms::DockStyle::Fill;
             this->textBoxNomClient->Location = System::Drawing::Point(99, 21);
-            this->textBoxNomClient->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
+            this->textBoxNomClient->Margin = System::Windows::Forms::Padding(1);
             this->textBoxNomClient->Name = L"textBoxNomClient";
-            this->textBoxNomClient->Size = System::Drawing::Size(198, 22);
+            this->textBoxNomClient->Size = System::Drawing::Size(197, 22);
             this->textBoxNomClient->TabIndex = 2;
             // 
             // dateTimePickerBirthDate
             // 
             this->dateTimePickerBirthDate->Dock = System::Windows::Forms::DockStyle::Fill;
             this->dateTimePickerBirthDate->Format = System::Windows::Forms::DateTimePickerFormat::Custom;
-            this->dateTimePickerBirthDate->Location = System::Drawing::Point(459, 52);
-            this->dateTimePickerBirthDate->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
+            this->dateTimePickerBirthDate->Location = System::Drawing::Point(458, 52);
+            this->dateTimePickerBirthDate->Margin = System::Windows::Forms::Padding(1);
             this->dateTimePickerBirthDate->Name = L"dateTimePickerBirthDate";
-            this->dateTimePickerBirthDate->Size = System::Drawing::Size(198, 22);
+            this->dateTimePickerBirthDate->Size = System::Drawing::Size(197, 22);
             this->dateTimePickerBirthDate->TabIndex = 18;
             // 
             // labelNumDeRueClient
@@ -1194,7 +1210,7 @@ private: System::Windows::Forms::Button^ button5;
             this->labelNumDeRueClient->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.9F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->labelNumDeRueClient->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-            this->labelNumDeRueClient->Location = System::Drawing::Point(679, 20);
+            this->labelNumDeRueClient->Location = System::Drawing::Point(677, 20);
             this->labelNumDeRueClient->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
             this->labelNumDeRueClient->Name = L"labelNumDeRueClient";
             this->labelNumDeRueClient->Size = System::Drawing::Size(96, 31);
@@ -1208,7 +1224,7 @@ private: System::Windows::Forms::Button^ button5;
             this->labelNomDeRueClient->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.9F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->labelNomDeRueClient->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-            this->labelNomDeRueClient->Location = System::Drawing::Point(679, 51);
+            this->labelNomDeRueClient->Location = System::Drawing::Point(677, 51);
             this->labelNomDeRueClient->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
             this->labelNomDeRueClient->Name = L"labelNomDeRueClient";
             this->labelNomDeRueClient->Size = System::Drawing::Size(96, 31);
@@ -1218,19 +1234,19 @@ private: System::Windows::Forms::Button^ button5;
             // textBoxNumRue
             // 
             this->textBoxNumRue->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->textBoxNumRue->Location = System::Drawing::Point(777, 21);
-            this->textBoxNumRue->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
+            this->textBoxNumRue->Location = System::Drawing::Point(775, 21);
+            this->textBoxNumRue->Margin = System::Windows::Forms::Padding(1);
             this->textBoxNumRue->Name = L"textBoxNumRue";
-            this->textBoxNumRue->Size = System::Drawing::Size(198, 22);
+            this->textBoxNumRue->Size = System::Drawing::Size(197, 22);
             this->textBoxNumRue->TabIndex = 21;
             // 
             // textBoxNomRue
             // 
             this->textBoxNomRue->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->textBoxNomRue->Location = System::Drawing::Point(777, 52);
-            this->textBoxNomRue->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
+            this->textBoxNomRue->Location = System::Drawing::Point(775, 52);
+            this->textBoxNomRue->Margin = System::Windows::Forms::Padding(1);
             this->textBoxNomRue->Name = L"textBoxNomRue";
-            this->textBoxNomRue->Size = System::Drawing::Size(198, 22);
+            this->textBoxNomRue->Size = System::Drawing::Size(197, 22);
             this->textBoxNomRue->TabIndex = 22;
             // 
             // labelNomClient
@@ -1251,9 +1267,9 @@ private: System::Windows::Forms::Button^ button5;
             // 
             this->textBoxClientId->Dock = System::Windows::Forms::DockStyle::Fill;
             this->textBoxClientId->Location = System::Drawing::Point(99, 83);
-            this->textBoxClientId->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
+            this->textBoxClientId->Margin = System::Windows::Forms::Padding(1);
             this->textBoxClientId->Name = L"textBoxClientId";
-            this->textBoxClientId->Size = System::Drawing::Size(198, 22);
+            this->textBoxClientId->Size = System::Drawing::Size(197, 22);
             this->textBoxClientId->TabIndex = 28;
             // 
             // labelEtageClient
@@ -1263,7 +1279,7 @@ private: System::Windows::Forms::Button^ button5;
             this->labelEtageClient->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.9F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->labelEtageClient->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-            this->labelEtageClient->Location = System::Drawing::Point(319, 82);
+            this->labelEtageClient->Location = System::Drawing::Point(318, 82);
             this->labelEtageClient->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
             this->labelEtageClient->Name = L"labelEtageClient";
             this->labelEtageClient->Size = System::Drawing::Size(138, 31);
@@ -1273,10 +1289,10 @@ private: System::Windows::Forms::Button^ button5;
             // textBoxEtage
             // 
             this->textBoxEtage->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->textBoxEtage->Location = System::Drawing::Point(459, 83);
-            this->textBoxEtage->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
+            this->textBoxEtage->Location = System::Drawing::Point(458, 83);
+            this->textBoxEtage->Margin = System::Windows::Forms::Padding(1);
             this->textBoxEtage->Name = L"textBoxEtage";
-            this->textBoxEtage->Size = System::Drawing::Size(198, 22);
+            this->textBoxEtage->Size = System::Drawing::Size(197, 22);
             this->textBoxEtage->TabIndex = 25;
             // 
             // labelVilleClient
@@ -1286,7 +1302,7 @@ private: System::Windows::Forms::Button^ button5;
             this->labelVilleClient->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.9F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->labelVilleClient->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-            this->labelVilleClient->Location = System::Drawing::Point(679, 82);
+            this->labelVilleClient->Location = System::Drawing::Point(677, 82);
             this->labelVilleClient->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
             this->labelVilleClient->Name = L"labelVilleClient";
             this->labelVilleClient->Size = System::Drawing::Size(96, 31);
@@ -1296,10 +1312,10 @@ private: System::Windows::Forms::Button^ button5;
             // textBoxVille
             // 
             this->textBoxVille->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->textBoxVille->Location = System::Drawing::Point(777, 83);
-            this->textBoxVille->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
+            this->textBoxVille->Location = System::Drawing::Point(775, 83);
+            this->textBoxVille->Margin = System::Windows::Forms::Padding(1);
             this->textBoxVille->Name = L"textBoxVille";
-            this->textBoxVille->Size = System::Drawing::Size(198, 22);
+            this->textBoxVille->Size = System::Drawing::Size(197, 22);
             this->textBoxVille->TabIndex = 26;
             // 
             // tabCommandes
@@ -1312,7 +1328,7 @@ private: System::Windows::Forms::Button^ button5;
                 static_cast<System::Int32>(static_cast<System::Byte>(76)));
             this->tabCommandes->Location = System::Drawing::Point(4, 29);
             this->tabCommandes->Name = L"tabCommandes";
-            this->tabCommandes->Padding = System::Windows::Forms::Padding(1, 1, 1, 1);
+            this->tabCommandes->Padding = System::Windows::Forms::Padding(1);
             this->tabCommandes->Size = System::Drawing::Size(1275, 468);
             this->tabCommandes->TabIndex = 1;
             this->tabCommandes->Text = L"Commandes";
@@ -1349,7 +1365,7 @@ private: System::Windows::Forms::Button^ button5;
             this->dataGridView2->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
             this->dataGridView2->Dock = System::Windows::Forms::DockStyle::Fill;
             this->dataGridView2->Location = System::Drawing::Point(68, 39);
-            this->dataGridView2->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
+            this->dataGridView2->Margin = System::Windows::Forms::Padding(1);
             this->dataGridView2->Name = L"dataGridView2";
             this->dataGridView2->ReadOnly = true;
             this->dataGridView2->RowHeadersWidth = 51;
@@ -1375,9 +1391,41 @@ private: System::Windows::Forms::Button^ button5;
             this->tableLayoutPanel16->RowCount = 1;
             this->tableLayoutPanel16->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
             this->tableLayoutPanel16->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Absolute,
-                88)));
+                89)));
             this->tableLayoutPanel16->Size = System::Drawing::Size(1133, 89);
             this->tableLayoutPanel16->TabIndex = 6;
+            // 
+            // button13
+            // 
+            this->button13->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(128)), static_cast<System::Int32>(static_cast<System::Byte>(128)),
+                static_cast<System::Int32>(static_cast<System::Byte>(255)));
+            this->button13->Cursor = System::Windows::Forms::Cursors::Hand;
+            this->button13->Dock = System::Windows::Forms::DockStyle::Fill;
+            this->button13->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+            this->button13->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.9F));
+            this->button13->ForeColor = System::Drawing::SystemColors::ControlLightLight;
+            this->button13->Location = System::Drawing::Point(380, 3);
+            this->button13->Name = L"button13";
+            this->button13->Size = System::Drawing::Size(371, 83);
+            this->button13->TabIndex = 5;
+            this->button13->Text = L"Nouvelle commande";
+            this->button13->UseVisualStyleBackColor = false;
+            // 
+            // button5
+            // 
+            this->button5->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(128)), static_cast<System::Int32>(static_cast<System::Byte>(128)),
+                static_cast<System::Int32>(static_cast<System::Byte>(255)));
+            this->button5->Cursor = System::Windows::Forms::Cursors::Hand;
+            this->button5->Dock = System::Windows::Forms::DockStyle::Fill;
+            this->button5->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+            this->button5->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.9F));
+            this->button5->ForeColor = System::Drawing::SystemColors::ControlLightLight;
+            this->button5->Location = System::Drawing::Point(3, 3);
+            this->button5->Name = L"button5";
+            this->button5->Size = System::Drawing::Size(371, 83);
+            this->button5->TabIndex = 4;
+            this->button5->Text = L"Modifier";
+            this->button5->UseVisualStyleBackColor = false;
             // 
             // buttonCreateCommande
             // 
@@ -1415,7 +1463,7 @@ private: System::Windows::Forms::Button^ button5;
             this->tabEmployes->Controls->Add(this->tableLayoutPanelEmployes);
             this->tabEmployes->Location = System::Drawing::Point(4, 29);
             this->tabEmployes->Name = L"tabEmployes";
-            this->tabEmployes->Padding = System::Windows::Forms::Padding(1, 1, 1, 1);
+            this->tabEmployes->Padding = System::Windows::Forms::Padding(1);
             this->tabEmployes->Size = System::Drawing::Size(1275, 468);
             this->tabEmployes->TabIndex = 2;
             this->tabEmployes->Text = L"Employes";
@@ -1452,7 +1500,7 @@ private: System::Windows::Forms::Button^ button5;
             this->dataGridView3->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
             this->dataGridView3->Dock = System::Windows::Forms::DockStyle::Fill;
             this->dataGridView3->Location = System::Drawing::Point(68, 31);
-            this->dataGridView3->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
+            this->dataGridView3->Margin = System::Windows::Forms::Padding(1);
             this->dataGridView3->Name = L"dataGridView3";
             this->dataGridView3->ReadOnly = true;
             this->dataGridView3->RowHeadersWidth = 51;
@@ -1484,7 +1532,7 @@ private: System::Windows::Forms::Button^ button5;
             this->tableLayoutPanelEmployes->Controls->Add(this->tableLayoutPanelDetailEmployes, 0, 0);
             this->tableLayoutPanelEmployes->Dock = System::Windows::Forms::DockStyle::Bottom;
             this->tableLayoutPanelEmployes->Location = System::Drawing::Point(1, 328);
-            this->tableLayoutPanelEmployes->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
+            this->tableLayoutPanelEmployes->Margin = System::Windows::Forms::Padding(1);
             this->tableLayoutPanelEmployes->Name = L"tableLayoutPanelEmployes";
             this->tableLayoutPanelEmployes->RowCount = 1;
             this->tableLayoutPanelEmployes->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent,
@@ -1502,7 +1550,7 @@ private: System::Windows::Forms::Button^ button5;
             this->tableLayoutPanel8->Controls->Add(this->button8, 0, 0);
             this->tableLayoutPanel8->Dock = System::Windows::Forms::DockStyle::Fill;
             this->tableLayoutPanel8->Location = System::Drawing::Point(1019, 1);
-            this->tableLayoutPanel8->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
+            this->tableLayoutPanel8->Margin = System::Windows::Forms::Padding(1);
             this->tableLayoutPanel8->Name = L"tableLayoutPanel8";
             this->tableLayoutPanel8->RowCount = 3;
             this->tableLayoutPanel8->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 33.33333F)));
@@ -1510,6 +1558,54 @@ private: System::Windows::Forms::Button^ button5;
             this->tableLayoutPanel8->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 33.33333F)));
             this->tableLayoutPanel8->Size = System::Drawing::Size(253, 137);
             this->tableLayoutPanel8->TabIndex = 3;
+            // 
+            // button4
+            // 
+            this->button4->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(128)), static_cast<System::Int32>(static_cast<System::Byte>(128)),
+                static_cast<System::Int32>(static_cast<System::Byte>(255)));
+            this->button4->Cursor = System::Windows::Forms::Cursors::Hand;
+            this->button4->Dock = System::Windows::Forms::DockStyle::Fill;
+            this->button4->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+            this->button4->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.9F));
+            this->button4->ForeColor = System::Drawing::SystemColors::ControlLightLight;
+            this->button4->Location = System::Drawing::Point(3, 48);
+            this->button4->Name = L"button4";
+            this->button4->Size = System::Drawing::Size(247, 39);
+            this->button4->TabIndex = 7;
+            this->button4->Text = L"Modifier";
+            this->button4->UseVisualStyleBackColor = false;
+            // 
+            // button10
+            // 
+            this->button10->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(128)), static_cast<System::Int32>(static_cast<System::Byte>(128)),
+                static_cast<System::Int32>(static_cast<System::Byte>(255)));
+            this->button10->Cursor = System::Windows::Forms::Cursors::Hand;
+            this->button10->Dock = System::Windows::Forms::DockStyle::Fill;
+            this->button10->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+            this->button10->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.9F));
+            this->button10->ForeColor = System::Drawing::SystemColors::ControlLightLight;
+            this->button10->Location = System::Drawing::Point(3, 93);
+            this->button10->Name = L"button10";
+            this->button10->Size = System::Drawing::Size(247, 41);
+            this->button10->TabIndex = 7;
+            this->button10->Text = L"Supprimer";
+            this->button10->UseVisualStyleBackColor = false;
+            // 
+            // button8
+            // 
+            this->button8->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(128)), static_cast<System::Int32>(static_cast<System::Byte>(128)),
+                static_cast<System::Int32>(static_cast<System::Byte>(255)));
+            this->button8->Cursor = System::Windows::Forms::Cursors::Hand;
+            this->button8->Dock = System::Windows::Forms::DockStyle::Fill;
+            this->button8->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+            this->button8->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.9F));
+            this->button8->ForeColor = System::Drawing::SystemColors::ControlLightLight;
+            this->button8->Location = System::Drawing::Point(3, 3);
+            this->button8->Name = L"button8";
+            this->button8->Size = System::Drawing::Size(247, 39);
+            this->button8->TabIndex = 7;
+            this->button8->Text = L"Ajouter";
+            this->button8->UseVisualStyleBackColor = false;
             // 
             // tableLayoutPanelDetailEmployes
             // 
@@ -1589,7 +1685,7 @@ private: System::Windows::Forms::Button^ button5;
             // 
             this->textBoxEmployesLastName->Dock = System::Windows::Forms::DockStyle::Fill;
             this->textBoxEmployesLastName->Location = System::Drawing::Point(370, 22);
-            this->textBoxEmployesLastName->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+            this->textBoxEmployesLastName->Margin = System::Windows::Forms::Padding(2);
             this->textBoxEmployesLastName->Name = L"textBoxEmployesLastName";
             this->textBoxEmployesLastName->Size = System::Drawing::Size(121, 22);
             this->textBoxEmployesLastName->TabIndex = 14;
@@ -1644,7 +1740,7 @@ private: System::Windows::Forms::Button^ button5;
             // 
             this->textBoxSuperior->Dock = System::Windows::Forms::DockStyle::Fill;
             this->textBoxSuperior->Location = System::Drawing::Point(370, 53);
-            this->textBoxSuperior->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+            this->textBoxSuperior->Margin = System::Windows::Forms::Padding(2);
             this->textBoxSuperior->Name = L"textBoxSuperior";
             this->textBoxSuperior->Size = System::Drawing::Size(121, 22);
             this->textBoxSuperior->TabIndex = 18;
@@ -1653,7 +1749,7 @@ private: System::Windows::Forms::Button^ button5;
             // 
             this->textBoxNumRueEmployes->Dock = System::Windows::Forms::DockStyle::Fill;
             this->textBoxNumRueEmployes->Location = System::Drawing::Point(637, 22);
-            this->textBoxNumRueEmployes->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+            this->textBoxNumRueEmployes->Margin = System::Windows::Forms::Padding(2);
             this->textBoxNumRueEmployes->Name = L"textBoxNumRueEmployes";
             this->textBoxNumRueEmployes->Size = System::Drawing::Size(121, 22);
             this->textBoxNumRueEmployes->TabIndex = 19;
@@ -1700,22 +1796,10 @@ private: System::Windows::Forms::Button^ button5;
             this->dateTimePickerHiringDate->Dock = System::Windows::Forms::DockStyle::Fill;
             this->dateTimePickerHiringDate->Format = System::Windows::Forms::DateTimePickerFormat::Custom;
             this->dateTimePickerHiringDate->Location = System::Drawing::Point(141, 52);
-            this->dateTimePickerHiringDate->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
+            this->dateTimePickerHiringDate->Margin = System::Windows::Forms::Padding(1);
             this->dateTimePickerHiringDate->Name = L"dateTimePickerHiringDate";
             this->dateTimePickerHiringDate->Size = System::Drawing::Size(123, 22);
             this->dateTimePickerHiringDate->TabIndex = 21;
-            // 
-            // label30
-            // 
-            this->label30->AutoSize = true;
-            this->label30->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->label30->ForeColor = System::Drawing::Color::Transparent;
-            this->label30->Location = System::Drawing::Point(287, 82);
-            this->label30->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
-            this->label30->Name = L"label30";
-            this->label30->Size = System::Drawing::Size(79, 31);
-            this->label30->TabIndex = 25;
-            this->label30->Text = L"Etage :";
             // 
             // label31
             // 
@@ -1745,7 +1829,7 @@ private: System::Windows::Forms::Button^ button5;
             // 
             this->textBoxIDEmployes->Dock = System::Windows::Forms::DockStyle::Fill;
             this->textBoxIDEmployes->Location = System::Drawing::Point(142, 84);
-            this->textBoxIDEmployes->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+            this->textBoxIDEmployes->Margin = System::Windows::Forms::Padding(2);
             this->textBoxIDEmployes->Name = L"textBoxIDEmployes";
             this->textBoxIDEmployes->Size = System::Drawing::Size(121, 22);
             this->textBoxIDEmployes->TabIndex = 27;
@@ -1754,25 +1838,16 @@ private: System::Windows::Forms::Button^ button5;
             // 
             this->textBoxNameStreetEmployes->Dock = System::Windows::Forms::DockStyle::Fill;
             this->textBoxNameStreetEmployes->Location = System::Drawing::Point(637, 53);
-            this->textBoxNameStreetEmployes->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+            this->textBoxNameStreetEmployes->Margin = System::Windows::Forms::Padding(2);
             this->textBoxNameStreetEmployes->Name = L"textBoxNameStreetEmployes";
             this->textBoxNameStreetEmployes->Size = System::Drawing::Size(121, 22);
             this->textBoxNameStreetEmployes->TabIndex = 28;
-            // 
-            // textBoxFloorEmployes
-            // 
-            this->textBoxFloorEmployes->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->textBoxFloorEmployes->Location = System::Drawing::Point(370, 84);
-            this->textBoxFloorEmployes->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
-            this->textBoxFloorEmployes->Name = L"textBoxFloorEmployes";
-            this->textBoxFloorEmployes->Size = System::Drawing::Size(121, 22);
-            this->textBoxFloorEmployes->TabIndex = 29;
             // 
             // textBoxCityEmployes
             // 
             this->textBoxCityEmployes->Dock = System::Windows::Forms::DockStyle::Fill;
             this->textBoxCityEmployes->Location = System::Drawing::Point(886, 22);
-            this->textBoxCityEmployes->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+            this->textBoxCityEmployes->Margin = System::Windows::Forms::Padding(2);
             this->textBoxCityEmployes->Name = L"textBoxCityEmployes";
             this->textBoxCityEmployes->Size = System::Drawing::Size(124, 22);
             this->textBoxCityEmployes->TabIndex = 30;
@@ -1781,10 +1856,31 @@ private: System::Windows::Forms::Button^ button5;
             // 
             this->textBoxPostalCodeEmployes->Dock = System::Windows::Forms::DockStyle::Fill;
             this->textBoxPostalCodeEmployes->Location = System::Drawing::Point(886, 53);
-            this->textBoxPostalCodeEmployes->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+            this->textBoxPostalCodeEmployes->Margin = System::Windows::Forms::Padding(2);
             this->textBoxPostalCodeEmployes->Name = L"textBoxPostalCodeEmployes";
             this->textBoxPostalCodeEmployes->Size = System::Drawing::Size(124, 22);
             this->textBoxPostalCodeEmployes->TabIndex = 31;
+            // 
+            // label30
+            // 
+            this->label30->AutoSize = true;
+            this->label30->Dock = System::Windows::Forms::DockStyle::Fill;
+            this->label30->ForeColor = System::Drawing::Color::Transparent;
+            this->label30->Location = System::Drawing::Point(287, 82);
+            this->label30->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+            this->label30->Name = L"label30";
+            this->label30->Size = System::Drawing::Size(79, 31);
+            this->label30->TabIndex = 25;
+            this->label30->Text = L"Etage :";
+            // 
+            // textBoxFloorEmployes
+            // 
+            this->textBoxFloorEmployes->Dock = System::Windows::Forms::DockStyle::Fill;
+            this->textBoxFloorEmployes->Location = System::Drawing::Point(370, 84);
+            this->textBoxFloorEmployes->Margin = System::Windows::Forms::Padding(2);
+            this->textBoxFloorEmployes->Name = L"textBoxFloorEmployes";
+            this->textBoxFloorEmployes->Size = System::Drawing::Size(121, 22);
+            this->textBoxFloorEmployes->TabIndex = 29;
             // 
             // tabStocks
             // 
@@ -1795,7 +1891,7 @@ private: System::Windows::Forms::Button^ button5;
             this->tabStocks->Controls->Add(this->tableLayoutPanelStocks);
             this->tabStocks->Location = System::Drawing::Point(4, 29);
             this->tabStocks->Name = L"tabStocks";
-            this->tabStocks->Padding = System::Windows::Forms::Padding(1, 1, 1, 1);
+            this->tabStocks->Padding = System::Windows::Forms::Padding(1);
             this->tabStocks->Size = System::Drawing::Size(1275, 468);
             this->tabStocks->TabIndex = 3;
             this->tabStocks->Text = L"Stocks";
@@ -1835,7 +1931,7 @@ private: System::Windows::Forms::Button^ button5;
             this->dataGridView4->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
             this->dataGridView4->Dock = System::Windows::Forms::DockStyle::Fill;
             this->dataGridView4->Location = System::Drawing::Point(68, 31);
-            this->dataGridView4->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
+            this->dataGridView4->Margin = System::Windows::Forms::Padding(1);
             this->dataGridView4->Name = L"dataGridView4";
             this->dataGridView4->ReadOnly = true;
             this->dataGridView4->RowHeadersWidth = 51;
@@ -1867,7 +1963,7 @@ private: System::Windows::Forms::Button^ button5;
             this->tableLayoutPanelStocks->Controls->Add(this->tableLayoutPanelDetailStocks, 0, 0);
             this->tableLayoutPanelStocks->Dock = System::Windows::Forms::DockStyle::Bottom;
             this->tableLayoutPanelStocks->Location = System::Drawing::Point(1, 328);
-            this->tableLayoutPanelStocks->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
+            this->tableLayoutPanelStocks->Margin = System::Windows::Forms::Padding(1);
             this->tableLayoutPanelStocks->Name = L"tableLayoutPanelStocks";
             this->tableLayoutPanelStocks->RowCount = 1;
             this->tableLayoutPanelStocks->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent,
@@ -1885,7 +1981,7 @@ private: System::Windows::Forms::Button^ button5;
             this->tableLayoutPanel9->Controls->Add(this->button11, 0, 2);
             this->tableLayoutPanel9->Dock = System::Windows::Forms::DockStyle::Fill;
             this->tableLayoutPanel9->Location = System::Drawing::Point(1019, 1);
-            this->tableLayoutPanel9->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
+            this->tableLayoutPanel9->Margin = System::Windows::Forms::Padding(1);
             this->tableLayoutPanel9->Name = L"tableLayoutPanel9";
             this->tableLayoutPanel9->RowCount = 3;
             this->tableLayoutPanel9->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 33.33333F)));
@@ -1895,6 +1991,54 @@ private: System::Windows::Forms::Button^ button5;
             this->tableLayoutPanel9->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Absolute, 20)));
             this->tableLayoutPanel9->Size = System::Drawing::Size(253, 137);
             this->tableLayoutPanel9->TabIndex = 3;
+            // 
+            // button12
+            // 
+            this->button12->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(128)), static_cast<System::Int32>(static_cast<System::Byte>(128)),
+                static_cast<System::Int32>(static_cast<System::Byte>(255)));
+            this->button12->Cursor = System::Windows::Forms::Cursors::Hand;
+            this->button12->Dock = System::Windows::Forms::DockStyle::Fill;
+            this->button12->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+            this->button12->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.9F));
+            this->button12->ForeColor = System::Drawing::SystemColors::ControlLightLight;
+            this->button12->Location = System::Drawing::Point(3, 3);
+            this->button12->Name = L"button12";
+            this->button12->Size = System::Drawing::Size(247, 39);
+            this->button12->TabIndex = 7;
+            this->button12->Text = L"Ajouter";
+            this->button12->UseVisualStyleBackColor = false;
+            // 
+            // button7
+            // 
+            this->button7->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(128)), static_cast<System::Int32>(static_cast<System::Byte>(128)),
+                static_cast<System::Int32>(static_cast<System::Byte>(255)));
+            this->button7->Cursor = System::Windows::Forms::Cursors::Hand;
+            this->button7->Dock = System::Windows::Forms::DockStyle::Fill;
+            this->button7->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+            this->button7->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.9F));
+            this->button7->ForeColor = System::Drawing::SystemColors::ControlLightLight;
+            this->button7->Location = System::Drawing::Point(3, 48);
+            this->button7->Name = L"button7";
+            this->button7->Size = System::Drawing::Size(247, 39);
+            this->button7->TabIndex = 7;
+            this->button7->Text = L"Modifier";
+            this->button7->UseVisualStyleBackColor = false;
+            // 
+            // button11
+            // 
+            this->button11->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(128)), static_cast<System::Int32>(static_cast<System::Byte>(128)),
+                static_cast<System::Int32>(static_cast<System::Byte>(255)));
+            this->button11->Cursor = System::Windows::Forms::Cursors::Hand;
+            this->button11->Dock = System::Windows::Forms::DockStyle::Fill;
+            this->button11->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+            this->button11->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.9F));
+            this->button11->ForeColor = System::Drawing::SystemColors::ControlLightLight;
+            this->button11->Location = System::Drawing::Point(3, 93);
+            this->button11->Name = L"button11";
+            this->button11->Size = System::Drawing::Size(247, 41);
+            this->button11->TabIndex = 7;
+            this->button11->Text = L"Supprimer";
+            this->button11->UseVisualStyleBackColor = false;
             // 
             // tableLayoutPanelDetailStocks
             // 
@@ -1956,7 +2100,7 @@ private: System::Windows::Forms::Button^ button5;
             // 
             this->textBoxD->Dock = System::Windows::Forms::DockStyle::Fill;
             this->textBoxD->Location = System::Drawing::Point(552, 22);
-            this->textBoxD->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+            this->textBoxD->Margin = System::Windows::Forms::Padding(2);
             this->textBoxD->Name = L"textBoxD";
             this->textBoxD->Size = System::Drawing::Size(163, 22);
             this->textBoxD->TabIndex = 14;
@@ -1965,7 +2109,7 @@ private: System::Windows::Forms::Button^ button5;
             // 
             this->textBoxQ->Dock = System::Windows::Forms::DockStyle::Fill;
             this->textBoxQ->Location = System::Drawing::Point(144, 77);
-            this->textBoxQ->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
+            this->textBoxQ->Margin = System::Windows::Forms::Padding(1);
             this->textBoxQ->Name = L"textBoxQ";
             this->textBoxQ->Size = System::Drawing::Size(165, 22);
             this->textBoxQ->TabIndex = 11;
@@ -2007,7 +2151,7 @@ private: System::Windows::Forms::Button^ button5;
             // 
             this->textBoxP->Dock = System::Windows::Forms::DockStyle::Fill;
             this->textBoxP->Location = System::Drawing::Point(845, 22);
-            this->textBoxP->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+            this->textBoxP->Margin = System::Windows::Forms::Padding(2);
             this->textBoxP->Name = L"textBoxP";
             this->textBoxP->Size = System::Drawing::Size(165, 22);
             this->textBoxP->TabIndex = 17;
@@ -2016,7 +2160,7 @@ private: System::Windows::Forms::Button^ button5;
             // 
             this->textBoxT->Dock = System::Windows::Forms::DockStyle::Fill;
             this->textBoxT->Location = System::Drawing::Point(845, 78);
-            this->textBoxT->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+            this->textBoxT->Margin = System::Windows::Forms::Padding(2);
             this->textBoxT->Name = L"textBoxT";
             this->textBoxT->Size = System::Drawing::Size(165, 22);
             this->textBoxT->TabIndex = 18;
@@ -2063,7 +2207,7 @@ private: System::Windows::Forms::Button^ button5;
             // 
             this->textBoxS->Dock = System::Windows::Forms::DockStyle::Fill;
             this->textBoxS->Location = System::Drawing::Point(552, 78);
-            this->textBoxS->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+            this->textBoxS->Margin = System::Windows::Forms::Padding(2);
             this->textBoxS->Name = L"textBoxS";
             this->textBoxS->Size = System::Drawing::Size(163, 22);
             this->textBoxS->TabIndex = 22;
@@ -2075,7 +2219,7 @@ private: System::Windows::Forms::Button^ button5;
             this->tabStats->Controls->Add(this->tableLayoutPanel5);
             this->tabStats->Location = System::Drawing::Point(4, 29);
             this->tabStats->Name = L"tabStats";
-            this->tabStats->Padding = System::Windows::Forms::Padding(1, 1, 1, 1);
+            this->tabStats->Padding = System::Windows::Forms::Padding(1);
             this->tabStats->Size = System::Drawing::Size(1275, 468);
             this->tabStats->TabIndex = 4;
             this->tabStats->Text = L"Stats";
@@ -2111,7 +2255,7 @@ private: System::Windows::Forms::Button^ button5;
             this->dataGridView6->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
             this->dataGridView6->Dock = System::Windows::Forms::DockStyle::Fill;
             this->dataGridView6->Location = System::Drawing::Point(42, 28);
-            this->dataGridView6->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+            this->dataGridView6->Margin = System::Windows::Forms::Padding(2);
             this->dataGridView6->Name = L"dataGridView6";
             this->dataGridView6->RowHeadersWidth = 51;
             this->dataGridView6->RowTemplate->Height = 24;
@@ -2129,7 +2273,7 @@ private: System::Windows::Forms::Button^ button5;
             this->tableLayoutPanel11->Controls->Add(this->tableLayoutPanel14, 0, 1);
             this->tableLayoutPanel11->Dock = System::Windows::Forms::DockStyle::Fill;
             this->tableLayoutPanel11->Location = System::Drawing::Point(42, 323);
-            this->tableLayoutPanel11->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+            this->tableLayoutPanel11->Margin = System::Windows::Forms::Padding(2);
             this->tableLayoutPanel11->Name = L"tableLayoutPanel11";
             this->tableLayoutPanel11->RowCount = 2;
             this->tableLayoutPanel11->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 50)));
@@ -2161,7 +2305,7 @@ private: System::Windows::Forms::Button^ button5;
             this->tableLayoutPanel13->Controls->Add(this->textBoxIdClientStats, 7, 0);
             this->tableLayoutPanel13->Dock = System::Windows::Forms::DockStyle::Fill;
             this->tableLayoutPanel13->Location = System::Drawing::Point(2, 2);
-            this->tableLayoutPanel13->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+            this->tableLayoutPanel13->Margin = System::Windows::Forms::Padding(2);
             this->tableLayoutPanel13->Name = L"tableLayoutPanel13";
             this->tableLayoutPanel13->RowCount = 1;
             this->tableLayoutPanel13->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
@@ -2211,7 +2355,7 @@ private: System::Windows::Forms::Button^ button5;
             // 
             this->textBoxMonthProfitStats->Dock = System::Windows::Forms::DockStyle::Fill;
             this->textBoxMonthProfitStats->Location = System::Drawing::Point(180, 2);
-            this->textBoxMonthProfitStats->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+            this->textBoxMonthProfitStats->Margin = System::Windows::Forms::Padding(2);
             this->textBoxMonthProfitStats->Name = L"textBoxMonthProfitStats";
             this->textBoxMonthProfitStats->Size = System::Drawing::Size(227, 22);
             this->textBoxMonthProfitStats->TabIndex = 0;
@@ -2220,7 +2364,7 @@ private: System::Windows::Forms::Button^ button5;
             // 
             this->textBoxProfitYearStats->Dock = System::Windows::Forms::DockStyle::Fill;
             this->textBoxProfitYearStats->Location = System::Drawing::Point(626, 2);
-            this->textBoxProfitYearStats->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+            this->textBoxProfitYearStats->Margin = System::Windows::Forms::Padding(2);
             this->textBoxProfitYearStats->Name = L"textBoxProfitYearStats";
             this->textBoxProfitYearStats->Size = System::Drawing::Size(227, 22);
             this->textBoxProfitYearStats->TabIndex = 1;
@@ -2229,7 +2373,7 @@ private: System::Windows::Forms::Button^ button5;
             // 
             this->textBoxIdClientStats->Dock = System::Windows::Forms::DockStyle::Fill;
             this->textBoxIdClientStats->Location = System::Drawing::Point(955, 2);
-            this->textBoxIdClientStats->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+            this->textBoxIdClientStats->Margin = System::Windows::Forms::Padding(2);
             this->textBoxIdClientStats->Name = L"textBoxIdClientStats";
             this->textBoxIdClientStats->Size = System::Drawing::Size(228, 22);
             this->textBoxIdClientStats->TabIndex = 2;
@@ -2263,7 +2407,7 @@ private: System::Windows::Forms::Button^ button5;
             this->tableLayoutPanel14->Controls->Add(this->buttonValeurAchatStock, 7, 0);
             this->tableLayoutPanel14->Dock = System::Windows::Forms::DockStyle::Fill;
             this->tableLayoutPanel14->Location = System::Drawing::Point(2, 72);
-            this->tableLayoutPanel14->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+            this->tableLayoutPanel14->Margin = System::Windows::Forms::Padding(2);
             this->tableLayoutPanel14->Name = L"tableLayoutPanel14";
             this->tableLayoutPanel14->RowCount = 1;
             this->tableLayoutPanel14->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
@@ -2274,7 +2418,7 @@ private: System::Windows::Forms::Button^ button5;
             // 
             this->buttonSeuilR->Dock = System::Windows::Forms::DockStyle::Fill;
             this->buttonSeuilR->Location = System::Drawing::Point(2, 2);
-            this->buttonSeuilR->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+            this->buttonSeuilR->Margin = System::Windows::Forms::Padding(2);
             this->buttonSeuilR->Name = L"buttonSeuilR";
             this->buttonSeuilR->Size = System::Drawing::Size(144, 63);
             this->buttonSeuilR->TabIndex = 0;
@@ -2286,7 +2430,7 @@ private: System::Windows::Forms::Button^ button5;
             // 
             this->buttonPanier->Dock = System::Windows::Forms::DockStyle::Fill;
             this->buttonPanier->Location = System::Drawing::Point(150, 2);
-            this->buttonPanier->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+            this->buttonPanier->Margin = System::Windows::Forms::Padding(2);
             this->buttonPanier->Name = L"buttonPanier";
             this->buttonPanier->Size = System::Drawing::Size(144, 63);
             this->buttonPanier->TabIndex = 1;
@@ -2298,7 +2442,7 @@ private: System::Windows::Forms::Button^ button5;
             // 
             this->buttonC->Dock = System::Windows::Forms::DockStyle::Fill;
             this->buttonC->Location = System::Drawing::Point(298, 2);
-            this->buttonC->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+            this->buttonC->Margin = System::Windows::Forms::Padding(2);
             this->buttonC->Name = L"buttonC";
             this->buttonC->Size = System::Drawing::Size(144, 63);
             this->buttonC->TabIndex = 2;
@@ -2310,7 +2454,7 @@ private: System::Windows::Forms::Button^ button5;
             // 
             this->buttonAchatsClient->Dock = System::Windows::Forms::DockStyle::Fill;
             this->buttonAchatsClient->Location = System::Drawing::Point(446, 2);
-            this->buttonAchatsClient->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+            this->buttonAchatsClient->Margin = System::Windows::Forms::Padding(2);
             this->buttonAchatsClient->Name = L"buttonAchatsClient";
             this->buttonAchatsClient->Size = System::Drawing::Size(144, 63);
             this->buttonAchatsClient->TabIndex = 3;
@@ -2322,7 +2466,7 @@ private: System::Windows::Forms::Button^ button5;
             // 
             this->buttonArticlesLesPlusVendus->Dock = System::Windows::Forms::DockStyle::Fill;
             this->buttonArticlesLesPlusVendus->Location = System::Drawing::Point(594, 2);
-            this->buttonArticlesLesPlusVendus->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+            this->buttonArticlesLesPlusVendus->Margin = System::Windows::Forms::Padding(2);
             this->buttonArticlesLesPlusVendus->Name = L"buttonArticlesLesPlusVendus";
             this->buttonArticlesLesPlusVendus->Size = System::Drawing::Size(144, 63);
             this->buttonArticlesLesPlusVendus->TabIndex = 4;
@@ -2334,7 +2478,7 @@ private: System::Windows::Forms::Button^ button5;
             // 
             this->buttonArticlesLesMoinsVendus->Dock = System::Windows::Forms::DockStyle::Fill;
             this->buttonArticlesLesMoinsVendus->Location = System::Drawing::Point(742, 2);
-            this->buttonArticlesLesMoinsVendus->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+            this->buttonArticlesLesMoinsVendus->Margin = System::Windows::Forms::Padding(2);
             this->buttonArticlesLesMoinsVendus->Name = L"buttonArticlesLesMoinsVendus";
             this->buttonArticlesLesMoinsVendus->Size = System::Drawing::Size(144, 63);
             this->buttonArticlesLesMoinsVendus->TabIndex = 5;
@@ -2346,7 +2490,7 @@ private: System::Windows::Forms::Button^ button5;
             // 
             this->buttonValeurCommercialeStock->Dock = System::Windows::Forms::DockStyle::Fill;
             this->buttonValeurCommercialeStock->Location = System::Drawing::Point(890, 2);
-            this->buttonValeurCommercialeStock->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+            this->buttonValeurCommercialeStock->Margin = System::Windows::Forms::Padding(2);
             this->buttonValeurCommercialeStock->Name = L"buttonValeurCommercialeStock";
             this->buttonValeurCommercialeStock->Size = System::Drawing::Size(144, 63);
             this->buttonValeurCommercialeStock->TabIndex = 6;
@@ -2358,7 +2502,7 @@ private: System::Windows::Forms::Button^ button5;
             // 
             this->buttonValeurAchatStock->Dock = System::Windows::Forms::DockStyle::Fill;
             this->buttonValeurAchatStock->Location = System::Drawing::Point(1038, 2);
-            this->buttonValeurAchatStock->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+            this->buttonValeurAchatStock->Margin = System::Windows::Forms::Padding(2);
             this->buttonValeurAchatStock->Name = L"buttonValeurAchatStock";
             this->buttonValeurAchatStock->Size = System::Drawing::Size(145, 63);
             this->buttonValeurAchatStock->TabIndex = 7;
@@ -2371,7 +2515,7 @@ private: System::Windows::Forms::Button^ button5;
             this->tabCreationCommande->Controls->Add(this->tableLayoutPanel7);
             this->tabCreationCommande->Location = System::Drawing::Point(4, 29);
             this->tabCreationCommande->Name = L"tabCreationCommande";
-            this->tabCreationCommande->Padding = System::Windows::Forms::Padding(3, 3, 3, 3);
+            this->tabCreationCommande->Padding = System::Windows::Forms::Padding(3);
             this->tabCreationCommande->Size = System::Drawing::Size(1275, 468);
             this->tabCreationCommande->TabIndex = 5;
             this->tabCreationCommande->Text = L"Création commande";
@@ -2390,7 +2534,7 @@ private: System::Windows::Forms::Button^ button5;
             this->tableLayoutPanel7->Controls->Add(this->tableLayoutPanel15, 0, 0);
             this->tableLayoutPanel7->Dock = System::Windows::Forms::DockStyle::Fill;
             this->tableLayoutPanel7->Location = System::Drawing::Point(3, 3);
-            this->tableLayoutPanel7->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
+            this->tableLayoutPanel7->Margin = System::Windows::Forms::Padding(1);
             this->tableLayoutPanel7->Name = L"tableLayoutPanel7";
             this->tableLayoutPanel7->RowCount = 1;
             this->tableLayoutPanel7->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
@@ -2407,7 +2551,7 @@ private: System::Windows::Forms::Button^ button5;
             this->tableLayoutPanel12->Controls->Add(this->button2, 0, 0);
             this->tableLayoutPanel12->Dock = System::Windows::Forms::DockStyle::Fill;
             this->tableLayoutPanel12->Location = System::Drawing::Point(1191, 2);
-            this->tableLayoutPanel12->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+            this->tableLayoutPanel12->Margin = System::Windows::Forms::Padding(2);
             this->tableLayoutPanel12->Name = L"tableLayoutPanel12";
             this->tableLayoutPanel12->RowCount = 2;
             this->tableLayoutPanel12->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 50)));
@@ -2578,7 +2722,7 @@ private: System::Windows::Forms::Button^ button5;
             // 
             this->textBoxDeliveryDateNewOrder->Dock = System::Windows::Forms::DockStyle::Fill;
             this->textBoxDeliveryDateNewOrder->Location = System::Drawing::Point(396, 21);
-            this->textBoxDeliveryDateNewOrder->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
+            this->textBoxDeliveryDateNewOrder->Margin = System::Windows::Forms::Padding(1);
             this->textBoxDeliveryDateNewOrder->Name = L"textBoxDeliveryDateNewOrder";
             this->textBoxDeliveryDateNewOrder->Size = System::Drawing::Size(27, 22);
             this->textBoxDeliveryDateNewOrder->TabIndex = 14;
@@ -2587,7 +2731,7 @@ private: System::Windows::Forms::Button^ button5;
             // 
             this->textBoxIdCommandNewOrder->Dock = System::Windows::Forms::DockStyle::Fill;
             this->textBoxIdCommandNewOrder->Location = System::Drawing::Point(153, 21);
-            this->textBoxIdCommandNewOrder->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
+            this->textBoxIdCommandNewOrder->Margin = System::Windows::Forms::Padding(1);
             this->textBoxIdCommandNewOrder->Name = L"textBoxIdCommandNewOrder";
             this->textBoxIdCommandNewOrder->Size = System::Drawing::Size(27, 22);
             this->textBoxIdCommandNewOrder->TabIndex = 2;
@@ -2610,7 +2754,7 @@ private: System::Windows::Forms::Button^ button5;
             // 
             this->textBoxEmissonDateNewOrder->Dock = System::Windows::Forms::DockStyle::Fill;
             this->textBoxEmissonDateNewOrder->Location = System::Drawing::Point(670, 21);
-            this->textBoxEmissonDateNewOrder->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
+            this->textBoxEmissonDateNewOrder->Margin = System::Windows::Forms::Padding(1);
             this->textBoxEmissonDateNewOrder->Name = L"textBoxEmissonDateNewOrder";
             this->textBoxEmissonDateNewOrder->Size = System::Drawing::Size(27, 22);
             this->textBoxEmissonDateNewOrder->TabIndex = 21;
@@ -2632,7 +2776,7 @@ private: System::Windows::Forms::Button^ button5;
             // 
             this->textBoxCityDeliveryNewOrder->Dock = System::Windows::Forms::DockStyle::Fill;
             this->textBoxCityDeliveryNewOrder->Location = System::Drawing::Point(153, 187);
-            this->textBoxCityDeliveryNewOrder->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
+            this->textBoxCityDeliveryNewOrder->Margin = System::Windows::Forms::Padding(1);
             this->textBoxCityDeliveryNewOrder->Name = L"textBoxCityDeliveryNewOrder";
             this->textBoxCityDeliveryNewOrder->Size = System::Drawing::Size(27, 22);
             this->textBoxCityDeliveryNewOrder->TabIndex = 28;
@@ -2655,7 +2799,7 @@ private: System::Windows::Forms::Button^ button5;
             // 
             this->textBoxPostalCodeDeliveryNewOrder->Dock = System::Windows::Forms::DockStyle::Fill;
             this->textBoxPostalCodeDeliveryNewOrder->Location = System::Drawing::Point(396, 187);
-            this->textBoxPostalCodeDeliveryNewOrder->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
+            this->textBoxPostalCodeDeliveryNewOrder->Margin = System::Windows::Forms::Padding(1);
             this->textBoxPostalCodeDeliveryNewOrder->Name = L"textBoxPostalCodeDeliveryNewOrder";
             this->textBoxPostalCodeDeliveryNewOrder->Size = System::Drawing::Size(27, 22);
             this->textBoxPostalCodeDeliveryNewOrder->TabIndex = 25;
@@ -2678,7 +2822,7 @@ private: System::Windows::Forms::Button^ button5;
             // 
             this->textBoxNumberAdrFactNewOrder->Dock = System::Windows::Forms::DockStyle::Fill;
             this->textBoxNumberAdrFactNewOrder->Location = System::Drawing::Point(670, 187);
-            this->textBoxNumberAdrFactNewOrder->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
+            this->textBoxNumberAdrFactNewOrder->Margin = System::Windows::Forms::Padding(1);
             this->textBoxNumberAdrFactNewOrder->Name = L"textBoxNumberAdrFactNewOrder";
             this->textBoxNumberAdrFactNewOrder->Size = System::Drawing::Size(27, 22);
             this->textBoxNumberAdrFactNewOrder->TabIndex = 26;
@@ -2928,7 +3072,7 @@ private: System::Windows::Forms::Button^ button5;
             // 
             this->textBoxStreetNameAdrDeliveryNewOrder->Dock = System::Windows::Forms::DockStyle::Fill;
             this->textBoxStreetNameAdrDeliveryNewOrder->Location = System::Drawing::Point(922, 104);
-            this->textBoxStreetNameAdrDeliveryNewOrder->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
+            this->textBoxStreetNameAdrDeliveryNewOrder->Margin = System::Windows::Forms::Padding(1);
             this->textBoxStreetNameAdrDeliveryNewOrder->Name = L"textBoxStreetNameAdrDeliveryNewOrder";
             this->textBoxStreetNameAdrDeliveryNewOrder->Size = System::Drawing::Size(27, 22);
             this->textBoxStreetNameAdrDeliveryNewOrder->TabIndex = 22;
@@ -3000,7 +3144,7 @@ private: System::Windows::Forms::Button^ button5;
             this->dateTimePickerBirthDateNewOrder->Dock = System::Windows::Forms::DockStyle::Fill;
             this->dateTimePickerBirthDateNewOrder->Format = System::Windows::Forms::DateTimePickerFormat::Custom;
             this->dateTimePickerBirthDateNewOrder->Location = System::Drawing::Point(396, 104);
-            this->dateTimePickerBirthDateNewOrder->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
+            this->dateTimePickerBirthDateNewOrder->Margin = System::Windows::Forms::Padding(1);
             this->dateTimePickerBirthDateNewOrder->Name = L"dateTimePickerBirthDateNewOrder";
             this->dateTimePickerBirthDateNewOrder->Size = System::Drawing::Size(27, 22);
             this->dateTimePickerBirthDateNewOrder->TabIndex = 18;
@@ -3009,7 +3153,7 @@ private: System::Windows::Forms::Button^ button5;
             // 
             this->textBoxNumberAdrDeliveryNewOrder->Dock = System::Windows::Forms::DockStyle::Fill;
             this->textBoxNumberAdrDeliveryNewOrder->Location = System::Drawing::Point(670, 104);
-            this->textBoxNumberAdrDeliveryNewOrder->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
+            this->textBoxNumberAdrDeliveryNewOrder->Margin = System::Windows::Forms::Padding(1);
             this->textBoxNumberAdrDeliveryNewOrder->Name = L"textBoxNumberAdrDeliveryNewOrder";
             this->textBoxNumberAdrDeliveryNewOrder->Size = System::Drawing::Size(27, 22);
             this->textBoxNumberAdrDeliveryNewOrder->TabIndex = 11;
@@ -3030,11 +3174,11 @@ private: System::Windows::Forms::Button^ button5;
             this->tableLayoutPanel6->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Absolute,
                 15)));
             this->tableLayoutPanel6->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Absolute,
-                27)));
+                28)));
             this->tableLayoutPanel6->Controls->Add(this->label22, 3, 0);
             this->tableLayoutPanel6->Dock = System::Windows::Forms::DockStyle::Top;
             this->tableLayoutPanel6->Location = System::Drawing::Point(0, 0);
-            this->tableLayoutPanel6->Margin = System::Windows::Forms::Padding(1, 1, 1, 1);
+            this->tableLayoutPanel6->Margin = System::Windows::Forms::Padding(1);
             this->tableLayoutPanel6->Name = L"tableLayoutPanel6";
             this->tableLayoutPanel6->RowCount = 1;
             this->tableLayoutPanel6->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
@@ -3049,7 +3193,7 @@ private: System::Windows::Forms::Button^ button5;
             this->label22->ForeColor = System::Drawing::SystemColors::ButtonFace;
             this->label22->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"label22.Image")));
             this->label22->ImageAlign = System::Drawing::ContentAlignment::MiddleLeft;
-            this->label22->Location = System::Drawing::Point(514, 0);
+            this->label22->Location = System::Drawing::Point(513, 0);
             this->label22->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
             this->label22->Name = L"label22";
             this->label22->Size = System::Drawing::Size(240, 38);
@@ -3057,150 +3201,6 @@ private: System::Windows::Forms::Button^ button5;
             this->label22->Text = L"x";
             this->label22->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
             this->label22->Click += gcnew System::EventHandler(this, &MyForm::label22_Click);
-            // 
-            // button9
-            // 
-            this->button9->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(128)), static_cast<System::Int32>(static_cast<System::Byte>(128)),
-                static_cast<System::Int32>(static_cast<System::Byte>(255)));
-            this->button9->Cursor = System::Windows::Forms::Cursors::Hand;
-            this->button9->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->button9->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-            this->button9->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.9F));
-            this->button9->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-            this->button9->Location = System::Drawing::Point(3, 93);
-            this->button9->Name = L"button9";
-            this->button9->Size = System::Drawing::Size(245, 39);
-            this->button9->TabIndex = 6;
-            this->button9->Text = L"Supprimer";
-            this->button9->UseVisualStyleBackColor = false;
-            // 
-            // button10
-            // 
-            this->button10->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(128)), static_cast<System::Int32>(static_cast<System::Byte>(128)),
-                static_cast<System::Int32>(static_cast<System::Byte>(255)));
-            this->button10->Cursor = System::Windows::Forms::Cursors::Hand;
-            this->button10->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->button10->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-            this->button10->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.9F));
-            this->button10->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-            this->button10->Location = System::Drawing::Point(3, 93);
-            this->button10->Name = L"button10";
-            this->button10->Size = System::Drawing::Size(247, 41);
-            this->button10->TabIndex = 7;
-            this->button10->Text = L"Supprimer";
-            this->button10->UseVisualStyleBackColor = false;
-            // 
-            // button11
-            // 
-            this->button11->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(128)), static_cast<System::Int32>(static_cast<System::Byte>(128)),
-                static_cast<System::Int32>(static_cast<System::Byte>(255)));
-            this->button11->Cursor = System::Windows::Forms::Cursors::Hand;
-            this->button11->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->button11->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-            this->button11->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.9F));
-            this->button11->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-            this->button11->Location = System::Drawing::Point(3, 93);
-            this->button11->Name = L"button11";
-            this->button11->Size = System::Drawing::Size(247, 41);
-            this->button11->TabIndex = 7;
-            this->button11->Text = L"Supprimer";
-            this->button11->UseVisualStyleBackColor = false;
-            // 
-            // button7
-            // 
-            this->button7->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(128)), static_cast<System::Int32>(static_cast<System::Byte>(128)),
-                static_cast<System::Int32>(static_cast<System::Byte>(255)));
-            this->button7->Cursor = System::Windows::Forms::Cursors::Hand;
-            this->button7->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->button7->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-            this->button7->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.9F));
-            this->button7->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-            this->button7->Location = System::Drawing::Point(3, 48);
-            this->button7->Name = L"button7";
-            this->button7->Size = System::Drawing::Size(247, 39);
-            this->button7->TabIndex = 7;
-            this->button7->Text = L"Modifier";
-            this->button7->UseVisualStyleBackColor = false;
-            // 
-            // button12
-            // 
-            this->button12->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(128)), static_cast<System::Int32>(static_cast<System::Byte>(128)),
-                static_cast<System::Int32>(static_cast<System::Byte>(255)));
-            this->button12->Cursor = System::Windows::Forms::Cursors::Hand;
-            this->button12->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->button12->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-            this->button12->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.9F));
-            this->button12->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-            this->button12->Location = System::Drawing::Point(3, 3);
-            this->button12->Name = L"button12";
-            this->button12->Size = System::Drawing::Size(247, 39);
-            this->button12->TabIndex = 7;
-            this->button12->Text = L"Ajouter";
-            this->button12->UseVisualStyleBackColor = false;
-            // 
-            // button8
-            // 
-            this->button8->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(128)), static_cast<System::Int32>(static_cast<System::Byte>(128)),
-                static_cast<System::Int32>(static_cast<System::Byte>(255)));
-            this->button8->Cursor = System::Windows::Forms::Cursors::Hand;
-            this->button8->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->button8->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-            this->button8->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.9F));
-            this->button8->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-            this->button8->Location = System::Drawing::Point(3, 3);
-            this->button8->Name = L"button8";
-            this->button8->Size = System::Drawing::Size(247, 39);
-            this->button8->TabIndex = 7;
-            this->button8->Text = L"Ajouter";
-            this->button8->UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this->button4->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(128)), static_cast<System::Int32>(static_cast<System::Byte>(128)),
-                static_cast<System::Int32>(static_cast<System::Byte>(255)));
-            this->button4->Cursor = System::Windows::Forms::Cursors::Hand;
-            this->button4->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->button4->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-            this->button4->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.9F));
-            this->button4->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-            this->button4->Location = System::Drawing::Point(3, 48);
-            this->button4->Name = L"button4";
-            this->button4->Size = System::Drawing::Size(247, 39);
-            this->button4->TabIndex = 7;
-            this->button4->Text = L"Modifier";
-            this->button4->UseVisualStyleBackColor = false;
-            // 
-            // button5
-            // 
-            this->button5->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(128)), static_cast<System::Int32>(static_cast<System::Byte>(128)),
-                static_cast<System::Int32>(static_cast<System::Byte>(255)));
-            this->button5->Cursor = System::Windows::Forms::Cursors::Hand;
-            this->button5->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->button5->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-            this->button5->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.9F));
-            this->button5->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-            this->button5->Location = System::Drawing::Point(3, 3);
-            this->button5->Name = L"button5";
-            this->button5->Size = System::Drawing::Size(371, 83);
-            this->button5->TabIndex = 4;
-            this->button5->Text = L"Modifier";
-            this->button5->UseVisualStyleBackColor = false;
-            // 
-            // button13
-            // 
-            this->button13->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(128)), static_cast<System::Int32>(static_cast<System::Byte>(128)),
-                static_cast<System::Int32>(static_cast<System::Byte>(255)));
-            this->button13->Cursor = System::Windows::Forms::Cursors::Hand;
-            this->button13->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->button13->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-            this->button13->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.9F));
-            this->button13->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-            this->button13->Location = System::Drawing::Point(380, 3);
-            this->button13->Name = L"button13";
-            this->button13->Size = System::Drawing::Size(371, 83);
-            this->button13->TabIndex = 5;
-            this->button13->Text = L"Nouvelle commande";
-            this->button13->UseVisualStyleBackColor = false;
             // 
             // MyForm
             // 
