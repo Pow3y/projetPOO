@@ -474,7 +474,7 @@ private: System::Windows::Forms::Button^ buttonValeurAchatStock;
             this->tableLayoutPanelHotbar->Controls->Add(this->CommandesButton, 2, 0);
             this->tableLayoutPanelHotbar->Dock = System::Windows::Forms::DockStyle::Top;
             this->tableLayoutPanelHotbar->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
-            this->tableLayoutPanelHotbar->Location = System::Drawing::Point(0, 38);
+            this->tableLayoutPanelHotbar->Location = System::Drawing::Point(0, 59);
             this->tableLayoutPanelHotbar->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
             this->tableLayoutPanelHotbar->Name = L"tableLayoutPanelHotbar";
             this->tableLayoutPanelHotbar->RowCount = 1;
@@ -514,10 +514,10 @@ private: System::Windows::Forms::Button^ buttonValeurAchatStock;
             this->ClientButton->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->ClientButton->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-            this->ClientButton->Location = System::Drawing::Point(3, 1);
+            this->ClientButton->Location = System::Drawing::Point(4, 1);
             this->ClientButton->Margin = System::Windows::Forms::Padding(1);
             this->ClientButton->Name = L"ClientButton";
-            this->ClientButton->Size = System::Drawing::Size(417, 58);
+            this->ClientButton->Size = System::Drawing::Size(419, 60);
             this->ClientButton->TabIndex = 0;
             this->ClientButton->Text = L"Client";
             this->ClientButton->UseVisualStyleBackColor = false;
@@ -776,13 +776,13 @@ private: System::Windows::Forms::Button^ buttonValeurAchatStock;
             this->dataGridView1->BackgroundColor = System::Drawing::Color::Black;
             this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
             this->dataGridView1->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->dataGridView1->Location = System::Drawing::Point(68, 31);
+            this->dataGridView1->Location = System::Drawing::Point(101, 48);
             this->dataGridView1->Margin = System::Windows::Forms::Padding(1);
             this->dataGridView1->Name = L"dataGridView1";
             this->dataGridView1->ReadOnly = true;
             this->dataGridView1->RowHeadersWidth = 51;
             this->dataGridView1->RowTemplate->Height = 24;
-            this->dataGridView1->Size = System::Drawing::Size(1896, 432);
+            this->dataGridView1->Size = System::Drawing::Size(1898, 434);
             this->dataGridView1->TabIndex = 4;
             this->dataGridView1->CellClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &MyForm::dataGridView1_CellClick);
             // 
@@ -1177,13 +1177,13 @@ private: System::Windows::Forms::Button^ buttonValeurAchatStock;
             this->dataGridView2->BackgroundColor = System::Drawing::Color::Black;
             this->dataGridView2->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
             this->dataGridView2->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->dataGridView2->Location = System::Drawing::Point(68, 31);
+            this->dataGridView2->Location = System::Drawing::Point(101, 48);
             this->dataGridView2->Margin = System::Windows::Forms::Padding(1);
             this->dataGridView2->Name = L"dataGridView2";
             this->dataGridView2->ReadOnly = true;
             this->dataGridView2->RowHeadersWidth = 51;
             this->dataGridView2->RowTemplate->Height = 24;
-            this->dataGridView2->Size = System::Drawing::Size(1896, 460);
+            this->dataGridView2->Size = System::Drawing::Size(1898, 462);
             this->dataGridView2->TabIndex = 5;
             // 
             // checkBox2
@@ -1444,13 +1444,13 @@ private: System::Windows::Forms::Button^ buttonValeurAchatStock;
             this->dataGridView3->BackgroundColor = System::Drawing::Color::Black;
             this->dataGridView3->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
             this->dataGridView3->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->dataGridView3->Location = System::Drawing::Point(68, 31);
+            this->dataGridView3->Location = System::Drawing::Point(101, 48);
             this->dataGridView3->Margin = System::Windows::Forms::Padding(1);
             this->dataGridView3->Name = L"dataGridView3";
             this->dataGridView3->ReadOnly = true;
             this->dataGridView3->RowHeadersWidth = 51;
             this->dataGridView3->RowTemplate->Height = 24;
-            this->dataGridView3->Size = System::Drawing::Size(1896, 467);
+            this->dataGridView3->Size = System::Drawing::Size(1898, 469);
             this->dataGridView3->TabIndex = 5;
             // 
             // checkBox3
@@ -1734,13 +1734,13 @@ private: System::Windows::Forms::Button^ buttonValeurAchatStock;
             this->dataGridView4->BackgroundColor = System::Drawing::Color::Black;
             this->dataGridView4->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
             this->dataGridView4->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->dataGridView4->Location = System::Drawing::Point(68, 31);
+            this->dataGridView4->Location = System::Drawing::Point(101, 48);
             this->dataGridView4->Margin = System::Windows::Forms::Padding(1);
             this->dataGridView4->Name = L"dataGridView4";
             this->dataGridView4->ReadOnly = true;
             this->dataGridView4->RowHeadersWidth = 51;
             this->dataGridView4->RowTemplate->Height = 24;
-            this->dataGridView4->Size = System::Drawing::Size(1896, 449);
+            this->dataGridView4->Size = System::Drawing::Size(1898, 451);
             this->dataGridView4->TabIndex = 5;
             // 
             // checkBox4
@@ -2030,7 +2030,7 @@ private: System::Windows::Forms::Button^ buttonValeurAchatStock;
             this->tableLayoutPanel5->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 67.13615F)));
             this->tableLayoutPanel5->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 32.86385F)));
             this->tableLayoutPanel5->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Absolute, 20)));
-            this->tableLayoutPanel5->Size = System::Drawing::Size(1398, 466);
+            this->tableLayoutPanel5->Size = System::Drawing::Size(2100, 747);
             this->tableLayoutPanel5->TabIndex = 9;
             this->tableLayoutPanel5->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &MyForm::tableLayoutPanel5_Paint_1);
             // 
@@ -2038,7 +2038,7 @@ private: System::Windows::Forms::Button^ buttonValeurAchatStock;
             // 
             this->dataGridView6->BackgroundColor = System::Drawing::Color::Black;
             this->dataGridView6->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-            this->dataGridView6->Location = System::Drawing::Point(43, 43);
+            this->dataGridView6->Location = System::Drawing::Point(63, 43);
             this->dataGridView6->Name = L"dataGridView6";
             this->dataGridView6->RowHeadersWidth = 51;
             this->dataGridView6->RowTemplate->Height = 24;
@@ -2054,7 +2054,7 @@ private: System::Windows::Forms::Button^ buttonValeurAchatStock;
                 20)));
             this->tableLayoutPanel11->Controls->Add(this->tableLayoutPanel13, 0, 0);
             this->tableLayoutPanel11->Controls->Add(this->tableLayoutPanel14, 0, 1);
-            this->tableLayoutPanel11->Location = System::Drawing::Point(43, 328);
+            this->tableLayoutPanel11->Location = System::Drawing::Point(63, 517);
             this->tableLayoutPanel11->Name = L"tableLayoutPanel11";
             this->tableLayoutPanel11->RowCount = 2;
             this->tableLayoutPanel11->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 50)));
@@ -2131,21 +2131,21 @@ private: System::Windows::Forms::Button^ buttonValeurAchatStock;
             // 
             this->Month->Location = System::Drawing::Point(220, 3);
             this->Month->Name = L"Month";
-            this->Month->Size = System::Drawing::Size(211, 22);
+            this->Month->Size = System::Drawing::Size(211, 31);
             this->Month->TabIndex = 0;
             // 
             // Year
             // 
             this->Year->Location = System::Drawing::Point(654, 3);
             this->Year->Name = L"Year";
-            this->Year->Size = System::Drawing::Size(211, 22);
+            this->Year->Size = System::Drawing::Size(211, 31);
             this->Year->TabIndex = 1;
             // 
             // Id
             // 
             this->Id->Location = System::Drawing::Point(1088, 3);
             this->Id->Name = L"Id";
-            this->Id->Size = System::Drawing::Size(215, 22);
+            this->Id->Size = System::Drawing::Size(215, 31);
             this->Id->TabIndex = 2;
             // 
             // tableLayoutPanel14
@@ -2279,7 +2279,7 @@ private: System::Windows::Forms::Button^ buttonValeurAchatStock;
             this->tableLayoutPanel6->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Absolute,
                 22)));
             this->tableLayoutPanel6->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Absolute,
-                30)));
+                31)));
             this->tableLayoutPanel6->Controls->Add(this->label22, 3, 0);
             this->tableLayoutPanel6->Dock = System::Windows::Forms::DockStyle::Top;
             this->tableLayoutPanel6->Location = System::Drawing::Point(0, 0);
@@ -2298,10 +2298,10 @@ private: System::Windows::Forms::Button^ buttonValeurAchatStock;
             this->label22->ForeColor = System::Drawing::SystemColors::ButtonFace;
             this->label22->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"label22.Image")));
             this->label22->ImageAlign = System::Drawing::ContentAlignment::MiddleLeft;
-            this->label22->Location = System::Drawing::Point(844, 0);
+            this->label22->Location = System::Drawing::Point(850, 0);
             this->label22->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
             this->label22->Name = L"label22";
-            this->label22->Size = System::Drawing::Size(396, 59);
+            this->label22->Size = System::Drawing::Size(399, 59);
             this->label22->TabIndex = 1;
             this->label22->Text = L"x";
             this->label22->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
