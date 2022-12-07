@@ -978,6 +978,7 @@ private: System::Windows::Forms::Button^ buttonValeurAchatStock;
             this->textBoxCodePostal->Name = L"textBoxCodePostal";
             this->textBoxCodePostal->Size = System::Drawing::Size(345, 31);
             this->textBoxCodePostal->TabIndex = 11;
+            this->textBoxCodePostal->TextChanged += gcnew System::EventHandler(this, &MyForm::textBoxCodePostal_TextChanged);
             // 
             // labelCodePostalClient
             // 
@@ -2059,7 +2060,7 @@ private: System::Windows::Forms::Button^ buttonValeurAchatStock;
             this->tableLayoutPanel11->RowCount = 2;
             this->tableLayoutPanel11->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 50)));
             this->tableLayoutPanel11->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 50)));
-            this->tableLayoutPanel11->Size = System::Drawing::Size(1312, 131);
+            this->tableLayoutPanel11->Size = System::Drawing::Size(1970, 227);
             this->tableLayoutPanel11->TabIndex = 6;
             // 
             // tableLayoutPanel13
@@ -2088,7 +2089,7 @@ private: System::Windows::Forms::Button^ buttonValeurAchatStock;
             this->tableLayoutPanel13->Name = L"tableLayoutPanel13";
             this->tableLayoutPanel13->RowCount = 1;
             this->tableLayoutPanel13->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-            this->tableLayoutPanel13->Size = System::Drawing::Size(1306, 59);
+            this->tableLayoutPanel13->Size = System::Drawing::Size(1964, 107);
             this->tableLayoutPanel13->TabIndex = 0;
             // 
             // label3
@@ -2097,9 +2098,9 @@ private: System::Windows::Forms::Button^ buttonValeurAchatStock;
             this->label3->Dock = System::Windows::Forms::DockStyle::Fill;
             this->label3->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.9F));
             this->label3->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-            this->label3->Location = System::Drawing::Point(871, 0);
+            this->label3->Location = System::Drawing::Point(1311, 0);
             this->label3->Name = L"label3";
-            this->label3->Size = System::Drawing::Size(211, 59);
+            this->label3->Size = System::Drawing::Size(321, 107);
             this->label3->TabIndex = 9;
             this->label3->Text = L"Id_Client :";
             // 
@@ -2109,9 +2110,9 @@ private: System::Windows::Forms::Button^ buttonValeurAchatStock;
             this->label2->Dock = System::Windows::Forms::DockStyle::Fill;
             this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.9F));
             this->label2->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-            this->label2->Location = System::Drawing::Point(437, 0);
+            this->label2->Location = System::Drawing::Point(657, 0);
             this->label2->Name = L"label2";
-            this->label2->Size = System::Drawing::Size(211, 59);
+            this->label2->Size = System::Drawing::Size(321, 107);
             this->label2->TabIndex = 8;
             this->label2->Text = L"Années du chiffre d\'affaire:";
             // 
@@ -2123,27 +2124,27 @@ private: System::Windows::Forms::Button^ buttonValeurAchatStock;
             this->label1->ForeColor = System::Drawing::SystemColors::ControlLightLight;
             this->label1->Location = System::Drawing::Point(3, 0);
             this->label1->Name = L"label1";
-            this->label1->Size = System::Drawing::Size(211, 59);
+            this->label1->Size = System::Drawing::Size(321, 107);
             this->label1->TabIndex = 7;
             this->label1->Text = L"Mois du chiffre d\'affaire:";
             // 
             // Month
             // 
-            this->Month->Location = System::Drawing::Point(220, 3);
+            this->Month->Location = System::Drawing::Point(330, 3);
             this->Month->Name = L"Month";
             this->Month->Size = System::Drawing::Size(211, 31);
             this->Month->TabIndex = 0;
             // 
             // Year
             // 
-            this->Year->Location = System::Drawing::Point(654, 3);
+            this->Year->Location = System::Drawing::Point(984, 3);
             this->Year->Name = L"Year";
             this->Year->Size = System::Drawing::Size(211, 31);
             this->Year->TabIndex = 1;
             // 
             // Id
             // 
-            this->Id->Location = System::Drawing::Point(1088, 3);
+            this->Id->Location = System::Drawing::Point(1638, 3);
             this->Id->Name = L"Id";
             this->Id->Size = System::Drawing::Size(215, 31);
             this->Id->TabIndex = 2;
@@ -2176,18 +2177,18 @@ private: System::Windows::Forms::Button^ buttonValeurAchatStock;
             this->tableLayoutPanel14->Controls->Add(this->buttonValeurCommercialeStock, 6, 0);
             this->tableLayoutPanel14->Controls->Add(this->buttonValeurAchatStock, 7, 0);
             this->tableLayoutPanel14->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->tableLayoutPanel14->Location = System::Drawing::Point(3, 68);
+            this->tableLayoutPanel14->Location = System::Drawing::Point(3, 116);
             this->tableLayoutPanel14->Name = L"tableLayoutPanel14";
             this->tableLayoutPanel14->RowCount = 1;
             this->tableLayoutPanel14->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-            this->tableLayoutPanel14->Size = System::Drawing::Size(1306, 60);
+            this->tableLayoutPanel14->Size = System::Drawing::Size(1964, 108);
             this->tableLayoutPanel14->TabIndex = 1;
             // 
             // buttonSeuilR
             // 
             this->buttonSeuilR->Location = System::Drawing::Point(3, 3);
             this->buttonSeuilR->Name = L"buttonSeuilR";
-            this->buttonSeuilR->Size = System::Drawing::Size(157, 54);
+            this->buttonSeuilR->Size = System::Drawing::Size(157, 73);
             this->buttonSeuilR->TabIndex = 0;
             this->buttonSeuilR->Text = L"seuil de réapprovisionnement";
             this->buttonSeuilR->UseVisualStyleBackColor = true;
@@ -2195,9 +2196,9 @@ private: System::Windows::Forms::Button^ buttonValeurAchatStock;
             // 
             // buttonPanier
             // 
-            this->buttonPanier->Location = System::Drawing::Point(166, 3);
+            this->buttonPanier->Location = System::Drawing::Point(248, 3);
             this->buttonPanier->Name = L"buttonPanier";
-            this->buttonPanier->Size = System::Drawing::Size(157, 54);
+            this->buttonPanier->Size = System::Drawing::Size(157, 73);
             this->buttonPanier->TabIndex = 1;
             this->buttonPanier->Text = L"panier moyen ";
             this->buttonPanier->UseVisualStyleBackColor = true;
@@ -2205,9 +2206,9 @@ private: System::Windows::Forms::Button^ buttonValeurAchatStock;
             // 
             // buttonC
             // 
-            this->buttonC->Location = System::Drawing::Point(329, 3);
+            this->buttonC->Location = System::Drawing::Point(493, 3);
             this->buttonC->Name = L"buttonC";
-            this->buttonC->Size = System::Drawing::Size(157, 54);
+            this->buttonC->Size = System::Drawing::Size(157, 73);
             this->buttonC->TabIndex = 2;
             this->buttonC->Text = L"chiffre d’affaire ";
             this->buttonC->UseVisualStyleBackColor = true;
@@ -2215,9 +2216,9 @@ private: System::Windows::Forms::Button^ buttonValeurAchatStock;
             // 
             // buttonAchatsClient
             // 
-            this->buttonAchatsClient->Location = System::Drawing::Point(492, 3);
+            this->buttonAchatsClient->Location = System::Drawing::Point(738, 3);
             this->buttonAchatsClient->Name = L"buttonAchatsClient";
-            this->buttonAchatsClient->Size = System::Drawing::Size(157, 54);
+            this->buttonAchatsClient->Size = System::Drawing::Size(157, 73);
             this->buttonAchatsClient->TabIndex = 3;
             this->buttonAchatsClient->Text = L"montant total des achats pour un client";
             this->buttonAchatsClient->UseVisualStyleBackColor = true;
@@ -2225,9 +2226,9 @@ private: System::Windows::Forms::Button^ buttonValeurAchatStock;
             // 
             // buttonArticlesLesPlusVendus
             // 
-            this->buttonArticlesLesPlusVendus->Location = System::Drawing::Point(655, 3);
+            this->buttonArticlesLesPlusVendus->Location = System::Drawing::Point(983, 3);
             this->buttonArticlesLesPlusVendus->Name = L"buttonArticlesLesPlusVendus";
-            this->buttonArticlesLesPlusVendus->Size = System::Drawing::Size(157, 54);
+            this->buttonArticlesLesPlusVendus->Size = System::Drawing::Size(157, 73);
             this->buttonArticlesLesPlusVendus->TabIndex = 4;
             this->buttonArticlesLesPlusVendus->Text = L"articles les plus vendus";
             this->buttonArticlesLesPlusVendus->UseVisualStyleBackColor = true;
@@ -2235,9 +2236,9 @@ private: System::Windows::Forms::Button^ buttonValeurAchatStock;
             // 
             // buttonArticlesLesMoinsVendus
             // 
-            this->buttonArticlesLesMoinsVendus->Location = System::Drawing::Point(818, 3);
+            this->buttonArticlesLesMoinsVendus->Location = System::Drawing::Point(1228, 3);
             this->buttonArticlesLesMoinsVendus->Name = L"buttonArticlesLesMoinsVendus";
-            this->buttonArticlesLesMoinsVendus->Size = System::Drawing::Size(157, 54);
+            this->buttonArticlesLesMoinsVendus->Size = System::Drawing::Size(157, 73);
             this->buttonArticlesLesMoinsVendus->TabIndex = 5;
             this->buttonArticlesLesMoinsVendus->Text = L"articles les moins vendus";
             this->buttonArticlesLesMoinsVendus->UseVisualStyleBackColor = true;
@@ -2245,9 +2246,9 @@ private: System::Windows::Forms::Button^ buttonValeurAchatStock;
             // 
             // buttonValeurCommercialeStock
             // 
-            this->buttonValeurCommercialeStock->Location = System::Drawing::Point(981, 3);
+            this->buttonValeurCommercialeStock->Location = System::Drawing::Point(1473, 3);
             this->buttonValeurCommercialeStock->Name = L"buttonValeurCommercialeStock";
-            this->buttonValeurCommercialeStock->Size = System::Drawing::Size(157, 54);
+            this->buttonValeurCommercialeStock->Size = System::Drawing::Size(157, 73);
             this->buttonValeurCommercialeStock->TabIndex = 6;
             this->buttonValeurCommercialeStock->Text = L"valeur commerciale du stock";
             this->buttonValeurCommercialeStock->UseVisualStyleBackColor = true;
@@ -2255,9 +2256,9 @@ private: System::Windows::Forms::Button^ buttonValeurAchatStock;
             // 
             // buttonValeurAchatStock
             // 
-            this->buttonValeurAchatStock->Location = System::Drawing::Point(1144, 3);
+            this->buttonValeurAchatStock->Location = System::Drawing::Point(1718, 3);
             this->buttonValeurAchatStock->Name = L"buttonValeurAchatStock";
-            this->buttonValeurAchatStock->Size = System::Drawing::Size(159, 54);
+            this->buttonValeurAchatStock->Size = System::Drawing::Size(159, 73);
             this->buttonValeurAchatStock->TabIndex = 7;
             this->buttonValeurAchatStock->Text = L"valeur d’achat du stock";
             this->buttonValeurAchatStock->UseVisualStyleBackColor = true;
@@ -2531,6 +2532,8 @@ private: System::Void button3_Click_1(System::Object^ sender, System::EventArgs^
     Clients^ Client = gcnew Clients();
     Client->Update(textBoxClientId, textBoxNomClient, textBoxPrénomClient, dateTimePickerBirthDate, textBoxNumRue, textBoxNomRue, textBoxEtage, textBoxVille, textBoxCodePostal);
     updateForms();
+}
+private: System::Void textBoxCodePostal_TextChanged(System::Object^ sender, System::EventArgs^ e) {
 }
 };
 }

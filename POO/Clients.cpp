@@ -48,8 +48,12 @@ void Clients::Create(TextBox^ ID, TextBox^ LastName, TextBox^ Firstname, DateTim
     this->AddressStreet = NameStreet->Text;
     this->AddressCity = City->Text;
     this->BirthDate = BirthDate->Value;
-    // Create command
-    
+    SqlServices^ DB = gcnew SqlServices();
+    DB->ConnectDB();
+    DB->ExecuteQuery("INSERT INTO projetPOO.dbo.Address VALUES ('" + System::Convert::ToString(this->AddressNum) + "','" + this->AddressStreet + "','" + System::Convert::ToString(this->AddressFloor) + "',20311)");
+    DB->ExecuteQuery("INSERT INTO projetPOO.dbo.Client VALUES ( '" + this->LastName + "','" + this->FirstName + "','" + System::Convert::ToString(this->BirthDate) + "')");
+    DB->ExecuteQuery("INSERT INTO projetPOO.dbo.Live_InC VALUES ( '11','11')");
+    MessageBox::Show("Client Created");
 }
 
 void Clients::Update(TextBox^ ID, TextBox^ LastName, TextBox^ Firstname, DateTimePicker^ BirthDate, TextBox^ NumAdr, TextBox^ NameStreet, TextBox^ Floor, TextBox^ City, TextBox^ PostalCode)
@@ -90,8 +94,6 @@ void Clients::Update(TextBox^ ID, TextBox^ LastName, TextBox^ Firstname, DateTim
     this->BirthDate = BirthDate->Value;
     if (this->Exist())
     {
-        // faire requete pour suppr client
-        // vider text box
 		SqlServices^ DB = gcnew SqlServices();
         DB->ConnectDB();
         DB->ExecuteQuery("UPDATE projetPOO.dbo.Client SET Last_Client = '"+ this->LastName +"',First_Client = '" + this->FirstName + "',Birth_Date = '" + System::Convert::ToString(this->BirthDate) + "' WHERE Id_Client = " + System::Convert::ToString(this->ID));
