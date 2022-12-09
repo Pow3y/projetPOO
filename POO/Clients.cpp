@@ -64,6 +64,7 @@ void Clients::Update(TextBox^ ID, TextBox^ LastName, TextBox^ Firstname, DateTim
     catch (Exception^ e)
     {
         MessageBox::Show("ID must be INT");
+        return;
     }
     try {
         this->AddressNum = Convert::ToInt32(NumAdr->Text);
@@ -71,21 +72,26 @@ void Clients::Update(TextBox^ ID, TextBox^ LastName, TextBox^ Firstname, DateTim
     catch (Exception^ e)
     {
         MessageBox::Show("Address number must be a number");
+        return;
     }
     try {
         this->AddressPostalCode = Convert::ToInt32(PostalCode->Text);
-
     }
     catch (Exception^ e)
     {
         MessageBox::Show("Postal Code be a number");
+        return;
     }
     try {
         this->AddressFloor = Convert::ToInt32(Floor->Text);
     }
     catch (Exception^ e)
     {
-        MessageBox::Show("Floor must be a number");
+		if (Floor->Text != "")
+		{
+			MessageBox::Show("Floor must be a number or empty");
+            return;
+		}
     }
     this->FirstName = Firstname->Text;
     this->LastName = LastName->Text;
@@ -96,8 +102,8 @@ void Clients::Update(TextBox^ ID, TextBox^ LastName, TextBox^ Firstname, DateTim
     {
 		SqlServices^ DB = gcnew SqlServices();
         DB->ConnectDB();
-        DB->ExecuteQuery("UPDATE projetPOO.dbo.Client SET Last_Client = '"+ this->LastName +"',First_Client = '" + this->FirstName + "',Birth_Date = '" + System::Convert::ToString(this->BirthDate) + "' WHERE Id_Client = " + System::Convert::ToString(this->ID));
-        DB->ExecuteQuery("UPDATE projetPOO.dbo.Address SET Number_Adr = '" + System::Convert::ToString(this->AddressNum) + "',Street_Adr = '" + this->AddressStreet + "',Floor = '" + System::Convert::ToString(this->AddressFloor) + "' WHERE Id_Adr = (SELECT Id_Adr FROM projetPOO.dbo.Live_InC WHERE Id_Client = "+ System::Convert::ToString(this->ID) +")");
+        DB->ExecuteQuery("UPDATE projetPOO.dbo.Client SET Last_Client = '"+ this->LastName +"',First_Client = '" + this->FirstName + "',Birth_Date = '" + BirthDate->Value.Year+"-"+ BirthDate->Value.Month+"-"+BirthDate->Value.Day+ "' WHERE Id_Client = " + System::Convert::ToString(this->ID));
+        DB->ExecuteQuery("UPDATE projetPOO.dbo.Address SET Number_Adr = '" + System::Convert::ToString(this->AddressNum) + "',Street_Adr = '" + this->AddressStreet + "',Floor = '" + Floor->Text + "' WHERE Id_Adr = (SELECT Id_Adr FROM projetPOO.dbo.Live_InC WHERE Id_Client = "+ System::Convert::ToString(this->ID) +")");
         
         Windows::Forms::MessageBox::Show("Client updated");
     }
