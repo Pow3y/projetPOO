@@ -1072,7 +1072,7 @@ private: System::Windows::Forms::Button^ button5;
             this->tableLayoutPanelDetailClient->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
                 33.33333F)));
             this->tableLayoutPanelDetailClient->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Absolute,
-                39)));
+                51)));
             this->tableLayoutPanelDetailClient->Controls->Add(this->labelClientId, 0, 3);
             this->tableLayoutPanelDetailClient->Controls->Add(this->labelBirthDateClient, 3, 2);
             this->tableLayoutPanelDetailClient->Controls->Add(this->labelPrenomClient, 3, 1);
@@ -1130,7 +1130,7 @@ private: System::Windows::Forms::Button^ button5;
             this->labelBirthDateClient->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.9F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->labelBirthDateClient->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-            this->labelBirthDateClient->Location = System::Drawing::Point(317, 51);
+            this->labelBirthDateClient->Location = System::Drawing::Point(313, 51);
             this->labelBirthDateClient->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
             this->labelBirthDateClient->Name = L"labelBirthDateClient";
             this->labelBirthDateClient->Size = System::Drawing::Size(138, 31);
@@ -1144,7 +1144,7 @@ private: System::Windows::Forms::Button^ button5;
             this->labelPrenomClient->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.9F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->labelPrenomClient->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-            this->labelPrenomClient->Location = System::Drawing::Point(317, 20);
+            this->labelPrenomClient->Location = System::Drawing::Point(313, 20);
             this->labelPrenomClient->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
             this->labelPrenomClient->Name = L"labelPrenomClient";
             this->labelPrenomClient->Size = System::Drawing::Size(138, 31);
@@ -1154,10 +1154,10 @@ private: System::Windows::Forms::Button^ button5;
             // textBoxPrénomClient
             // 
             this->textBoxPrénomClient->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->textBoxPrénomClient->Location = System::Drawing::Point(457, 21);
+            this->textBoxPrénomClient->Location = System::Drawing::Point(453, 21);
             this->textBoxPrénomClient->Margin = System::Windows::Forms::Padding(1);
             this->textBoxPrénomClient->Name = L"textBoxPrénomClient";
-            this->textBoxPrénomClient->Size = System::Drawing::Size(196, 22);
+            this->textBoxPrénomClient->Size = System::Drawing::Size(192, 22);
             this->textBoxPrénomClient->TabIndex = 14;
             // 
             // textBoxCodePostal
@@ -1166,7 +1166,7 @@ private: System::Windows::Forms::Button^ button5;
             this->textBoxCodePostal->Location = System::Drawing::Point(99, 52);
             this->textBoxCodePostal->Margin = System::Windows::Forms::Padding(1);
             this->textBoxCodePostal->Name = L"textBoxCodePostal";
-            this->textBoxCodePostal->Size = System::Drawing::Size(196, 22);
+            this->textBoxCodePostal->Size = System::Drawing::Size(192, 22);
             this->textBoxCodePostal->TabIndex = 11;
             // 
             // labelCodePostalClient
@@ -1190,17 +1190,17 @@ private: System::Windows::Forms::Button^ button5;
             this->textBoxNomClient->Location = System::Drawing::Point(99, 21);
             this->textBoxNomClient->Margin = System::Windows::Forms::Padding(1);
             this->textBoxNomClient->Name = L"textBoxNomClient";
-            this->textBoxNomClient->Size = System::Drawing::Size(196, 22);
+            this->textBoxNomClient->Size = System::Drawing::Size(192, 22);
             this->textBoxNomClient->TabIndex = 2;
             // 
             // dateTimePickerBirthDate
             // 
             this->dateTimePickerBirthDate->Dock = System::Windows::Forms::DockStyle::Fill;
             this->dateTimePickerBirthDate->Format = System::Windows::Forms::DateTimePickerFormat::Custom;
-            this->dateTimePickerBirthDate->Location = System::Drawing::Point(457, 52);
+            this->dateTimePickerBirthDate->Location = System::Drawing::Point(453, 52);
             this->dateTimePickerBirthDate->Margin = System::Windows::Forms::Padding(1);
             this->dateTimePickerBirthDate->Name = L"dateTimePickerBirthDate";
-            this->dateTimePickerBirthDate->Size = System::Drawing::Size(196, 22);
+            this->dateTimePickerBirthDate->Size = System::Drawing::Size(192, 22);
             this->dateTimePickerBirthDate->TabIndex = 18;
             // 
             // labelNumDeRueClient
@@ -1210,7 +1210,7 @@ private: System::Windows::Forms::Button^ button5;
             this->labelNumDeRueClient->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.9F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->labelNumDeRueClient->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-            this->labelNumDeRueClient->Location = System::Drawing::Point(675, 20);
+            this->labelNumDeRueClient->Location = System::Drawing::Point(667, 20);
             this->labelNumDeRueClient->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
             this->labelNumDeRueClient->Name = L"labelNumDeRueClient";
             this->labelNumDeRueClient->Size = System::Drawing::Size(96, 31);
@@ -1224,7 +1224,7 @@ private: System::Windows::Forms::Button^ button5;
             this->labelNomDeRueClient->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.9F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->labelNomDeRueClient->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-            this->labelNomDeRueClient->Location = System::Drawing::Point(675, 51);
+            this->labelNomDeRueClient->Location = System::Drawing::Point(667, 51);
             this->labelNomDeRueClient->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
             this->labelNomDeRueClient->Name = L"labelNomDeRueClient";
             this->labelNomDeRueClient->Size = System::Drawing::Size(96, 31);
@@ -1234,19 +1234,19 @@ private: System::Windows::Forms::Button^ button5;
             // textBoxNumRue
             // 
             this->textBoxNumRue->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->textBoxNumRue->Location = System::Drawing::Point(773, 21);
+            this->textBoxNumRue->Location = System::Drawing::Point(765, 21);
             this->textBoxNumRue->Margin = System::Windows::Forms::Padding(1);
             this->textBoxNumRue->Name = L"textBoxNumRue";
-            this->textBoxNumRue->Size = System::Drawing::Size(196, 22);
+            this->textBoxNumRue->Size = System::Drawing::Size(192, 22);
             this->textBoxNumRue->TabIndex = 21;
             // 
             // textBoxNomRue
             // 
             this->textBoxNomRue->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->textBoxNomRue->Location = System::Drawing::Point(773, 52);
+            this->textBoxNomRue->Location = System::Drawing::Point(765, 52);
             this->textBoxNomRue->Margin = System::Windows::Forms::Padding(1);
             this->textBoxNomRue->Name = L"textBoxNomRue";
-            this->textBoxNomRue->Size = System::Drawing::Size(196, 22);
+            this->textBoxNomRue->Size = System::Drawing::Size(192, 22);
             this->textBoxNomRue->TabIndex = 22;
             // 
             // labelNomClient
@@ -1269,7 +1269,7 @@ private: System::Windows::Forms::Button^ button5;
             this->textBoxClientId->Location = System::Drawing::Point(99, 83);
             this->textBoxClientId->Margin = System::Windows::Forms::Padding(1);
             this->textBoxClientId->Name = L"textBoxClientId";
-            this->textBoxClientId->Size = System::Drawing::Size(196, 22);
+            this->textBoxClientId->Size = System::Drawing::Size(192, 22);
             this->textBoxClientId->TabIndex = 28;
             // 
             // labelEtageClient
@@ -1279,7 +1279,7 @@ private: System::Windows::Forms::Button^ button5;
             this->labelEtageClient->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.9F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->labelEtageClient->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-            this->labelEtageClient->Location = System::Drawing::Point(317, 82);
+            this->labelEtageClient->Location = System::Drawing::Point(313, 82);
             this->labelEtageClient->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
             this->labelEtageClient->Name = L"labelEtageClient";
             this->labelEtageClient->Size = System::Drawing::Size(138, 31);
@@ -1289,10 +1289,10 @@ private: System::Windows::Forms::Button^ button5;
             // textBoxEtage
             // 
             this->textBoxEtage->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->textBoxEtage->Location = System::Drawing::Point(457, 83);
+            this->textBoxEtage->Location = System::Drawing::Point(453, 83);
             this->textBoxEtage->Margin = System::Windows::Forms::Padding(1);
             this->textBoxEtage->Name = L"textBoxEtage";
-            this->textBoxEtage->Size = System::Drawing::Size(196, 22);
+            this->textBoxEtage->Size = System::Drawing::Size(192, 22);
             this->textBoxEtage->TabIndex = 25;
             // 
             // labelVilleClient
@@ -1302,7 +1302,7 @@ private: System::Windows::Forms::Button^ button5;
             this->labelVilleClient->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 7.9F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->labelVilleClient->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-            this->labelVilleClient->Location = System::Drawing::Point(675, 82);
+            this->labelVilleClient->Location = System::Drawing::Point(667, 82);
             this->labelVilleClient->Margin = System::Windows::Forms::Padding(1, 0, 1, 0);
             this->labelVilleClient->Name = L"labelVilleClient";
             this->labelVilleClient->Size = System::Drawing::Size(96, 31);
@@ -1312,10 +1312,10 @@ private: System::Windows::Forms::Button^ button5;
             // textBoxVille
             // 
             this->textBoxVille->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->textBoxVille->Location = System::Drawing::Point(773, 83);
+            this->textBoxVille->Location = System::Drawing::Point(765, 83);
             this->textBoxVille->Margin = System::Windows::Forms::Padding(1);
             this->textBoxVille->Name = L"textBoxVille";
-            this->textBoxVille->Size = System::Drawing::Size(196, 22);
+            this->textBoxVille->Size = System::Drawing::Size(192, 22);
             this->textBoxVille->TabIndex = 26;
             // 
             // tabCommandes
@@ -3454,17 +3454,17 @@ private: System::Void dataGridView3_CellContentClick_1(System::Object^ sender, S
     if (e->RowIndex >= 0) {
         DataRowView^ drv = (DataRowView^)dataGridView3->Rows[e->RowIndex]->DataBoundItem;
         DataRow^ test = drv->Row;
-        textBoxNP->Text = test["LAST_Personnel"]->ToString();
-        textBoxPP->Text = test["First_Personnel"]->ToString();
-        textBoxSP->Text = test["Id_Superior"]->ToString();
-        textBoxNuP->Text = test["Number_Adr"]->ToString();
-        textBoxNS->Text = test["Street_Adr"]->ToString();
-        textBoxEP->Text = test["Floor"]->ToString();
-        textBoxCP->Text = test["City_Name"]->ToString();
-        textBoxPoP->Text = test["Post_Code"]->ToString();
-        textBoxIDP->Text = test["Id_Personnel"]->ToString();
-        dateTimePickerHiring->Text = test["Hire_Date"]->ToString();
-
+        textBoxEmployesLastName->Text = test["LAST_Personnel"]->ToString();
+        textBoxEmployesFirstName->Text = test["First_Personnel"]->ToString();
+        textBoxSuperior->Text = test["Id_Superior"]->ToString();
+        textBoxNumRueEmployes->Text = test["Number_Adr"]->ToString();
+        textBoxNameStreetEmployes->Text = test["Street_Adr"]->ToString();
+        textBoxFloorEmployes->Text = test["Floor"]->ToString();
+        textBoxCityEmployes->Text = test["City_Name"]->ToString();
+        textBoxPostalCodeEmployes->Text = test["Post_Code"]->ToString();
+        textBoxIDEmployes->Text = test["Id_Personnel"]->ToString();
+        dateTimePickerHiringDate->Text = test["Hire_Date"]->ToString();
+        //ytftvytftf
     }
 }
 private: System::Void dataGridView1_CellContentClick_1(System::Object^ sender, System::Windows::Forms::DataGridViewCellEventArgs^ e) {
