@@ -104,7 +104,6 @@ void Clients::Update(TextBox^ ID, TextBox^ LastName, TextBox^ Firstname, DateTim
         DB->ConnectDB();
         DB->ExecuteQuery("UPDATE projetPOO.dbo.Client SET Last_Client = '"+ this->LastName +"',First_Client = '" + this->FirstName + "',Birth_Date = '" + BirthDate->Value.Year+"-"+ BirthDate->Value.Month+"-"+BirthDate->Value.Day+ "' WHERE Id_Client = " + System::Convert::ToString(this->ID));
         DB->ExecuteQuery("UPDATE projetPOO.dbo.Address SET Number_Adr = '" + System::Convert::ToString(this->AddressNum) + "',Street_Adr = '" + this->AddressStreet + "',Floor = '" + Floor->Text + "' WHERE Id_Adr = (SELECT Id_Adr FROM projetPOO.dbo.Live_InC WHERE Id_Client = "+ System::Convert::ToString(this->ID) +")");
-        
         Windows::Forms::MessageBox::Show("Client updated");
     }
     else
