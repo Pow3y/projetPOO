@@ -15,44 +15,51 @@ Clients::~Clients()
 void Clients::Create(TextBox^ ID, TextBox^ LastName, TextBox^ Firstname, DateTimePicker^ BirthDate, TextBox^ NumAdr, TextBox^ NameStreet, TextBox^ Floor, TextBox^ City, TextBox^ PostalCode)
 {
     try {
-        System::Convert::ToString(ID);
-    }
-    catch (Exception^ e)
-    {
-        MessageBox::Show("ID must be empty");
-    }
-    try {
         this->AddressNum = Convert::ToInt32(NumAdr->Text);
     }
     catch (Exception^ e)
     {
         MessageBox::Show("Address number must be a number");
+        return;
     }
     try {
         this->AddressPostalCode = Convert::ToInt32(PostalCode->Text);
-
     }
     catch (Exception^ e)
     {
         MessageBox::Show("Postal Code be a number");
+        return;
     }
     try {
         this->AddressFloor = Convert::ToInt32(Floor->Text);
     }
     catch (Exception^ e)
     {
-        MessageBox::Show("Floor must be a number");
+        if (Floor->Text != "")
+        {
+            MessageBox::Show("Floor must be a number or empty");
+            return;
+        }
     }
+    SqlServices^ DB = gcnew SqlServices();
+    if (DB->ExecuteQuery("SELECT Id_City FROM projetPOO.dbo.residence_cities WHERE City_Name ='"+ City->Text +"' AND Post_Code = '"+ PostalCode->Text+"'") == 0) {
+        MessageBox::Show("La ville et le code postal ne correspondent pas");
+        return;
+    }
+    MessageBox::Show("City->Text" + City->Text + "Post_Code" + PostalCode->Text);
     this->FirstName = Firstname->Text;
     this->LastName = LastName->Text;
     this->AddressStreet = NameStreet->Text;
     this->AddressCity = City->Text;
     this->BirthDate = BirthDate->Value;
-    SqlServices^ DB = gcnew SqlServices();
     DB->ConnectDB();
-    DB->ExecuteQuery("INSERT INTO projetPOO.dbo.Address VALUES ('" + System::Convert::ToString(this->AddressNum) + "','" + this->AddressStreet + "','" + System::Convert::ToString(this->AddressFloor) + "',20311)");
-    DB->ExecuteQuery("INSERT INTO projetPOO.dbo.Client VALUES ( '" + this->LastName + "','" + this->FirstName + "','" + System::Convert::ToString(this->BirthDate) + "')");
-    DB->ExecuteQuery("INSERT INTO projetPOO.dbo.Live_InC VALUES ( '13','13')");
+    System::Data::DataTable^ q1 = DB->ExecuteSQL("SELECT Id_City FROM projetPOO.dbo.residence_cities WHERE City_Name ='" + City->Text + "' AND Post_Code = '" + PostalCode->Text + "'");
+    DB->ExecuteQuery("INSERT INTO projetPOO.dbo.Address VALUES ('" + System::Convert::ToString(this->AddressNum) + "','" + this->AddressStreet + "','" + System::Convert::ToString(this->AddressFloor) + "'," + q1->Rows[0]->ItemArray[0] +")");
+    DB->ExecuteQuery("INSERT INTO projetPOO.dbo.Client VALUES ( '" + this->LastName + "','" + this->FirstName + "','" + BirthDate->Value.Year + "-" + BirthDate->Value.Month + "-" + BirthDate->Value.Day + "')");
+	System::Data::DataTable^ q = DB->ExecuteSQL("SELECT MAX(Id_Client) FROM projetPOO.dbo.Client");
+	System::Data::DataTable^ q2 = DB->ExecuteSQL("SELECT MAX(Id_Adr) FROM projetPOO.dbo.Address");
+    DB->ExecuteQuery("INSERT INTO projetPOO.dbo.Live_InC VALUES ( " + q->Rows[0]->ItemArray[0]->ToString() + ", "+ q2->Rows[0]->ItemArray[0]->ToString() + ")");
+	
     MessageBox::Show("Client Created");
 }
 
