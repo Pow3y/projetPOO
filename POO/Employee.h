@@ -9,9 +9,9 @@ ref class Employee : public Person
 public:
 	Employee();
 	~Employee();
-	void Create() override;
+	void Create(TextBox^ IDEmployes, TextBox^ EmployesLastName, TextBox^ EmployesFirstname, DateTimePicker^ HiringhDate, TextBox^ NumAdrEmployes, TextBox^ NameStreetEmployes, TextBox^ FloorEmployes, TextBox^ CityEmployes, TextBox^ PostalCodeEmployes, TextBox^ Superior) override;
 	void Remove() override;
-	void Update() override;
+	void Update(TextBox^ IDEmployes, TextBox^ EmployesLastName, TextBox^ EmployesFirstname, DateTimePicker^ HiringhDate, TextBox^ NumAdrEmployes, TextBox^ NameStreetEmployes, TextBox^ FloorEmployes, TextBox^ CityEmployes, TextBox^ PostalCodeEmployes, TextBox^ Superior) override;
 private:
 	int SuperiorID;
 	DateTime HiringDate;
