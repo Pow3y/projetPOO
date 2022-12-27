@@ -13,7 +13,6 @@ Employee::~Employee()
 
 }
 
-
 void Employee::Create(TextBox^ IDEmployes, TextBox^ EmployesLastName, TextBox^ EmployesFirstname, DateTimePicker^ HiringhDate, TextBox^ NumAdrEmployes, TextBox^ NameStreetEmployes, TextBox^ FloorEmployes, TextBox^ CityEmployes, TextBox^ PostalCodeEmployes, TextBox^ Superior)
 {
     try {
