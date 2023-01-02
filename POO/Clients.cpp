@@ -1,6 +1,7 @@
 #include "pch.h"
 #include "Clients.h"
 #include "SqlServices.h"
+using namespace ::System::Windows::Forms;
 
 Clients::Clients()
 {

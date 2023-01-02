@@ -3,6 +3,7 @@
 #include <iostream>
 
 using namespace System;
+using namespace System::Windows::Forms;
 
 ref class Employee : public Person
 {
@@ -11,7 +12,8 @@ public:
 	~Employee();
 	void Create(TextBox^ IDEmployes, TextBox^ EmployesLastName, TextBox^ EmployesFirstname, DateTimePicker^ HiringhDate, TextBox^ NumAdrEmployes, TextBox^ NameStreetEmployes, TextBox^ FloorEmployes, TextBox^ CityEmployes, TextBox^ PostalCodeEmployes, TextBox^ Superior) override;
 	void Remove() override;
-	void Update(TextBox^ IDEmployes, TextBox^ EmployesLastName, TextBox^ EmployesFirstname, DateTimePicker^ HiringhDate, TextBox^ NumAdrEmployes, TextBox^ NameStreetEmployes, TextBox^ FloorEmployes, TextBox^ CityEmployes, TextBox^ PostalCodeEmployes, TextBox^ Superior) override;
+	void Update(TextBox^ IDEmployes, TextBox^ EmployesLastName, TextBox^ EmployesFirstname, DateTimePicker^ HiringDate, TextBox^ NumAdrEmployes, TextBox^ NameStreetEmployes, TextBox^ FloorEmployes, TextBox^ CityEmployes, TextBox^ PostalCodeEmployes, TextBox^ Superior) override;
+	bool Exist() override;
 private:
 	int SuperiorID;
 	DateTime HiringDate;

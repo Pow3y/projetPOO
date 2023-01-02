@@ -1,12 +1,12 @@
 #pragma once
 #include "Person.h"
+#include <iostream>
 
 using namespace System;
 using namespace System::Windows::Forms;
 
 ref class Clients : public Person
 {
-
 public:
 	Clients();
 	~Clients();
@@ -22,4 +22,5 @@ public:
 	static System::String^ AddressCity;
 	static int AddressPostalCode;
 	static DateTime BirthDate;
+private:
 };
